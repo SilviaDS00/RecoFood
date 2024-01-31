@@ -3,21 +3,21 @@
 
 ## Índice
 
- :black_nib: [Justificación y descripción del proyecto](#id1)
+ :black_nib: [1. Justificación y descripción del proyecto](#id1)
  
- :mag: [Obtención de los datos](#id2)
+ :mag: [2. Obtención de los datos](#id2)
  
- :shower: [Limpieza de datos (Preprocesado)](#id3)
+ :shower: [3. Limpieza de datos (Preprocesado)](#id3)
  
- :bar_chart: [Exploración y visualización de los datos](#id4)
+ :bar_chart: [4. Exploración y visualización de los datos](#id4)
  
- :hourglass: [Preparación de los datos para Machine Learning](#id5)
+ :hourglass: [5. Preparación de los datos para Machine Learning](#id5)
  
- :chart_with_upwards_trend: [Entrenamiento del modelo y comprobación del rendimiento](#id6)
+ :chart_with_upwards_trend: [6. Entrenamiento del modelo y comprobación del rendimiento](#id6)
  
- :computer: [Aplicación Web](#id7)
+ :computer: [7. Aplicación Web](#id7)
  
- :pencil: [Conclusiones](#id8)
+ :pencil: [8. Conclusiones](#id8)
 
 
 ## 1. Justificación y descripción del proyecto.<a name="id1"></a>
