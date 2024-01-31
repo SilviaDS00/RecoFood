@@ -20,15 +20,15 @@
  :pencil: [8. Conclusiones](#id8)
 
 
-## 1. Justificación y descripción del proyecto.<a name="id1"></a>
+## 1. Justificación y descripción del proyecto<a name="id1"></a>
 
-## 2. Obtención de los datos.<a name="id2"></a>
+## 2. Obtención de los datos<a name="id2"></a>
 
-## 3. Limpieza de datos (Preprocesado).<a name="id3"></a>
+## 3. Limpieza de datos (Preprocesado)<a name="id3"></a>
 
-## 4. Exploración y visualización de los datos.<a name="id4"></a>
+## 4. Exploración y visualización de los datos<a name="id4"></a>
 
-## 5. Preparación de los datos para Machine Learning.<a name="id5"></a>
+## 5. Preparación de los datos para Machine Learning<a name="id5"></a>
 
 ## 6. Entrenamiento del modelo y comprobación del rendimiento<a name="id6"></a>
 
