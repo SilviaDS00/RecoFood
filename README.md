@@ -11,3 +11,12 @@
 * [Entrenamiento del modelo y comprobación del rendimiento](#id8)
 * [Aplicación Web](#id12)
 * [Conclusiones](#id16)
+
+
+## 1. Justificación y descripción del proyecto.<a name="id1"></a>
+
+### :black_nib: Justificación
+
+
+
+### :book: Descripción
