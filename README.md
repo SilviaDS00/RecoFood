@@ -8,9 +8,9 @@
 * :shower: [Limpieza de datos (Preprocesado)](#id3)
 * :bar_chart: [Exploración y visualización de los datos](#id4)
 * :hourglass: [Preparación de los datos para Machine Learning](#id5)
-* :chart_with_upwards_trend: [Entrenamiento del modelo y comprobación del rendimiento](#id8)
-* :computer: [Aplicación Web](#id12)
-* :pencil: [Conclusiones](#id16)
+* :chart_with_upwards_trend: [Entrenamiento del modelo y comprobación del rendimiento](#id6)
+* :computer: [Aplicación Web](#id7)
+* :pencil: [Conclusiones](#id8)
 
 
 ## 1. Justificación y descripción del proyecto.<a name="id1"></a>
@@ -23,8 +23,8 @@
 
 ## 5. Preparación de los datos para Machine Learning.<a name="id5"></a>
 
-## 6. Entrenamiento del modelo y comprobación del rendimiento<a name="id8"></a>
+## 6. Entrenamiento del modelo y comprobación del rendimiento<a name="id6"></a>
 
-## 7. Aplicación web<a name="id12"></a>
+## 7. Aplicación web<a name="id7"></a>
 
-## 8. Conclusiones<a name="id16"></a>
+## 8. Conclusiones<a name="id8"></a>
