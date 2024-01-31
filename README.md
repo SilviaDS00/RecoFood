@@ -3,7 +3,7 @@
 
 ## Índice
 
-* [Justificación y descripción del proyecto](#id1)
+* :black_nib: [Justificación y descripción del proyecto](#id1)
 * [Obtención de los datos](#id2)
 * [Limpieza de datos (Preprocesado)](#id3)
 * [Exploración y visualización de los datos](#id4)
@@ -15,7 +15,7 @@
 
 ## 1. Justificación y descripción del proyecto.<a name="id1"></a>
 
-### :black_nib: Justificación
+### Justificación
 
 
 
