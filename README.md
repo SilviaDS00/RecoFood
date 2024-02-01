@@ -23,6 +23,7 @@
 
 
 ## 1. Justificación y descripción del proyecto<a name="id1"></a>
+La calidad del aire es un tema crítico para la salud pública. Este proyecto busca predecir la calidad del aire en diferentes regiones de España utilizando datos recopilados por el gobierno. La predicción ayudará a anticipar episodios de mala calidad del aire, permitiendo la toma de medidas preventivas y de concienciación.
 
 ## 2. Obtención de los datos<a name="id2"></a>
 
