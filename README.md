@@ -1,4 +1,4 @@
-# EcoSphere Predictor
+# RecoFood
 
 *TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, **[Elena Racero Gonzalez](https://github.com/ElenaRacero3)** y **[Manuel Fajardo Jiménez](https://github.com/Manufajimez)** del Máster de Inteligencia Arficial y Big Data del CPIFP Alan Turing*
 
@@ -23,7 +23,7 @@
 
 
 ## 1. Justificación y descripción del proyecto<a name="id1"></a>
-La calidad del aire es un tema crítico para la salud pública. Este proyecto busca predecir la calidad del aire en diferentes regiones de España utilizando datos recopilados por el gobierno. La predicción ayudará a anticipar episodios de mala calidad del aire, permitiendo la toma de medidas preventivas y de concienciación.
+El proyecto tiene como objetivo desarrollar un sistema integral que clasifique comidas utilizando el conjunto de datos Food101. Además, se proporcionará información sobre los macronutrientes de las comidas y se implementará un chatbot para mejorar la interacción. Este proyecto aborda la necesidad de brindar información detallada sobre las comidas y facilitar la toma de decisiones nutricionales.
 
 ## 2. Obtención de los datos<a name="id2"></a>
 
