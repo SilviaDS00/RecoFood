@@ -9,15 +9,15 @@
  
  :mag: [2. Obtención de los datos](#id2)
   
- :bar_chart: [3. Exploración y visualización de los datos](#id4)
+ :bar_chart: [3. Exploración y visualización de los datos](#id3)
  
- :hourglass: [4. Preparación de los datos para Machine Learning](#id5)
+ :hourglass: [4. Preparación de los datos para Machine Learning](#id4)
  
- :chart_with_upwards_trend: [5. Entrenamiento del modelo y comprobación del rendimiento](#id6)
+ :chart_with_upwards_trend: [5. Entrenamiento del modelo y comprobación del rendimiento](#id5)
  
- :computer: [6. Aplicación Web](#id7)
+ :computer: [6. Aplicación Web](#id6)
  
- :pencil: [7. Conclusiones](#id8)
+ :pencil: [7. Conclusiones](#id7)
 
 
 ## 1. Justificación y descripción del proyecto<a name="id1"></a>
@@ -34,7 +34,7 @@ Se han descargado y extraído desde el cuaderno de Jupyter de la siguiente maner
 
 ![Obtencion de las imagenes](/Capturas_Codigo/Data_obtein.png)
 
-## 3. Exploración y visualización de los datos<a name="id4"></a>
+## 3. Exploración y visualización de los datos<a name="id3"></a>
 
 Primero visualizamos todas las clases de comida que hay en el conjunto de datos:
 
@@ -46,7 +46,7 @@ Primero visualizamos todas las clases de comida que hay en el conjunto de datos:
 
 
 
-## 4. Preparación de los datos para Machine Learning<a name="id5"></a>
+## 4. Preparación de los datos para Machine Learning<a name="id4"></a>
 
 Primero realizamos la configuración los generadores de los datos de las imágenes:
 
@@ -81,7 +81,7 @@ Found 80800 images belonging to 101 classes.
 
 Found 20200 images belonging to 101 classes.
 ```
-## 5. Entrenamiento del modelo y comprobación del rendimiento<a name="id6"></a>
+## 5. Entrenamiento del modelo y comprobación del rendimiento<a name="id5"></a>
 
 En este paso creamos el modelo de entrenamiento, utilizamos la actiquectura `InceptionV3` preentrenada en el conjunto de datos *ImageNet*.
 
@@ -121,6 +121,6 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Fit.png)
 
-## 6. Aplicación web<a name="id7"></a>
+## 6. Aplicación web<a name="id6"></a>
 
-## 7. Conclusiones<a name="id8"></a>
+## 7. Conclusiones<a name="id7"></a>
