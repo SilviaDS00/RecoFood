@@ -62,6 +62,18 @@ Primero realizamos la configuración los generadores de los datos de las imágen
 
 ![Preparacion datos](/Capturas_Codigo/Data_prepair1.png)
 
+A continuación configuramos los generadores del flujo de los datos que alimentarán los lotes de las imágenes preprocesadas al modelo durante el entrenamiento y la evaluación.
+
+* **base_dir**: La ruta al directorio que contiene subdirectorios separados para cada clase de imágenes. Estos subdirectorios son utilizados por el generador para determinar las clases y organizar las imágenes.
+
+* **target_size=(img_height, img_width)**: El tamaño al que se deben redimensionar las imágenes. Todas las imágenes se redimensionarán a este tamaño antes de ser alimentadas al modelo.
+
+* **batch_size**: El tamaño de cada lote de imágenes que se proporcionará al modelo durante cada iteración de entrenamiento.
+
+* **class_mode='categorical'**: La forma en que se deben manejar las etiquetas de clase. En este caso, se utiliza 'categorical' porque parece estar trabajando con un problema de clasificación de varias clases.
+
+* **subset="training"** o **subset="validation"**: Esto se utiliza para especificar si el generador está configurado para el conjunto de entrenamiento ("training") o para el conjunto de validación ("validation"). Esto es útil cuando se utiliza la opción validation_split en los generadores de datos de imágenes para dividir automáticamente los datos en conjuntos de entrenamiento y validación.
+
 ![Preparacion datos](/Capturas_Codigo/Data_prepair2.png)
 
 ```
