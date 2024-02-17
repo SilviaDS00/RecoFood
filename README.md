@@ -111,6 +111,9 @@ Compilamos el modelo:
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Compile.png)
 
+Antes de entrenar el modelo establecemos un callback para que se vaya guardando el modelo en cada iteracción, siempre que las métricas sean mejor que la anterior.
+
+![Compilacion modelo](/Capturas_Codigo/Model_Checkpoint.png)
 
 ## 6. Aplicación web<a name="id7"></a>
 
