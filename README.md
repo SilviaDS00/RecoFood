@@ -32,9 +32,13 @@ El proyecto tiene como objetivo desarrollar un sistema integral que clasifique c
 
 ### Desarrollo
 
-Lenguajes: Python
+Lenguajes: 
+
+[![python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python&logoColor=blue&labelColor=101010)]()
 
 Entornos: Colab, VisualStudio Code, Anaconda, Jupyter Notebook
+
+[![python](https://img.shields.io/badge/colab-black?style=for-the-badge&logo=colab&logoColor=orange&labelColor=101010)]()
 
 Frontend: ReactJS, SASS
 
