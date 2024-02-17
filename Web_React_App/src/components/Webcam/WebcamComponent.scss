@@ -1,0 +1,76 @@
+// Estilos para WebcamComponent
+
+.webcam-container {
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.webcam {
+  border: 2px solid #333;
+  margin-bottom: 10px;
+}
+
+.capture-button, .toggle-webcam-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.capture-button:hover, .toggle-webcam-button:hover {
+  background-color: #45a049;
+}
+
+.prediction-button{
+  background-color: #3498db;
+  margin-bottom: 0;
+  width: 100%;
+  &:hover {
+    background-color: #45a049;
+  }
+}
+
+.delete-button, .close-webcam-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.captured-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.captured-image {
+  max-width: 100%;
+  margin-bottom: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.download-link {
+  padding: 8px;
+  background-color: #2196f3;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #1769aa;
+  }
+}
