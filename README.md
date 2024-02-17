@@ -8,18 +8,16 @@
  :black_nib: [1. Justificación y descripción del proyecto](#id1)
  
  :mag: [2. Obtención de los datos](#id2)
+  
+ :bar_chart: [3. Exploración y visualización de los datos](#id4)
  
- :shower: [3. Limpieza de datos (Preprocesado)](#id3)
+ :hourglass: [4. Preparación de los datos para Machine Learning](#id5)
  
- :bar_chart: [4. Exploración y visualización de los datos](#id4)
+ :chart_with_upwards_trend: [5. Entrenamiento del modelo y comprobación del rendimiento](#id6)
  
- :hourglass: [5. Preparación de los datos para Machine Learning](#id5)
+ :computer: [6. Aplicación Web](#id7)
  
- :chart_with_upwards_trend: [6. Entrenamiento del modelo y comprobación del rendimiento](#id6)
- 
- :computer: [7. Aplicación Web](#id7)
- 
- :pencil: [8. Conclusiones](#id8)
+ :pencil: [7. Conclusiones](#id8)
 
 
 ## 1. Justificación y descripción del proyecto<a name="id1"></a>
