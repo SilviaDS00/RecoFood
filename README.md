@@ -50,29 +50,29 @@ Primero visualizamos todas las clases de comida que hay en el conjunto de datos:
 
 Primero realizamos la configuración los generadores de los datos de las imágenes:
 
-* **rescale=1./255**: Este parámetro escala los valores de píxeles de las imágenes. Dividir por 255 normaliza los valores de píxeles para que estén en el rango de 0 a 1. Esto es común en el preprocesamiento de imágenes para facilitar el entrenamiento de modelos.
+* `rescale=1./255`: Este parámetro escala los valores de píxeles de las imágenes. Dividir por 255 normaliza los valores de píxeles para que estén en el rango de 0 a 1. Esto es común en el preprocesamiento de imágenes para facilitar el entrenamiento de modelos.
 
-* **shear_range=0.2**: Se aplica un sesgo (shear) a las imágenes. Este parámetro controla la intensidad del sesgo. El sesgo puede ser útil para la variación de datos durante el entrenamiento, lo que ayuda al modelo a generalizar mejor.
+* `shear_range=0.2`: Se aplica un sesgo (shear) a las imágenes. Este parámetro controla la intensidad del sesgo. El sesgo puede ser útil para la variación de datos durante el entrenamiento, lo que ayuda al modelo a generalizar mejor.
 
-* **zoom_range=0.2**: Este parámetro controla el rango de zoom que se puede aplicar a las imágenes. Al igual que el sesgo, el zoom introduce variabilidad en los datos durante el entrenamiento.
+* `zoom_range=0.2`: Este parámetro controla el rango de zoom que se puede aplicar a las imágenes. Al igual que el sesgo, el zoom introduce variabilidad en los datos durante el entrenamiento.
 
-* **horizontal_flip=True**: Permite voltear horizontalmente aleatoriamente las imágenes. Esto también ayuda a aumentar la variabilidad y mejorar la capacidad del modelo para generalizar.
+* `horizontal_flip=True`: Permite voltear horizontalmente aleatoriamente las imágenes. Esto también ayuda a aumentar la variabilidad y mejorar la capacidad del modelo para generalizar.
 
-* **validation_split=0.2**: Este parámetro se utiliza para dividir automáticamente el conjunto de datos en conjuntos de entrenamiento y validación. En este caso, el 80% de los datos se utilizarán para entrenamiento y el 20% restante se utilizará para validación.
+* `validation_split=0.2`: Este parámetro se utiliza para dividir automáticamente el conjunto de datos en conjuntos de entrenamiento y validación. En este caso, el 80% de los datos se utilizarán para entrenamiento y el 20% restante se utilizará para validación.
 
 ![Preparacion datos](/Capturas_Codigo/Data_prepair1.png)
 
 A continuación configuramos los generadores del flujo de los datos que alimentarán los lotes de las imágenes preprocesadas al modelo durante el entrenamiento y la evaluación.
 
-* **base_dir**: La ruta al directorio que contiene subdirectorios separados para cada clase de imágenes. Estos subdirectorios son utilizados por el generador para determinar las clases y organizar las imágenes.
+* `base_dir`: La ruta al directorio que contiene subdirectorios separados para cada clase de imágenes. Estos subdirectorios son utilizados por el generador para determinar las clases y organizar las imágenes.
 
-* **target_size=(img_height, img_width)**: El tamaño al que se deben redimensionar las imágenes. Todas las imágenes se redimensionarán a este tamaño antes de ser alimentadas al modelo.
+* `target_size=(img_height, img_width)`: El tamaño al que se deben redimensionar las imágenes. Todas las imágenes se redimensionarán a este tamaño antes de ser alimentadas al modelo.
 
-* **batch_size**: El tamaño de cada lote de imágenes que se proporcionará al modelo durante cada iteración de entrenamiento.
+* `batch_size`: El tamaño de cada lote de imágenes que se proporcionará al modelo durante cada iteración de entrenamiento.
 
-* **class_mode='categorical'**: La forma en que se deben manejar las etiquetas de clase. En este caso, se utiliza 'categorical' porque parece estar trabajando con un problema de clasificación de varias clases.
+* `class_mode='categorical'`: La forma en que se deben manejar las etiquetas de clase. En este caso, se utiliza 'categorical' porque parece estar trabajando con un problema de clasificación multiclase.
 
-* **subset="training"** o **subset="validation"**: Esto se utiliza para especificar si el generador está configurado para el conjunto de entrenamiento ("training") o para el conjunto de validación ("validation"). Esto es útil cuando se utiliza la opción validation_split en los generadores de datos de imágenes para dividir automáticamente los datos en conjuntos de entrenamiento y validación.
+* `subset="training"` o `subset="validation"`: Esto se utiliza para especificar si el generador está configurado para el conjunto de entrenamiento ("training") o para el conjunto de validación ("validation"). Esto es útil cuando se utiliza la opción validation_split en los generadores de datos de imágenes para dividir automáticamente los datos en conjuntos de entrenamiento y validación.
 
 ![Preparacion datos](/Capturas_Codigo/Data_prepair2.png)
 
@@ -83,24 +83,30 @@ Found 20200 images belonging to 101 classes.
 ```
 ## 5. Entrenamiento del modelo y comprobación del rendimiento<a name="id6"></a>
 
-En este paso creamos el modelo de entrenamiento, utilizamos la actiquectura **InceptionV3** preentrenada en el conjunto de datos *ImageNet*.
+En este paso creamos el modelo de entrenamiento, utilizamos la actiquectura `InceptionV3` preentrenada en el conjunto de datos *ImageNet*.
 
-* **inception = InceptionV3(weights='imagenet', include_top=False)**: Se crea una instancia del modelo InceptionV3. La opción weights='imagenet' carga los pesos preentrenados del modelo en el conjunto de datos "ImageNet". include_top=False excluye las capas densas (totalmente conectadas) en la parte superior del modelo, ya que se agregarán capas personalizadas más adelante para adaptar el modelo a un problema específico.
+* `inception = InceptionV3(weights='imagenet', include_top=False)`: Se crea una instancia del modelo InceptionV3. La opción `weights='imagenet'` carga los pesos preentrenados del modelo en el conjunto de datos "ImageNet". `include_top=False` excluye las capas densas (totalmente conectadas) en la parte superior del modelo, ya que se agregarán capas personalizadas más adelante para adaptar el modelo a un problema específico.
 
-* **x = inception.output**: Se toma la salida de la última capa de la red InceptionV3. Esta salida es una representación de características de alto nivel de la entrada de la imagen.
+* `x = inception.output`: Se toma la salida de la última capa de la red InceptionV3. Esta salida es una representación de características de alto nivel de la entrada de la imagen.
 
-* **x = GlobalAveragePooling2D()(x)**: Se aplica una capa de pooling global promedio, que toma la media de cada canal a lo largo de todas las posiciones espaciales. Esto reduce la dimensionalidad de la representación de características, capturando la información esencial de las características.
+* `x = GlobalAveragePooling2D()(x)`: Se aplica una capa de pooling global promedio, que toma la media de cada canal a lo largo de todas las posiciones espaciales. Esto reduce la dimensionalidad de la representación de características, capturando la información esencial de las características.
 
-* **x = Dense(128, activation='relu')(x)**: Se agrega una capa densa con 128 neuronas y función de activación ReLU. Esta capa totalmente conectada ayuda a aprender patrones más complejos en los datos.
+* `x = Dense(128, activation='relu')(x)`: Se agrega una capa densa con 128 neuronas y función de activación ReLU. Esta capa totalmente conectada ayuda a aprender patrones más complejos en los datos.
 
-* **x = Dropout(0.2)(x)**: Se aplica una capa de Dropout con una tasa del 20%. El Dropout ayuda a prevenir el sobreajuste al "apagar" aleatoriamente un porcentaje de las neuronas durante el entrenamiento.
+* `x = Dropout(0.2)(x)`: Se aplica una capa de Dropout con una tasa del 20%. El Dropout ayuda a prevenir el sobreajuste al "apagar" aleatoriamente un porcentaje de las neuronas durante el entrenamiento.
 
-* **predictions = Dense(len(class_names), kernel_regularizer=l1(0.005), activation='softmax')(x)**: Se añade la capa de salida. Esta capa tiene un número de neuronas igual a la cantidad de clases en tu problema (determinado por len(class_names)), con una regularización L1 para penalizar los pesos grandes. La función de activación softmax se utiliza para obtener probabilidades normalizadas para cada clase.
+* `predictions = Dense(len(class_names), kernel_regularizer=l1(0.005), activation='softmax')(x)`: Se añade la capa de salida. Esta capa tiene un número de neuronas igual a la cantidad de clases en tu problema (determinado por len(class_names)), con una regularización L1 para penalizar los pesos grandes. La función de activación softmax se utiliza para obtener probabilidades normalizadas para cada clase.
 
-* **model = Model(inputs=inception.input, outputs=predictions)**: Se crea el modelo final utilizando el modelo InceptionV3 como base y añadiendo las capas personalizadas. inputs=inception.input establece la entrada del modelo como la entrada original de InceptionV3, y outputs=predictions establece la salida del modelo como la capa de predicciones recién añadida.
+* `model = Model(inputs=inception.input, outputs=predictions)`: Se crea el modelo final utilizando el modelo InceptionV3 como base y añadiendo las capas personalizadas. inputs=inception.input establece la entrada del modelo como la entrada original de InceptionV3, y outputs=predictions establece la salida del modelo como la capa de predicciones recién añadida.
 ![Creacion modelo](/Capturas_Codigo/Model_Creation.png)
 
 Compilamos el modelo:
+
+* `optimizer=SGD(learning_rate=0.0001, momentum=0.9)`: Se especifica el optimizador que se utilizará durante el entrenamiento del modelo. En este caso, se está utilizando el optimizador estocástico de descenso de gradiente (SGD). learning_rate=0.0001 establece la tasa de aprendizaje, que controla el tamaño de los pasos que el optimizador toma para minimizar la función de pérdida. momentum=0.9 es un término que acelera la convergencia en la dirección correcta y ayuda a evitar oscilaciones.
+
+* `loss='categorical_crossentropy'`: Se especifica la función de pérdida que se utilizará durante el entrenamiento. En este caso, se trata de la entropía cruzada categórica, que es comúnmente utilizada en problemas de clasificación con múltiples clases.
+
+* `metrics=['accuracy']`: Se especifica la métrica que se utilizará para evaluar el rendimiento del modelo durante el entrenamiento y la evaluación. En este caso, se utiliza la precisión (accuracy), que mide la fracción de muestras correctamente clasificadas.
 ![Compilacion modelo](/Capturas_Codigo/Model_Compile.png)
 
 
