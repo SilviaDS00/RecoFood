@@ -47,8 +47,23 @@ Primero visualizamos todas las clases de comida que hay en el conjunto de datos:
 
 
 ## 4. Preparación de los datos para Machine Learning<a name="id5"></a>
+
+Primero realizamos la configuración los generadores de los datos de las imágenes:
+
+* **rescale=1./255**: Este parámetro escala los valores de píxeles de las imágenes. Dividir por 255 normaliza los valores de píxeles para que estén en el rango de 0 a 1. Esto es común en el preprocesamiento de imágenes para facilitar el entrenamiento de modelos.
+
+* **shear_range=0.2**: Se aplica un sesgo (shear) a las imágenes. Este parámetro controla la intensidad del sesgo. El sesgo puede ser útil para la variación de datos durante el entrenamiento, lo que ayuda al modelo a generalizar mejor.
+
+* **zoom_range=0.2**: Este parámetro controla el rango de zoom que se puede aplicar a las imágenes. Al igual que el sesgo, el zoom introduce variabilidad en los datos durante el entrenamiento.
+
+* **horizontal_flip=True**: Permite voltear horizontalmente aleatoriamente las imágenes. Esto también ayuda a aumentar la variabilidad y mejorar la capacidad del modelo para generalizar.
+
+* **validation_split=0.2**: Este parámetro se utiliza para dividir automáticamente el conjunto de datos en conjuntos de entrenamiento y validación. En este caso, el 80% de los datos se utilizarán para entrenamiento y el 20% restante se utilizará para validación.
+
 ![Preparacion datos](/Capturas_Codigo/Data_prepair1.png)
+
 ![Preparacion datos](/Capturas_Codigo/Data_prepair2.png)
+
 ```
 Found 80800 images belonging to 101 classes.
 
