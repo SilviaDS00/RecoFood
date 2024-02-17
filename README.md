@@ -36,14 +36,12 @@ Se han descargado y extraído desde el cuaderno de Jupyter de la siguiente maner
 
 ![Obtencion de las imagenes](/Capturas_Codigo/Data_obtein.png)
 
-## 3. Limpieza de datos (Preprocesado)<a name="id3"></a>
+## 3. Exploración y visualización de los datos<a name="id4"></a>
 
-## 4. Exploración y visualización de los datos<a name="id4"></a>
+## 4. Preparación de los datos para Machine Learning<a name="id5"></a>
 
-## 5. Preparación de los datos para Machine Learning<a name="id5"></a>
+## 5. Entrenamiento del modelo y comprobación del rendimiento<a name="id6"></a>
 
-## 6. Entrenamiento del modelo y comprobación del rendimiento<a name="id6"></a>
+## 6. Aplicación web<a name="id7"></a>
 
-## 7. Aplicación web<a name="id7"></a>
-
-## 8. Conclusiones<a name="id8"></a>
+## 7. Conclusiones<a name="id8"></a>
