@@ -28,11 +28,13 @@ El proyecto tiene como objetivo desarrollar un sistema integral que clasifique c
 ## 2. Obtención de los datos<a name="id2"></a>
 Las imágenes han sido recogidas de un conjunto de datos de 101 categorías de alimentos con un total de 101000 imágenes.
 
-[https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/]("Fuente de los datos")
+[Fuente de los datos](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/)
 
-[https://www.tensorflow.org/datasets/catalog/food101?hl=es-419]("Link a la web de TensorFlow ")
+[Link a la web de TensorFlow](https://www.tensorflow.org/datasets/catalog/food101?hl=es-419)
 
-![Obtencion de las imagenes](/Capturas_Codigo/Data_obtein.png){width=200px height=200px}
+Se han descargado y extraído desde el cuaderno de Jupyter de la siguiente manera:
+
+![Obtencion de las imagenes](/Capturas_Codigo/Data_obtein.png)
 
 ## 3. Limpieza de datos (Preprocesado)<a name="id3"></a>
 
