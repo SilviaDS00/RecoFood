@@ -117,7 +117,7 @@ Antes de entrenar el modelo establecemos un callback para que se vaya guardando 
 
 Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo.
 
-Para poder realizar el entrenamiento con éxito, hemos tenido que instalar **Anaconda** con TensorFlow, Keras, CUDA y CUDNN de manera local para poder utilizar la GPU de nuestro ordenador (para ello hemos seguido los pasos de este [vídeo](https://www.youtube.com/watch?v=OEFKlRSd8Ic)), ya que al entrenar tantas imágenes, el Google Colab se colapsaba.
+**NOTA**: Para poder realizar el entrenamiento con éxito, hemos tenido que instalar **Anaconda** con TensorFlow, Keras, CUDA y CUDNN de manera local para poder utilizar la GPU de nuestro ordenador (para ello hemos seguido los pasos de este [vídeo](https://www.youtube.com/watch?v=OEFKlRSd8Ic)), ya que al entrenar tantas imágenes, el Google Colab se colapsaba.
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Fit.png)
 
