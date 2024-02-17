@@ -26,6 +26,36 @@
 
 El proyecto tiene como objetivo desarrollar un sistema integral que clasifique comidas utilizando el conjunto de datos Food101. Además, se proporcionará información sobre los macronutrientes de las comidas y se implementará un chatbot para mejorar la interacción. Este proyecto aborda la necesidad de brindar información detallada sobre las comidas y facilitar la toma de decisiones nutricionales.
 
+<div align="center">
+
+## :computer: Tecnologías usadas
+
+### Desarrollo
+
+Lenguajes: Python
+
+Entornos: Colab, VisualStudio Code, Anaconda, Jupyter Notebook
+
+Frontend: ReactJS, SASS
+
+Backend: Strapi(?), MongoDB(?)
+
+Diseño: Figma
+
+Control de versiones: Github
+
+Gestión de proyectos: Trello
+
+### Análisis
+
+Numpy, Pandas, Matplotlib
+
+### Machine Learning
+
+TensorFlow, Keras
+
+</div>
+
 ## 2. Obtención de los datos<a name="id2"></a>
 
 Las imágenes han sido recogidas de un conjunto de datos de 101 categorías de alimentos con un total de 101000 imágenes.
@@ -135,5 +165,9 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 ## 6. Procesamiento del lenguaje natural - ChatBot<a name="id6"></a>
 
 ## 7. Aplicación web<a name="id7"></a>
+
+La aplicación web está realizada en ReactJS, el cual hemos implementado el modelo entrenado.
+
+La web contiene dos botones, uno para realizar una foto con la cámara, y otro para subir una imagen. Realizando cualquiera de las dos opciones se aplicará el modelo a la imagen.
 
 ## 8. Conclusiones<a name="id8"></a>
