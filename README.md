@@ -122,4 +122,5 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 ## 6. Aplicación web<a name="id6"></a>
 
+
 ## 7. Conclusiones<a name="id7"></a>
