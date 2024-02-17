@@ -115,6 +115,12 @@ Antes de entrenar el modelo establecemos un callback para que se vaya guardando 
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Checkpoint.png)
 
+Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo.
+
+Para poder realizar el entrenamiento con éxito, hemos tenido que instalar **Anaconda** de manera local para poder utilizar la GPU de nuestro ordenador (para ello hemos seguido los pasos de este [vídeo](https://www.youtube.com/watch?v=OEFKlRSd8Ic)), ya que al entrenar tantas imágenes, el Google Colab se colapsaba.
+
+![Compilacion modelo](/Capturas_Codigo/Model_Fit.png)
+
 ## 6. Aplicación web<a name="id7"></a>
 
 ## 7. Conclusiones<a name="id8"></a>
