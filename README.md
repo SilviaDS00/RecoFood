@@ -100,7 +100,7 @@ En este paso creamos el modelo de entrenamiento, utilizamos la actiquectura **In
 * **model = Model(inputs=inception.input, outputs=predictions)**: Se crea el modelo final utilizando el modelo InceptionV3 como base y añadiendo las capas personalizadas. inputs=inception.input establece la entrada del modelo como la entrada original de InceptionV3, y outputs=predictions establece la salida del modelo como la capa de predicciones recién añadida.
 ![Creacion modelo](/Capturas_Codigo/Model_Creation.png)
 
-![Compilacion modelo](/Capturas_Codigo/Model_Compilation.png)
+![Compilacion modelo](/Capturas_Codigo/Model_Compile.png)
 
 
 ## 6. Aplicación web<a name="id7"></a>
