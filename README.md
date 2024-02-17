@@ -38,7 +38,7 @@ Lenguajes:
 
 Entornos: Colab, VisualStudio Code, Anaconda, Jupyter Notebook
 
-[![python](https://img.shields.io/badge/colab-black?style=for-the-badge&logo=colab&logoColor=orange&labelColor=101010)]()
+[![python](https://img.shields.io/badge/Colab-black?style=for-the-badge&logo=Google-Colab&logoColor=orange&labelColor=101010)]()
 
 Frontend: ReactJS, SASS
 
