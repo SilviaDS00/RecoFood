@@ -16,9 +16,11 @@
 
  :chart_with_upwards_trend: [5. Entrenamiento del modelo y comprobación del rendimiento](#id5)
 
- :computer: [6. Aplicación Web](#id6)
+ :computer: [6. Procesamiento del lenguaje natural - ChatBot](#id6)
 
- :pencil: [7. Conclusiones](#id7)
+ :computer: [7. Aplicación Web](#id7)
+
+ :pencil: [8. Conclusiones](#id8)
 
 ## 1. Justificación y descripción del proyecto<a name="id1"></a>
 
@@ -122,8 +124,11 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Fit.png)
 
-## 6. Aplicación web<a name="id6"></a>
+### 5.1 Métricas del entrenamiento
 
+## 6. Procesamiento del lenguaje natural - ChatBot<a name="id6"></a>
 
-## 7. Conclusiones<a name="id7"></a>
+## 6. Aplicación web<a name="id7"></a>
+
+## 7. Conclusiones<a name="id8"></a>
 
