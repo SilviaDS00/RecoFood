@@ -16,7 +16,7 @@
 
  :chart_with_upwards_trend: [5. Entrenamiento del modelo y comprobación del rendimiento](#id5)
 
- :computer: [6. Procesamiento del lenguaje natural - ChatBot](#id6)
+ :space_invader: [6. Procesamiento del lenguaje natural - ChatBot](#id6)
 
  :computer: [7. Aplicación Web](#id7)
 
