@@ -188,7 +188,9 @@ Y obtendremos una carpeta que contendrá el modelo en formato JSON y otros fiche
 
 ## 7. Aplicación web<a name="id7"></a>
 
-La aplicación web está realizada en ReactJS, el cual hemos implementado el modelo entrenado.
+[Aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Web_React_App) puedes encontrar todos los ficheros de la aplicación de ReactJS.
+
+La aplicación web está realizada en ReactJS, el la cual hemos implementado el modelo entrenado.
 
 La web contiene dos botones, uno para realizar una foto con la cámara, y otro para subir una imagen. Realizando cualquiera de las dos opciones se aplicará el modelo a la imagen.
 
