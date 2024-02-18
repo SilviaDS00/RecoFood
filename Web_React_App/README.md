@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Pasos para usar la aplicación web
 
 ## Primer paso para preparar el proyecto
 
