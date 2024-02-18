@@ -166,6 +166,22 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 ### 5.5 Métricas del entrenamiento
 
+### 5.6 Conversión del modelo entrenado
+
+Este paso lo hacemos en el siguiente [Colab](https://github.com/SilviaDS00/RecoFood/blob/main/Modelo_Entrenado/Conversion_Modelo_Entrenado_Web.ipynb)
+
+Para garantizar la implementación del modelo en nuestra aplicación web, primero debemos convertirlo a un formato apto para ello.
+
+Nuestro modelo entrenado estará en formato `.h5`, pero debemos transformarlo a `.json`.
+
+Para ello ejecutaremos el siguiente comando:
+
+```
+!tensorflowjs_converter --input_format keras '/content/best_model_trained.h5' /content/drive/MyDrive/TFM-RecoFood/Modelo_Convertido_Web
+```
+
+Y obtendremos una carpeta que contendrá el modelo en formato JSON y otros ficheros necesarios.
+
 ## 6. Procesamiento del lenguaje natural - ChatBot<a name="id6"></a>
 
 ## 7. Aplicación web<a name="id7"></a>
