@@ -28,7 +28,7 @@ El proyecto tiene como objetivo desarrollar un sistema integral que clasifique c
 
 ## 2. Obtención de los datos<a name="id2"></a>
 
-**NOTA:** Todos los pasos de obtención, visualización y del entrenamiento de los datos se hacen en [este Cuaderno de Jupyter](https://github.com/SilviaDS00/RecoFood/blob/main/Modelo_Entrenamiento/Modelo_RecoFood.ipynb)
+**NOTA:** Todos los pasos de obtención de los datos, visualización de los datos y entrenamiento del modelo se hacen en [este Cuaderno de Jupyter](https://github.com/SilviaDS00/RecoFood/blob/main/Modelo_Entrenamiento/Modelo_RecoFood.ipynb)
 
 Las imágenes han sido recogidas de un conjunto de datos de 101 categorías de alimentos con un total de 101000 imágenes.
 
