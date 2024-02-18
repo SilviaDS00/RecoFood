@@ -146,7 +146,7 @@ Antes de entrenar el modelo establecemos el callback `EarlyStopping`, que usa un
 
 * `restore_best_weights=True`: Restaurará los pesos del modelo a la época en la que se obtuvo la mejor métrica de validación. Esto es útil para evitar que el modelo se sobreajuste al conjunto de entrenamiento.
 
-Y también añadimos el callback de ModelCheckpoint, que éste guarda el modelo durante el entrenamiento después de cada época siempre y cuando la métrica sea mejor que la anterior:
+Y también añadimos el callback de `ModelCheckpoint`, que éste guarda el modelo durante el entrenamiento después de cada época siempre y cuando la métrica sea mejor que la anterior:
 
 * `filepath='Modelos entrenados/best_model_inception.h5'`: Indica la ruta donde se guardará el modelo. En este caso, el modelo se guardará como un archivo HDF5 llamado "best_model_inception.h5" en el directorio "Modelos entrenados".
 
