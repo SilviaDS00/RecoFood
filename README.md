@@ -58,15 +58,27 @@ A continuación visualizamos una imagen aleatoria de cada clase:
 
 Primero realizamos la configuración los generadores de los datos de las imágenes:
 
-* `rescale=1./255`: Este parámetro escala los valores de píxeles de las imágenes. Dividir por 255 normaliza los valores de píxeles para que estén en el rango de 0 a 1. Esto es común en el preprocesamiento de imágenes para facilitar el entrenamiento de modelos.
+* `rescale=1./255`: Normaliza los valores de píxeles de las imágenes dividiendo cada píxel por 255. Esto escala los valores de píxeles al rango de [0, 1].
 
-* `shear_range=0.2`: Se aplica un sesgo (shear) a las imágenes. Este parámetro controla la intensidad del sesgo. El sesgo puede ser útil para la variación de datos durante el entrenamiento, lo que ayuda al modelo a generalizar mejor.
+* `shear_range=0.2`: Aplica transformaciones de cizallamiento a las imágenes. Puede ayudar a mejorar la capacidad del modelo para reconocer objetos desde diferentes ángulos.
 
-* `zoom_range=0.2`: Este parámetro controla el rango de zoom que se puede aplicar a las imágenes. Al igual que el sesgo, el zoom introduce variabilidad en los datos durante el entrenamiento.
+* `zoom_range=0.2`: Aplica transformaciones de zoom aleatorio a las imágenes. Esto puede ayudar al modelo a generalizar mejor y mejorar su robustez.
 
-* `horizontal_flip=True`: Permite voltear horizontalmente aleatoriamente las imágenes. Esto también ayuda a aumentar la variabilidad y mejorar la capacidad del modelo para generalizar.
+* `horizontal_flip=True`: Voltea aleatoriamente las imágenes horizontalmente. Esto aumenta la variabilidad de los datos.
 
-* `validation_split=0.2`: Este parámetro se utiliza para dividir automáticamente el conjunto de datos en conjuntos de entrenamiento y validación. En este caso, el 80% de los datos se utilizarán para entrenamiento y el 20% restante se utilizará para validación.
+* `vertical_flip=True`: Voltea aleatoriamente las imágenes verticalmente. Similar al horizontal_flip, aumenta la variabilidad.
+
+* `fill_mode='nearest'`: Rellena los píxeles recién creados después de una transformación. 'nearest' indica que se utilizarán los valores de píxeles más cercanos.
+
+* `channel_shift_range=0.2`: Cambia aleatoriamente los valores de píxeles en los canales de color. Esto puede introducir variabilidad en los colores de las imágenes.
+
+* `rotation_range=40`: Rota aleatoriamente las imágenes en un rango de 40 grados. Esto puede ayudar al modelo a reconocer objetos en diferentes orientaciones.
+
+* `brightness_range=[0.5, 1.5]`: Ajusta aleatoriamente el brillo de las imágenes dentro del rango especificado.
+
+* `width_shift_range=0.2` y `height_shift_range=0.2`: Realiza desplazamientos aleatorios en anchura y altura respectivamente. Ayuda a que el modelo sea más robusto a cambios en la posición de los objetos.
+
+* `validation_split=0.2`: Divide automáticamente el conjunto de datos en entrenamiento y validación, reservando el 20% de los datos para validación. Esto es útil para evaluar el rendimiento del modelo en un conjunto de datos separado durante el entrenamiento.
 
 ![Preparacion datos](/Capturas_Codigo/Data_prepair1.png)
 
