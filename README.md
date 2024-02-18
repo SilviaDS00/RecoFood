@@ -60,7 +60,7 @@ Primero realizamos la configuración los generadores de los datos de las imágen
 
 * `rescale=1./255`: Normaliza los valores de píxeles de las imágenes dividiendo cada píxel por 255. Esto escala los valores de píxeles al rango de [0, 1].
 
-* `shear_range=0.2`: Aplica transformaciones de cizallamiento a las imágenes. Puede ayudar a mejorar la capacidad del modelo para reconocer objetos desde diferentes ángulos.
+* `shear_range=0.2`: Se aplica un sesgo (shear) a las imágenes. Este parámetro controla la intensidad del sesgo. El sesgo puede ser útil para la variación de datos durante el entrenamiento, lo que ayuda al modelo a generalizar mejor.
 
 * `zoom_range=0.2`: Aplica transformaciones de zoom aleatorio a las imágenes. Esto puede ayudar al modelo a generalizar mejor y mejorar su robustez.
 
