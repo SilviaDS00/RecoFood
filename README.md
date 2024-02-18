@@ -156,7 +156,7 @@ Y también añadimos el callback de `ModelCheckpoint`, que éste guarda el model
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Callbacks.png)
 
-### 5.4 Entrenamiento
+### 5.4 Entrenamiento del modelo
 
 Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo.
 
