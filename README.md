@@ -1,8 +1,8 @@
-![Logo](/Capturas_Codigo/Logo.png)
+![importacion](https://github.com/SilviaDS00/RecoFood/assets/146923466/d9d9454f-335a-4a58-9549-0c224522755f)![Logo](/Capturas_Codigo/Logo.png)
 
 # RecoFood
 
-*TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, **[Elena Racero Gonzalez](https://github.com/ElenaRacero3)** y **[Manuel Fajardo Jiménez](https://github.com/Manufajimez)** del Máster de Inteligencia Arficial y Big Data del CPIFP Alan Turing*
+*TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, **[Elena Racero González](https://github.com/ElenaRacero3)** y **[Manuel Fajardo Jiménez](https://github.com/Manufajimez)** del Máster de Inteligencia Arficial y Big Data del CPIFP Alan Turing*
 
 ## Índice
 
@@ -185,6 +185,62 @@ Para ello ejecutaremos el siguiente comando:
 Y obtendremos una carpeta que contendrá el modelo en formato JSON y otros ficheros necesarios, puedes verlos [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Modelo_Entrenado/Modelo_Transformado).
 
 ## 6. Procesamiento del lenguaje natural - ChatBot<a name="id6"></a>
+
+En esta sección, se detalla el progreso de nuestro Asistente de Recetas. Este emplea el Procesamiento de Lenguaje Natural (PLN) para interactuar con los usuarios de una manera más accesible. En particular, hemos implementado la traducción automática, que es una aplicación del PLN, para permitir que los usuarios accedan a las recetas en dos idiomas: inglés y español.
+
+### 6.1 Importación de paquetes
+
+Importamos aquellos paquetes necesarios para ejecutar nuestro programa
+
+* `json`: nos permite trabajar con objetos JSON.
+* `googletrans`: es una biblioteca que implementa la API de Google Translate, permitiéndonos traducir texto de un idioma a otro.
+
+![importacion](https://github.com/SilviaDS00/RecoFood/assets/146923466/eef3995c-3e77-4b5a-aa0b-9376443b888e)
+
+
+### 6.2 Definición de la clase AsistenteRecetas
+   
+La clase `AsistenteRecetas` es la principal de nuestro programa, donde implementamos todas las funcionalidades relacionadas con la gestión y visualización de recetas. 
+
+En su constructor (init), se inicializan varias variables de instancia:
+
+* `self.translator`: Un objeto de la clase Translator que se utilizará para traducir texto.
+
+* `self.idioma`: Un diccionario que mapea los nombres de los idiomas a sus códigos correspondientes (es o en).
+
+* `self.idioma_elegido`: El idioma elegido por el usuario, obtenido llamando a la función elegir_idioma().
+
+* `self.recetas`: Las recetas cargadas desde un archivo JSON, obtenidas llamando a la función carga_json().
+
+![Inicializador](https://github.com/SilviaDS00/RecoFood/assets/146923466/bbb1f866-1662-4e57-a7a3-04a5fc806b00)
+
+El método `elegir_idioma` permite al usuario seleccionar un idioma. Continúa solicitando un idioma hasta que el usuario ingresa español o inglés.
+
+![eleccion_idioma](https://github.com/SilviaDS00/RecoFood/assets/146923466/e9d321ac-298b-459c-b0d0-2b92e33888dc)
+
+El método `traducir` utiliza el traductor para convertir un texto dado al idioma elegido por el usuario, lo que garantiza la comprensión adecuada de las recetas independientemente del idioma original.
+
+![traductor](https://github.com/SilviaDS00/RecoFood/assets/146923466/88032901-7586-4129-b0a0-1d9aa6cdf5e5)
+
+El método `carga_json` carga las recetas desde archivos JSON según el idioma seleccionado
+
+![carga_json](https://github.com/SilviaDS00/RecoFood/assets/146923466/eb9154b1-f323-419d-b571-f0e5875eb0ea)
+
+El método `ver_receta` verifica si la receta especificada por el usuario existe en el sistema. Si existe, muestra el nombre de la receta, seguido de la lista de ingredientes y pasos de preparación, todo ello en el idioma elegido por el usuario. Si la receta no existe, muestra un mensaje indicando que no se encontró la receta.
+
+![ver_receta](https://github.com/SilviaDS00/RecoFood/assets/146923466/3c50b868-0ab9-4423-a03f-63f85aeb0cd0)
+
+Por último, el método `otras_recetas` muestra todas las recetas disponibles y después pide al usuario que proporcione el nombre de una receta para poder mostrársela.
+
+![otras_recetas](https://github.com/SilviaDS00/RecoFood/assets/146923466/ff84bde7-9c56-483f-9b9f-0d0b17fc0bc3)
+
+Después de definir la clase, creamos una instancia de esta clase llamada Bot.
+ 
+### 6.3 Interacción con el usuario
+
+El código proporciona un bucle que permite al usuario interactuar con el asistente de recetas. Dependiendo de la opción seleccionada, el programa ejecuta el método correspondiente de la clase, garantizando una interacción fluida y amigable con el usuario. En caso de ingresar una opción no válida, se muestra un mensaje de error y se solicita al usuario que ingrese nuevamente una opción válida.
+
+![menú](https://github.com/SilviaDS00/RecoFood/assets/146923466/d17f664f-aa55-408e-bc60-a00ecd507c95)
 
 ## 7. Aplicación web<a name="id7"></a>
 
