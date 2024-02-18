@@ -1,4 +1,4 @@
-![importacion](https://github.com/SilviaDS00/RecoFood/assets/146923466/d9d9454f-335a-4a58-9549-0c224522755f)![Logo](/Capturas_Codigo/Logo.png)
+![Logo](/Capturas_Codigo/Logo.png)
 
 # RecoFood
 
