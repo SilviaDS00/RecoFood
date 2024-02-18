@@ -26,40 +26,6 @@
 
 El proyecto tiene como objetivo desarrollar un sistema integral que clasifique comidas utilizando el conjunto de datos Food101. Además, se proporcionará información sobre los macronutrientes de las comidas y se implementará un chatbot para mejorar la interacción. Este proyecto aborda la necesidad de brindar información detallada sobre las comidas y facilitar la toma de decisiones nutricionales.
 
-<div align="center">
-
-## :computer: Tecnologías usadas
-
-### Desarrollo
-
-Lenguajes: 
-
-[![python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python&logoColor=blue&labelColor=101010)]()
-
-Entornos: Colab, VisualStudio Code, Anaconda, Jupyter Notebook
-
-[![python](https://img.shields.io/badge/Colab-black?style=for-the-badge&logo=Google-Colab&logoColor=orange&labelColor=101010)]()
-
-Frontend: ReactJS, SASS
-
-Backend: Strapi(?), MongoDB(?)
-
-Diseño: Figma
-
-Control de versiones: Github
-
-Gestión de proyectos: Trello
-
-### Análisis
-
-Numpy, Pandas, Matplotlib
-
-### Machine Learning
-
-TensorFlow, Keras
-
-</div>
-
 ## 2. Obtención de los datos<a name="id2"></a>
 
 Las imágenes han sido recogidas de un conjunto de datos de 101 categorías de alimentos con un total de 101000 imágenes.
