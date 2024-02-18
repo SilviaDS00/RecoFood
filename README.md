@@ -168,7 +168,7 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 ### 5.6 Conversión del modelo entrenado
 
-Este paso lo hacemos en el siguiente [Colab](https://github.com/SilviaDS00/RecoFood/blob/main/Modelo_Entrenado/Conversion_Modelo_Entrenado_Web.ipynb).
+Este paso lo hacemos en el siguiente [Cuaderno de Jupyter](https://github.com/SilviaDS00/RecoFood/blob/main/Modelo_Entrenado/Conversion_Modelo_Entrenado_Web.ipynb).
 
 Para garantizar la implementación del modelo en nuestra aplicación web, primero debemos convertirlo a un formato apto para ello.
 
