@@ -104,6 +104,8 @@ Found 20200 images belonging to 101 classes.
 
 ## 5. Entrenamiento del modelo y comprobación del rendimiento<a name="id5"></a>
 
+### 5.1 Creación del modelo
+
 En este paso creamos el modelo de entrenamiento, utilizamos la actiquectura `InceptionV3` preentrenada en el conjunto de datos *ImageNet*.
 
 * `inception = InceptionV3(weights='imagenet', include_top=False)`: Se crea una instancia del modelo InceptionV3. La opción `weights='imagenet'` carga los pesos preentrenados del modelo en el conjunto de datos "ImageNet". `include_top=False` excluye las capas densas (totalmente conectadas) en la parte superior del modelo, ya que se agregarán capas personalizadas más adelante para adaptar el modelo a un problema específico.
@@ -122,6 +124,8 @@ En este paso creamos el modelo de entrenamiento, utilizamos la actiquectura `Inc
 
 ![Creacion modelo](/Capturas_Codigo/Model_Creation.png)
 
+### 5.2 Compilación del modelo
+
 Compilamos el modelo:
 
 * `optimizer=SGD(learning_rate=0.0001, momentum=0.9)`: Se especifica el optimizador que se utilizará durante el entrenamiento del modelo. En este caso, se está utilizando el optimizador estocástico de descenso de gradiente (SGD). `learning_rate=0.0001` establece la tasa de aprendizaje, que controla el tamaño de los pasos que el optimizador toma para minimizar la función de pérdida. `momentum=0.9` es un término que acelera la convergencia en la dirección correcta y ayuda a evitar oscilaciones.
@@ -132,9 +136,27 @@ Compilamos el modelo:
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Compile.png)
 
-Antes de entrenar el modelo establecemos un callback para que se vaya guardando el modelo en cada iteracción, siempre que las métricas sean mejor que la anterior.
+### 5.3 Callbacks
 
-![Compilacion modelo](/Capturas_Codigo/Model_Checkpoint.png)
+Antes de entrenar el modelo establecemos el callback `EarlyStopping`, que usa una técnica que detiene el entrenamiento si no hay mejoreas de las métricas:
+
+* `monitor='val_loss'`: Significa que la métrica que se está monitoreando es la pérdida en el conjunto de validación (val_loss).
+
+* `patience=10`: Indica que el entrenamiento se detendrá después de 10 épocas consecutivas sin mejora en la pérdida de validación.
+
+* `restore_best_weights=True`: Restaurará los pesos del modelo a la época en la que se obtuvo la mejor métrica de validación. Esto es útil para evitar que el modelo se sobreajuste al conjunto de entrenamiento.
+
+Y también añadimos el callback de ModelCheckpoint, que éste guarda el modelo durante el entrenamiento después de cada época siempre y cuando la métrica sea mejor que la anterior:
+
+* `filepath='Modelos entrenados/best_model_inception.h5'`: Indica la ruta donde se guardará el modelo. En este caso, el modelo se guardará como un archivo HDF5 llamado "best_model_inception.h5" en el directorio "Modelos entrenados".
+
+* `verbose=1`: Proporciona información detallada sobre la guarda del modelo (por ejemplo, qué época se guardó, etc.).
+
+* `save_best_only=True`: Guarda solo el mejor modelo en términos de la métrica monitorizada (en este caso, la pérdida de validación). Esto asegura que solo se guarde el modelo si es mejor que los modelos anteriores.
+
+![Compilacion modelo](/Capturas_Codigo/Model_Callbacks.png)
+
+### 5.4 Entrenamiento
 
 Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo.
 
@@ -142,7 +164,7 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Fit.png)
 
-### 5.1 Métricas del entrenamiento
+### 5.5 Métricas del entrenamiento
 
 ## 6. Procesamiento del lenguaje natural - ChatBot<a name="id6"></a>
 
