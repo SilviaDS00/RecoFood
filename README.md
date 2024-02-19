@@ -2,25 +2,25 @@
 
 # RecoFood
 
-*TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, **[Elena Racero González](https://github.com/ElenaRacero3)** y **[Manuel Fajardo Jiménez](https://github.com/Manufajimez)** del Máster de Inteligencia Arficial y Big Data del CPIFP Alan Turing*
+_TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, **[Elena Racero González](https://github.com/ElenaRacero3)** y **[Manuel Fajardo Jiménez](https://github.com/Manufajimez)** del Máster de Inteligencia Arficial y Big Data del CPIFP Alan Turing_
 
 ## Índice
 
- :black_nib: [1. Justificación y descripción del proyecto](#id1)
+:black_nib: [1. Justificación y descripción del proyecto](#id1)
 
- :mag: [2. Obtención de los datos](#id2)
-  
- :bar_chart: [3. Exploración y visualización de los datos](#id3)
+:mag: [2. Obtención de los datos](#id2)
 
- :hourglass: [4. Preparación de los datos para Machine Learning](#id4)
+:bar_chart: [3. Exploración y visualización de los datos](#id3)
 
- :chart_with_upwards_trend: [5. Entrenamiento del modelo y comprobación del rendimiento](#id5)
+:hourglass: [4. Preparación de los datos para Machine Learning](#id4)
 
- :space_invader: [6. Procesamiento del lenguaje natural - ChatBot](#id6)
+:chart_with_upwards_trend: [5. Entrenamiento del modelo y comprobación del rendimiento](#id5)
 
- :computer: [7. Aplicación Web](#id7)
+:space_invader: [6. Procesamiento del lenguaje natural - ChatBot](#id6)
 
- :pencil: [8. Conclusiones](#id8)
+:computer: [7. Aplicación Web](#id7)
+
+:pencil: [8. Conclusiones](#id8)
 
 ## 1. Justificación y descripción del proyecto<a name="id1"></a>
 
@@ -60,41 +60,41 @@ A continuación visualizamos una imagen aleatoria de cada clase:
 
 Primero realizamos la configuración los generadores de los datos de las imágenes:
 
-* `rescale=1./255`: Normaliza los valores de píxeles de las imágenes dividiendo cada píxel por 255. Esto escala los valores de píxeles al rango de [0, 1].
+- `rescale=1./255`: Normaliza los valores de píxeles de las imágenes dividiendo cada píxel por 255. Esto escala los valores de píxeles al rango de [0, 1].
 
-* `shear_range=0.2`: Se aplica un sesgo (shear) a las imágenes. Este parámetro controla la intensidad del sesgo. El sesgo puede ser útil para la variación de datos durante el entrenamiento, lo que ayuda al modelo a generalizar mejor.
+- `shear_range=0.2`: Se aplica un sesgo (shear) a las imágenes. Este parámetro controla la intensidad del sesgo. El sesgo puede ser útil para la variación de datos durante el entrenamiento, lo que ayuda al modelo a generalizar mejor.
 
-* `zoom_range=0.2`: Aplica transformaciones de zoom aleatorio a las imágenes. Esto puede ayudar al modelo a generalizar mejor y mejorar su robustez.
+- `zoom_range=0.2`: Aplica transformaciones de zoom aleatorio a las imágenes. Esto puede ayudar al modelo a generalizar mejor y mejorar su robustez.
 
-* `horizontal_flip=True`: Voltea aleatoriamente las imágenes horizontalmente. Esto aumenta la variabilidad de los datos.
+- `horizontal_flip=True`: Voltea aleatoriamente las imágenes horizontalmente. Esto aumenta la variabilidad de los datos.
 
-* `vertical_flip=True`: Voltea aleatoriamente las imágenes verticalmente. Similar al horizontal_flip, aumenta la variabilidad.
+- `vertical_flip=True`: Voltea aleatoriamente las imágenes verticalmente. Similar al horizontal_flip, aumenta la variabilidad.
 
-* `fill_mode='nearest'`: Rellena los píxeles recién creados después de una transformación. 'nearest' indica que se utilizarán los valores de píxeles más cercanos.
+- `fill_mode='nearest'`: Rellena los píxeles recién creados después de una transformación. 'nearest' indica que se utilizarán los valores de píxeles más cercanos.
 
-* `channel_shift_range=0.2`: Cambia aleatoriamente los valores de píxeles en los canales de color. Esto puede introducir variabilidad en los colores de las imágenes.
+- `channel_shift_range=0.2`: Cambia aleatoriamente los valores de píxeles en los canales de color. Esto puede introducir variabilidad en los colores de las imágenes.
 
-* `rotation_range=40`: Rota aleatoriamente las imágenes en un rango de 40 grados. Esto puede ayudar al modelo a reconocer objetos en diferentes orientaciones.
+- `rotation_range=40`: Rota aleatoriamente las imágenes en un rango de 40 grados. Esto puede ayudar al modelo a reconocer objetos en diferentes orientaciones.
 
-* `brightness_range=[0.5, 1.5]`: Ajusta aleatoriamente el brillo de las imágenes dentro del rango especificado.
+- `brightness_range=[0.5, 1.5]`: Ajusta aleatoriamente el brillo de las imágenes dentro del rango especificado.
 
-* `width_shift_range=0.2` y `height_shift_range=0.2`: Realiza desplazamientos aleatorios en anchura y altura respectivamente. Ayuda a que el modelo sea más robusto a cambios en la posición de los objetos.
+- `width_shift_range=0.2` y `height_shift_range=0.2`: Realiza desplazamientos aleatorios en anchura y altura respectivamente. Ayuda a que el modelo sea más robusto a cambios en la posición de los objetos.
 
-* `validation_split=0.2`: Divide automáticamente el conjunto de datos en entrenamiento y validación, reservando el 20% de los datos para validación. Esto es útil para evaluar el rendimiento del modelo en un conjunto de datos separado durante el entrenamiento.
+- `validation_split=0.2`: Divide automáticamente el conjunto de datos en entrenamiento y validación, reservando el 20% de los datos para validación. Esto es útil para evaluar el rendimiento del modelo en un conjunto de datos separado durante el entrenamiento.
 
 ![Preparacion datos](/Capturas_Codigo/Data_prepair1.png)
 
 A continuación configuramos los generadores del flujo de los datos que alimentarán los lotes de las imágenes preprocesadas al modelo durante el entrenamiento y la evaluación.
 
-* `base_dir`: La ruta al directorio que contiene subdirectorios separados para cada clase de imágenes. Estos subdirectorios son utilizados por el generador para determinar las clases y organizar las imágenes.
+- `base_dir`: La ruta al directorio que contiene subdirectorios separados para cada clase de imágenes. Estos subdirectorios son utilizados por el generador para determinar las clases y organizar las imágenes.
 
-* `target_size=(img_height, img_width)`: El tamaño al que se deben redimensionar las imágenes. Todas las imágenes se redimensionarán a este tamaño antes de ser alimentadas al modelo.
+- `target_size=(img_height, img_width)`: El tamaño al que se deben redimensionar las imágenes. Todas las imágenes se redimensionarán a este tamaño antes de ser alimentadas al modelo.
 
-* `batch_size`: El tamaño de cada lote de imágenes que se proporcionará al modelo durante cada iteración de entrenamiento.
+- `batch_size`: El tamaño de cada lote de imágenes que se proporcionará al modelo durante cada iteración de entrenamiento.
 
-* `class_mode='categorical'`: La forma en que se deben manejar las etiquetas de clase. En este caso, se utiliza 'categorical' porque parece estar trabajando con un problema de clasificación multiclase.
+- `class_mode='categorical'`: La forma en que se deben manejar las etiquetas de clase. En este caso, se utiliza 'categorical' porque parece estar trabajando con un problema de clasificación multiclase.
 
-* `subset="training"` o `subset="validation"`: Esto se utiliza para especificar si el generador está configurado para el conjunto de entrenamiento ("training") o para el conjunto de validación ("validation"). Esto es útil cuando se utiliza la opción validation_split en los generadores de datos de imágenes para dividir automáticamente los datos en conjuntos de entrenamiento y validación.
+- `subset="training"` o `subset="validation"`: Esto se utiliza para especificar si el generador está configurado para el conjunto de entrenamiento ("training") o para el conjunto de validación ("validation"). Esto es útil cuando se utiliza la opción validation_split en los generadores de datos de imágenes para dividir automáticamente los datos en conjuntos de entrenamiento y validación.
 
 ![Preparacion datos](/Capturas_Codigo/Data_prepair2.png)
 
@@ -108,21 +108,21 @@ Found 20200 images belonging to 101 classes.
 
 ### 5.1 Creación del modelo
 
-En este paso creamos el modelo de entrenamiento, utilizamos la arquitectura `InceptionV3` preentrenada en el conjunto de datos *ImageNet*.
+En este paso creamos el modelo de entrenamiento, utilizamos la arquitectura `InceptionV3` preentrenada en el conjunto de datos _ImageNet_.
 
-* `inception = InceptionV3(weights='imagenet', include_top=False)`: Se crea una instancia del modelo InceptionV3. La opción `weights='imagenet'` carga los pesos preentrenados del modelo en el conjunto de datos "ImageNet". `include_top=False` excluye las capas densas (totalmente conectadas) en la parte superior del modelo, ya que se agregarán capas personalizadas más adelante para adaptar el modelo a un problema específico.
+- `inception = InceptionV3(weights='imagenet', include_top=False)`: Se crea una instancia del modelo InceptionV3. La opción `weights='imagenet'` carga los pesos preentrenados del modelo en el conjunto de datos "ImageNet". `include_top=False` excluye las capas densas (totalmente conectadas) en la parte superior del modelo, ya que se agregarán capas personalizadas más adelante para adaptar el modelo a un problema específico.
 
-* `x = inception.output`: Se toma la salida de la última capa de la red InceptionV3. Esta salida es una representación de características de alto nivel de la entrada de la imagen.
+- `x = inception.output`: Se toma la salida de la última capa de la red InceptionV3. Esta salida es una representación de características de alto nivel de la entrada de la imagen.
 
-* `x = GlobalAveragePooling2D()(x)`: Se aplica una capa de pooling global promedio, que toma la media de cada canal a lo largo de todas las posiciones espaciales. Esto reduce la dimensionalidad de la representación de características, capturando la información esencial de las características.
+- `x = GlobalAveragePooling2D()(x)`: Se aplica una capa de pooling global promedio, que toma la media de cada canal a lo largo de todas las posiciones espaciales. Esto reduce la dimensionalidad de la representación de características, capturando la información esencial de las características.
 
-* `x = Dense(128, activation='relu')(x)`: Se agrega una capa densa con 128 neuronas y función de activación ReLU. Esta capa totalmente conectada ayuda a aprender patrones más complejos en los datos.
+- `x = Dense(128, activation='relu')(x)`: Se agrega una capa densa con 128 neuronas y función de activación ReLU. Esta capa totalmente conectada ayuda a aprender patrones más complejos en los datos.
 
-* `x = Dropout(0.2)(x)`: Se aplica una capa de Dropout con una tasa del 20%. El Dropout ayuda a prevenir el sobreajuste al "apagar" aleatoriamente un porcentaje de las neuronas durante el entrenamiento.
+- `x = Dropout(0.2)(x)`: Se aplica una capa de Dropout con una tasa del 20%. El Dropout ayuda a prevenir el sobreajuste al "apagar" aleatoriamente un porcentaje de las neuronas durante el entrenamiento.
 
-* `predictions = Dense(len(class_names), kernel_regularizer=l1(0.005), activation='softmax')(x)`: Se añade la capa de salida. Esta capa tiene un número de neuronas igual a la cantidad de clases en tu problema (determinado por `len(class_names)`), con una regularización **L1** para penalizar los pesos grandes. La función de activación **softmax** se utiliza para obtener probabilidades normalizadas para cada clase.
+- `predictions = Dense(len(class_names), kernel_regularizer=l1(0.005), activation='softmax')(x)`: Se añade la capa de salida. Esta capa tiene un número de neuronas igual a la cantidad de clases en tu problema (determinado por `len(class_names)`), con una regularización **L1** para penalizar los pesos grandes. La función de activación **softmax** se utiliza para obtener probabilidades normalizadas para cada clase.
 
-* `model = Model(inputs=inception.input, outputs=predictions)`: Se crea el modelo final utilizando el modelo **InceptionV3** como base y añadiendo las capas personalizadas. `inputs=inception.input` establece la entrada del modelo como la entrada original de InceptionV3, y `outputs=predictions` establece la salida del modelo como la capa de predicciones recién añadida.
+- `model = Model(inputs=inception.input, outputs=predictions)`: Se crea el modelo final utilizando el modelo **InceptionV3** como base y añadiendo las capas personalizadas. `inputs=inception.input` establece la entrada del modelo como la entrada original de InceptionV3, y `outputs=predictions` establece la salida del modelo como la capa de predicciones recién añadida.
 
 ![Creacion modelo](/Capturas_Codigo/Model_Creation.png)
 
@@ -130,11 +130,11 @@ En este paso creamos el modelo de entrenamiento, utilizamos la arquitectura `Inc
 
 Compilamos el modelo:
 
-* `optimizer=SGD(learning_rate=0.0001, momentum=0.9)`: Se especifica el optimizador que se utilizará durante el entrenamiento del modelo. En este caso, se está utilizando el optimizador estocástico de descenso de gradiente (SGD). `learning_rate=0.0001` establece la tasa de aprendizaje, que controla el tamaño de los pasos que el optimizador toma para minimizar la función de pérdida. `momentum=0.9` es un término que acelera la convergencia en la dirección correcta y ayuda a evitar oscilaciones.
+- `optimizer=SGD(learning_rate=0.0001, momentum=0.9)`: Se especifica el optimizador que se utilizará durante el entrenamiento del modelo. En este caso, se está utilizando el optimizador estocástico de descenso de gradiente (SGD). `learning_rate=0.0001` establece la tasa de aprendizaje, que controla el tamaño de los pasos que el optimizador toma para minimizar la función de pérdida. `momentum=0.9` es un término que acelera la convergencia en la dirección correcta y ayuda a evitar oscilaciones.
 
-* `loss='categorical_crossentropy'`: Se especifica la función de pérdida que se utilizará durante el entrenamiento. En este caso, se trata de la entropía cruzada categórica, que es comúnmente utilizada en problemas de clasificación con múltiples clases.
+- `loss='categorical_crossentropy'`: Se especifica la función de pérdida que se utilizará durante el entrenamiento. En este caso, se trata de la entropía cruzada categórica, que es comúnmente utilizada en problemas de clasificación con múltiples clases.
 
-* `metrics=['accuracy']`: Se especifica la métrica que se utilizará para evaluar el rendimiento del modelo durante el entrenamiento y la evaluación. En este caso, se utiliza la precisión (accuracy), que mide la fracción de muestras correctamente clasificadas.
+- `metrics=['accuracy']`: Se especifica la métrica que se utilizará para evaluar el rendimiento del modelo durante el entrenamiento y la evaluación. En este caso, se utiliza la precisión (accuracy), que mide la fracción de muestras correctamente clasificadas.
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Compile.png)
 
@@ -142,19 +142,19 @@ Compilamos el modelo:
 
 Antes de entrenar el modelo establecemos el callback `EarlyStopping`, que usa una técnica que detiene el entrenamiento si no hay mejoreas de las métricas:
 
-* `monitor='val_loss'`: Significa que la métrica que se está monitoreando es la pérdida en el conjunto de validación (val_loss).
+- `monitor='val_loss'`: Significa que la métrica que se está monitoreando es la pérdida en el conjunto de validación (val_loss).
 
-* `patience=10`: Indica que el entrenamiento se detendrá después de 10 épocas consecutivas sin mejora en la pérdida de validación.
+- `patience=10`: Indica que el entrenamiento se detendrá después de 10 épocas consecutivas sin mejora en la pérdida de validación.
 
-* `restore_best_weights=True`: Restaurará los pesos del modelo a la época en la que se obtuvo la mejor métrica de validación. Esto es útil para evitar que el modelo se sobreajuste al conjunto de entrenamiento.
+- `restore_best_weights=True`: Restaurará los pesos del modelo a la época en la que se obtuvo la mejor métrica de validación. Esto es útil para evitar que el modelo se sobreajuste al conjunto de entrenamiento.
 
 Y también añadimos el callback de `ModelCheckpoint`, que éste guarda el modelo durante el entrenamiento después de cada época siempre y cuando la métrica sea mejor que la anterior:
 
-* `filepath='Modelos entrenados/best_model_inception.h5'`: Indica la ruta donde se guardará el modelo. En este caso, el modelo se guardará como un archivo HDF5 llamado "best_model_inception.h5" en el directorio "Modelos entrenados".
+- `filepath='Modelos entrenados/best_model_inception.h5'`: Indica la ruta donde se guardará el modelo. En este caso, el modelo se guardará como un archivo HDF5 llamado "best_model_inception.h5" en el directorio "Modelos entrenados".
 
-* `verbose=1`: Proporciona información detallada sobre la guarda del modelo (por ejemplo, qué época se guardó, etc.).
+- `verbose=1`: Proporciona información detallada sobre la guarda del modelo (por ejemplo, qué época se guardó, etc.).
 
-* `save_best_only=True`: Guarda solo el mejor modelo en términos de la métrica monitorizada (en este caso, la pérdida de validación). Esto asegura que solo se guarde el modelo si es mejor que los modelos anteriores.
+- `save_best_only=True`: Guarda solo el mejor modelo en términos de la métrica monitorizada (en este caso, la pérdida de validación). Esto asegura que solo se guarde el modelo si es mejor que los modelos anteriores.
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Callbacks.png)
 
@@ -167,6 +167,10 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 ![Compilacion modelo](/Capturas_Codigo/Model_Fit.png)
 
 ### 5.5 Métricas del entrenamiento
+
+Las métricas del modelo entrenado con `InceptionV3` son las siguientes:
+
+![Compilacion modelo](/Capturas_Codigo/Inception_Metrics.png)
 
 ### 5.6 Conversión del modelo entrenado
 
@@ -192,25 +196,24 @@ En esta sección, se detalla el progreso de nuestro Asistente de Recetas. Este e
 
 Importamos aquellos paquetes necesarios para ejecutar nuestro programa
 
-* `json`: nos permite trabajar con objetos JSON.
-* `googletrans`: es una biblioteca que implementa la API de Google Translate, permitiéndonos traducir texto de un idioma a otro.
+- `json`: nos permite trabajar con objetos JSON.
+- `googletrans`: es una biblioteca que implementa la API de Google Translate, permitiéndonos traducir texto de un idioma a otro.
 
 ![importacion](https://github.com/SilviaDS00/RecoFood/assets/146923466/eef3995c-3e77-4b5a-aa0b-9376443b888e)
 
-
 ### 6.2 Definición de la clase AsistenteRecetas
-   
-La clase `AsistenteRecetas` es la principal de nuestro programa, donde implementamos todas las funcionalidades relacionadas con la gestión y visualización de recetas. 
+
+La clase `AsistenteRecetas` es la principal de nuestro programa, donde implementamos todas las funcionalidades relacionadas con la gestión y visualización de recetas.
 
 En su constructor (init), se inicializan varias variables de instancia:
 
-* `self.translator`: Un objeto de la clase Translator que se utilizará para traducir texto.
+- `self.translator`: Un objeto de la clase Translator que se utilizará para traducir texto.
 
-* `self.idioma`: Un diccionario que mapea los nombres de los idiomas a sus códigos correspondientes (es o en).
+- `self.idioma`: Un diccionario que mapea los nombres de los idiomas a sus códigos correspondientes (es o en).
 
-* `self.idioma_elegido`: El idioma elegido por el usuario, obtenido llamando a la función elegir_idioma().
+- `self.idioma_elegido`: El idioma elegido por el usuario, obtenido llamando a la función elegir_idioma().
 
-* `self.recetas`: Las recetas cargadas desde un archivo JSON, obtenidas llamando a la función carga_json().
+- `self.recetas`: Las recetas cargadas desde un archivo JSON, obtenidas llamando a la función carga_json().
 
 ![Inicializador](https://github.com/SilviaDS00/RecoFood/assets/146923466/bbb1f866-1662-4e57-a7a3-04a5fc806b00)
 
@@ -235,13 +238,12 @@ Por último, el método `otras_recetas` muestra todas las recetas disponibles y 
 ![otras_recetas](https://github.com/SilviaDS00/RecoFood/assets/146923466/ff84bde7-9c56-483f-9b9f-0d0b17fc0bc3)
 
 Después de definir la clase, creamos una instancia de esta clase llamada Bot.
- 
+
 ### 6.3 Interacción con el usuario
 
 El código proporciona un bucle que permite al usuario interactuar con el asistente de recetas. Dependiendo de la opción seleccionada, el programa ejecuta el método correspondiente de la clase, garantizando una interacción fluida y amigable con el usuario. En caso de ingresar una opción no válida, se muestra un mensaje de error y se solicita al usuario que ingrese nuevamente una opción válida.
 
 ![menu](https://github.com/SilviaDS00/RecoFood/assets/146923466/1ff6434d-9e2f-4842-a46c-8ece0fb186d3)
-
 
 ## 7. Aplicación web<a name="id7"></a>
 
