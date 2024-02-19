@@ -108,7 +108,7 @@ Found 20200 images belonging to 101 classes.
 
 ### 5.1 Creación del modelo
 
-En este paso creamos el modelo de entrenamiento, utilizamos la actiquectura `InceptionV3` preentrenada en el conjunto de datos *ImageNet*.
+En este paso creamos el modelo de entrenamiento, utilizamos la arquitectura `InceptionV3` preentrenada en el conjunto de datos *ImageNet*.
 
 * `inception = InceptionV3(weights='imagenet', include_top=False)`: Se crea una instancia del modelo InceptionV3. La opción `weights='imagenet'` carga los pesos preentrenados del modelo en el conjunto de datos "ImageNet". `include_top=False` excluye las capas densas (totalmente conectadas) en la parte superior del modelo, ya que se agregarán capas personalizadas más adelante para adaptar el modelo a un problema específico.
 
@@ -240,7 +240,8 @@ Después de definir la clase, creamos una instancia de esta clase llamada Bot.
 
 El código proporciona un bucle que permite al usuario interactuar con el asistente de recetas. Dependiendo de la opción seleccionada, el programa ejecuta el método correspondiente de la clase, garantizando una interacción fluida y amigable con el usuario. En caso de ingresar una opción no válida, se muestra un mensaje de error y se solicita al usuario que ingrese nuevamente una opción válida.
 
-![menú](https://github.com/SilviaDS00/RecoFood/assets/146923466/d17f664f-aa55-408e-bc60-a00ecd507c95)
+![menu](https://github.com/SilviaDS00/RecoFood/assets/146923466/1ff6434d-9e2f-4842-a46c-8ece0fb186d3)
+
 
 ## 7. Aplicación web<a name="id7"></a>
 
