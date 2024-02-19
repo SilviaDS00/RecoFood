@@ -106,6 +106,12 @@ Found 20200 images belonging to 101 classes.
 
 ## 5. Entrenamiento del modelo y comprobación del rendimiento<a name="id5"></a>
 
+Hemos realizado pruebas con 3 modelos preentrenados: `InceptionV3`, `ResNet50`, `DenseNet121`.
+
+El que mejores métricas ha dado es: ``.
+
+A continuación se mostrarán los pasos del entrenamiento con el modelo finalmente elegido.
+
 ### 5.1 Creación del modelo
 
 En este paso creamos el modelo de entrenamiento, utilizamos la arquitectura `InceptionV3` preentrenada en el conjunto de datos _ImageNet_.
