@@ -1,0 +1,45 @@
+{
+    "donuts": {
+      "name": "Homemade Donuts",
+      "ingredients": [
+        "2 packets of yeast",
+        "80 ml of warm water",
+        "1½ cups of milk (360 ml)",
+        "75 g of shortening",
+        "55 g of sugar",
+        "2 teaspoons of salt",
+        "2 teaspoons of nutmeg",
+        "2 beaten eggs",
+        "4½ cups of flour (630 g)",
+        "½ cup of melted butter",
+        "1 cup of sugar (200 g)",
+        "1 teaspoon of powdered cinnamon"
+      ],
+      "steps": [
+        "Dissolve the yeast in warm water. Melt the shortening with the milk and let it cool.",
+        "Mix the yeast with the milk and melted shortening. Add sugar, salt, nutmeg, beaten eggs, and 2 cups of flour. Beat until you get a homogeneous dough.",
+        "Incorporate the remaining flour and beat until the mixture is smooth. Let the dough rest covered for 1 hour to double its size.",
+        "Knead the dough on a floured surface, roll out with a rolling pin and form the donuts.",
+        "Place the donuts on a greased baking tray and let them rest for 20 minutes. Preheat the oven to 200ºC.",
+        "Bake the donuts for 10 minutes or until they are golden. Spread with melted butter and pass through the sugar and cinnamon mixture. Serve hot or let cool."
+      ]
+    },
+    "pizza": {
+      "name": "Pepperoni Pizza",
+      "ingredients": [
+        "Pizza dough",
+        "Tomato sauce",
+        "Grated mozzarella cheese",
+        "Pepperoni"
+      ],
+      "steps": [
+        "Preheat the oven to 220°C.",
+        "Spread the pizza dough on a tray.",
+        "Cover the dough with tomato sauce.",
+        "Sprinkle the grated mozzarella cheese over the sauce.",
+        "Place the pepperoni slices on the cheese.",
+        "Bake the pizza for 12-15 minutes, or until it is golden and bubbly.",
+        "Serve hot and enjoy your pepperoni pizza!"
+      ]
+    }
+}
