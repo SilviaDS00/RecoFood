@@ -193,7 +193,7 @@ Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/Inception_Metrics.png)
 
-En el modelo entrenado con `ResNet50` se ha establecido el mismo callback pero con un patience de 15:
+En el modelo entrenado con `ResNet50` se ha establecido el mismo callback pero con un patience de 10:
 
 ```
 early_stopping_resnet = EarlyStopping(
