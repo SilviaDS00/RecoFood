@@ -176,11 +176,35 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 El modelo, como hemos dicho anteriormente, ha sido entrenado con 3 modelos preentrenados diferentes, a continuación se muestran las gráficas de cada resultado obtenido:
 
-Las métricas del modelo entrenado con `InceptionV3` son las siguientes:
+En el modelo de `InceptionV3` se ha establecido un callback de EarlyStopping con los siguientes parámetros:
+
+```
+early_stopping_inception = EarlyStopping(
+    monitor='val_loss',
+    patience=15,
+    restore_best_weights=True)
+```
+
+Se ha usado un patience de 15, es decir, que cuando en 15 épocas no se ha mejorado la métrica de `val_loss`, el entrenamiento se detiene.
+
+El modelo se ha detenido a las 73 épocas de entrenamiento.
+
+Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/Inception_Metrics.png)
 
-Las métricas del modelo entrenado con `ResNet50` son las siguientes:
+En el modelo entrenado con `ResNet50` se ha establecido el mismo callback pero con un patience de 15:
+
+```
+early_stopping_resnet = EarlyStopping(
+    monitor='val_loss',
+    patience=10,
+    restore_best_weights=True)
+```
+
+El modelo se ha detenido a las 30 épocas de entrenamiento.
+
+Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/ResNet_Metrics.png)
 
