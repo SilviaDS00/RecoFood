@@ -30,7 +30,7 @@ La clasificación de comidas mediante el conjunto de datos Food101 permitirá a 
 
 Además de la clasificación de alimentos, el proyecto se propone ofrecer información detallada sobre los macronutrientes presentes en cada comida. Esta funcionalidad responde a la demanda creciente de conocimientos nutricionales específicos, lo que permite a los usuarios adaptar sus dietas de acuerdo con sus necesidades individuales y metas de salud.
 
-La clasificación de alimentos a través de Food101 es esencial para ayudar a los usuarios a identificar y comprender rápidamente los componentes de sus comidas. Sin embargo, reconocemos que la información sobre la clasificación sola puede no ser suficiente para guiar a los usuarios hacia elecciones alimentarias más saludables. Es por eso que hemos decidido incorporar un chatbot especializado en ofrecer recetas adaptadas a las preferencias y necesidades individuales de los usuarios.
+La clasificación de alimentos a través de Food101 es esencial para ayudar a los usuarios a identificar y comprender rápidamente los componentes de sus comidas. Sin embargo, reconocemos que la información sobre la clasificación sola puede no ser suficiente para guiar a los usuarios hacia elecciones alimentarias más saludables. Es por eso que hemos decidido incorporar un chatbot especializado en ofrecer recetas.
 
 ## 2. Obtención de los datos<a name="id2"></a>
 
