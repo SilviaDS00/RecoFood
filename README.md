@@ -208,6 +208,21 @@ Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/ResNet_Metrics.png)
 
+En el modelo entrenado con `ResNet50` se ha establecido el mismo callback con un patience de 10:
+
+```
+early_stopping_densenet = EarlyStopping(
+    monitor='val_loss',
+    patience=10,
+    restore_best_weights=True)
+```
+
+El modelo se ha detenido a las 25 épocas de entrenamiento.
+
+Las métricas de este modelo entrenado son las siguientes:
+
+![Compilacion modelo](/Capturas_Codigo/DenseNet_Metrics.png)
+
 ### 5.6 Conversión del modelo entrenado
 
 Este paso lo hacemos en el siguiente [Cuaderno de Jupyter](https://github.com/SilviaDS00/RecoFood/blob/main/Modelo_Entrenado/Conversion_Modelo_Entrenado_Web.ipynb).
