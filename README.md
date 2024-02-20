@@ -306,7 +306,7 @@ El código proporciona un bucle que permite al usuario interactuar con el asiste
 
 [Aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Web_React_App) puedes encontrar todos los ficheros de la aplicación de ReactJS.
 
-La aplicación web está realizada en ReactJS, el la cual hemos implementado el modelo entrenado.
+La aplicación web está realizada en ReactJS, en la cual hemos implementado el modelo entrenado.
 
 La web contiene dos botones, uno para realizar una foto con la cámara, y otro para subir una imagen. Realizando cualquiera de las dos opciones se aplicará el modelo a la imagen.
 
