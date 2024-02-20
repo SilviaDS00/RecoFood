@@ -24,7 +24,13 @@ _TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, 
 
 ## 1. Justificación y descripción del proyecto<a name="id1"></a>
 
-El proyecto tiene como objetivo desarrollar un sistema integral que clasifique comidas utilizando el conjunto de datos Food101. Además, se proporcionará información sobre los macronutrientes de las comidas y se implementará un chatbot para mejorar la interacción. Este proyecto aborda la necesidad de brindar información detallada sobre las comidas y facilitar la toma de decisiones nutricionales.
+El proyecto propuesto se centra en el desarrollo de un sistema integral destinado a clasificar alimentos mediante el uso del conjunto de datos Food101. Esta iniciativa surge en respuesta a la creciente necesidad de proporcionar información detallada sobre las comidas, con el objetivo de facilitar la toma de decisiones nutricionales. En la actualidad, las personas están cada vez más conscientes de la importancia de una alimentación equilibrada y saludable, pero la variedad y complejidad de los alimentos disponibles pueden dificultar la toma de decisiones informadas.
+
+La clasificación de comidas mediante el conjunto de datos Food101 permitirá a los usuarios identificar rápidamente los alimentos presentes en sus comidas, proporcionando así una base para obtener información nutricional específica. Este enfoque no solo contribuye a la conciencia alimentaria, sino que también facilita la implementación de hábitos dietéticos más saludables.
+
+Además de la clasificación de alimentos, el proyecto se propone ofrecer información detallada sobre los macronutrientes presentes en cada comida. Esta funcionalidad responde a la demanda creciente de conocimientos nutricionales específicos, lo que permite a los usuarios adaptar sus dietas de acuerdo con sus necesidades individuales y metas de salud.
+
+La clasificación de alimentos a través de Food101 es esencial para ayudar a los usuarios a identificar y comprender rápidamente los componentes de sus comidas. Sin embargo, reconocemos que la información sobre la clasificación sola puede no ser suficiente para guiar a los usuarios hacia elecciones alimentarias más saludables. Es por eso que hemos decidido incorporar un chatbot especializado en ofrecer recetas adaptadas a las preferencias y necesidades individuales de los usuarios.
 
 ## 2. Obtención de los datos<a name="id2"></a>
 
