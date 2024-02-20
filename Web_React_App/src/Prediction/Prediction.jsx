@@ -106,14 +106,13 @@ const PredictionComponent = ({ imageSrc }) => {
     "takoyaki",
     "tiramisu",
     "tuna_tartare",
-    "waffles"
+    "waffles",
   ]);
 
   useEffect(() => {
     const predict = async () => {
       setLoading(true);
-      
-    
+
       class L1 {
         static className = "L1";
 
@@ -125,28 +124,33 @@ const PredictionComponent = ({ imageSrc }) => {
 
       await tf.ready();
 
-      const model = await tf.loadLayersModel("/model/model.json", {
-        customObjects: { l1: tf.regularizers.l1 },
-      });
+      const model = await tf.loadLayersModel("/model/model.json");
 
-      // Preprocesar la imagen
-      const img = new Image();
-      img.src = imageSrc;
-      await img.decode();
-      const tensor = tf.browser
-        .fromPixels(img)
-        .resizeNearestNeighbor([224, 224])
-        .toFloat()
-        .expandDims();
+      if (model) {
+        console.log("Modelo cargado correctamente");
 
-      // Realizar la predicción
-      const predictions = await model.predict(tensor).data();
-      const maxPrediction = Math.max(...predictions);
-      const predictedClass = predictions.indexOf(maxPrediction);
-      const predictedFoodName = foodNames[predictedClass];
+        // Preprocesar la imagen
+        const img = new Image();
+        // console.log(imageSrc);
+        img.src = imageSrc;
+        await img.decode();
+        const tensor = tf.browser
+          .fromPixels(img)
+          .resizeNearestNeighbor([150, 150])
+          .toFloat()
+          .expandDims();
 
-      setPrediction(`La comida escaneada es: ${predictedFoodName}`);
-      setLoading(false);
+        console.log("Imagen preprocesada");
+        console.log(tensor);
+        const predictions = await model.predict(tensor).data();
+        const maxPrediction = Math.max(...predictions);
+        const predictedClass = predictions.indexOf(maxPrediction);
+        const predictedFoodName = foodNames[predictedClass];
+        console.log("La comida escaneada es: ", predictedFoodName);
+
+        setPrediction(`La comida escaneada es: ${predictedFoodName}`);
+        setLoading(false);
+      }
     };
 
     predict();
