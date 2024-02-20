@@ -174,9 +174,15 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 ### 5.5 Métricas del entrenamiento
 
+El modelo, como hemos dicho anteriormente, ha sido entrenado con 3 modelos preentrenados diferentes, a continuación se muestran las gráficas de cada resultado obtenido:
+
 Las métricas del modelo entrenado con `InceptionV3` son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/Inception_Metrics.png)
+
+Las métricas del modelo entrenado con `ResNet50` son las siguientes:
+
+![Compilacion modelo](/Capturas_Codigo/ResNet_Metrics.png)
 
 ### 5.6 Conversión del modelo entrenado
 
