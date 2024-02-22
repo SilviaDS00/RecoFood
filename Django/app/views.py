@@ -1,20 +1,19 @@
-
-""" Hay que instalar esto antes de ejecutar:
-    - pip install django djangorestframework
-    - pip install django-cors-headers
-"""
-
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse, HttpResponse
+from .predict import hacer_prediccion
 
 @csrf_exempt
-def chatbot_view(request):
-    if request.method == 'GET':
-        response_data = {"message": "Hola. Has realizado una solicitud GET a la página de inicio."}
-        return JsonResponse(response_data)
-    elif request.method == 'POST':
-        response_data = {"message": "Hola. Has realizado una solicitud POST a la página de inicio."}
-        return JsonResponse(response_data)
-    else:
-        return HttpResponse(status=405) 
+def endpoint_prediccion(request):
+    if request.method == 'POST':
+        datos_de_entrada = request.POST.get('datos_de_entrada')  # Ajusta según tu formato de datos
+        # Realiza cualquier preprocesamiento necesario en tus datos de entrada
 
+        # Hacer la predicción
+        prediccion = hacer_prediccion(datos_de_entrada)
+
+        # Devuelve la predicción como respuesta JSON
+        return JsonResponse({'prediccion': prediccion})
+
+    return JsonResponse({'error': 'Se esperaba una solicitud POST'})
+def home(request):
+    return JsonResponse({'message': '¡Bienvenido a la API de mi proyecto!'})
