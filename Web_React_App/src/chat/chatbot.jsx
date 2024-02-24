@@ -7,9 +7,13 @@ function Chat() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-
+    
+        // Imprime el valor de userInput en la consola
+        console.log("Valor de userInput:", userInput);
+    
         try {
             const response = await axios.post('http://localhost:8000/chatbot/', { prompt: userInput });
+            console.log(response);  // Imprime la respuesta del servidor
             setChatHistory([...chatHistory, { role: 'user', text: userInput }, { role: 'assistant', text: response.data.message }]);
             setUserInput('');
         } catch (error) {
@@ -17,6 +21,7 @@ function Chat() {
             // Maneja el error apropiadamente en tu aplicación React
         }
     };
+    
 
     return (
         <div>
