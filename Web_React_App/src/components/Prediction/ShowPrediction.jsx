@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import "./ShowPrediction.scss";
 import { Form, Message } from "semantic-ui-react";
 
-import ChartComponent from "../Macros/ChartComponent";
-
 const ShowPrediction = ({ predictionResult }) => {
   const classnames = [
     "apple_pie",
