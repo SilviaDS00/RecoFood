@@ -41,7 +41,7 @@ const LoginForm = () => {
   });
 
   return (
-    <div className="form-container">
+    <div className="form-container-login">
       <h3>Iniciar sesión</h3>
       <Form onSubmit={formik.handleSubmit}>
         {formik.status && <Message negative content={formik.status} />}

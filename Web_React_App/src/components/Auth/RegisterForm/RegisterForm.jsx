@@ -46,7 +46,7 @@ const RegisterForm = () => {
     },
   });
   return (
-    <div className="form-container">
+    <div className="form-container-signup">
       <h3>Registrarse</h3>
       <Form onSubmit={formik.handleSubmit}>
         {isLoading && (

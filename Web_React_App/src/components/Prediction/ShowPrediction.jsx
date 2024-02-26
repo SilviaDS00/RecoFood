@@ -279,6 +279,7 @@ const ShowPrediction = ({ predictionResult }) => {
           Introduce los gramos de tu comida para calcular los macronutrientes de
           una forma más aproximada:
           <Form.Input
+          className="input-grams"
             type="number"
             value={gramsInput}
             onChange={handleGramsInputChange}
