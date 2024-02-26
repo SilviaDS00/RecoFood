@@ -314,7 +314,11 @@ La web creada tiene una interfaz minimalista, ya que el objetivo de la página e
 
 Primero tenemos el menú de la página, compuesto por el logo, el nombre del proyecto, las páginas principales y la sección de los usuarios:
 
-![TopBar](/Capturas_Codigo/TopBar.png)
+![TopBar](/Capturas_Codigo/TopBar.PNG)
+
+En la sección de inicio tenemos la parte para realizar la predicción, teniendo como opción hacer una foto o subirla desde el explorador de archivos:
+
+![Home](/Capturas_Codigo/Home.PNG)
 
 
 ### 7.2 Implementación del modelo en React.js
