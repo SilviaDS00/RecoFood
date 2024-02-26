@@ -1,0 +1,15 @@
+// Home.scss
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  h1, p {
+    margin-bottom: 20px;
+  }
+  
+  // Ajusta los estilos según sea necesario para los componentes Webcam y ImageUpload
+  

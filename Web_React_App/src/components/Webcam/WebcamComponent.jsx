@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import Webcam from "react-webcam";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
-import PredictionComponent from "../../Prediction/Prediction";
+import PredictionComponent from "../Prediction/Prediction";
 import "./WebcamComponent.scss";
 
 const WebcamComponent = () => {
@@ -60,7 +60,7 @@ const WebcamComponent = () => {
       ) : null}
       {!showWebcam && !capturedImage && (
         <button onClick={toggleWebcam} className="toggle-webcam-button">
-          Abrir Cámara
+          Escanear comida
         </button>
       )}
       {showWebcam && !capturedImage && (

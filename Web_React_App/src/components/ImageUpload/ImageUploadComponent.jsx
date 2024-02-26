@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import PredictionComponent from "../../Prediction/Prediction";
+import PredictionComponent from "../Prediction/Prediction";
 import "./ImageUploadComponent.scss";
 
 const ImageUploadComponent = () => {
@@ -43,7 +43,7 @@ const ImageUploadComponent = () => {
         id="fileInput"
       />
       <label htmlFor="fileInput" className="custom-image-upload-label">
-        <div className="custom-image-upload">Seleccionar Imagen</div>
+        <div className="custom-image-upload">Subir foto</div>
       </label>
       {selectedImage && (
         <div className="selected-image-container">
