@@ -10,8 +10,14 @@ Hay que instalar esto antes de ejecutar:
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, JsonResponse, HttpResponseBadRequest
 import os
+import io
 from dotenv import load_dotenv
 import google.generativeai as gen_ai
+import tensorflow as tf
+import numpy as np
+from PIL import Image
+
+
 
 # Load environment variables
 load_dotenv()
@@ -60,3 +66,49 @@ def chatbot_view(request):
         return JsonResponse(response_data)
     else:
         return HttpResponse(status=405)
+
+
+model = tf.keras.models.load_model('model/best_model_trained.h5')
+@csrf_exempt
+def prediction(request):
+    try:
+        if request.method == "POST":
+            # Obtén la imagen del cuerpo de la solicitud POST
+            image_data = request.FILES['imagen'].read()
+            print(image_data)
+            image = Image.open(io.BytesIO(image_data))
+
+            # Preprocesa la imagen para que coincida con el formato esperado por el modelo
+            image = image.resize((224, 224))  # Ajusta el tamaño según las necesidades de tu modelo
+            image = np.array(image) / 255.0
+            image = np.expand_dims(image, axis=0)
+
+            # Realiza la predicción con el modelo cargado
+            prediction = model.predict(image)
+
+            # Puedes procesar la salida de la predicción según tus necesidades
+            # En este ejemplo, simplemente se obtiene la clase con la mayor probabilidad
+            predicted_class = np.argmax(prediction)
+
+            # Devuelve la respuesta en formato JSON
+            response_data = {
+                "message": "Predicción exitosa",
+                "predicted_class": int(predicted_class),
+                "confidence": float(prediction[0][predicted_class])
+            }
+            return JsonResponse(response_data)
+
+        elif request.method == "GET":
+            response_data = {
+                "message": "Hola. Has realizado una solicitud GET a la página de inicio."
+            }
+            return JsonResponse(response_data)
+
+        else:
+            return JsonResponse({"message": "Método no permitido"}, status=405)
+    except Exception as e:
+        return JsonResponse({"error": str(e)}, status=500)
+    except KeyError as e:
+        return JsonResponse({"error": "No se proporcionó ninguna imagen en la solicitud POST."}, status=400)
+    except ValueError as e:
+        return JsonResponse({"error": "La imagen proporcionada no es válida."}, status=400)
