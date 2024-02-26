@@ -1,5 +1,5 @@
 import { ENV } from "../utils/constant";
-import * as jwtDecode from 'jwt-decode';
+import { jwtDecode } from 'jwt-decode';
 
 export class Token {
   setToken(token) {
@@ -15,13 +15,19 @@ export class Token {
   }
 
   hasExpiredToken(token) {
-    const tokenDecode = jwtDecode(token);
-    const expireDate = tokenDecode.exp * 1000;
-    const currentDate = new Date().getTime();
-
-    if (currentDate > expireDate) {
+    if (!token) {
       return true;
     }
-    return false;
+
+    try {
+      const decodedToken = jwtDecode(token);
+      const currentTime = Date.now() / 1000;
+
+      return decodedToken.exp < currentTime;
+    } catch (error) {
+      console.error('Error decoding token:', error);
+      return true; 
+    }
   }
+
 }

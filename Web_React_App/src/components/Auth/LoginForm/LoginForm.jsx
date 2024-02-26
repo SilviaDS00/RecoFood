@@ -5,12 +5,18 @@ import { useFormik } from 'formik';
 import { initialValues, validationSchema } from './LoginForm.form';
 import { useAuth } from '../../../hooks/useAuth';
 import { Auth } from '../../../api/auth';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from 'react-router-dom';
+
 import './LoginForm.scss'; // Importa los estilos
 
 const authCtrl = new Auth();
 
 const LoginForm = () => {
   const { login } = useAuth();
+  const navigate = useNavigate();
+
 
   const formik = useFormik({
     initialValues: initialValues(),
@@ -20,6 +26,14 @@ const LoginForm = () => {
       try {
         const response = await authCtrl.login(formValues);
         login(response.jwt);
+        toast.success(
+          "!Inicio de sesión exitoso! Redirigiendo a la página de inicio."
+        );
+
+        // Redirigir al usuario a la página de inicio de sesión después de unos segundos
+        setTimeout(() => {
+          navigate('/');
+        }, 2000);
       } catch (error) {
         formik.setStatus('Correo o contraseña incorrectos');
         console.error(error);
@@ -63,6 +77,7 @@ const LoginForm = () => {
         >
           Entrar
         </Form.Button>
+        <ToastContainer />
       </Form>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Message, Dimmer, Loader  } from "semantic-ui-react";
+import { Form, Message } from "semantic-ui-react";
 import { useFormik } from "formik";
 // import { useRouter } from "next/router";
 import { initialValues, validationSchema } from "./RegisterForm.form";
@@ -8,10 +8,12 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
 import './RegisterForm.scss';
+import { useNavigate } from 'react-router-dom';
+
 
 const authCtrl = new Auth();
-
 const RegisterForm = () => {
+  const navigate = useNavigate();
   // const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -30,7 +32,7 @@ const RegisterForm = () => {
 
         // Redirigir al usuario a la página de inicio de sesión después de unos segundos
         setTimeout(() => {
-          // router.push("/join/sign-in");
+          navigate('/log-in');
         }, 2000);
       } catch (error) {
         if (
@@ -51,11 +53,11 @@ const RegisterForm = () => {
     <div className="form-container">
     <h3>Registrarse</h3>
     <Form onSubmit={formik.handleSubmit}>
-      {isLoading && (
+      {/* {isLoading && (
         <Dimmer active inverted>
           <Loader size="large">Loading</Loader>
         </Dimmer>
-      )}
+      )} */}
       {formik.status && <Message negative content={formik.status} />}
       <Form.Group widths="equal">
         <Form.Input
