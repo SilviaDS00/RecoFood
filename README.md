@@ -306,8 +306,29 @@ El código proporciona un bucle que permite al usuario interactuar con el asiste
 
 [Aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Web_React_App) puedes encontrar todos los ficheros de la aplicación de ReactJS.
 
-La aplicación web está realizada en ReactJS, en la cual hemos implementado el modelo entrenado.
+La aplicación web está realizada en ReactJS, en la cual hemos implementado el modelo entrenado con Django.
 
-La web contiene dos botones, uno para realizar una foto con la cámara, y otro para subir una imagen. Realizando cualquiera de las dos opciones se aplicará el modelo a la imagen.
+### 7.1 Diseño de la web
+
+La web creada tiene una interfaz minimalista, ya que el objetivo de la página es que sea lo más intuitiva y fácil de usar posible. Se prioriza la simplicidad en el diseño para garantizar una experiencia de usuario fluida y eficiente, donde la información y las funciones clave estén al alcance de los usuarios de manera clara y directa. El enfoque minimalista busca eliminar elementos innecesarios y distracciones, centrándose en la funcionalidad principal de la página y mejorando la accesibilidad para una amplia variedad de usuarios.
+
+Primero tenemos el menú de la página, compuesto por el logo, el nombre del proyecto, las páginas principales y la sección de los usuarios:
+
+![TopBar](/Capturas_Codigo/TopBar.png)
+
+
+### 7.2 Implementación del modelo en React.js
+
+El código de Django lo puedes encontrar [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Django)
+
+Usando Django hemo creado un endpoint de petición `POST` para la predicción del modelo
+
+![Implementacion modelo](/Capturas_Codigo/Model_Implementation.png)
+
+Desde un componente de React.js, llamamos al endpoint creado con Django de la siguiente manera:
+
+![Endpoint React](/Capturas_Codigo/Endpoint_React.png)
+
+Este componente lo utilizaremos en otros componentes para realizar la predicción de dos maneras, haciendo una foto o subiendo la foto.
 
 ## 8. Conclusiones<a name="id8"></a>

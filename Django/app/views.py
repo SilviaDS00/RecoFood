@@ -79,14 +79,12 @@ def prediction(request):
             image = Image.open(io.BytesIO(image_data))
 
             # Preprocesa la imagen para que coincida con el formato esperado por el modelo
-            image = image.resize((224, 224))  # Ajusta el tamaño según las necesidades de tu modelo
+            image = image.resize((224, 224)) 
             image = np.array(image) / 255.0
             image = np.expand_dims(image, axis=0)
 
             # Realiza la predicción con el modelo cargado
             prediction = model.predict(image)
-
-            # Puedes procesar la salida de la predicción según tus necesidades
             # En este ejemplo, simplemente se obtiene la clase con la mayor probabilidad
             predicted_class = np.argmax(prediction)
 
@@ -108,7 +106,3 @@ def prediction(request):
             return JsonResponse({"message": "Método no permitido"}, status=405)
     except Exception as e:
         return JsonResponse({"error": str(e)}, status=500)
-    except KeyError as e:
-        return JsonResponse({"error": "No se proporcionó ninguna imagen en la solicitud POST."}, status=400)
-    except ValueError as e:
-        return JsonResponse({"error": "La imagen proporcionada no es válida."}, status=400)

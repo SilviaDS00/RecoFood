@@ -1,5 +1,3 @@
-// PredictionService.js
-
 import axios from 'axios';
 
 const predictImage = async (imageBlob) => {
@@ -16,7 +14,7 @@ const predictImage = async (imageBlob) => {
     return response.data;
   } catch (error) {
     console.error('Error al realizar la predicción:', error);
-    throw error; // Propaga el error para manejarlo en el componente que llama a esta función
+    throw error; 
   }
 };
 
