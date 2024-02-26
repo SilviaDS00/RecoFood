@@ -376,6 +376,17 @@ Y para el inicio de sesión una interfaz muy parecida:
 
 ![Login](/Capturas_Codigo/Login.PNG)
 
+Los formularios de inicio de sesión y registro de usuarios, tienen toda la lógica necesaria para la validación, si no existe el correo o la contraseña está mal, no te deja iniciar sesión.
+
+![Validation Login](/Capturas_Codigo/Validation_Login.PNG)
+
+Para ello hemos usado una librería llamada Yup, la cual sirve para la validación de formularios.
+
+En el registro no puedes dejar campos vacíos, las contraseñas deben coincidir y no debe de haber ninguna cuenta existente con el mismo email o usuario.
+
+![Validation Register](/Capturas_Codigo/Validation_Register.PNG)
+![Validation Register](/Capturas_Codigo/Validation_Register2.PNG)
+
 ### 7.2 Implementación del modelo en React.js
 
 El código de Django lo puedes encontrar [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Django)
