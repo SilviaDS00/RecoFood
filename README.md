@@ -382,6 +382,8 @@ Una vez pulsado el botón de procesar imagen se mostraría el resultado de la si
 
 ![Macros](/Capturas_Codigo/Macros_Layout.PNG)
 
+**NOTA:** Para calcular los macros de cada comida, hemos creado un [json](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/data/macronutrientes.json) con todos los valores aproximados de los macros de cada comida, haciendo la importación dentro de react y procesando los datos. [Aquí](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/Prediction/ShowPrediction.jsx) puedes encontrar el componente donde se importa el json dicho.
+
 Para el registro de usuarios hemos hecho el siguiente diseño de la interfaz:
 
 ![Sign up](/Capturas_Codigo/Signup.PNG)
@@ -391,6 +393,8 @@ Y para el inicio de sesión una interfaz muy parecida:
 ![Login](/Capturas_Codigo/Login.PNG)
 
 ### 7.2 Back de usuarios
+
+[Ver el proyecto de Strapi aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Strapi)
 
 Para realizar el back para los usuarios, hemos utilizado **Strapi**, ya que proporciona una interfaz sencilla de utilizar e intuitiva.
 
