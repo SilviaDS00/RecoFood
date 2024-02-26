@@ -275,22 +275,6 @@ Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/DenseNet_Metrics.png)
 
-### 5.6 Conversión del modelo entrenado
-
-Este paso lo hacemos en el siguiente [Cuaderno de Jupyter](https://github.com/SilviaDS00/RecoFood/blob/main/Modelo_Entrenado/Conversion_Modelo_Entrenado_Web.ipynb).
-
-Para garantizar la implementación del modelo en nuestra aplicación web, primero debemos convertirlo a un formato apto para ello.
-
-Nuestro modelo entrenado estará en formato `.h5`, pero debemos transformarlo a `.json`.
-
-Para ello ejecutaremos el siguiente comando:
-
-```
-!tensorflowjs_converter --input_format keras '/content/best_model_trained.h5' /content/drive/MyDrive/TFM-RecoFood/Modelo_Convertido_Web
-```
-
-Y obtendremos una carpeta que contendrá el modelo en formato JSON y otros ficheros necesarios, puedes verlos [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Modelo_Entrenado/Modelo_Transformado).
-
 ## 6. Procesamiento del lenguaje natural - ChatBot<a name="id6"></a>
 
 En esta sección, se detalla el progreso de nuestro Asistente de Recetas. Este emplea el Procesamiento de Lenguaje Natural (PLN) para interactuar con los usuarios de una manera más accesible. En particular, hemos implementado la traducción automática, que es una aplicación del PLN, para permitir que los usuarios accedan a las recetas en dos idiomas: inglés y español.
