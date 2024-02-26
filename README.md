@@ -97,6 +97,11 @@ Visualizamos cuántas imágenes tienen establecidos en los ficheros train.txt y 
 
 ![Numero imagenes te entrenamiento y de test](/Capturas_Codigo/Num_Images_Train_Test.png)
 
+```
+El archivo 'food-101/meta/train.txt' contiene 75750 datos de entrenamiento.
+El archivo 'food-101/meta/test.txt' contiene 25250 datos de test.
+```
+
 A continuación visualizamos una imagen aleatoria de cada clase:
 
 ![Codigo imagenes aleatorias](/Capturas_Codigo/Code_Imagenes_Aleatorias.png)
