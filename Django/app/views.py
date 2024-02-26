@@ -3,7 +3,7 @@ Hay que instalar esto antes de ejecutar:
     - pip install django djangorestframework
     - pip install django-cors-headers
     - pip install google.generativeai
-    - pip install dotenv
+    - pip install dotenv / pip install python-dotenv
     - Arrancar el Servidor: python manage.py runserver 
 """
 
