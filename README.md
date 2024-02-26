@@ -320,6 +320,13 @@ En la sección de inicio tenemos la parte para realizar la predicción, teniendo
 
 ![Home](/Capturas_Codigo/Home.PNG)
 
+Para el registro de usuarios hemos hecho el siguiente diseño de la interfaz:
+
+![Sign up](/Capturas_Codigo/Signup.PNG)
+
+Y para el inicio de sesión una interfaz muy parecida:
+
+![Login](/Capturas_Codigo/Login.PNG)
 
 ### 7.2 Implementación del modelo en React.js
 
