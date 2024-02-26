@@ -390,7 +390,7 @@ En el registro no puedes dejar campos vacíos, las contraseñas deben coincidir 
 También se han incluido pop-ups informativos con una librería llamada `toastify` para el registro e inicio de sesión:
 
 ![Register Success](/Capturas_Codigo/Register.PNG)
-![Login Success](/Capturas_Codigo/LoginSuccess.PNG)
+![Login Success](/Capturas_Codigo/Login_Success.PNG)
 
 ### 7.2 Implementación del modelo en React.js
 
