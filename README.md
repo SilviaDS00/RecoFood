@@ -310,14 +310,11 @@ La aplicación web está realizada en ReactJS, en la cual hemos implementado el 
 
 ### 7.1 Diseño de la web
 
-La idea del diseño de la web la hemos obtenido con una AI de creación de interfaces, llamada [galileo.ai](https://www.usegalileo.ai/explore), la cual le explicas qué diseño quieres y te lo genera.
+La idea del diseño de la web la hemos obtenido con una AI de creación de diseño para interfaces, llamada [galileo.ai](https://www.usegalileo.ai/explore), la cual le explicas qué diseño quieres y te lo genera.
 
-También esos diseños los hemos exportado a [Figma](https://www.figma.com/file/jdgPz51T3CRJMv2dVcBxoJ/Galileo-Design?type=design&node-id=0%3A1&mode=dev&t=iuc6j96I83u5tPMe-1), haciendo modificaciones y adaptándolo a nuestros requisitos, hemos usado el diseño como apoyo para darnos ideas, pero no para usarlo de forma estricta.
-
-
+También esos diseños los hemos exportado a [Figma](https://www.figma.com/file/jdgPz51T3CRJMv2dVcBxoJ/Galileo-Design?type=design&node-id=0%3A1&mode=dev&t=iuc6j96I83u5tPMe-1), haciendo modificaciones y adaptándolo a nuestros requisitos. Hemos usado el diseño como apoyo para darnos ideas, pero no para usarlo de forma estricta.
 
 La web creada tiene una interfaz minimalista, ya que el objetivo de la página es que sea lo más intuitiva y fácil de usar posible. Se prioriza la simplicidad en el diseño para garantizar una experiencia de usuario fluida y eficiente, donde la información y las funciones clave estén al alcance de los usuarios de manera clara y directa. El enfoque minimalista busca eliminar elementos innecesarios y distracciones, centrándose en la funcionalidad principal de la página y mejorando la accesibilidad para una amplia variedad de usuarios.
-
 
 Primero tenemos el menú de la página, compuesto por el logo, el nombre del proyecto, las páginas principales y la sección de los usuarios:
 
