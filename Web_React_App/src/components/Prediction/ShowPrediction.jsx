@@ -272,8 +272,8 @@ const ShowPrediction = ({ predictionResult }) => {
           </Message.List>
         </Message>
       </div>
-
-      <Form onSubmit={handleSubmit} className="form">
+      <div className="form-container">
+      <Form onSubmit={handleSubmit} className="form-macros">
         <h3>Calcular macros</h3>
         <label>
           Introduce los gramos de tu comida para calcular los macronutrientes de
@@ -288,6 +288,7 @@ const ShowPrediction = ({ predictionResult }) => {
           Calcular Macros
         </button>
       </Form>
+      </div>
       {calculatedMacros && (
         <div className="calculated-macros">
           <Message positive>

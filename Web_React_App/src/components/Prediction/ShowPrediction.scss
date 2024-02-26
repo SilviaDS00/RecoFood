@@ -45,12 +45,19 @@
     background-color: #45a049; /* Darker green on hover */
   }
 
-  .form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 3rem;
+  .form-container {
+    max-width: 40rem;
+    margin: 0 auto 2rem auto;
+    padding: 20px;
+
   }
+
+  // .form-macros{
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   padding: 1rem 3rem;
+  // }
 
   .macros-info{
     margin-bottom: 2rem;
@@ -58,5 +65,6 @@
   }
 
   .calculated-macros{
+    margin: 2rem 0;
     padding: 0 5rem;
   }

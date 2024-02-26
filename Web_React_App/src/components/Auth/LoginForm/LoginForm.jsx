@@ -8,7 +8,6 @@ import { Auth } from '../../../api/auth';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from 'react-router-dom';
-
 import './LoginForm.scss'; // Importa los estilos
 
 const authCtrl = new Auth();

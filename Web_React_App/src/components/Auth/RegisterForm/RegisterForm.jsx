@@ -59,6 +59,7 @@ const RegisterForm = () => {
         <Form.Group widths="equal">
           <Form.Input
             fluid
+            className="input-field"
             name="email"
             type="text"
             placeholder="Correo electrónico"
@@ -72,6 +73,7 @@ const RegisterForm = () => {
           />
           <Form.Input
             fluid
+            className="input-field"
             name="username"
             type="text"
             placeholder="Nombre de usuario"
@@ -87,6 +89,7 @@ const RegisterForm = () => {
         <Form.Group widths="equal">
           <Form.Input
             fluid
+            className="input-field"
             name="password"
             type="password"
             placeholder="Contraseña"
@@ -100,6 +103,7 @@ const RegisterForm = () => {
           />
           <Form.Input
             fluid
+            className="input-field"
             name="passwordConfirmation"
             type="password"
             placeholder="Confirmar Contraseña"
@@ -112,11 +116,12 @@ const RegisterForm = () => {
                 : null
             }
           />
-        </Form.Group>
+        </Form.Group >
         <p>Datos personales</p>
         <Form.Group widths="equal">
           <Form.Input
             fluid
+            className="input-field"
             name="age"
             type="text"
             placeholder="Edad"
@@ -130,6 +135,7 @@ const RegisterForm = () => {
         <Form.Group widths="equal">
           <Form.Input
             fluid
+            className="input-field"
             name="weight"
             type="text"
             placeholder="Peso (kg)"
@@ -143,6 +149,7 @@ const RegisterForm = () => {
           />
           <Form.Input
             fluid
+            className="input-field"
             name="height"
             type="text"
             placeholder="Altura (cm)"
