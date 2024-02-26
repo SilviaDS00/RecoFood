@@ -374,6 +374,14 @@ Cuando se abre la cámara, se mostraría de la siguiente manera:
 
 ![Webcam](/Capturas_Codigo/Webcam.PNG)
 
+Cuando se escanea la imagen o se sube desde el explorador de archivos, se vería la imagen seguido de un botón para procesar la imagen para la predicción
+
+![Scan image](/Capturas_Codigo/Predict_Hamburguer.PNG)
+
+Una vez pulsado el botón de procesar imagen se mostraría el resultado de la siguiente manera, permitiendo al usuario calcular los macronutrientes según los gramos que pesa su comida:
+
+![Macros](/Capturas_Codigo/Macros_Layout.PNG)
+
 Para el registro de usuarios hemos hecho el siguiente diseño de la interfaz:
 
 ![Sign up](/Capturas_Codigo/Signup.PNG)
