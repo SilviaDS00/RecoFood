@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.scss";
 import Home from "./pages/Home/home";
