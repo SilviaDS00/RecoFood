@@ -19,6 +19,10 @@
     text-decoration: underline;
     color: rgb(0, 0, 0);
   }
+
+  a:visited {
+    color: rgb(0, 0, 0);
+  }
   
   .left {
     display: flex;
@@ -30,8 +34,7 @@
   
     }
   }
-  
-  
+
   .center {
     color: rgb(0, 0, 0);
     display: flex;

@@ -5,8 +5,8 @@ import "./App.scss";
 import Home from "./pages/Home/home";
 import ChatBot from "./pages/chatbot";
 import Contact from "./pages/contact";
-import Login from "./pages/login";
-import SignUp from "./pages/signup";
+import LoginPage from "./pages/log-in";
+import SignUpPage from "./pages/sign-up";
 
 function App() {
   return (
@@ -44,8 +44,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/chatbot" element={<ChatBot />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/log-in" element={<Login />} />
-        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/log-in" element={<LoginPage />} />
+        <Route path="/sign-up" element={<SignUpPage />} />
       </Routes>
     </div>
   );
