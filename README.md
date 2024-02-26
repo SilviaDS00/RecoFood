@@ -382,7 +382,33 @@ Y para el inicio de sesión una interfaz muy parecida:
 
 ![Login](/Capturas_Codigo/Login.PNG)
 
-### 7.2 Implementación del modelo en React.js
+### 7.2 Back de usuarios
+
+Para realizar el back para los usuarios, hemos utilizado Strapi, ya que proporciona una interfaz sencilla de utilizar e intuitiva.
+
+Para instalar Strapi primero ejecutamos el siguiente comando: `npm install -g create-strapi-app`.
+
+Una vez instalado, procedemos a crear el proyecto: `create-strapi-app Strapi --quickstart` (Strapi es el nombre que queremos del proyecto).
+
+Una vez creado el proyecto, accedemos a Strapi en el navegador, creamos una cuenta o iniciamos sesión.
+
+![Strapi Login](/Capturas_Codigo/Login_Strapi.PNG)
+
+Y la interfaz sería la siguiente:
+
+![Strapi Layout](/Capturas_Codigo/Strapi_Layout.PNG)
+
+En el menú lateral encontramos el Content Manager, que ahí aparecerán todas las entradas de datos que tienen las colecciones creadas.
+
+Después tenemos Content-Type Builder, que sería para crear las colecciones:
+
+![Strapi Collections](/Capturas_Codigo/Strapi_Collections.PNG)
+
+Y ya el resto de apartados serían otras configuraciones, pero otra sección importante sería para habilitar los endpoints para gestionar los usuarios. Dentro de **Settings**, en el apartado de roles de *users & permissions plugin*, accedemos a la parte para habilitar los endpoints, por ejemplo dentro de public estaría el endpoint para poder registrar un usuario o el de iniciar sesión. Dentro de authtenticated, estaría por ejemplo el endpoint de ver los datos del usuario o de actualizar sus datos o contraseña.
+
+![Strapi Roles](/Capturas_Codigo/Strapi_Roles.PNG)
+
+### 7.3 Implementación del modelo en React.js
 
 El código de Django lo puedes encontrar [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Django)
 
