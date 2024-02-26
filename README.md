@@ -354,7 +354,7 @@ El código proporciona un bucle que permite al usuario interactuar con el asiste
 
 La aplicación web está realizada en ReactJS, en la cual hemos implementado el modelo entrenado con Django.
 
-### 7.1 Diseño de la web
+### 7.1 Creación de la web
 
 La idea del diseño de la web la hemos obtenido con una AI de creación de diseño para interfaces, llamada [galileo.ai](https://www.usegalileo.ai/explore), la cual le explicas qué diseño quieres y te lo genera.
 
@@ -392,7 +392,26 @@ Y para el inicio de sesión una interfaz muy parecida:
 
 ![Login](/Capturas_Codigo/Login.PNG)
 
-### 7.2 Back de usuarios
+### 7.2 Implementación del modelo en React.js
+
+El código de Django lo puedes encontrar [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Django)
+
+Usando Django hemo creado un endpoint de petición `POST` para la predicción del modelo
+
+![Implementacion modelo](/Capturas_Codigo/Model_Implementation.png)
+
+Desde un componente de React.js, llamamos al endpoint creado con Django de la siguiente manera:
+
+![Endpoint React](/Capturas_Codigo/Endpoint_React.png)
+
+Este componente lo utilizaremos en otros componentes para realizar la predicción de dos maneras, haciendo una foto o subiendo la foto.
+
+Por ejemplo, dentro del componente de [ImageUploadComponent](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/ImageUpload/ImageUploadComponent.jsx) utilizamos el componente creado para realizar la predicción pasándole la imagen subida por el usuario:
+
+![Image predict](/Capturas_Codigo/Predict_Image.png)
+
+
+### 7.3 Back de usuarios
 
 [Ver el proyecto de Strapi aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Strapi)
 
@@ -419,19 +438,5 @@ Después tenemos *Content-Type Builder*, que sería para crear las colecciones:
 Y ya el resto de apartados serían otras configuraciones, pero otra sección importante sería para habilitar los **endpoints** para gestionar los usuarios. Dentro de **Settings**, en el apartado de roles de *users & permissions plugin*, accedemos a la parte para habilitar los endpoints, por ejemplo dentro de public estaría el endpoint para poder registrar un usuario o el de iniciar sesión. Dentro de autenticated, estaría por ejemplo el endpoint de ver los datos del usuario o de actualizar sus datos o contraseña.
 
 ![Strapi Roles](/Capturas_Codigo/Strapi_Roles.PNG)
-
-### 7.3 Implementación del modelo en React.js
-
-El código de Django lo puedes encontrar [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Django)
-
-Usando Django hemo creado un endpoint de petición `POST` para la predicción del modelo
-
-![Implementacion modelo](/Capturas_Codigo/Model_Implementation.png)
-
-Desde un componente de React.js, llamamos al endpoint creado con Django de la siguiente manera:
-
-![Endpoint React](/Capturas_Codigo/Endpoint_React.png)
-
-Este componente lo utilizaremos en otros componentes para realizar la predicción de dos maneras, haciendo una foto o subiendo la foto.
 
 ## 8. Conclusiones<a name="id8"></a>
