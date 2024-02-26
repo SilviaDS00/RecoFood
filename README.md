@@ -358,11 +358,11 @@ Cuando se abre la cámara, se mostraría de la siguiente manera:
 
 ![Webcam](/Capturas_Codigo/Webcam.PNG)
 
-Cuando se escanea la imagen o se sube desde el explorador de archivos, se vería la imagen seguido de un botón para procesar la imagen para la predicción
+Cuando se escanea la imagen o se sube desde el explorador de archivos, se vería la imagen seguido de un botón para procesar la imagen para la predicción.
 
 ![Scan image](/Capturas_Codigo/Predict_Hamburguer.PNG)
 
-Una vez pulsado el botón de procesar imagen se mostraría el resultado de la siguiente manera, permitiendo al usuario calcular los macronutrientes según los gramos que pesa su comida:
+Una vez pulsado el botón de procesar imagen se mostraría el resultado de la predicción y los macronutrientes de esa comida, permitiendo al usuario calcular los macronutrientes según los gramos que pesa su comida:
 
 ![Macros](/Capturas_Codigo/Macros_Layout.PNG)
 
@@ -380,20 +380,23 @@ Y para el inicio de sesión una interfaz muy parecida:
 
 El código de Django lo puedes encontrar [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Django)
 
-Usando Django hemo creado un endpoint de petición `POST` para la predicción del modelo
+Usando Django hemo creado una vista con un endpoint de petición `POST` para la predicción del modelo, procesando la imagen para adecuarlo al modelo entrenado antes de hacer el predict.
 
 ![Implementacion modelo](/Capturas_Codigo/Model_Implementation.png)
+
+Creamos la url para el endpoint:
+
+![Url endpoint](/Capturas_Codigo/Url_Endpoint.png)
 
 Desde un componente de React.js, llamamos al endpoint creado con Django de la siguiente manera:
 
 ![Endpoint React](/Capturas_Codigo/Endpoint_React.png)
 
-Este componente lo utilizaremos en otros componentes para realizar la predicción de dos maneras, haciendo una foto o subiendo la foto.
+Este componente lo utilizaremos en otros componentes para realizar la predicción, en este, de dos maneras, haciendo una foto o directamente subiendo la foto.
 
 Por ejemplo, dentro del componente de [ImageUploadComponent](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/ImageUpload/ImageUploadComponent.jsx) utilizamos el componente creado para realizar la predicción pasándole la imagen subida por el usuario:
 
 ![Image predict](/Capturas_Codigo/Predict_Image.png)
-
 
 ### 7.3 Back de usuarios
 
