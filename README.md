@@ -320,6 +320,10 @@ En la sección de inicio tenemos la parte para realizar la predicción, teniendo
 
 ![Home](/Capturas_Codigo/Home.PNG)
 
+Cuando se abre la cámara, se mostraría de la siguiente manera:
+
+![Webcam](/Capturas_Codigo/Webcam.PNG)
+
 Para el registro de usuarios hemos hecho el siguiente diseño de la interfaz:
 
 ![Sign up](/Capturas_Codigo/Signup.PNG)
