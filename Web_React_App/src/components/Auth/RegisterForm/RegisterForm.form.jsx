@@ -6,6 +6,8 @@ export function initialValues() {
     username: "",
     password: "",
     passwordConfirmation: "",  
+    weight: "",
+    height: "",
   }
 }
 
@@ -17,6 +19,8 @@ export function validationSchema() {
     passwordConfirmation: Yup.string()
       .oneOf([Yup.ref('password'), null], 'Las contraseñas deben coincidir') 
       .required('Debes confirmar tu contraseña'), 
+    weight: Yup.string().required("Introduce tu peso"),
+    height: Yup.string().required("Introduce tu altura"),
   });
 
 }
