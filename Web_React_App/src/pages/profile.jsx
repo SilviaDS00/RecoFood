@@ -4,7 +4,7 @@ import { ProfileInfo } from "../components/ProfileInfo/ProfileInfo";
 import { ProfileHistory } from "../components/ProfileHistory/ProfileHistory";
 import { Tab } from "semantic-ui-react";
 import "./profile.scss";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";

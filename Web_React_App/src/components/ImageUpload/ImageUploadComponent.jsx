@@ -36,6 +36,9 @@ const ImageUploadComponent = () => {
       setShowPrediction(true);
     } catch (error) {
       console.error("Error al realizar la predicción:", error);
+      if (error.isAxiosError && error.response) {
+        console.error("Detalles del error:", error.response.data);
+      }
       setLoading(false);
     }
   };
