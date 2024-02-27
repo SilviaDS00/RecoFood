@@ -226,17 +226,15 @@ const ShowPrediction = ({ predictionResult }) => {
   const predictedClassTranslation =
     translations[classnames[predictionResult.predicted_class]];
 
-  const [gramsInput, setGramsInput] = useState(100); // Default to 100g
+  const [gramsInput, setGramsInput] = useState(100);
   const [calculatedMacros, setCalculatedMacros] = useState(null);
 
-  // Handler for input change
   const handleGramsInputChange = (e) => {
     setGramsInput(e.target.value);
   };
 
-  // Calculate macros based on user input
   const calculateMacros = (grams) => {
-    const multiplier = grams / 100; // Adjust the macros based on the input grams
+    const multiplier = grams / 100;
     return {
       calories: predictedClassInfo.calories_per_100g * multiplier,
       protein: predictedClassInfo.protein_per_100g * multiplier,
@@ -244,7 +242,7 @@ const ShowPrediction = ({ predictionResult }) => {
       carbs: predictedClassInfo.carbs_per_100g * multiplier,
     };
   };
-  // Handler for form submission
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const calculatedMacros = calculateMacros(gramsInput);
@@ -282,22 +280,22 @@ const ShowPrediction = ({ predictionResult }) => {
         </Message>
       </div>
       <div className="form-container">
-      <Form onSubmit={handleSubmit} className="form-macros">
-        <h3>Calcular macros</h3>
-        <label>
-          Introduce los gramos de tu comida para calcular los macronutrientes de
-          una forma más aproximada:
-          <Form.Input
-          className="input-grams"
-            type="number"
-            value={gramsInput}
-            onChange={handleGramsInputChange}
-          />
-        </label>
-        <button type="submit" className="calculate-button">
-          Calcular Macros
-        </button>
-      </Form>
+        <Form onSubmit={handleSubmit} className="form-macros">
+          <h3>Calcular macros</h3>
+          <label>
+            Introduce los gramos de tu comida para calcular los macronutrientes
+            de una forma más aproximada:
+            <Form.Input
+              className="input-grams"
+              type="number"
+              value={gramsInput}
+              onChange={handleGramsInputChange}
+            />
+          </label>
+          <button type="submit" className="calculate-button">
+            Calcular Macros
+          </button>
+        </Form>
       </div>
       {calculatedMacros && (
         <div className="calculated-macros">
