@@ -1,0 +1,173 @@
+.ui.form label {
+  position: relative;
+  bottom: 8px;
+}
+.ui.form .field .ui.input input {
+  border: 2px solid #2080e8;
+  background-color: #fff;
+  color: #1271d6;
+  padding: 14px;
+  border-radius: 6px;
+}
+.ui.form .field .ui.input input:hover, .ui.form .field .ui.input input:active, .ui.form .field .ui.input input:focus {
+  border-color: #1271d6;
+}
+.ui.form .field.error .ui.input input {
+  border-color: #bf0606;
+}
+.ui.form .ui.button[type=submit] {
+  background-color: #2080e8;
+  color: #fff;
+  margin: 0;
+  padding: 15.5px 30px;
+  border-radius: 6px;
+}
+.ui.form .ui.button[type=submit]:hover {
+  background-color: #1271d6;
+}
+
+.ui.menu.secondary.pointing {
+  border-bottom: 2px solid #2080e8;
+}
+.ui.menu.secondary.pointing a.item {
+  color: #2080e8;
+  font-weight: bold !important;
+}
+.ui.menu.secondary.pointing a.item:hover, .ui.menu.secondary.pointing a.item:active, .ui.menu.secondary.pointing a.item:focus {
+  color: #1271d6 !important;
+  border-color: #1271d6 !important;
+}
+.ui.menu.secondary.pointing a.item.active {
+  color: #1271d6;
+  border-color: #1271d6;
+}
+.ui.menu.secondary.pointing a.item > i {
+  color: #2080e8;
+}
+
+.ui.tab.segment.active {
+  background-color: transparent;
+  padding: 20px 0 0 0;
+  border: none !important;
+}
+
+.ui.button.primary {
+  background-color: #2080e8;
+  color: #fff;
+  margin: 0;
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+}
+.ui.button.primary:hover, .ui.button.primary:active, .ui.button.primary:focus {
+  background-color: #1271d6;
+}
+
+.ui.modal.visible.active {
+  background-color: #2080e8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.ui.modal.visible.active > .header {
+  background-color: #fff;
+  color: #1271d6;
+  font-size: 20px;
+  padding: 30px 30px 0 30px;
+}
+.ui.modal.visible.active > .content {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.ui.modal.confirm.visible.active {
+  background-color: #2080e8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.ui.modal.confirm.visible.active > .content {
+  background-color: #2080e8;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 20px 0 20px !important;
+}
+.ui.modal.confirm.visible.active > .actions {
+  background-color: #2080e8;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ui.modal.confirm.visible.active > .actions > .ui.button {
+  width: 48%;
+  padding: 15px !important;
+  margin: 0;
+}
+
+.ui.pagination {
+  border-color: #2080e8;
+  background-color: #fff;
+}
+.ui.pagination > .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2080e8;
+}
+.ui.pagination > .item.active, .ui.pagination > .item:focus, .ui.pagination > .item:hover {
+  background-color: #1271d6 !important;
+  color: #fff !important;
+}
+
+.ui.selection.dropdown.number {
+  background-color: #71b2f7;
+  border-radius: 5px !important;
+}
+.ui.selection.dropdown.number.visible.active {
+  border-color: #1271d6;
+}
+.ui.selection.dropdown.number .divider.text {
+  color: #1271d6;
+}
+.ui.selection.dropdown.number .visible.menu.transition {
+  background-color: #71b2f7;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 0;
+}
+.ui.selection.dropdown.number .visible.menu.transition::-webkit-scrollbar {
+  display: none;
+}
+.ui.selection.dropdown.number .visible.menu.transition .item {
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ui.selection.dropdown.number .visible.menu.transition .item:hover, .ui.selection.dropdown.number .visible.menu.transition .item.active {
+  background-color: #2080e8;
+}
+.ui.selection.dropdown.number .visible.menu.transition .item .text {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  color: #1271d6;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  margin: 0;
+  color: #1271d6;
+}
+
+a:hover {
+  color: #004996;
+}

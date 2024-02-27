@@ -1,0 +1,21 @@
+
+.tabs{
+    position: relative;
+    margin-top: 50px;
+    >div{
+        >a{
+            &:last-of-type{
+                position: absolute !important;
+                right: 0;
+            }
+            &:nth-last-of-type(0){
+                position: absolute !important;
+                right: 50px;
+            }
+        }
+    }
+}
+
+.containerForms{
+    margin-top: 50px;
+}

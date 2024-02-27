@@ -1,0 +1,43 @@
+.ui.form {
+    label {
+      position: relative;
+      bottom: 8px;
+    }
+  
+    .field {
+      .ui.input {
+        input {
+          border: 2px solid $default-blue;
+          background-color: $white;
+          color: $medium-purple;
+          padding: 14px;
+          border-radius: 6px;
+  
+          &:hover,
+          &:active,
+          &:focus {
+            border-color: $medium-purple;
+          }
+        }
+      }
+    }
+  
+    .field.error {
+      .ui.input {
+        input {
+          border-color: $danger;
+        }
+      }
+    }
+  
+    .ui.button[type="submit"] {
+      background-color: $default-blue;
+      color: $white;
+      margin: 0;
+      padding: 15.5px 30px;
+      border-radius: 6px;
+      &:hover{
+        background-color: $medium-purple;
+      }
+    }
+  }

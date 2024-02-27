@@ -1,0 +1,18 @@
+.ui.pagination {
+    border-color: $default-blue;
+    background-color: $white;
+  
+    > .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $default-blue;
+  
+      &.active,
+      &:focus,
+      &:hover {
+        background-color: $medium-purple !important;
+        color: $white !important;
+      }
+    }
+  }

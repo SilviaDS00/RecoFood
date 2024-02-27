@@ -1,0 +1,10 @@
+.ui.button.primary {
+  background-color: #356FFF;
+  color: #fff;
+  margin: 0;
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+}
+.ui.button.primary:hover, .ui.button.primary:active, .ui.button.primary:focus {
+  background-color: #7C4AFF;
+}/*# sourceMappingURL=button.css.map */

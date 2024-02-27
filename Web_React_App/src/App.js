@@ -39,26 +39,26 @@ function App() {
         </div>
 
         <div className="right">
-          {user ? (
-            <>
-              <Link to="/profile" className="menuItem" onClick={logout}>
-                Mi perfil
-              </Link>
-              <Link to="/" className="menuItem" onClick={logout}>
-                Cerrar sesión
-              </Link>
-            </>
-          ) : (
-            <>
-              <Link to="/log-in" className="menuItem">
-                Iniciar sesión
-              </Link>
-              <Link to="/sign-up" className="menuItem">
-                Crear cuenta
-              </Link>
-            </>
-          )}
-        </div>
+        {user ? (
+          <>
+            <Link to="/profile" className="menuItem">
+              Mi perfil
+            </Link>
+            <Link to="/" className="menuItem" onClick={logout}>
+              Cerrar sesión
+            </Link>
+          </>
+        ) : (
+          <>
+            <Link to="/log-in" className="menuItem" >
+              Iniciar sesión
+            </Link>
+            <Link to="/sign-up" className="menuItem">
+              Crear cuenta
+            </Link>
+          </>
+        )}
+      </div>
       </div>
 
       <Routes>

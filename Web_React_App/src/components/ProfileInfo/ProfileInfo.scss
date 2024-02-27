@@ -1,0 +1,48 @@
+@import "~/src/scss/index.scss";
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 0 0;}
+
+.iconUser{
+    background-color: $light-purple !important;
+    color: $dark-purple !important;
+    border-radius: 20px !important;
+    margin: 0 !important;
+    cursor: auto !important;
+    height: 100px;
+    width: 100px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px !important;
+
+    >i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+}
+
+.username{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.name{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.email{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.createdAt{
+    color: $medium-purple;
+    font-size: 0.8rem;
+}

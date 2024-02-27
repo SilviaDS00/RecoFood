@@ -1,0 +1,29 @@
+.contentEmail{
+    display: flex;
+    align-items: center;
+
+    >div{
+        &:nth-child(1),
+        &:nth-child(2){
+            width: 50%;
+            margin: 0 !important;
+        }
+
+        &:nth-child(2){
+            margin-left: 15px !important;
+        }
+
+        &:last-of-type{
+            margin-left: 15px !important;
+        }
+    }
+}
+
+.confirmationMessageEmail{
+    position: absolute;
+    top: 5.3rem;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    color: green;
+}
