@@ -1,0 +1,24 @@
+.card {
+    border: 1px solid #ddd;
+    padding: 10px 5rem 10px 1rem;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    .macros {
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .updatedAt {
+      color: #888;
+      font-size: 12px;
+    }
+  }
+  

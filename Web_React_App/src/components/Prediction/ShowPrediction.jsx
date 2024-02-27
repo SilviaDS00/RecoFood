@@ -1,9 +1,26 @@
 // PredictionComponent.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ShowPrediction.scss";
 import { Form, Message } from "semantic-ui-react";
+import { History } from "../../api/history";
+import { useAuth } from "../../hooks/useAuth";
+
+const historyCtrl = new History();
 
 const ShowPrediction = ({ predictionResult }) => {
+  const { user } = useAuth();
+
+  // useEffect(() => {
+  //   (async () => {
+  //     try{
+  //       const response = await historyCtrl.getHistory(user.id);
+  //     }catch(error){
+  //       console.error(error)
+  //     }
+  //   })()
+  // }, []);
+
+  
   const classnames = [
     "apple_pie",
     "baby_back_ribs",
@@ -212,6 +229,8 @@ const ShowPrediction = ({ predictionResult }) => {
     waffles: "gofres",
   };
 
+  
+
   const classInfo = require("../../data/macronutrientes.json");
   const predictClass = predictionResult.predicted_class;
   const predictedClassInfo = classInfo.find(
@@ -239,11 +258,26 @@ const ShowPrediction = ({ predictionResult }) => {
     };
   };
 
+  const addFoodToHistory = async () => {
+    const response = await historyCtrl.add(
+      user.id,
+      predictedClassTranslation,
+      calculatedMacros
+    );
+    console.log(response);
+  }
+
   // Handler for form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const calculatedMacros = calculateMacros(gramsInput);
     setCalculatedMacros(calculatedMacros);
+    const response = await historyCtrl.add(
+      user.id,
+      predictedClassTranslation,
+      calculatedMacros
+    );
+    console.log(response);
   };
 
   return (
