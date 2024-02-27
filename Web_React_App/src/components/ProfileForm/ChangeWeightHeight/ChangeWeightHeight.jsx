@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import {useAuth} from "../../../hooks/useAuth";
 import {User} from "../../../api/user";
 import { initialValues, validationSchema } from "./ChangeWeightHeight.form";
+import "../ProfileForm.scss";
 
 const userCtrl = new User();
 export function ChangeWeightHeightForm() {
@@ -30,7 +31,7 @@ export function ChangeWeightHeightForm() {
     return (
       <Form onSubmit={formik.handleSubmit}>
         <label>Cambiar Peso y Altura</label>
-        <div className="contentEmail">
+        <div className="content">
           <Form.Input
             type="text"
             name="weight"
@@ -53,7 +54,7 @@ export function ChangeWeightHeightForm() {
         </div>
   
         {isWeightHeightChanged && (
-          <div className="confirmationMessageEmail">
+          <div className="confirmationMessage">
             Se ha cambiado el peso y la altura correctamente.
           </div>
         )}

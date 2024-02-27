@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import {useAuth} from "../../../hooks/useAuth";
 import {User} from "../../../api/user";
 import { initialValues, validationSchema } from "./ChangePassword.form";
+import "../ProfileForm.scss";
 
 const userCtrl = new User();
 export function ChangePasswordForm() {
@@ -30,7 +31,7 @@ export function ChangePasswordForm() {
     return (
       <Form onSubmit={formik.handleSubmit}>
         <label>Cambiar contraseña</label>
-        <div className="contentPassword">
+        <div className="content">
           <Form.Input
             type="password"
             name="password"
@@ -53,7 +54,7 @@ export function ChangePasswordForm() {
         </div>
   
         {isPasswordChanged && (
-          <div className="confirmationMessagePassword">
+          <div className="confirmationMessage">
             Se ha cambiado la contraseña correctamente.
           </div>
         )}

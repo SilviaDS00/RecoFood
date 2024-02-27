@@ -8,9 +8,9 @@ export function ProfileInfo() {
 
   return (
     <div className={styles.info}>
-      {/* <Button icon className={styles.iconUser}>
+      <Button icon className={styles.iconUser}>
         <Icon name="user outline" />
-      </Button> */}
+      </Button>
       <h3 className={styles.username}>@{user.username}</h3>
       <h4 className={styles.name}>{user.firstname} {user.lastname}</h4>
       <h4 className={styles.email}>{user.email}</h4>

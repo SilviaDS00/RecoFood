@@ -3,19 +3,27 @@
     position: relative;
     margin-top: 50px;
     >div{
+        display: flex;
+        justify-content: flex-end;
         >a{
-            &:last-of-type{
+            &:first-of-type{
                 position: absolute !important;
-                right: 0;
+                left: 0;
             }
-            &:nth-last-of-type(0){
-                position: absolute !important;
-                right: 50px;
-            }
+            // &:nth-first-of-type(0){
+            //     position: absolute !important;
+            // }
         }
     }
 }
 
 .containerForms{
     margin-top: 50px;
+}
+
+.contentProfile{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10rem;
+
 }

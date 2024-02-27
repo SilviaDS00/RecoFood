@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import {useAuth} from "../../../hooks/useAuth";
 import {User} from "../../../api/user";
 import { initialValues, validationSchema } from "./ChangeUsername.form";
+import "../ProfileForm.scss";
 
 const userCtrl = new User();
 export function ChangeUsernameForm() {
@@ -30,14 +31,22 @@ export function ChangeUsernameForm() {
     return (
       <Form onSubmit={formik.handleSubmit}>
         <label>Cambiar nombre de usuario</label>
-        <div className="contentUsername">
+        <div className="content">
           <Form.Input
-            type="username"
+            type="text"
             name="username"
             placeholder="Nuevo usuario"
             value={formik.values.username}
             onChange={formik.handleChange}
             error={formik.errors.username}
+          />
+          <Form.Input
+            type="text"
+            name="repeatUsername"
+            placeholder="Repetir usuario"
+            value={formik.values.repeatUsername}
+            onChange={formik.handleChange}
+            error={formik.errors.repeatUsername}
           />
           <Form.Button type="submit" loading={formik.isSubmitting}>
             Cambiar
@@ -45,7 +54,7 @@ export function ChangeUsernameForm() {
         </div>
   
         {isUsernameChanged && (
-          <div className="confirmationMessageUsername">
+          <div className="confirmationMessage">
             Se ha cambiado la contraseña correctamente.
           </div>
         )}

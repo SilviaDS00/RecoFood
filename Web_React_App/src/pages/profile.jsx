@@ -1,38 +1,35 @@
-import React from 'react';
-import ProfileForm from '../components/ProfileForm/ProfileForm';
-import { ProfileInfo } from '../components/ProfileInfo/ProfileInfo';
+import React from "react";
+import ProfileForm from "../components/ProfileForm/ProfileForm";
+import { ProfileInfo } from "../components/ProfileInfo/ProfileInfo";
+import { ProfileHistory } from "../components/ProfileHistory/ProfileHistory";
 import { Tab } from "semantic-ui-react";
-import styles from "./profile.scss";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from 'react-router-dom';
-import {useAuth} from "../hooks/useAuth";
-
-
+import "./profile.scss";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../hooks/useAuth";
 
 const Profile = () => {
-  
   const { logout, user } = useAuth();
   const navigate = useNavigate();
 
   if (!user) {
-    navigate('/');
+    navigate("/");
     return null;
   }
 
   const handleLogout = async () => {
     try {
       // Mostrar Toast de cierre de sesión
-     setTimeout(() => {
+      setTimeout(() => {
         toast.success("¡Sesión cerrada exitosamente!");
-      }
-      , 1000);
+      }, 1000);
 
       // Realizar logout después de mostrar el Toast
       await logout();
 
       // Redirigir a la página principal después del logout
-      navigate('/');
+      navigate("/");
     } catch (error) {
       console.error("Error al cerrar sesión:", error);
     }
@@ -40,11 +37,12 @@ const Profile = () => {
 
   const panes = [
     {
-      menuItem: "Estadísticas",
-      render: () => 
+      menuItem: "Historial",
+      render: () => (
         <Tab.Pane attached={false}>
-          <p>Gráficas</p>
+          <ProfileHistory />
         </Tab.Pane>
+      ),
     },
     {
       menuItem: {
@@ -55,7 +53,6 @@ const Profile = () => {
       render: () => (
         <Tab.Pane attached={false}>
           <ProfileForm />
-
         </Tab.Pane>
       ),
     },
@@ -70,14 +67,14 @@ const Profile = () => {
   ];
 
   return (
-    <>
+    <div className="contentProfile">
         <ProfileInfo />
         <Tab
           menu={{ secondary: true, pointing: true }}
           panes={panes}
-          className={styles.tabs}
+          className='tabs'
         />
-    </>
+    </div>
   );
 };
 

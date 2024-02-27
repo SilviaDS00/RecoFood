@@ -7,7 +7,7 @@ import { ChangeWeightHeightForm } from './ChangeWeightHeight/ChangeWeightHeight'
 const ProfileForm = () => {
 
   return (
-    <div>
+    <div className='profileForm'>
         <ChangePasswordForm />
         <ChangeUsernameForm />
         <ChangeEmailForm />

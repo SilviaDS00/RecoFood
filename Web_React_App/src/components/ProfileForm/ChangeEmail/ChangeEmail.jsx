@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import {useAuth} from "../../../hooks/useAuth";
 import {User} from "../../../api/user";
 import { initialValues, validationSchema } from "./ChangeEmail.form";
+import "../ProfileForm.scss";
 
 const userCtrl = new User();
 export function ChangeEmailForm() {
@@ -30,7 +31,7 @@ export function ChangeEmailForm() {
     return (
       <Form onSubmit={formik.handleSubmit}>
         <label>Cambiar email</label>
-        <div className="contentEmail">
+        <div className="content">
           <Form.Input
             type="email"
             name="email"

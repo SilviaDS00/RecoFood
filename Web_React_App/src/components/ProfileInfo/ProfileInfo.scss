@@ -1,5 +1,3 @@
-@import "~/src/scss/index.scss";
-
 .info{
     display: flex;
     flex-direction: column;
@@ -7,8 +5,8 @@
     padding: 10px 0 0 0;}
 
 .iconUser{
-    background-color: $light-purple !important;
-    color: $dark-purple !important;
+    background-color: blue !important;
+    color: blue !important;
     border-radius: 20px !important;
     margin: 0 !important;
     cursor: auto !important;
@@ -43,6 +41,6 @@
 }
 
 .createdAt{
-    color: $medium-purple;
+    color: blue;
     font-size: 0.8rem;
 }
