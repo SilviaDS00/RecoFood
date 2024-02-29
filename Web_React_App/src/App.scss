@@ -13,21 +13,18 @@
 .menuItem {
   text-decoration: none;
   color: rgb(0, 0, 0);
-}
-  
-.menuItem:hover {
-  text-decoration: underline;
-  color: rgb(255, 111, 0);
-}
+  &:hover {
+    color: #f90; /* Color al pasar el ratón */
+  }
 
-.menuItem:visited {
-  color: rgb(0, 0, 0);
-}
+  &.active {
+    color: #f90; /* Color cuando está activo */
+  }
 
-.menuItem:active {
-  color: rgb(255, 136, 0);
+  &.visited {
+    color: rgb(0, 0, 0); /* Color cuando está visitado */
+  }
 }
-  
   .left {
     display: flex;
     gap: 1rem;
