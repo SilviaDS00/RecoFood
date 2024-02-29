@@ -294,6 +294,7 @@ const ShowPrediction = ({ predictionResult }) => {
               type="number"
               value={gramsInput}
               onChange={handleGramsInputChange}
+              disabled={!user}
             />
           </label>
         </Form>
