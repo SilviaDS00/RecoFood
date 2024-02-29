@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import "./ImageUploadComponent.scss";
 import Prediction from "../Predictions/Prediction"; // Importa la función de predicción
-import ShowPrediction from "../Prediction/ShowPrediction"
+import ShowPrediction from "../Predictions/ShowPrediction"
 
 const ImageUploadComponent = () => {
   const [selectedImage, setSelectedImage] = useState(null);

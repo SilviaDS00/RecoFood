@@ -3,8 +3,8 @@ import Webcam from "react-webcam";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
 import "./WebcamComponent.scss";
-import Prediction from "../Prediction/Prediction";
-import ShowPrediction from "../Prediction/ShowPrediction";
+import Prediction from "../Predictions/Prediction";
+import ShowPrediction from "../Predictions/ShowPrediction";
 
 const WebcamComponent = () => {
   const webcamRef = useRef(null);
