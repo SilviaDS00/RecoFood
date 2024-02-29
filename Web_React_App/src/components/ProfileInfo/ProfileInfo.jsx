@@ -1,6 +1,6 @@
 import React from "react";
 import { useAuth } from "../../hooks/useAuth";
-import { Button, Icon, Form } from "semantic-ui-react";
+import { Button, Icon } from "semantic-ui-react";
 import { DateTime } from "luxon";
 import styles from "./ProfileInfo.scss";
 
