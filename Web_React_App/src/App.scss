@@ -10,19 +10,23 @@
     margin-bottom: 5rem;
   }
   
-  a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-  }
+.menuItem {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
   
-  a:hover {
-    text-decoration: underline;
-    color: rgb(0, 0, 0);
-  }
+.menuItem:hover {
+  text-decoration: underline;
+  color: rgb(255, 111, 0);
+}
 
-  a:visited {
-    color: rgb(0, 0, 0);
-  }
+.menuItem:visited {
+  color: rgb(0, 0, 0);
+}
+
+.menuItem:active {
+  color: rgb(255, 136, 0);
+}
   
   .left {
     display: flex;

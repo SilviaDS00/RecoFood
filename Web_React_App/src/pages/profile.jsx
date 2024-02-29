@@ -2,6 +2,7 @@ import React from "react";
 import ProfileForm from "../components/ProfileForm/ProfileForm";
 import { ProfileInfo } from "../components/ProfileInfo/ProfileInfo";
 import { ProfileHistory } from "../components/ProfileHistory/ProfileHistory";
+import { UserBmi } from "../components/UserBmi/UserBmi";
 import { Tab } from "semantic-ui-react";
 import "./profile.scss";
 import { toast } from "react-toastify";
@@ -41,6 +42,14 @@ const Profile = () => {
       render: () => (
         <Tab.Pane attached={false}>
           <ProfileHistory />
+        </Tab.Pane>
+      ),
+    },
+    {
+      menuItem: "IMC",
+      render: () => (
+        <Tab.Pane attached={false}>
+          <UserBmi />
         </Tab.Pane>
       ),
     },
