@@ -50,10 +50,10 @@ function App() {
           </>
         ) : (
           <>
-            <Link to="/log-in" className="menuItem" >
+            <Link to="/login" className="menuItem" >
               Iniciar sesión
             </Link>
-            <Link to="/sign-up" className="menuItem">
+            <Link to="/register" className="menuItem">
               Crear cuenta
             </Link>
           </>
@@ -65,8 +65,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/chatbot" element={<ChatBot />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/log-in" element={<LoginPage />} />
-        <Route path="/sign-up" element={<SignUpPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<SignUpPage />} />
         <Route path="/profile" element={<Profile />} />
 
       </Routes>

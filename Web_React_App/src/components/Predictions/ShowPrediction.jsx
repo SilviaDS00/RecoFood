@@ -1,14 +1,17 @@
 // PredictionComponent.js
 import React, { useState } from "react";
 import "./ShowPrediction.scss";
-import { Form, Message } from "semantic-ui-react";
+import { Button, Form, Message } from "semantic-ui-react";
 import { History } from "../../api/history";
 import { useAuth } from "../../hooks/useAuth";
+import { useNavigate } from "react-router-dom";
 
 const historyCtrl = new History();
 
 const ShowPrediction = ({ predictionResult }) => {
   const { user } = useAuth();
+
+  const navigate = useNavigate();
 
   const classnames = [
     "apple_pie",
@@ -279,6 +282,7 @@ const ShowPrediction = ({ predictionResult }) => {
           </Message.List>
         </Message>
       </div>
+
       <div className="form-container">
         <Form onSubmit={handleSubmit} className="form-macros">
           <h3>Calcular macros</h3>
@@ -292,11 +296,24 @@ const ShowPrediction = ({ predictionResult }) => {
               onChange={handleGramsInputChange}
             />
           </label>
-          <button type="submit" className="calculate-button">
-            Calcular Macros
-          </button>
         </Form>
       </div>
+      {!user ? (
+            <div className="login-register-container">
+              <label className="login-register">
+                Regístrate o inicia sesión para guardar el historial de tus
+                comidas y calcular los macros
+              </label>
+              <div>
+              <Button onClick={() => navigate("/register")}>Registrarse</Button>
+              <Button onClick={() => navigate("/login")}>Iniciar Sesión</Button>
+              </div>
+            </div>
+          ) : (
+            <Button type="submit" className="calculate-button">
+              Calcular Macros
+            </Button>
+          )}
       {calculatedMacros && (
         <div className="calculated-macros">
           <Message positive>
