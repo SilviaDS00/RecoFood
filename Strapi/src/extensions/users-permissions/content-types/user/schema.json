@@ -80,9 +80,6 @@
     },
     "lastname": {
       "type": "string"
-    },
-    "birthdate": {
-      "type": "date"
     }
   }
 }
