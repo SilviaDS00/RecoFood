@@ -1,3 +1,5 @@
+@import "../../scss/colors.scss";
+
 .user-bmi-container {
   max-width: 600px;
   margin: 0 auto;
@@ -16,7 +18,7 @@
     margin-top: 20px;
 
     button {
-      background-color: #4caf50;
+      background-color: $blue;
       color: white;
       padding: 10px 20px;
       border: none;
@@ -25,7 +27,8 @@
       font-size: 16px;
 
       &:hover {
-        background-color: #45a049;
+        color: white;
+        background-color: $dark-blue;
       }
     }
   }
@@ -38,13 +41,13 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: white;
     p {
       margin: 0;
       font-size: 16px;
   
       b {
-        color: #ff8400;
+        color: $orange;
       }
     }
   }
@@ -58,13 +61,13 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: white;
     p {
       margin: 0;
       font-size: 16px;
   
       b {
-        color: #ff8400;
+        color: $orange;
       }
     }
   }

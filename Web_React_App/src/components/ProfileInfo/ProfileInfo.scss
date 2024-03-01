@@ -1,3 +1,4 @@
+@import "../../scss/colors.scss";
 .info{
     display: flex;
     flex-direction: column;
@@ -9,8 +10,8 @@
     
 
 .iconUser{
-    background-color: rgb(255, 136, 0) !important;
-    color: rgb(255, 255, 255) !important;
+    background-color: $orange !important;
+    color: white !important;
     cursor: auto !important;
     >i{
         display: flex;
@@ -20,8 +21,9 @@
 }
 
 .username{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0;
+    color: $orange;
 }
 
 .name{
@@ -31,15 +33,23 @@
 
 .email{
     font-size: 1rem;
-    // margin-bottom: 10px;
+    margin: 10px 0 0 0;
 }
 
 .createdAt{
-    color: rgb(255, 115, 0);
+    color: $blue;
     font-size: 0.8rem;
+    margin: 10px 0 0 0;
 }
 
 .user-personal-data{
     display: flex;
     gap: 2rem;
+
+}
+
+.title{
+    font-size: 1.8rem;
+    color: $blue;
+    margin: 10px 0;
 }
