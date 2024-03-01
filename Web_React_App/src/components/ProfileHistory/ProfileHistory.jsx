@@ -15,7 +15,6 @@ export function ProfileHistory() {
     (async() => {
       try {
         const response = await historyCtrl.getHistory(user.id);
-        console.log(response);
         setHistory(response.data);
       } catch (error) {
         console.error(error);

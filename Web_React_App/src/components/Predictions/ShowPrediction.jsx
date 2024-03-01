@@ -248,14 +248,13 @@ const ShowPrediction = ({ predictionResult }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const calculatedMacros = calculateMacros(gramsInput);
-    setCalculatedMacros(calculatedMacros);
-    const response = await historyCtrl.add(
-      user.id,
-      predictedClassTranslation,
-      calculatedMacros,
-    );
-    console.log(response);
+    try {
+      const calculatedMacros = calculateMacros(gramsInput);
+      setCalculatedMacros(calculatedMacros);
+      await historyCtrl.add(user.id, predictedClassTranslation, calculatedMacros);
+    } catch (error) {
+      console.error("Error al calcular los macronutrientes:", error);
+    }
   };
 
   return (

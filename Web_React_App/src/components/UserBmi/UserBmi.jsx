@@ -20,7 +20,6 @@ export function UserBmi() {
     e.preventDefault();
     try {
       const result = await predictionBmi(user);
-      console.log(result);
       setPredictionResult(result);
     } catch (error) {
       console.error("Error al realizar la predicción:", error);
