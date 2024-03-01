@@ -3,7 +3,7 @@ import React from 'react';
 function ChatBot() {
   return (
     <div>
-      chatbot page
+      <ChatBot />
     </div>
   );
 }
