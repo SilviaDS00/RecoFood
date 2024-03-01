@@ -8,7 +8,7 @@ import "../ProfileForm.scss";
 
 const userCtrl = new User();
 export function ChangeWeightHeightForm() {
-    const { user, logout } = useAuth();
+    const { user } = useAuth();
     const [isWeightHeightChanged, setIsWeightHeightChanged] = useState(false);
   
     const formik = useFormik({
