@@ -20,7 +20,6 @@ export class History {
 
   async add(userId, food, macros) {
     try {
-      // const filters = `filters[user][id][$eq]=${userId}`;
       const url = `${ENV.API_URL}/${ENV.ENDPOINTS.HISTORY}`;
       const params = {
         method: "POST",
@@ -31,7 +30,7 @@ export class History {
           "data":{
             "user": userId,
             "food": food,
-            "macros": macros
+            "macros": macros,
           }
         }),
       };

@@ -253,7 +253,7 @@ const ShowPrediction = ({ predictionResult }) => {
     const response = await historyCtrl.add(
       user.id,
       predictedClassTranslation,
-      calculatedMacros
+      calculatedMacros,
     );
     console.log(response);
   };
@@ -297,17 +297,20 @@ const ShowPrediction = ({ predictionResult }) => {
               disabled={!user}
             />
           </label>
-        </Form>
-      </div>
-      {!user ? (
+
+          {!user ? (
             <div className="login-register-container">
               <label className="login-register">
                 Regístrate o inicia sesión para guardar el historial de tus
                 comidas y calcular los macros
               </label>
               <div>
-              <Button onClick={() => navigate("/register")}>Registrarse</Button>
-              <Button onClick={() => navigate("/login")}>Iniciar Sesión</Button>
+                <Button onClick={() => navigate("/register")}>
+                  Registrarse
+                </Button>
+                <Button onClick={() => navigate("/login")}>
+                  Iniciar Sesión
+                </Button>
               </div>
             </div>
           ) : (
@@ -315,6 +318,8 @@ const ShowPrediction = ({ predictionResult }) => {
               Calcular Macros
             </Button>
           )}
+        </Form>
+      </div>
       {calculatedMacros && (
         <div className="calculated-macros">
           <Message positive>
