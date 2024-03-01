@@ -5,6 +5,7 @@
     >div{
         display: flex;
         justify-content: flex-end;
+        
         >a{
             &:first-of-type{
                 position: absolute !important;
@@ -24,5 +25,5 @@
 .contentProfile{
     display: flex;
     flex-direction: column;
-    margin: 0 10rem;
+    margin: 0 40rem;
 }

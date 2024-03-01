@@ -27,7 +27,7 @@ const RegisterForm = () => {
         );
 
         setTimeout(() => {
-          navigate("/log-in");
+          navigate("/login");
         }, 2000);
       } catch (error) {
         if (
@@ -118,6 +118,36 @@ const RegisterForm = () => {
           />
         </Form.Group >
         <p>Datos personales</p>
+        <Form.Group widths="equal">
+          <Form.Input
+            fluid
+            className="input-field"
+            name="firstname"
+            type="text"
+            placeholder="Nombre"
+            value={formik.values.firstname}
+            onChange={formik.handleChange}
+            error={
+              formik.touched.firstname && formik.errors.firstname
+                ? formik.errors.firstname
+                : null
+            }
+          />
+          <Form.Input
+            fluid
+            className="input-field"
+            name="lastname"
+            type="text"
+            placeholder="Apellidos"
+            value={formik.values.lastname}
+            onChange={formik.handleChange}
+            error={
+              formik.touched.lastname && formik.errors.lastname
+                ? formik.errors.lastname
+                : null
+            }
+          />
+        </Form.Group>
         <Form.Group widths="equal">
           <Form.Input
             fluid
