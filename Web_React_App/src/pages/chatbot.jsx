@@ -1,6 +1,7 @@
 import React from 'react';
+import ChatBot from '../components/ChatBot/chatbot';
 
-function ChatBot() {
+const ChatBotPage = () => {
   return (
     <div>
       <ChatBot />
@@ -8,4 +9,4 @@ function ChatBot() {
   );
 }
 
-export default ChatBot;
+export default ChatBotPage;

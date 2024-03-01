@@ -16,7 +16,7 @@ const chatWithBot = async (prompt) => {
   }
 };
 
-function ChatBot() {
+const ChatBot = () => {
   const [userInput, setUserInput] = useState('');
   const [chatHistory, setChatHistory] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
