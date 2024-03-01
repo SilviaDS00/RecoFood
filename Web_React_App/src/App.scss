@@ -1,3 +1,5 @@
+@import "./scss/colors.scss";
+
 .topBar {
     display: flex;
     align-items: center;
@@ -11,18 +13,20 @@
   }
   
 .menuItem {
+  font-size: 1.1rem;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: black;
   &:hover {
-    color: #f90; /* Color al pasar el ratón */
+    text-decoration: underline;
+    color: $orange; /* Color al pasar el ratón */
   }
 
   &.active {
-    color: #f90; /* Color cuando está activo */
+    color: $orange; /* Color cuando está activo */
   }
 
   &.visited {
-    color: rgb(0, 0, 0); /* Color cuando está visitado */
+    color: black; /* Color cuando está visitado */
   }
 }
   .left {
@@ -31,13 +35,18 @@
     width: 30%;
     padding-left: 5rem;
     a{
-      font-size: 1.3rem;
-  
+      margin-top: auto;
+      font-size: 1.4rem;
+      color: $orange;
+      font-weight: bold;
+      &:hover {
+        color: $orange; /* Color al pasar el ratón */
+      }
     }
   }
 
   .center {
-    color: rgb(0, 0, 0);
+    color: black;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -46,7 +55,7 @@
   }
   
   .right {
-    color: rgb(0, 0, 0);
+    color: black;
     display: flex;
     width: 30%;
     gap: 1rem;

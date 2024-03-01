@@ -259,8 +259,8 @@ const ShowPrediction = ({ predictionResult }) => {
 
   return (
     <div className="prediction-result">
-      <h3>La comida escaneada es... </h3>
-      <p>{predictedClassTranslation || predictClass}</p>
+      <h3 className="prediction-title">La comida escaneada es... </h3>
+      <p><b>{predictedClassTranslation || predictClass}</b></p>
       <hr />
       <div className="macros-info">
         <Message>
@@ -284,7 +284,7 @@ const ShowPrediction = ({ predictionResult }) => {
 
       <div className="form-container">
         <Form onSubmit={handleSubmit} className="form-macros">
-          <h3>Calcular macros</h3>
+          <h3 className="macros-title">Calcular macros</h3>
           <label>
             Introduce los gramos de tu comida para calcular los macronutrientes
             de una forma más aproximada:

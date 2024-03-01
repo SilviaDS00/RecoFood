@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@import "../../scss/colors.scss";
 .webcam-container {
   padding: 2rem 0 2rem 0;
   display: flex;
@@ -19,14 +19,14 @@
   width: 20rem;
   font-size: 16px;
   color: #fff;
-  background-color: #35cd51;
+  background-color: $orange;
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
   border:none;
 
   &:hover {
-    background-color: #23af3d;
+    background-color: $dark-orange;
   }
 
   &:focus {
