@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useAuth } from "../../hooks/useAuth";
 import { Button, Form } from "semantic-ui-react";
 import predictionBmi from "../Predictions/Prediction_bmi";
+import "./UserBmi.scss";
 
 export function UserBmi() {
   const { user } = useAuth();
@@ -30,7 +31,7 @@ export function UserBmi() {
   };
 
   return (
-    <div>
+    <div className="user-bmi-container">
       <h3>IMC</h3>
       <p>
         El índice de masa corporal (IMC) es una medida de asociación entre el
@@ -41,13 +42,12 @@ export function UserBmi() {
       <p>Peso: {user.weight}kg</p>
       <p>Altura: {user.height}m</p>
 
-      <Form onSubmit={handleSumit}>
-        <Button type="submit">
-          Predecir IMC
-        </Button>
+      <Form className="form-container" onSubmit={handleSumit}>
+        <Button type="submit">Predecir IMC</Button>
       </Form>
+
       {predictionResult && (
-        <div>
+        <div className="prediction-result">
           <h3>Resultado de la predicción:</h3>
           <p>
             Su IMC es de: <strong>{predictionResult.bmi}</strong>
