@@ -3,13 +3,13 @@ import { Form } from "semantic-ui-react";
 import { useFormik } from "formik";
 import {useAuth} from "../../../hooks/useAuth";
 import {User} from "../../../api/user";
-import { initialValues, validationSchema } from "./ChangeEmail.form";
+import { initialValues, validationSchema } from "./ChangeName.form";
 import "../ProfileForm.scss";
 
 const userCtrl = new User();
-export function ChangeEmailForm() {
-    const { user, logout } = useAuth();
-    const [isEmailChanged, setIsEmailChanged] = useState(false);
+export function ChangeName() {
+    const { user } = useAuth();
+    const [isNameChanged, setIsNameChanged] = useState(false);
   
     const formik = useFormik({
       initialValues: initialValues(),
@@ -17,10 +17,10 @@ export function ChangeEmailForm() {
       validateOnChange: false,
       onSubmit: async (formValue) => {
         try {
-          await userCtrl.updateMe(user.id, { email: formValue.email });
-          setIsEmailChanged(true);
+          await userCtrl.updateMe(user.id, { firstname: formValue.firstname, lastname: formValue.lastname});
+          setIsNameChanged(true);
           setTimeout(() => {
-            setIsEmailChanged(false);
+            setIsNameChanged(false);
           }, 3000);
         } catch (error) {
           throw error;
@@ -30,32 +30,32 @@ export function ChangeEmailForm() {
   
     return (
       <Form onSubmit={formik.handleSubmit}>
-        <label>Cambiar email</label>
+        <label>Cambiar nombre y apellidos</label>
         <div className="content">
           <Form.Input
-            type="email"
-            name="email"
-            placeholder="Nuevo email"
-            value={formik.values.email}
+            type="text"
+            name="firstname"
+            placeholder="Nombre"
+            value={formik.values.firstname}
             onChange={formik.handleChange}
-            error={formik.errors.email}
+            error={formik.errors.firstname}
           />
           <Form.Input
-            type="email"
-            name="repeatEmail"
-            placeholder="Repetir email"
-            value={formik.values.repeatEmail}
+            type="text"
+            name="lastname"
+            placeholder="Apellidos"
+            value={formik.values.lastname}
             onChange={formik.handleChange}
-            error={formik.errors.repeatEmail}
+            error={formik.errors.lastname}
           />
           <Form.Button type="submit" loading={formik.isSubmitting}>
             Cambiar
           </Form.Button>
         </div>
   
-        {isEmailChanged && (
-          <div className="confirmationMessageEmail">
-            Se ha cambiado el email correctamente.
+        {isNameChanged && (
+          <div className="confirmationMessage">
+            Se ha cambiado el nombre y apellidos correctamente.
           </div>
         )}
       </Form>
