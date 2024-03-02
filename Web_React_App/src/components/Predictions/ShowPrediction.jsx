@@ -257,10 +257,46 @@ const ShowPrediction = ({ predictionResult }) => {
     }
   };
 
+  const [showSimilar, setShowSimilar] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(null);
+
+
+  const handleShowSimilarClick = () => {
+    setShowSimilar(true);
+  };
+
+  const handleHideSimilarClick = () => {
+    setShowSimilar(false);
+  };
+    const handleOptionClick = (option) => {
+    // Aquí puedes realizar la lógica para actualizar los macros y el resultado según la opción seleccionada.
+    setSelectedOption(option);
+  };
+
+  const topClasses = predictionResult.top5_classes.map((classIndex) => ({
+    classIndex,
+    className: classnames[classIndex],
+    translation: translations[classnames[classIndex]],
+  }));
+
   return (
     <div className="prediction-result">
       <h3 className="prediction-title">La comida escaneada es... </h3>
       <p><b>{predictedClassTranslation || predictClass}</b></p>
+      <p className="incorrect-prediction">No es correcto?</p>
+      <Button onClick={handleShowSimilarClick} className="more-options">Ver opciones aproximadas</Button>
+      {showSimilar && (
+        <div className="similar-options">
+          <div>
+            {topClasses.map((option) => (
+              <p key={option.classIndex}>
+                {option.translation || option.className}
+              </p>
+            ))}
+          </div>
+          <Button onClick={handleHideSimilarClick}>Ocultar opciones aproximadas</Button>
+        </div>
+      )}
       <hr />
       <div className="macros-info">
         <Message>
