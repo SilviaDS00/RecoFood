@@ -11,7 +11,6 @@ const predictImage = async (imageBlob) => {
       },
       withCredentials: true,
     });
-    console.log('Predicción realizada:', response.data);
     return response.data;
   } catch (error) {
     console.error('Error al realizar la predicción:', error);

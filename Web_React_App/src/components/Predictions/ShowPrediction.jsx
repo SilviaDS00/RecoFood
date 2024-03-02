@@ -251,15 +251,18 @@ const ShowPrediction = ({ predictionResult }) => {
     try {
       const calculatedMacros = calculateMacros(gramsInput);
       setCalculatedMacros(calculatedMacros);
-      await historyCtrl.add(user.id, predictedClassTranslation, calculatedMacros);
+      await historyCtrl.add(
+        user.id,
+        predictedClassTranslation,
+        calculatedMacros
+      );
     } catch (error) {
       console.error("Error al calcular los macronutrientes:", error);
     }
   };
 
   const [showSimilar, setShowSimilar] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
-
+  // const [selectedOption, setSelectedOption] = useState(null);
 
   const handleShowSimilarClick = () => {
     setShowSimilar(true);
@@ -268,9 +271,19 @@ const ShowPrediction = ({ predictionResult }) => {
   const handleHideSimilarClick = () => {
     setShowSimilar(false);
   };
-    const handleOptionClick = (option) => {
-    // Aquí puedes realizar la lógica para actualizar los macros y el resultado según la opción seleccionada.
-    setSelectedOption(option);
+  const handleOptionClick = (option) => {
+    // Actualizar los macros y el resultado según la opción seleccionada
+    // setSelectedOption(option);
+  
+    // Puedes acceder a la información de la opción seleccionada, por ejemplo:
+    const selectedClassInfo = classInfo.find((item) => item.name === option.className);
+  
+    predictionResult.predicted_class = option.classIndex;
+    predictionResult.predicted_class_name = option.className;
+    predictedClassInfo.calories_per_100g = selectedClassInfo.calories_per_100g;
+    predictedClassInfo.protein_per_100g = selectedClassInfo.protein_per_100g;
+    predictedClassInfo.fat_per_100g = selectedClassInfo.fat_per_100g;
+    predictedClassInfo.carbs_per_100g = selectedClassInfo.carbs_per_100g;
   };
 
   const topClasses = predictionResult.top5_classes.map((classIndex) => ({
@@ -282,19 +295,31 @@ const ShowPrediction = ({ predictionResult }) => {
   return (
     <div className="prediction-result">
       <h3 className="prediction-title">La comida escaneada es... </h3>
-      <p><b>{predictedClassTranslation || predictClass}</b></p>
+      <p>
+        <b>{predictedClassTranslation || predictClass}</b>
+      </p>
       <p className="incorrect-prediction">No es correcto?</p>
-      <Button onClick={handleShowSimilarClick} className="more-options">Ver opciones aproximadas</Button>
+      <Button onClick={handleShowSimilarClick} className="more-options">
+        Ver opciones aproximadas
+      </Button>
       {showSimilar && (
-        <div className="similar-options">
-          <div>
+        <div className="similar-options-container">
+          <div className="similar-options-buttons">
             {topClasses.map((option) => (
-              <p key={option.classIndex}>
-                {option.translation || option.className}
-              </p>
+              <div>
+                Mi comida es{" "}
+                <button
+                  key={option.classIndex}
+                  onClick={() => handleOptionClick(option)}
+                >
+                  {option.translation || option.className}
+                </button>
+              </div>
             ))}
           </div>
-          <Button onClick={handleHideSimilarClick}>Ocultar opciones aproximadas</Button>
+          <Button onClick={handleHideSimilarClick}>
+            Ocultar opciones aproximadas
+          </Button>
         </div>
       )}
       <hr />
