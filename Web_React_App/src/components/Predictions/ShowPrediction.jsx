@@ -262,7 +262,7 @@ const ShowPrediction = ({ predictionResult }) => {
   };
 
   const [showSimilar, setShowSimilar] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [, setSelectedOption] = useState(null);
 
   const handleShowSimilarClick = () => {
     setShowSimilar(true);
