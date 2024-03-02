@@ -262,7 +262,7 @@ const ShowPrediction = ({ predictionResult }) => {
   };
 
   const [showSimilar, setShowSimilar] = useState(false);
-  // const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(null);
 
   const handleShowSimilarClick = () => {
     setShowSimilar(true);
@@ -273,7 +273,7 @@ const ShowPrediction = ({ predictionResult }) => {
   };
   const handleOptionClick = (option) => {
     // Actualizar los macros y el resultado según la opción seleccionada
-    // setSelectedOption(option);
+    setSelectedOption(option);
   
     // Puedes acceder a la información de la opción seleccionada, por ejemplo:
     const selectedClassInfo = classInfo.find((item) => item.name === option.className);
@@ -305,9 +305,9 @@ const ShowPrediction = ({ predictionResult }) => {
       {showSimilar && (
         <div className="similar-options-container">
           <div className="similar-options-buttons">
-            {topClasses.map((option) => (
+            <p>Por favor, selecciona el nombre correcto de tu comida</p>
+            {topClasses.slice(1).map((option) => (
               <div>
-                Mi comida es{" "}
                 <button
                   key={option.classIndex}
                   onClick={() => handleOptionClick(option)}

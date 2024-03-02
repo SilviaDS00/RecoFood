@@ -84,7 +84,7 @@ def prediction(request):
             # Realiza la predicción con el modelo cargado
             prediction = model.predict(image)
             # En este ejemplo, simplemente se obtiene la clase con la mayor probabilidad
-            top5_classes = np.argsort(-prediction[0])[:5]
+            top5_classes = np.argsort(-prediction[0])[:6]
             print("Top 5 clases: ",top5_classes)
 # En este ejemplo, simplemente se obtiene la clase con la mayor probabilidad
             predicted_class = top5_classes[0]
