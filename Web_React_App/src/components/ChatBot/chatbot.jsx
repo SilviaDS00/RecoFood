@@ -92,28 +92,18 @@ const Chatbot = () => {
   };
   
   return (
-    <div>
-      <div
-        style={{
-          height: "300px",
-          overflowY: "auto",
-          border: "1px solid #ccc",
-          padding: "10px",
-        }}
-      >
+    <div className="Chatbot">
+      <div className="chat-container">
         {messages.map((message, index) => (
           <div
             key={index}
-            style={{
-              marginBottom: "10px",
-              color: message.sender === "user" ? "blue" : "green",
-            }}
+            className={`message ${message.sender}`}
           >
             {message.text}
           </div>
         ))}
       </div>
-      <div style={{ marginTop: "10px" }}>
+      <div className="input-container">
         <input type="text" value={input} onChange={handleInputChange} />
         <button onClick={sendMessage}>Enviar</button>
       </div>
