@@ -54,36 +54,39 @@ def chatbot_view(request):
         return JsonResponse({"error": "Método no permitido"}, status=405)
 
     
-model = tf.keras.models.load_model("model/best_model_densenet.h5")
+model = tf.keras.models.load_model('model/best_model_densenet.h5')
 @csrf_exempt
 def prediction(request):
     if request.method == "POST":
         try:
-
+        
             # Obtén la imagen del cuerpo de la solicitud POST
-            image_data = request.FILES["imagen"].read()
-            print(image_data)
+            image_data = request.FILES['imagen'].read()
             image = Image.open(io.BytesIO(image_data))
 
             # Preprocesa la imagen para que coincida con el formato esperado por el modelo
-            image = image.resize((224, 224))
+            image = image.resize((150, 150)) 
             image = np.array(image) / 255.0
             image = np.expand_dims(image, axis=0)
 
             # Realiza la predicción con el modelo cargado
             prediction = model.predict(image)
             # En este ejemplo, simplemente se obtiene la clase con la mayor probabilidad
-            predicted_class = np.argmax(prediction)
+            top5_classes = np.argsort(-prediction[0])[:6]
+            print("Top 5 clases: ",top5_classes)
+# En este ejemplo, simplemente se obtiene la clase con la mayor probabilidad
+            predicted_class = top5_classes[0]
 
             # Devuelve la respuesta en formato JSON
             response_data = {
                 "message": "Predicción exitosa",
                 "predicted_class": int(predicted_class),
                 "confidence": float(prediction[0][predicted_class]),
+                "top5_classes": top5_classes.astype(int).tolist() if top5_classes is not None else None
             }
             return JsonResponse(response_data)
         except Exception as e:
-            return JsonResponse({"error": str(e)}, status=500)
+                return JsonResponse({"error": str(e)}, status=500)
 
     elif request.method == "GET":
         response_data = {
@@ -93,7 +96,6 @@ def prediction(request):
 
     else:
         return JsonResponse({"message": "Método no permitido"}, status=405)
-
 
 import json
 from django.http import JsonResponse, HttpResponseBadRequest
