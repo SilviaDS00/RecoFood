@@ -20,15 +20,15 @@ const Chatbot = () => {
 
     if (step === 0) {
       setIdioma(input);
-      setMessages([...newMessages, { text: "Ingrese los ingredientes que tiene: ", sender: "bot" }]);
+      setMessages(prevMessages => [...prevMessages, { text: "Ingrese los ingredientes que tiene: ", sender: "bot" }]);
       setStep(1);
     } else if (step === 1) {
       const ingredientes = input.split(",");
-      setMessages([...newMessages, { text: "Buscando recetas...", sender: "bot" }]);
+      setMessages(prevMessages => [...prevMessages, { text: "Buscando recetas...", sender: "bot" }]);
       buscarRecetas(ingredientes);
     } else if (step === 2) {
       const nombreReceta = input;
-      setMessages([...messages, { text: `Seleccionaste la receta: ${nombreReceta}`, sender: "bot" }]);
+      setMessages(prevMessages => [...prevMessages, { text: `Seleccionaste la receta: ${nombreReceta}`, sender: "bot" }]);
       mostrarReceta(nombreReceta);
     }
   };
@@ -50,8 +50,8 @@ const Chatbot = () => {
           ? data.resultados.map((receta) => receta.nombre || "Nombre no disponible")
           : [];
 
-      setMessages([
-        ...messages,
+      setMessages(prevMessages => [
+        ...prevMessages,
         { text: "Recetas encontradas:", sender: "bot" },
         ...nombresRecetas.map((nombreReceta) => ({ text: `- ${nombreReceta}`, sender: "bot" })),
         { text: "Selecciona la receta de la que quieras ver la elaboración:", sender: "bot" },
@@ -71,9 +71,9 @@ const Chatbot = () => {
         },
         body: JSON.stringify({ nombreReceta, idioma }),
       });
-  
+
       const data = await response.json();
-  
+
       const botResponse = data.receta
         ? {
           text: `Receta: ${data.receta.nombre || "Nombre no disponible"
@@ -85,8 +85,8 @@ const Chatbot = () => {
           sender: "bot",
         }
         : { text: "Receta no encontrada.", sender: "bot" };
-  
-      setMessages([...messages, botResponse]);
+
+      setMessages(prevMessages => [...prevMessages, botResponse]);
     } catch (error) {
       console.error("Error al obtener detalles de la receta:", error);
     }
