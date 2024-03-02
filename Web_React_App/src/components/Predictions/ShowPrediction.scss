@@ -10,6 +10,17 @@
     color: $blue;
   }
 
+  .incorrect-prediction{
+    font-size: 0.8rem;
+    color: red;
+  }
+
+  .more-options{
+    font-size: 0.8rem;
+    color: $orange;
+    cursor: pointer;
+  }
+
   hr {
     border: 0;
     height: 1px;
@@ -84,3 +95,4 @@
   margin: 1rem 0;
   font-size: 1rem;
 }
+
