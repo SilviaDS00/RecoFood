@@ -254,7 +254,8 @@ const ShowPrediction = ({ predictionResult }) => {
       await historyCtrl.add(
         user.id,
         predictedClassTranslation,
-        calculatedMacros
+        calculatedMacros,
+        gramsInput
       );
     } catch (error) {
       console.error("Error al calcular los macronutrientes:", error);

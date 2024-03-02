@@ -382,6 +382,7 @@ export interface ApiHistoryHistory extends Schema.CollectionType {
       'plugin::users-permissions.user'
     >;
     image: Attribute.Media;
+    grams: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
