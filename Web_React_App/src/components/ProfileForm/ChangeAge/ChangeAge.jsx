@@ -3,13 +3,13 @@ import { Form } from "semantic-ui-react";
 import { useFormik } from "formik";
 import {useAuth} from "../../../hooks/useAuth";
 import {User} from "../../../api/user";
-import { initialValues, validationSchema } from "./ChangeEmail.form";
+import { initialValues, validationSchema } from "./ChangeAge.form";
 import "../ProfileForm.scss";
 
 const userCtrl = new User();
-export function ChangeEmailForm() {
+export function ChangeAge() {
     const { user, logout } = useAuth();
-    const [isEmailChanged, setIsEmailChanged] = useState(false);
+    const [isAgeChanged, setIsAgeChanged] = useState(false);
   
     const formik = useFormik({
       initialValues: initialValues(),
@@ -17,10 +17,10 @@ export function ChangeEmailForm() {
       validateOnChange: false,
       onSubmit: async (formValue) => {
         try {
-          await userCtrl.updateMe(user.id, { email: formValue.email });
-          setIsEmailChanged(true);
+          await userCtrl.updateMe(user.id, { age: formValue.age });
+          setIsAgeChanged(true);
           setTimeout(() => {
-            setIsEmailChanged(false);
+            setIsAgeChanged(false);
           }, 3000);
         } catch (error) {
           throw error;
@@ -30,32 +30,24 @@ export function ChangeEmailForm() {
   
     return (
       <Form onSubmit={formik.handleSubmit}>
-        <label>Cambiar email</label>
+        <label>Cambiar edad</label>
         <div className="content">
           <Form.Input
-            type="email"
-            name="email"
-            placeholder="Nuevo email"
-            value={formik.values.email}
+            type="text"
+            name="age"
+            placeholder="Edad"
+            value={formik.values.age}
             onChange={formik.handleChange}
-            error={formik.errors.email}
-          />
-          <Form.Input
-            type="email"
-            name="repeatEmail"
-            placeholder="Repetir email"
-            value={formik.values.repeatEmail}
-            onChange={formik.handleChange}
-            error={formik.errors.repeatEmail}
+            error={formik.errors.age}
           />
           <Form.Button type="submit" loading={formik.isSubmitting}>
             Cambiar
           </Form.Button>
         </div>
   
-        {isEmailChanged && (
+        {isAgeChanged && (
           <div className="confirmationMessageEmail">
-            Se ha cambiado el email correctamente.
+            Se ha cambiado la edad correctamente.
           </div>
         )}
       </Form>

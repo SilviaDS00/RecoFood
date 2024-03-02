@@ -1,7 +1,7 @@
 import { useAuth } from "../../hooks/useAuth";
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { History } from "../../api/history";
-import {map} from "lodash";
+import { map } from "lodash";
 import { FoodComponent } from "./FoodComponent/FoodComponent";
 
 const historyCtrl = new History();
@@ -12,10 +12,9 @@ export function ProfileHistory() {
   const { user } = useAuth();
 
   useEffect(() => {
-    (async() => {
+    (async () => {
       try {
         const response = await historyCtrl.getHistory(user.id);
-        console.log(response);
         setHistory(response.data);
       } catch (error) {
         console.error(error);
@@ -23,15 +22,12 @@ export function ProfileHistory() {
     })();
   }, []);
 
-  if (!history) return <div>Historial vacío</div>;
-
   return (
-    <div >
-
-          {map(history, (hist) => (
-            <FoodComponent key={hist.id} history={hist} />
-          ))}
-
+    <div>
+      {!history ? <div>Historial vacío</div> : <></>}
+      {map(history, (hist) => (
+        <FoodComponent key={hist.id} history={hist} />
+      ))}
     </div>
   );
 }

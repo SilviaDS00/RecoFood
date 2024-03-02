@@ -55,7 +55,7 @@ export function ChangeUsernameForm() {
   
         {isUsernameChanged && (
           <div className="confirmationMessage">
-            Se ha cambiado la contraseña correctamente.
+            Se ha cambiado el nombre de usuario correctamente.
           </div>
         )}
       </Form>

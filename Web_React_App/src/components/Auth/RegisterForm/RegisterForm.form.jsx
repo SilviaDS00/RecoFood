@@ -6,6 +6,8 @@ export function initialValues() {
     username: "",
     password: "",
     passwordConfirmation: "",  
+    firstname: "",
+    lastname: "",
     age: "",
     weight: "",
     height: "",
@@ -19,7 +21,9 @@ export function validationSchema() {
     password: Yup.string().required("Introduce una contraseña"),
     passwordConfirmation: Yup.string()
       .oneOf([Yup.ref('password'), null], 'Las contraseñas deben coincidir') 
-      .required('Debes confirmar tu contraseña'), 
+      .required('Debes confirmar tu contraseña'),
+    firstname: Yup.string().required("Introduce tu nombre"), 
+    lastname: Yup.string().required("Introduce tus apellidos"),
     age: Yup.string().required("Introduce tu edad"),
     weight: Yup.string().required("Introduce tu peso"),
     height: Yup.string().required("Introduce tu altura"),

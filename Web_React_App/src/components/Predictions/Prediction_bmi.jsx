@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const predictionBmi = async (user) => {
-    console.log(user);
   try {
 
     const response = await axios.post('http://localhost:8000/prediction-bmi/', user, {

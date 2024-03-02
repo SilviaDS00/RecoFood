@@ -9,8 +9,8 @@ const predictImage = async (imageBlob) => {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
+      withCredentials: true,
     });
-
     return response.data;
   } catch (error) {
     console.error('Error al realizar la predicción:', error);
