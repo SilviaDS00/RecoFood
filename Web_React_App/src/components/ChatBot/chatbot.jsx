@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./chatbot.scss";
 
 const Chatbot = () => {
   const [input, setInput] = useState("");
@@ -97,9 +98,12 @@ const Chatbot = () => {
         {messages.map((message, index) => (
           <div
             key={index}
-            className={`message ${message.sender}`}
+            className={`message ${message.sender === "user" ? "user" : "bot"}`}
           >
+            {message.sender === "user" && <div className="user-icon">👤</div>}
+            {message.sender === "bot" && <div className="bot-icon">🤖</div>}
             {message.text}
+            
           </div>
         ))}
       </div>

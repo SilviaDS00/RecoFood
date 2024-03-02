@@ -1,0 +1,59 @@
+// Chatbot.scss
+
+.Chatbot {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  
+    .chat-container {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      max-height: 300px;
+      overflow-y: auto;
+      padding: 10px;
+      margin-bottom: 10px;
+  
+      .message {
+        padding: 8px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+  
+        &.bot {
+          background-color: #dfdfdf;
+        }
+  
+        &.user {
+          background-color: #beeaff;
+        }
+      }
+    }
+  
+    .input-container {
+      display: flex;
+      align-items: center;
+  
+      input {
+        flex-grow: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+  
+      button {
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  
