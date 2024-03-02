@@ -1,120 +1,87 @@
-@import "../../scss/colors.scss";
-
 .prediction-result {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-
-  .prediction-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: $blue;
+    // margin: 20px;
+    // padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+  
+    h3 {
+      font-size: 1.2em;
+      color: #333;
+    }
+  
+    hr {
+      border: 0;
+      height: 1px;
+      background: #ccc;
+      margin: 10px 0;
+    }
+  
+    p {
+      margin: 8px 0;
+  
+      b {
+        font-weight: bold;
+      }
+    }
   }
+  
 
-  .incorrect-prediction{
-    font-size: 0.8rem;
-    color: red;
-  }
-
-  .more-options{
-    font-size: 0.8rem;
-    color: $orange;
+  .calculate-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4caf50; /* Green background color */
+    color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
   }
 
-  .similar-options-buttons{
+  .calculate-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+
+  .form-container-macros {
+    max-width: 40rem;
+    margin: 0 auto 2rem auto;
+    padding: 20px;
+
+  }
+
+  .form-macros{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    padding: 1rem 3rem;
 
-    button {
-      margin: 5px 0;
-      padding: 8px 12px;
-      background-color: $blue;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: $dark-orange;
+    >label{
+      width: 30rem;
     }
   }
 
-  hr {
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    margin: 10px 0;
+  .macros-info{
+    margin-bottom: 2rem;
+    padding: 0 5rem;
   }
 
-  p {
-    margin: 8px 0;
-    color: $orange;
-    b {
-      font-weight: bold;
-    }
+  .calculated-macros{
+    margin: 2rem 0;
+    padding: 0 5rem;
   }
-}
-
-.calculate-button {
-  margin-top: 10px;
-  padding: 8px 12px;
-  background-color: $orange;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.calculate-button:hover {
-  background-color: $dark-orange;
-}
-
-.form-container-macros {
-  max-width: 40rem;
-  margin: 0 auto 2rem auto;
-  padding: 20px;
-}
-
-.form-macros {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 3rem;
-
-  .macros-title {
-    color: $blue;
+  .login-register-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem;
   }
-
-  > label {
-    width: 30rem;
-    margin-bottom: 1rem;
+  .login-register{
+    color: red;
+    margin: 1rem 0;
+    font-size: 1rem;
   }
-}
-
-.macros-info {
-  margin-bottom: 2rem;
-  padding: 0 5rem;
-}
-
-.calculated-macros {
-  margin: 2rem 0;
-  padding: 0 5rem;
-}
-.login-register-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 3rem;
-}
-.login-register {
-  color: red;
-  margin: 1rem 0;
-  font-size: 1rem;
-}
-

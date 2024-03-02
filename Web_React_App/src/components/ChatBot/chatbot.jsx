@@ -1,39 +1,124 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from "react";
 
-function Chat() {
-    const [userInput, setUserInput] = useState('');
-    const [chatHistory, setChatHistory] = useState([]);
+const Chatbot = () => {
+  const [input, setInput] = useState("");
+  const [messages, setMessages] = useState([]);
+  const [idioma, setIdioma] = useState("");
+  const [step, setStep] = useState(0);
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-    
-        // Imprime el valor de userInput en la consola
-        console.log("Valor de userInput:", userInput);
-    
-        try {
-            const response = await axios.post('http://localhost:8000/chatbot/', { prompt: userInput });
-            console.log(response);  // Imprime la respuesta del servidor
-            setChatHistory([...chatHistory, { role: 'user', text: userInput }, { role: 'assistant', text: response.data.message }]);
-            setUserInput('');
-        } catch (error) {
-            console.error('Error al enviar la solicitud:', error);
-            // Maneja el error apropiadamente en tu aplicación React
+  const handleInputChange = (e) => {
+    setInput(e.target.value);
+  };
+
+  const sendMessage = async () => {
+    if (!input.trim()) return;
+
+    const newMessages = [...messages, { text: input, sender: "user" }];
+    setMessages(newMessages);
+    setInput("");
+
+    if (step === 0) {
+      setIdioma(input);
+      setMessages([...newMessages, { text: "Ingrese los ingredientes que tiene: ", sender: "bot" }]);
+      setStep(1);
+    } else if (step === 1) {
+      const ingredientes = input.split(",");
+      setMessages([...newMessages, { text: "Buscando recetas...", sender: "bot" }]);
+      buscarRecetas(ingredientes);
+    } else if (step === 2) {
+      const nombreReceta = input;
+      setMessages([...messages, { text: `Seleccionaste la receta: ${nombreReceta}`, sender: "bot" }]);
+      mostrarReceta(nombreReceta);
+    }
+  };
+
+  const buscarRecetas = async (ingredientes) => {
+    try {
+      const response = await fetch("http://localhost:8000/chatbot/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ingredientes, idioma }),
+      });
+
+      const data = await response.json();
+
+      const nombresRecetas =
+        data.resultados && Array.isArray(data.resultados)
+          ? data.resultados.map((receta) => receta.nombre || "Nombre no disponible")
+          : [];
+
+      setMessages([
+        ...messages,
+        { text: "Recetas encontradas:", sender: "bot" },
+        ...nombresRecetas.map((nombreReceta) => ({ text: `- ${nombreReceta}`, sender: "bot" })),
+        { text: "Selecciona la receta de la que quieras ver la elaboración:", sender: "bot" },
+      ]);
+      setStep(2);
+    } catch (error) {
+      console.error("Error al consultar recetas:", error);
+    }
+  };
+
+  const mostrarReceta = async (nombreReceta) => {
+    try {
+      const response = await fetch("http://localhost:8000/chatbot/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ nombreReceta, idioma }),
+      });
+  
+      const data = await response.json();
+  
+      const botResponse = data.receta
+        ? {
+          text: `Receta: ${data.receta.nombre || "Nombre no disponible"
+            }\nIngredientes:\n${data.receta.ingredientes
+              ? data.receta.ingredientes.map((ingrediente) => `- ${ingrediente}`).join("\n")
+              : "Ingredientes no disponibles"
+            }\nPasos:\n${data.receta.pasos ? data.receta.pasos.map((paso, i) => `${i + 1}. ${paso}`).join("\n") : "Pasos no disponibles"
+            }`,
+          sender: "bot",
         }
-    };
-    
+        : { text: "Receta no encontrada.", sender: "bot" };
+  
+      setMessages([...messages, botResponse]);
+    } catch (error) {
+      console.error("Error al obtener detalles de la receta:", error);
+    }
+  };
+  
+  return (
+    <div>
+      <div
+        style={{
+          height: "300px",
+          overflowY: "auto",
+          border: "1px solid #ccc",
+          padding: "10px",
+        }}
+      >
+        {messages.map((message, index) => (
+          <div
+            key={index}
+            style={{
+              marginBottom: "10px",
+              color: message.sender === "user" ? "blue" : "green",
+            }}
+          >
+            {message.text}
+          </div>
+        ))}
+      </div>
+      <div style={{ marginTop: "10px" }}>
+        <input type="text" value={input} onChange={handleInputChange} />
+        <button onClick={sendMessage}>Enviar</button>
+      </div>
+    </div>
+  );
+};
 
-    return (
-        <div>
-            {chatHistory.map((message, index) => (
-                <p key={index}><strong>{message.role}:</strong> {message.text}</p>
-            ))}
-            <form onSubmit={handleSubmit}>
-                <input type="text" value={userInput} onChange={e => setUserInput(e.target.value)} />
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    );
-}
-
-export default Chat;
+export default Chatbot;

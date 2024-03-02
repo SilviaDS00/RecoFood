@@ -1,0 +1,2564 @@
+[
+  {
+    "recipe": "donuts",
+    "id": 0,
+    "name": "donuts",
+    "ingredients": [
+      "yeast",
+      "warm water",
+      "milk",
+      "butter",
+      "sugar",
+      "salt",
+      "nutmeg",
+      "beaten eggs",
+      "flour",
+      "melted butter",
+      "sugar",
+      "ground cinnamon"
+    ],
+    "steps": [
+      "Dissolve the yeast in warm water. Melt the butter with the milk and let it cool.",
+      "Mix the yeast with the milk and melted butter. Add sugar, salt, nutmeg, beaten eggs, and 2 cups of flour. Beat until you get a homogeneous mixture.",
+      "Incorporate the remaining flour and beat until the mixture is smooth. Let the dough rest covered for 1 hour until it doubles in size.",
+      "Knead the dough on a floured surface, roll it out with a rolling pin, and shape the donuts.",
+      "Place the donuts on a greased baking sheet and let them rest for 20 minutes. Preheat the oven to 200ºC (400ºF).",
+      "Bake the donuts for 10 minutes or until they are golden brown. Spread with melted butter and roll in the sugar and cinnamon mixture. Serve hot or let cool."
+    ]
+  },
+  {
+    "recipe": "macaroni_and_cheese",
+    "id": 1,
+    "name": "macaroni_and_cheese",
+    "ingredients": [
+      "Macaroni",
+      "Cheddar cheese",
+      "Grated cheese",
+      "White pepper",
+      "Cherry tomatoes",
+      "Oil",
+      "Fresh basil",
+      "Salt"
+    ],
+    "steps": [
+      "Cook the pasta in boiling salted water until al dente. Drain and set aside.",
+      "Quarter the tomatoes and mix with oil, salt, pepper, and fresh basil.",
+      "Return the pasta to the pot and mix with the cheddar cheese melted over low heat.",
+      "Serve the macaroni with cheese and top with the tomatoes with basil. Sprinkle with grated cheese and broil in the oven.",
+      "Enjoy some delicious macaroni and cheese with tomatoes."
+    ]
+  },
+  {
+    "recipe": "filet_mignon",
+    "id": 2,
+    "name": "filet_mignon",
+    "ingredients": [
+      "Beef tenderloin",
+      "Port wine sauce",
+      "Artichokes",
+      "Truffle threads",
+      "Butter",
+      "Grated cheese",
+      "Peas"
+    ],
+    "steps": [
+      "Cook the artichoke hearts with water, salt, and lemon. Canned artichokes can also be used.",
+      "Cook the peas and stuff the artichokes. Sprinkle grated cheese on top and broil.",
+      "Prepare a sauce for meats, such as a reduction of port wine.",
+      "Sauté the filet mignons in a skillet with butter or cook on a griddle or grill.",
+      "Assemble the dish by placing the filet mignon on one side, the artichoke on another, and a truffle thread on top of the filet mignon. Drizzle with the sauce."
+    ]
+  },
+  {
+    "recipe": "greek_salad",
+    "id": 3,
+    "name": "greek_salad",
+    "ingredients": [
+      "Romaine lettuce",
+      "Firm red tomato",
+      "Cucumber",
+      "Red onion",
+      "Black olives",
+      "Feta cheese",
+      "Greek yogurt",
+      "Balsamic vinegar",
+      "Sugar",
+      "Herbs",
+      "Salt",
+      "Pepper"
+    ],
+    "steps": [
+      "Prepare and chop all the ingredients.",
+      "Mix the yogurt with balsamic vinegar, sugar, salt, pepper, and herbs.",
+      "Assemble the salad on a plate with the chopped ingredients.",
+      "Serve the salad with the yogurt vinaigrette."
+    ]
+  },
+  {
+    "recipe": "paella",
+    "id": 5,
+    "name": "paella",
+    "ingredients": [
+      "chicken",
+      "rabbit",
+      "olive oil",
+      "garlic",
+      "green beans",
+      "ripe tomatoes",
+      "saffron threads",
+      "sweet paprika",
+      "rice",
+      "lima beans",
+      "food coloring",
+      "water",
+      "salt"
+    ],
+    "steps": [
+      "Sauté the pieces of chicken and rabbit in olive oil with garlic.",
+      "Add green beans, crushed tomatoes, saffron, and paprika.",
+      "Cook for a few minutes, then add water and salt. Cook for 30 minutes.",
+      "Add rice, lima beans, and natural food coloring. Cook for another 20 minutes.",
+      "Let the paella rest before serving."
+    ]
+  },
+  {
+    "recipe": "lasagna",
+    "id": 5,
+    "name": "lasagna",
+    "ingredients": [
+      "Bechamel sauce",
+      "Lasagna pasta sheets",
+      "Ground beef",
+      "Onion",
+      "Garlic",
+      "Crushed tomatoes",
+      "Tomato sauce",
+      "Olive oil",
+      "Grated cheese",
+      "Butter",
+      "Water",
+      "Salt"
+    ],
+    "steps": [
+      "Prepare a tomato sauce with the onion, garlic, crushed tomatoes, and tomato sauce.",
+      "Cook the ground beef in olive oil.",
+      "Layer the lasagna by alternating pasta, meat, and bechamel sauce.",
+      "Bake the lasagna at 180ºC (350ºF) until the cheese is golden brown.",
+      "Let it rest before serving."
+    ]
+  },
+  {
+    "recipe": "french_onion_soup",
+    "id": 6,
+    "name": "french_onion_soup",
+    "ingredients": [
+      "Onions",
+      "Shallots",
+      "Garlic",
+      "Sprig of thyme",
+      "Butter",
+      "Chicken broth",
+      "Water",
+      "Emmental cheese",
+      "White wine",
+      "Salt",
+      "Olive oil",
+      "Pepper",
+      "Bread"
+    ],
+    "steps": [
+      "Slice the onions thinly and the shallots or shallots.",
+      "Sauté the onions and shallots in butter and olive oil over low heat for 30 minutes.",
+      "Add the white wine and cook until the alcohol evaporates.",
+      "Add the broth, water, and thyme sprig. Simmer for an hour.",
+      "Toast the bread and rub it with garlic.",
+      "Remove the thyme sprig from the soup and adjust the seasoning with salt and pepper.",
+      "Serve the soup in individual bowls, place the bread slices on each portion, and cover with grated cheese.",
+      "Broil in the oven until the cheese is golden and crispy."
+    ]
+  },
+  {
+    "recipe": "omelette",
+    "id": 7,
+    "name": "omelette",
+    "ingredients": [
+      "Potatoes",
+      "Eggs",
+      "Green bell pepper",
+      "Red bell pepper",
+      "Yellow bell pepper",
+      "Onion",
+      "Leek",
+      "Oil",
+      "Salt"
+    ],
+    "steps": [
+      "Peel and dice the potatoes. Fry them in plenty of oil until golden brown.",
+      "Cut the onion, leek, and peppers into similar-sized pieces.",
+      "In a skillet with a little oil, sauté the vegetables until tender.",
+      "Beat the eggs and mix them with the fried potatoes and sautéed vegetables. Add salt to taste.",
+      "Pour the mixture into a skillet with a little hot oil and cook it over medium-low heat until set on one side.",
+      "Using a plate or lid, flip the omelette and cook it on the other side until golden brown and fully set."
+    ]
+  },
+  {
+    "recipe": "spaghetti_carbonara",
+    "id": 8,
+    "name": "spaghetti_carbonara",
+    "ingredients": [
+      "Spaghetti",
+      "Bacon or smoked bacon",
+      "Egg",
+      "Heavy cream",
+      "Butter",
+      "Parmesan cheese",
+      "Salt",
+      "Pepper"
+    ],
+    "steps": [
+      "Cook the spaghetti in boiling salted water until al dente.",
+      "In a skillet, brown the bacon in butter until crispy.",
+      "Mix the heavy cream, eggs, salt, and pepper in a bowl and set aside.",
+      "Add the spaghetti to the skillet with the bacon and cook for 1 minute.",
+      "Add the egg and cream mixture to the skillet and cook for 2 minutes, stirring constantly.",
+      "Serve in a deep plate and top with Parmesan cheese."
+    ]
+  },
+  {
+    "recipe": "churros",
+    "id": 9,
+    "name": "churros",
+    "ingredients": [
+      "Flour",
+      "Water",
+      "Salt",
+      "Yeast",
+      "Frying oil",
+      "Extra virgin olive oil",
+      "Sugar"
+    ],
+    "steps": [
+      "Heat the water (warm) and add a splash of extra virgin olive oil.",
+      "In a bowl, place the sifted flour, salt, and yeast. Mix well.",
+      "Add the hot water with oil to the flour mixture and mix with a fork or wooden spoon until a homogeneous dough forms.",
+      "Let the dough rest well covered with a cloth for about half an hour.",
+      "Fill the churrera (churro maker) with the dough and start frying in hot oil."
+    ]
+  },
+  {
+    "recipe": "oysters",
+    "id": 10,
+    "name": "oysters",
+    "ingredients": [
+      "Oysters",
+      "Scallions",
+      "Lemon juice",
+      "White wine",
+      "Butter",
+      "Salt",
+      "Pepper"
+    ],
+    "steps": [
+      "Open the oysters and place the part with the meat in a dish.",
+      "In a skillet, melt the butter and sauté the scallions until soft.",
+      "Add the lemon juice and white wine to the scallions in the skillet. Let it reduce to one-third and season with salt and pepper.",
+      "Spread this sauce over the oysters in the dish.",
+      "Bake at high temperature for 10-15 minutes.",
+      "Serve hot."
+    ]
+  },
+  {
+    "recipe": "chicken_wings",
+    "id": 11,
+    "name": "chicken wings",
+    "ingredients": [
+      "Chicken wings",
+      "Sweet paprika",
+      "Oregano",
+      "Cumin",
+      "Curry",
+      "Onion powder",
+      "Salt",
+      "Black pepper",
+      "Olive oil",
+      "Butter"
+    ],
+    "steps": [
+      "Season the chicken wings with salt on all sides.",
+      "In a bowl, mix a tablespoon of sweet paprika, oregano, cumin, onion powder, and a teaspoon of curry. Also add freshly ground black pepper and two tablespoons of olive oil. Incorporate the chicken wings and mix well with your hands until evenly coated with the spices. Cover with plastic wrap and refrigerate for at least 30 minutes.",
+      "Preheat the oven to 200°C (390°F).",
+      "Melt the butter in the microwave and mix it with a tablespoon of sweet paprika, oregano, cumin, onion powder, and a teaspoon of curry. Mix well.",
+      "Place the chicken wings on a baking tray and brush them with the butter and spice mixture on the side facing up. Bake with heat from above and below for 25 minutes.",
+      "Remove the wings from the oven and flip them. Brush the side facing up with the butter and spice mixture and bake for another 20 minutes or until the skin is toasted to your liking.",
+      "Serve the chicken wings directly from the tray or on individual plates."
+    ]
+  },
+  {
+    "recipe": "escargots",
+    "id": 12,
+    "name": "escargots",
+    "ingredients": [
+      "Escargots",
+      "Bay leaf",
+      "Cayenne pepper",
+      "Chorizo",
+      "Serrano ham",
+      "Olive oil",
+      "Chicken sauce",
+      "Fried tomato",
+      "Garlic cloves",
+      "Salt",
+      "Black pepper"
+    ],
+    "steps": [
+      "To start, prepare a homemade chicken sauce in advance.",
+      "Clean the escargots and place them in a saucepan with water, a bay leaf, a cayenne pepper, and salt. Cook for 1 hour.",
+      "Cut the chorizo and serrano ham into pieces.",
+      "In a pot, heat a tablespoon of olive oil and sauté the chorizo and ham with a bay leaf, a cayenne pepper, and a little black pepper.",
+      "Add the drained escargots and cook for 2 minutes.",
+      "Incorporate the chicken sauce and fried tomato. Cook for 10 minutes.",
+      "In a mortar, crush the garlic cloves with a tablespoon of olive oil.",
+      "Add the crushed garlic to the pot of escargots and cook for another 2 minutes."
+    ]
+  },
+  {
+    "recipe": "french_fries",
+    "id": 13,
+    "name": "french_fries",
+    "ingredients": [
+      "Potatoes",
+      "Olive oil",
+      "Salt"
+    ],
+    "steps": [
+      "Peel the potatoes, wash them, and dry them with kitchen paper towels.",
+      "Cut the potatoes into sticks of the same size and place them in a microwave-safe bowl.",
+      "Pour three tablespoons of olive oil over the potatoes in the bowl.",
+      "Place the bowl in the microwave and cook at maximum power for 5 minutes.",
+      "Stir the potatoes and microwave again for another 5 minutes at maximum power.",
+      "Check the doneness, and if necessary, cook for an additional 3 to 5 minutes.",
+      "Once ready, remove the potatoes from the microwave, add salt to taste, and serve hot."
+    ]
+  },
+  {
+    "recipe": "panna_cotta",
+    "id": 14,
+    "name": "panna_Cotta",
+    "ingredients": [
+      "Cream",
+      "Milk",
+      "Sugar",
+      "Gelatin",
+      "Vanilla",
+      "Brandy"
+    ],
+    "steps": [
+      "Soak the gelatin sheets and set aside.",
+      "In the Thermomix glass, combine the cream, brandy, milk, sugar, and vanilla.",
+      "Program for 10 minutes at 90°C (194°F) and speed 2.",
+      "At 8-9 minutes, add the soaked gelatin to the mixture in the Thermomix and make sure it integrates well.",
+      "Pour the mixture into a flan or jelly mold and refrigerate for several hours until set.",
+      "Decorate with jam or fruit before serving, if desired."
+    ]
+  },
+  {
+    "recipe": "takoyaki",
+    "id": 15,
+    "name": "takoyaki",
+    "ingredients": [
+      "Flour",
+      "Egg",
+      "Water",
+      "Octopus",
+      "Cabbage",
+      "Onion",
+      "Tenkasu",
+      "Benishoga",
+      "Takoyaki sauce",
+      "Japanese mayonnaise",
+      "Katsuobushi",
+      "Aonori"
+    ],
+    "steps": [
+      "First, prepare the solid ingredients. Cut the octopus into small pieces that fit inside the takoyaki, chop the cabbage as finely as possible, and dice the onion and benishoga.",
+      "Next, in a large bowl, add the flour, egg, and water. Mix well until you get a creamy but not excessively liquid batter.",
+      "Add a handful of tenkasu, benishoga, and onion to the mixture and plenty of cabbage. Mix everything well.",
+      "Heat the takoyaki grill and add a little oil to the holes to prevent the balls from sticking.",
+      "When it's hot, add batter mixture to each of the holes until flush. Place a piece of octopus in the center. Pour a little more batter on top, even if it overflows.",
+      "After a while, you'll see that side of the ball is ready. With a skewer, flip the takoyaki with a quick wrist movement and let it cook on the other side. The idea is to get a sphere as perfect as possible.",
+      "Once the takoyaki are ready, place them on a flat plate, without stacking. Pour mayonnaise, takoyaki sauce, katsuobushi, and aonori on top and enjoy."
+    ]
+  },
+  {
+    "recipe": "tacos",
+    "id": 16,
+    "name": "tacos",
+    "ingredients": [
+      "Flour",
+      "Egg",
+      "Water",
+      "Octopus",
+      "Cabbage",
+      "Onion",
+      "Tenkasu",
+      "Benishoga",
+      "Takoyaki sauce",
+      "Japanese mayonnaise",
+      "Katsuobushi",
+      "Aonori"
+    ],
+    "steps": [
+      "Thoroughly wash the tomatoes, onion, serrano chilies, garlic cloves, and cilantro sprig. Then, cut them into medium-sized pieces.",
+      "Transfer the chopped vegetables to a blender with half a cup of water, a pinch of salt, pepper, and dried cumin, and blend for 2 minutes.",
+      "Heat a tablespoon of oil in a pot and pour in the blended sauce. Cook over medium-high heat for 5 or 6 minutes until it starts to boil and changes color. Adjust the seasoning if necessary.",
+      "In a bowl, beat the eggs with salt and pepper. Cook the egg cake in a frying pan with hot oil until fully cooked.",
+      "Heat the corn tortillas and fill them with the cooked egg cake. Fold the tortillas and serve. Drizzle with ranchero sauce, add crumbled fresh cheese, and diced radish."
+    ]
+  },
+  {
+    "recipe": "chocolate_cake",
+    "id": 17,
+    "name": "chocolate_cake",
+    "ingredients": [
+      "Sugar",
+      "Olive oil",
+      "Eggs",
+      "Greek yogurt",
+      "Pure cocoa",
+      "Hot coffee",
+      "Flour",
+      "Baking soda",
+      "Cornstarch",
+      "Salt",
+      "Water",
+      "Vanilla"
+    ],
+    "steps": [
+      "Mix the sugar, olive oil, and eggs in a bowl.",
+      "Add the Greek yogurt and mix well.",
+      "Hydrate the cocoa powder with hot coffee and add it to the previous mixture.",
+      "Sift the flour, baking soda, and cornstarch over the mixture and stir until you get a homogeneous batter.",
+      "Butter a cake mold, place a parchment paper disc on the base, and flour it.",
+      "Pour the batter into the mold and bake at 165°C (329°F) for 45 minutes.",
+      "Let the cake cool, cut it in half, and soak each half with simple syrup.",
+      "Prepare the chantilly ganache by heating the heavy cream and pouring it over the chopped bitter chocolate. Mix until you get a smooth cream. Refrigerate overnight.",
+      "The next day, whip the ganache and cold heavy cream until semi-firm peaks form.",
+      "Fill and cover the cake with the cream, decorating as desired."
+    ]
+  },
+  {
+    "recipe": "lobster_bisque",
+    "id": 18,
+    "name": "lobster_bisque",
+    "ingredients": [
+      "Tomatoes",
+      "Onion",
+      "Celery",
+      "Basil",
+      "Bell pepper",
+      "Seafood mix",
+      "Garlic paste",
+      "Heavy cream",
+      "Salt",
+      "Pepper",
+      "Bay leaf",
+      "Thyme",
+      "White wine"
+    ],
+    "steps": [
+      "The first step to make our bisque recipe is to prepare the ingredients.",
+      "Bring a deep pot to medium heat and add a little olive oil. Add the chopped red onion.",
+      "Once the onion becomes translucent, add the celery and red bell pepper. Sauté for a few minutes.",
+      "Add the seedless tomato wedges; it's very important to remove the seeds as they make the preparation a bit more acidic. Add some garlic paste to taste.",
+      "Add water to cover all the contents. Season with salt, pepper, bay leaf, and thyme to taste. Let it cook for about 20 to 30 minutes and turn off the heat. Blend or process our base until all the ingredients are integrated.",
+      "Once you blend our cream base, bring it back to a pot. If desired, you can strain the mixture for a smoother consistency.",
+      "Cook over low heat and add fresh basil leaves to give a special touch to the seafood bisque.",
+      "Meanwhile, cook over medium heat in a separate skillet with a teaspoon of butter, the seafood mix. Sauté briefly without exceeding 5 minutes.",
+      "Incorporate the sautéed seafood mix into our bisque and add the heavy cream. Let it simmer for another 10 minutes.",
+      "Serve the seafood bisque accompanied with croutons or fried bread. You can also add some grated parmesan cheese to taste and a little heavy cream to garnish the dish, which will be a perfect starter for a special gathering."
+    ]
+  },
+  {
+    "recipe": "chocolate_mousse",
+    "id": 19,
+    "name": "chocolate_mousse",
+    "ingredients": [
+      "Dark chocolate",
+      "Refined sugar",
+      "Eggs"
+    ],
+    "steps": [
+      "Separate the egg whites from the yolks. Place the whites in a large bowl and beat with electric beaters until stiff peaks form.",
+      "Break the chocolate into pieces and melt it in a saucepan over a double boiler or in the microwave, in 30-second cycles, stirring between each cycle.",
+      "Add the sugar to the yolks and beat until creamy. Gradually add the melted chocolate while beating continuously until fully incorporated.",
+      "Finally, gently fold the beaten egg whites into the chocolate and yolk mixture, mixing with folding motions to maintain the fluffiness.",
+      "Refrigerate the mousse for at least 4 hours before serving, to achieve the right consistency."
+    ]
+  },
+  {
+    "recipe": "chicken_quesadilla",
+    "id": 20,
+    "name": "chicken_quesadilla",
+    "ingredients": [
+      "Corn tortillas",
+      "Chicken breast",
+      "Panela cheese",
+      "Red tomato",
+      "White onion",
+      "Cilantro",
+      "Salt",
+      "Pepper",
+      "Oil"
+    ],
+    "steps": [
+      "In the following image, you will be able to see the ingredients needed for the preparation of these delicious Mexican chicken quesadillas.",
+      "We will start the Mexican quesadilla recipe by washing and finely chopping the vegetables, namely, the onion, red tomato, and cilantro.",
+      "Once the vegetables are ready, take the onion and red tomato, and sauté these ingredients in a skillet with hot oil to start preparing the chicken quesadilla filling.",
+      "When the onion appears transparent, add the chicken cut into strips or slices and perfectly seasoned. Let it cook together, stirring constantly with a spatula or wooden spoon.",
+      "Once the chicken is almost cooked through, add the chopped cilantro and let it cook together for another 5 minutes. After this time, remove the preparation from the heat and set aside for a moment.",
+      "On the other hand, take pieces of panela cheese, place them inside the corn tortilla, and take the quesadillas to the hot griddle to melt the cheese. This is the only ingredient that cannot be missing in Mexican quesadillas, so we recommend not skipping it.",
+      "When the cheese is practically melted, fill the quesadillas with the chicken stew and close them again. If you want, you can heat them again for a few more seconds to finish melting the cheese, or consume them as they are."
+    ]
+  },
+  {
+    "recipe": "club_sandwich",
+    "id": 21,
+    "name": "club_sandwich",
+    "ingredients": [
+      "Bread",
+      "Ham",
+      "Cheese",
+      "Chicken",
+      "Lettuce",
+      "Mayonnaise",
+      "Tomato",
+      "Butter",
+      "Salt",
+      "Vinegar",
+      "Oil"
+    ],
+    "steps": [
+      "Toast the bread slices and spread them with butter.",
+      "On the first slice of bread, place lettuce, dress it with oil, vinegar, and salt; add 1 slice of ham and a little mayonnaise on top, and then a slice of cheese.",
+      "On top of the second slice of bread of the club sandwich, we will put lettuce and some slices of seasoned tomatoes, on top the chicken in pieces and mixed with mayonnaise.",
+      "On top of the third slice of bread of the super club sandwich, which will also be spread with a layer of mayonnaise, we will place 1 slice of cheese, 1/4 tomato, and a black olive.",
+      "The sandwich can be garnished by placing small mounds of mayonnaise on the edges of the top slice of bread."
+    ]
+  },
+  {
+    "recipe": "apple_pie",
+    "id": 22,
+    "name": "apple_pie",
+    "ingredients": [
+      "Sugar",
+      "Flour",
+      "Butter",
+      "Eggs",
+      "Milk",
+      "Apples",
+      "Vanilla",
+      "Cinnamon"
+    ],
+    "steps": [
+      "Take a bowl and mix the flour with the sugar and butter, forming a sandy paste. You can use your fingers to integrate these ingredients. Then, place half of this preparation in an oven-proof dish and spread it evenly over the base.",
+      "Apart, slice the apples thinly and place them on the sandy base. Sprinkle with a little cinnamon powder.",
+      "In a separate bowl, mix the milk with the vanilla essence and the eggs. Pour the liquid over the apples and, finally, cover with the remaining flour and butter mixture.",
+      "Preheat the oven to 170ºC (340ºF) and, when hot, bake the green apple pie until it's done. It may take between 30 and 40 minutes approximately, depending on the power of your oven."
+    ]
+  },
+  {
+    "recipe": "peking_duck",
+    "id": 23,
+    "name": "peking_duck",
+    "ingredients": [
+      "Duck",
+      "Spices",
+      "Glaze",
+      "Sauce",
+      "Crepes",
+      "Fresh ginger",
+      "Bay leaves",
+      "Rice vinegar",
+      "Red wine",
+      "Sugar",
+      "Oyster sauce",
+      "Soy paste",
+      "Hoisin sauce",
+      "Oil",
+      "Flour",
+      "Water",
+      "Sesame oil",
+      "Red chilies",
+      "Onion"
+    ],
+    "steps": [
+      "To prepare Peking duck, remove all the innards and clean it well inside and out. Then, let it drain and dry it with a cloth.",
+      "Next, carefully mix the marinade ingredients and spread it inside the duck, being careful not to stain the skin. Then, let it marinate for about 20 minutes.",
+      "Then stuff the duck with the spices and close it with a toothpick.",
+      "Dip it for 5 seconds in boiling water, remove it, and instantly dip it again in ice water for another 5 seconds to stop the cooking process. Remove it again and dry it with a cloth. This process is called blanching.",
+      "Next, mix the glaze ingredients and smear the duck's skin so that, once cooked, it acquires that clayey tone and juicy appearance characteristic of Peking duck.",
+      "Hang the lacquered duck and let it dry for 6 hours in a cool place.",
+      "On the other hand, mix all the ingredients for the sauce (except the teaspoon of oil). Heat the oil in a pan, pour in the mixture, and, stirring constantly, bring it to a boil. Remove from heat and let it cool.",
+      "Preheat the oven to 150°C (300°F). Place the Peking duck breast-side up on the grill (with a container underneath to collect the juice and fat it releases), turn it over, and let it cook for 15 minutes.",
+      "Remove the Peking duck from the oven, heat a little oil and pour it over the duck. With a very sharp knife, carefully separate the skin from the breasts, sides, and back. Cut the skin into pieces (about 4x6 cm), removing the layer of fat from the skin at the same time.",
+      "To make the scallion bouquets, cut the white part of the scallions into 5 cm strips and then make four cuts in each part. Put the scallion strips in ice water and store them in the refrigerator until the tips curl. Before serving, drain them well. Also put a red chili ring on each end.",
+      "To make the crepes or pancakes for Peking duck, sift the flour into a bowl and make a well in the center to pour in the boiling water. Knead the flour and water until you get an elastic dough.",
+      "Roll out the dough on a floured board until it is smooth and about 5 mm thick. Using a circular mold 7 cm in diameter, cut out as many pancake circles as possible. Gather the remaining dough and repeat the operation. Grease half of the circles with a little sesame oil and cover them with the other half. Stretch the dough portions with"
+    ]
+  },
+  {
+    "recipe": "caprese_salad",
+    "id": 24,
+    "name": "caprese_salad",
+    "ingredients": [
+      "Plum tomatoes",
+      "Mozzarella",
+      "Basil",
+      "Salt",
+      "Black pepper",
+      "Olive oil"
+    ],
+    "steps": [
+      "To make this Caprese salad, we must prepare all the ingredients.",
+      "For this Italian salad, I advise you to choose plum tomatoes because they don't release as much juice. Cut the tomatoes into slices, not too thin or too thick, and set aside.",
+      "Take the mozzarella cheese and cut it into slices similar to those of the tomato. Set aside.",
+      "On the other hand, to season this exquisite Caprese salad, make a preparation with a few chopped fresh basil leaves, extra virgin olive oil, salt, and freshly ground black pepper. Another totally valid option is to season the salad with homemade pesto sauce.",
+      "Finally, for the presentation of the salad, take a plate or a flat platter and arrange the ingredients by alternating a tomato slice, a mozzarella slice, a fresh basil leaf, and so on. Dress with the preparation made previously and sprinkle with a touch of freshly ground black pepper to complete the decoration of this delicious and irresistible Caprese salad. This salad can be enjoyed alone as an appetizer, but it is also ideal to accompany any type of grilled meat."
+    ]
+  },
+  {
+    "recipe": "ice_cream",
+    "id": 25,
+    "name": "ice_cream",
+    "ingredients": [
+      "Oranges",
+      "Lemon",
+      "Cream",
+      "Orange blossom water",
+      "Sugar",
+      "Grated chocolate zest"
+    ],
+    "steps": [
+      "To begin with homemade orange ice cream, squeeze the juice from the oranges and set aside. Avoid straining it as the pulp will give a lot of texture to your dessert, plus most of the vitamins and fiber are concentrated in this part of the fruit.",
+      "If you wish, also squeeze the juice from half a lemon. This detail will serve as a flavor enhancer for the citrus ice cream, although it is entirely optional. Tip: lemon helps stop the oxidation of the dessert.",
+      "It is essential that the cream is very cold so that it whips up without any problems. Add a little sugar and beat, starting slowly and gradually increasing the intensity. You can use an electric mixer or choose to do it manually. Continue beating until the cream thickens. Tip: to prepare orange ice cream without cream, you can substitute this ingredient with yogurt, as it will provide a similar texture.",
+      "Incorporate the rest of the sugar and the orange blossom water into the orange and lemon juice. Mix until both ingredients are dissolved in the juice and pour it over the cream in small streams. Stir gently and smoothly to achieve a creamy orange ice cream.",
+      "Cover with a layer of protective film and place the container in the freezer for at least 4 hours.",
+      "After this time, serve your homemade orange ice cream in a bowl and garnish with grated chocolate zest."
+    ]
+  },
+  {
+    "recipe": "pulled_pork_sandwich",
+    "id": 26,
+    "name": "pulled_pork_sandwich",
+    "ingredients": [
+      "Pork",
+      "Cumin",
+      "Oregano",
+      "Mustard",
+      "Pepper",
+      "Onion",
+      "Liquid smoke",
+      "Garlic paste",
+      "Salt",
+      "Pepper",
+      "Sandwich bread",
+      "Barbecue sauce",
+      "Cheddar cheese"
+    ],
+    "steps": [
+      "Our first step to make this American recipe is to gather the ingredients.",
+      "Bring a pressure cooker to medium heat, once hot add a little sunflower oil and add the previously seasoned pork piece.",
+      "Once our protein is seared, add the diced peppers and onion wedges with a little garlic paste in the pot where we have the pulled pork.",
+      "Add a little oregano to taste and if you want more salt and pepper to the American preparation.",
+      "Cover the pork piece with enough water and add the liquid smoke, which is available at any supermarket and will give the traditional smoky touch we need in the preparation of this sandwich. Cover the pressure cooker and cook the meat for about 30-40 minutes, or until it is tender and can be shredded easily.",
+      "Remove the pork piece and let it cool, keep the broth where we cooked it because this will be a fundamental part of the recipe. Shred the pork and add a little barbecue sauce from any brand you want or made by yourself, and a little broth left over from the preparation. Ideally, our pulled pork should be moist, then it will be ready to serve."
+    ]
+  },
+  {
+    "recipe": "tiramisu",
+    "id": 27,
+    "name": "tiramisu",
+    "ingredients": [
+      "Egg",
+      "Powdered sugar",
+      "Cheese",
+      "Coffee",
+      "Amaretto",
+      "Chocolate",
+      "Cocoa powder"
+    ],
+    "steps": [
+      "The first thing you should do to get started as soon as possible is to prepare all the ingredients. To give tiramisu a special touch, we will mix the coffee with a good splash of Amaretto.",
+      "Now, let's start! Take a bowl and mix the egg yolks with the powdered sugar until completely integrated.",
+      "Take another bowl and beat the egg whites until stiff peaks form.",
+      "Go back to the bowl where we mixed the yolks with the sugar and add the Mascarpone cheese, mix well. Once incorporated, gradually add the beaten egg whites and mix them in with slow movements from bottom to top.",
+      "Take the dish or mold where you plan to make the homemade tiramisu and start assembling it. To do this, place a layer of ladyfinger biscuits on the bottom, previously soaked in the coffee and Amaretto mixture.",
+      "Then, add a good layer of the yolk, egg white, Mascarpone cheese, and sugar mixture. Sprinkle evenly with grated chocolate and place another layer of ladyfinger biscuits soaked in coffee.",
+      "To finish the homemade tiramisu, place another layer of cream and sprinkle a good amount of cocoa powder.",
+      "You can make your tiramisu in a larger or smaller mold or in individual dishes, or add more or fewer layers of biscuits, although, for my taste, two layers are more than enough. Reserve the tiramisu in the refrigerator for 12-24 hours to set well and be perfect."
+    ]
+  },
+  {
+    "recipe": "falafel",
+    "id": 28,
+    "name": "falafel",
+    "ingredients": [
+      "Dried fava beans",
+      "Onion",
+      "Garlic",
+      "Parsley",
+      "Flour",
+      "Cumin",
+      "Salt",
+      "Olive oil"
+    ],
+    "steps": [
+      "Peel the fava beans and soak them in water for about six hours. Then drain them well.",
+      "Place the drained fava beans in a blender along with the chopped onion, garlic, parsley, ground cumin, salt, and baking powder. Blend until you get a mixture with a puree-like consistency.",
+      "Pour the mixture into a bowl and let it rest in a warm place.",
+      "When the mixture has increased in size, add flour and mix well. Form small balls the size of a large walnut.",
+      "Let the balls rest for about twenty minutes and then roll them in flour.",
+      "Heat olive oil in a deep frying pan until it reaches the right temperature for frying.",
+      "Fry the falafel balls until they are golden brown on the outside and cooked on the inside.",
+      "Drain the excess oil on paper towels and serve hot."
+    ]
+  },
+  {
+    "recipe": "beignets",
+    "id": 29,
+    "name": "beignets",
+    "ingredients": [
+      "Flour",
+      "Egg",
+      "Sugar",
+      "Milk",
+      "Butter",
+      "Yeast",
+      "Anise",
+      "Sugar",
+      "Oil",
+      "Salt"
+    ],
+    "steps": [
+      "In a bowl, mix the egg, melted butter, and sugar.",
+      "Beat the mixture well and add the shot of anise, continue stirring.",
+      "Add the milk to the mixture and beat well.",
+      "In another bowl, mix the flour with the yeast and a pinch of salt.",
+      "Gradually add the flour to the liquid mixture, mixing to avoid lumps.",
+      "Let the dough rest in the refrigerator for about 10 minutes.",
+      "Heat plenty of oil in a pan.",
+      "Using a spoon, pour portions of dough into the hot oil and fry until golden brown on all sides.",
+      "Place the beignets on a plate with paper towels to remove excess oil.",
+      "Mix sugar and cinnamon powder on a plate and coat the beignets while they are still warm."
+    ]
+  },
+  {
+    "recipe": "foie_gras",
+    "id": 30,
+    "name": "foie_gras",
+    "servings": "4 people",
+    "ingredients": [
+      "Foie gras",
+      "Pepper",
+      "Sherry",
+      "Salt",
+      "Parsley",
+      "Fresh cheese"
+    ],
+    "steps": [
+      "In a blender, mix the foie gras, fresh cheese, sherry, and parsley.",
+      "Season the mixture with salt and pepper.",
+      "Place the mixture in a large terrine.",
+      "Refrigerate for 4 to 5 hours before serving."
+    ]
+  },
+  {
+    "recipe": "sushi",
+    "id": 31,
+    "name": "sushi",
+    "ingredients": [
+      "Sushi rice",
+      "Water",
+      "Sushi vinegar",
+      "Bamboo mat (makisu)",
+      "Nori seaweed",
+      "Sesame seeds",
+      "Cream cheese",
+      "Cucumber",
+      "Avocado",
+      "Shrimp",
+      "Soy sauce"
+    ],
+    "steps": [
+      "Wash the rice until the water runs clear. Cook the rice with water over medium heat.",
+      "When cooked, let it rest for 10 minutes, then mix it with sushi vinegar and let it cool.",
+      "Place a sheet of nori seaweed on the bamboo mat, cover it with rice, and sprinkle with sesame seeds.",
+      "Flip the sheet, add a thin layer of cream cheese, a strip of cucumber, one of avocado, and shrimp.",
+      "Roll and press with the bamboo mat to form the rolls. Repeat with the other sheets of nori.",
+      "Moisten a knife with water and cut the rolls into 6 or 8 pieces.",
+      "Serve accompanied by soy sauce with lemon and orange juice."
+    ]
+  },
+  {
+    "recipe": "cannoli",
+    "id": 32,
+    "name": "cannoli",
+    "ingredients": [
+      "Powdered sugar",
+      "Egg",
+      "Butter",
+      "Sweet Marsala wine",
+      "Cocoa",
+      "Cinnamon",
+      "Flour",
+      "Dark chocolate",
+      "Powdered sugar",
+      "Ricotta cheese"
+    ],
+    "steps": [
+      "In a bowl, mix all the ingredients for the dough except the sweet Marsala wine.",
+      "Add the sweet Marsala wine and mix well. Then knead for 8 minutes and reserve the dough in the refrigerator for 2 hours.",
+      "Meanwhile, prepare the filling by mixing drained ricotta cheese, powdered sugar, and finely chopped dark chocolate. Reserve in the refrigerator.",
+      "Divide the dough in two and roll it out thinly. Cut out circles and wrap each circle around a cylindrical mold to shape the cannoli.",
+      "Fry the cannolis in hot oil until golden brown. Drain them on paper towels and let them cool.",
+      "Fill the cannolis with the ricotta cheese and chocolate mixture.",
+      "Optionally, sprinkle powdered sugar on top before serving."
+    ]
+  },
+  {
+    "recipe": "fried_rice",
+    "id": 33,
+    "name": "fried_rice",
+    "ingredients": [
+      "Rice",
+      "Chicken breast",
+      "Zucchini",
+      "Spring onion",
+      "Carrots",
+      "Mushrooms",
+      "Eggs",
+      "Vegetable oil",
+      "Salt",
+      "Ground ginger"
+    ],
+    "steps": [
+      "Wash the rice several times until the water runs clear. Cook it according to the manufacturer's instructions, then rinse and let it drain.",
+      "Cut all the vegetables into small pieces and sauté them in a pan with oil. Add the mushrooms when the vegetables are halfway cooked.",
+      "Add the chopped chicken to the pan with the vegetables and continue cooking until well done. Season with a little salt.",
+      "Make an omelet with the eggs and cut it into strips or small pieces.",
+      "In a large skillet, stir-fry the cooked rice with a little oil, soy sauce, and ground ginger.",
+      "Add the vegetables, chicken, and egg to the rice and stir-fry everything together for a few minutes.",
+      "Taste and adjust the seasoning as needed.",
+      "Serve the Japanese fried rice hot and enjoy."
+    ]
+  },
+  {
+    "recipe": "cupcakes",
+    "id": 34,
+    "name": "cupcakes",
+    "ingredients": [
+      "Flour",
+      "Butter",
+      "Sugar",
+      "Eggs",
+      "Banana",
+      "Banana essence",
+      "Baking powder",
+      "Milk"
+    ],
+    "steps": [
+      "Prepare all the necessary ingredients to make the cupcakes.",
+      "Beat the butter with the sugar until obtaining a creamy mixture. Add the banana essence.",
+      "Add the eggs and milk, and mix well.",
+      "Incorporate the sifted flour and baking powder. Add the mashed banana and mix until everything is well combined.",
+      "Place the batter in the cupcake molds and bake at 170ºC for approximately 20 minutes, or until golden and cooked.",
+      "Decorate the cupcakes as you wish. You can opt for"
+    ]
+  },
+  {
+    "recipe": "pizza",
+    "id": 35,
+    "name": "pizza",
+    "ingredients": [
+      "Strong flour",
+      "Milk",
+      "Baker's fresh yeast",
+      "Salt",
+      "Italian green pepper",
+      "Sweet onion",
+      "Pepperoni",
+      "Oregano and pepper",
+      "Crushed tomato",
+      "Grated cheddar cheese"
+    ],
+    "steps": [
+      "Prepare the polish: Mix half a glass of warm milk with the yeast and 2 tablespoons of flour. Let it rest for 15 minutes.",
+      "In another bowl, mix the remaining flour with the warm milk, add the polish and salt. Knead for 5 minutes.",
+      "Let the dough rest in a covered bowl for 1 hour. Then, shape it into a ball and let it rest for another 30 minutes or until it doubles in size.",
+      "Cut the onion into julienne strips and the pepper into slices. Grate the cheddar cheese.",
+      "Roll out the dough on parchment paper. Cover with crushed tomato and sprinkle the spices on top.",
+      "Add the grated cheese, pepperoni, pepper, and onion over the tomato sauce.",
+      "Bake in a preheated oven at 180 ºC for approximately 20 minutes or until the pizza is golden and crispy."
+    ]
+  },
+  {
+    "recipe": "strawberry_shortcake",
+    "id": 36,
+    "name": "strawberry_shortcake",
+    "ingredients": {
+      "sponge_cake": [
+        "Eggs",
+        "Sugar",
+        "Lemon juice",
+        "Lemon zest",
+        "Flour",
+        "Salt",
+        "Unsalted melted butter",
+        "Vanilla extract"
+      ],
+      "filling": [
+        "Whipped cream",
+        "Cream cheese",
+        "Sugar",
+        "Lemon zest",
+        "Lemon juice",
+        "Sliced strawberries",
+        "Strawberry jam",
+        "Powdered sugar"
+      ]
+    },
+    "steps": [
+      "Preheat the oven to 190ºC.",
+      "Beat the eggs with the sugar for 5 minutes. Add the zest and lemon juice while beating.",
+      "Sift the flour with the salt and gradually add it to the egg and sugar mixture.",
+      "Incorporate the melted butter and vanilla. Pour the batter into a 22-centimeter round mold lined with parchment paper and bake for 40 minutes.",
+      "Let the sponge cake cool.",
+      "For the filling, mix the whipped cream with the cream cheese, sugar, vanilla, lemon zest, and lemon juice.",
+      "Dip half of the strawberries in the jam.",
+      "Cut the sponge cake in half horizontally and spread half of the cream on one of the parts.",
+      "Place the strawberries dipped in jam on the cream and cover with the other half of the sponge cake.",
+      "Cover with the remaining cream and decorate with the remaining strawberries.",
+      "Sprinkle with powdered sugar before serving."
+    ]
+  },
+  {
+    "recipe": "steak",
+    "id": 37,
+    "name": "steak",
+    "ingredients": [
+      "Veal fillets",
+      "Leeks cut into julienne",
+      "Black peppercorns",
+      "Brandy",
+      "Worcestershire sauce",
+      "Butter",
+      "Concentrated beef broth",
+      "Salt"
+    ],
+    "steps": [
+      "Crush the pepper in the mortar.",
+      "Season the fillets with salt and cover with pepper on both sides.",
+      "Brown the fillets in a pan with butter.",
+      "Add the brandy and flambé.",
+      "Let the fire extinguish itself.",
+      "Add the leeks cut into julienne and brown.",
+      "Incorporate the beef broth, ketchup, and Worcestershire sauce. Reduce almost completely.",
+      "Serve the fillets with the sauce on top."
+    ]
+  },
+  {
+    "recipe": "seaweed_salad",
+    "id": 38,
+    "name": "seaweed_salad",
+    "main_ingredients": [
+      "Lettuce leaves",
+      "Watercress",
+      "3 or 4 radishes",
+      "Mixed sprouts",
+      "Grated carrot",
+      "2 endives",
+      "Celery leaves",
+      "2 tablespoons of corn",
+      "1 piece of sweet seaweed",
+      "1 piece of wakame seaweed",
+      "Olives",
+      "Toasted sesame seeds",
+      "Lemon juice",
+      "Soy sauce",
+      "Extra virgin olive oil",
+      "Oregano"
+    ],
+    "steps": [
+      "Cut the lettuce into not too large pieces.",
+      "Prepare the seaweed: soak them in a little water and lemon juice and let them marinate for a few moments.",
+      "In a bowl, place the lettuce, carrot, sprouts, celery leaves, corn, and seaweed.",
+      "Prepare the sauce by mixing all the ingredients well.",
+      "Place the endives on a platter with the tips outward.",
+      "Garnish with olives and toasted sesame seeds."
+    ]
+  },
+  {
+    "recipe": "gyoza",
+    "id": 39,
+    "name": "gyoza",
+    "ingredients": [
+      "100 grams of minced pork",
+      "100 grams of cabbage",
+      "1 clove of garlic",
+      "Salt to taste",
+      "1 tablespoon of powdered ginger",
+      "100 grams of flour",
+      "60 cubic centimeters of water",
+      "Extra flour for rolling out"
+    ],
+    "steps": [
+      "For the dough, spread flour on a clean marble surface and pour hot water in the center. Knead for about 10 minutes until obtaining a smooth and soft dough.",
+      "Cover the dough and let it rest for about 30 minutes.",
+      "Chop the cabbage into very small pieces and mix it with the minced pork, chopped garlic, and grated ginger.",
+      "Divide the dough into 15 equal parts of approximately 10 grams each.",
+      "Roll out each portion of dough to obtain discs about 8 centimeters in diameter and 2 or 3 millimeters thick, sprinkling extra flour to prevent sticking.",
+      "Fill each dough disc with the meat and cabbage mixture.",
+      "Moisten the edges of each disc with water and make a pleat to seal the gyoza.",
+      "Heat a non-stick pan or pot with oil and brown the base of the gyoza for 1 to 5 minutes.",
+      "Add 200 cubic centimeters of water to the pan or pot, cover, and cook the gyoza for about 7 minutes.",
+      "Uncover and allow the water to evaporate completely."
+    ]
+  },
+  {
+    "recipe": "fried_calamari",
+    "id": 40,
+    "name": "fried_calamari",
+    "ingredients": [
+      "2 kilograms of fresh squid",
+      "Flour, as needed"
+    ],
+    "steps": [
+      "Clean the squid and cut them into rings.",
+      "Coat the squid rings in flour, shaking off the excess.",
+      "Fry the squid in oil at 250 degrees Celsius until golden brown.",
+      "Once golden brown, remove the squid from the oil and serve with a wedge of lemon."
+    ]
+  },
+  {
+    "recipe": "onion_rings",
+    "id": 41,
+    "name": "onion_rings",
+    "ingredients": [
+      "2 large onions",
+      "2 eggs",
+      "Salt, to taste",
+      "Pepper, to taste",
+      "3 tablespoons of grated cheese",
+      "Flour, as needed",
+      "Frying oil, as needed"
+    ],
+    "steps": [
+      "Cut the onions into thick rings.",
+      "Beat the eggs in a bowl.",
+      "Season the beaten eggs with salt and pepper.",
+      "Add the grated cheese and then the flour, mixing well until obtaining a homogeneous mixture.",
+      "Dip the onion rings into the prepared batter, ensuring they are completely covered.",
+      "Fry the onion rings in plenty of hot oil until golden brown.",
+      "Remove the onion rings from the oil and place on paper towels to remove excess oil.",
+      "Serve hot and enjoy."
+    ]
+  },
+  {
+    "recipe": "bread_pudding",
+    "id": 42,
+    "name": "bread_pudding",
+    "ingredients": [
+      "Milk",
+      "Stale bread",
+      "Powdered flan mix",
+      "Ground cinnamon",
+      "Vanilla essence",
+      "Liquid caramel"
+    ],
+    "steps": [
+      "Place the liquid caramel in the mold or tray.",
+      "Mix the vanilla essence with the milk.",
+      "In a bowl, combine the flan mix with the cinnamon and gradually add the milk, mixing well.",
+      "Bring the mixture to a boil in a saucepan over medium heat, stirring constantly with a whisk.",
+      "Pour the hot mixture over the slices of stale bread in the mold, ensuring they are well soaked.",
+      "Allow to cool to room temperature and then refrigerate for about 2 hours.",
+      "Unmold the pudding and serve."
+    ]
+  },
+  {
+    "recipe": "carrot_cake",
+    "id": 43,
+    "name": "carrot_cake",
+    "ingredients": [
+      "Carrots",
+      "Cinnamon stick",
+      "Sugar",
+      "Grated coconut",
+      "Maria cookies",
+      "Liqueur for soaking the cookies",
+      "Chocolate sprinkles for decoration"
+    ],
+    "steps": [
+      "Peel and chop the carrots, and cook them with the cinnamon stick and sugar until soft.",
+      "Drain the cooked carrots well and mash them.",
+      "In a mold, place a layer of Maria cookies previously soaked in liqueur, followed by a layer of mashed carrots and a layer of grated coconut. Repeat this layering process about 3 or 4 times.",
+      "Finish with a final layer of grated coconut and decorate with chocolate sprinkles.",
+      "Refrigerate before serving."
+    ]
+  },
+  {
+    "recipe": "nachos",
+    "id": 44,
+    "name": "nachos",
+    "ingredients": [
+      "Cornmeal",
+      "Wheat flour",
+      "Hot water",
+      "Sunflower oil",
+      "Salt",
+      "Pepper",
+      "Olive oil"
+    ],
+    "steps": [
+      "Mix cornmeal and wheat flour in a bowl. Add salt and pepper, and stir well to combine all ingredients.",
+      "Transfer the mixture to a large bowl. Add the oil and stir to mix. Then gradually add the hot water while kneading the dough.",
+      "Form a ball with the dough and cover it with a clean cloth. Let it rest in the refrigerator for 20 minutes.",
+      "After resting, roll out the dough on parchment paper with a rolling pin, forming a thin rectangular sheet. Trim the edges to make a precise rectangle and then cut the dough into zigzag triangles with a knife.",
+      "Heat sunflower oil in a pan. When hot, fry the nachos in small batches for about 2 minutes. Remove them and place them on paper towels to remove excess oil.",
+      "Serve homemade nachos with sauces or as a side dish. Ready to enjoy!"
+    ]
+  },
+  {
+    "recipe": "beet_salad",
+    "id": 45,
+    "name": "beet_salad",
+    "ingredients": [
+      "Quince",
+      "Sugar",
+      "Lemon juice",
+      "Dried shallot",
+      "Cranberry vinegar",
+      "Curry",
+      "Olive oil",
+      "Lettuce",
+      "Tomato",
+      "Cooked beetroot",
+      "Salt crystals",
+      "Mint leaves"
+    ],
+    "steps": [
+      "To prepare the quince compote, peel the fruit, remove the core, and cut it into regular-sized cubes. Place the quince cubes in a saucepan, cover with water, add sugar and a few drops of lemon juice. Heat and cook the compote until the fruit is tender but still firm. Then, chill in the refrigerator.",
+      "On the day of preparation, make the salad dressing by mixing all the ingredients and letting it sit for a few minutes to allow the shallot to hydrate well.",
+      "To assemble the salad, place some lettuce leaves on the bottom of each plate, then add the chopped tomatoes and cubed beetroot. Add a portion of quince compote in the center of each plate and drizzle the vegetables with the dressing, avoiding it from touching the quince.",
+      "Finally, drizzle each plate with olive oil, add a pinch of salt, and sprinkle mint leaves over the quince. Ready to serve!"
+    ]
+  },
+  {
+    "recipe": "bruschetta",
+    "id": 46,
+    "name": "bruschetta",
+    "ingredients": [
+      "Tomato",
+      "Baguette bread",
+      "Olive oil",
+      "Salt",
+      "Pepper",
+      "Fresh basil",
+      "Garlic"
+    ],
+    "steps": [
+      "Prepare all the ingredients.",
+      "Finely chop the seedless tomatoes into cubes.",
+      "Add olive oil, salt, and pepper to taste.",
+      "Add the basil cut into strips and refrigerate until needed.",
+      "Slice the bread, toast it with a little olive oil, and rub it with garlic.",
+      "Serve and enjoy these delicious tomato bruschettas as a perfect appetizer."
+    ]
+  },
+  {
+    "recipe": "croque_madame",
+    "id": 47,
+    "name": "croque_madame_sandwich",
+    "ingredients": [
+      "Sliced bread",
+      "Cheese",
+      "Butter",
+      "Egg",
+      "Cooked ham"
+    ],
+    "steps": [
+      "Gather all the necessary ingredients.",
+      "Grate the cheese if necessary.",
+      "Spread butter on one side of each slice of bread.",
+      "Place half of the grated cheese and the slices of cooked ham on one of the slices, on the buttered side.",
+      "Cover the sandwich with the other slice of bread, with the buttered side down, and spread more butter on the top side of the sandwich.",
+      "Cover the sandwich with the remaining grated cheese.",
+      "Add an egg on top.",
+      "Bake in the oven and gratin until the cheese melts."
+    ]
+  },
+  {
+    "recipe": "baby_back_ribs",
+    "id": 48,
+    "name": "baby_back_ribs",
+    "ingredients": [
+      "Pork baby back ribs",
+      "Salt",
+      "Pepper",
+      "Honey",
+      "Soy sauce",
+      "Lemon juice",
+      "Powdered ginger",
+      "Pineapple",
+      "Vinegar"
+    ],
+    "steps": [
+      "Cut the baby back ribs to separate them and place them on a platter. Sprinkle with salt and put them in the oven covered at 375°F (190°C) for about 45 minutes.",
+      "Meanwhile, prepare the sauce by mixing honey, soy sauce, lemon juice, and powdered ginger.",
+      "Remove the baby back ribs from the oven and remove excess fat if desired. Drizzle half of the ribs with the honey mixture and return to the oven, uncovered, reducing the temperature slightly, for another 25 minutes or until golden brown.",
+      "Meanwhile, drain the pineapple syrup and add the vinegar. Incorporate everything with the reserved honey mixture.",
+      "Dice the pepper and marinate them in this liquid.",
+      "Add the pineapple chunks and cook for about five minutes.",
+      "Remove the baby back ribs from the oven, drizzle them with this mixture, and bake for another 15 minutes to caramelize."
+    ]
+  },
+  {
+    "recipe": "pork_chop",
+    "id": 49,
+    "name": "pork_chop",
+    "ingredients": [
+      "Pork chops with bones",
+      "Crushed garlic",
+      "Soy sauce",
+      "Lemon juice",
+      "Olive oil",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Marinate the pork chops with all the ingredients: crushed garlic, soy sauce, lemon juice, and olive oil. Mix well and reserve for 1 hour to absorb all the flavors.",
+      "Heat the griddle and grease it with a little oil or butter.",
+      "Cook the pork chops on the griddle until golden brown on both sides.",
+      "Serve the chops accompanied by roasted potatoes or a green salad."
+    ]
+  },
+  {
+    "recipe": "hummus",
+    "id": 50,
+    "name": "hummus",
+    "ingredients": [
+      "Cooked chickpeas",
+      "½ clove of Garlic",
+      "1 teaspoon of Tahini or sesame seed paste",
+      "Olive oil",
+      "6 Black olives",
+      "A pinch of Ground cumin",
+      "A pinch of Salt",
+      "A pinch of Ground black pepper",
+      "A dash of Lemon juice"
+    ],
+    "steps": [
+      "Wash the chickpeas and drain them well. Place them in a blender glass.",
+      "Add the black olives, garlic, a little salt, black pepper to taste, and a little ground cumin.",
+      "Add a teaspoon of tahini or sesame paste.",
+      "Blend the Arabic hummus with the blender, adding a little olive oil and lemon juice to taste.",
+      "Serve the Arabic hummus accompanied by a little sweet paprika on top and olive oil."
+    ]
+  },
+  {
+    "recipe": "sashimi",
+    "id": 51,
+    "name": "sashimi",
+    "ingredients": [
+      "500 grams of Salmon",
+      "50 grams of Dried basil",
+      "100 grams of Pine nuts",
+      "A dash of Lemon juice",
+      "100 milliliters of Olive oil",
+      "A pinch of Salt",
+      "A pinch of Pepper"
+    ],
+    "steps": [
+      "Cut the salmon into thick strips and place them in the center of a plate.",
+      "Add the lemon juice over the salmon and let it marinate for about 10 minutes.",
+      "Drizzle the olive oil over the salmon.",
+      "Sprinkle the dried basil over the salmon and garnish with pine nuts.",
+      "Serve the salmon sashimi accompanied by soy sauce and optionally with sushi rice."
+    ]
+  },
+  {
+    "recipe": "cheese_plate",
+    "id": 52,
+    "name": "cheese_plate",
+    "ingredients": [
+      "Potato",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Chili pepper",
+      "Cheese",
+      "Shrimp broth or water",
+      "Evaporated milk",
+      "Huacatay",
+      "Ground black pepper",
+      "Salt",
+      "Oil"
+    ],
+    "steps": [
+      "Wash and place the potatoes in a large pot with water and salt. Cook them until tender, then peel and cut them in half or slices.",
+      "Cut the onions into thick wedges and the tomatoes into small cubes.",
+      "In a pan, heat a splash of oil and sauté the crushed garlic. Add the onions and cook until soft.",
+      "Add the aji panca and cook for a few more minutes.",
+      "Incorporate the chopped tomatoes and cook until they break down.",
+      "Add the shrimp broth (or water), huacatay leaves, salt, and pepper to taste.",
+      "Add the potatoes and cover with slices of cheese.",
+      "Let it boil until the cheese melts, then pour in a splash of evaporated milk.",
+      "Serve hot, removing the huacatay leaves and garnish with a slice of rocoto pepper."
+    ]
+  },
+  {
+    "recipe": "edamame",
+    "id": 53,
+    "name": "edamame",
+    "ingredients": [
+      "Edamame",
+      "Salt",
+      "Water",
+      "Sweet paprika",
+      "Flakes of salt"
+    ],
+    "steps": [
+      "Boil water in a saucepan and add a pinch of salt.",
+      "When the water is boiling, add the edamame pods and cook for 5 minutes over high heat, until the pods are tender and float to the surface.",
+      "Drain the edamame pods and let them cool.",
+      "Serve the edamame pods sprinkled with sweet paprika and flakes of salt."
+    ]
+  },
+  {
+    "recipe": "prime_rib",
+    "id": 54,
+    "name": "prime_rib",
+    "ingredients": [
+      "Pork ribs",
+      "Moroccan spices",
+      "Olive oil",
+      "Himalayan salt",
+      "Dehydrated onion",
+      "Pedro Ximénez reduction"
+    ],
+    "steps": [
+      "Preheat the oven to 180°C (356°F) with top and bottom heat.",
+      "In an oven tray previously coated with olive oil, place the strips of pork ribs.",
+      "Drizzle the ribs with a little olive oil and sprinkle Moroccan spices, Himalayan salt, and dehydrated onion flakes over them.",
+      "Bake the marinated ribs for approximately 1 hour and 45 minutes, or until well cooked.",
+      "When removing them from the oven, drizzle the ribs with Pedro Ximénez reduction before serving."
+    ]
+  },
+  {
+    "recipe": "beef_tartare",
+    "id": 55,
+    "name": "beef_tartare",
+    "ingredients": [
+      "Beef",
+      "Parsley",
+      "Lemon",
+      "Salt",
+      "Olive oil",
+      "Mustard",
+      "Curry",
+      "Black pepper"
+    ],
+    "steps": [
+      "Chop the beef into small pieces or use minced meat.",
+      "Finely chop the parsley.",
+      "Squeeze the lemon and reserve the juice.",
+      "In a large bowl, mix the beef with the parsley and drizzle with the lemon juice. Let it rest for a few minutes.",
+      "Prepare the spice sauce in another bowl, mixing Dijon mustard with a little oil, and adding black pepper, curry, and salt.",
+      "Pour the spice dressing over the beef and mix well to infuse.",
+      "Serve the beef tartare with spices and shape it if desired. It can be accompanied with cherry tomatoes and toast."
+    ]
+  },
+  {
+    "recipe": "hot_and_sour_soup",
+    "id": 56,
+    "name": "hot_and_sour_soup",
+    "ingredients": [
+      "Mushrooms",
+      "Vinegar",
+      "Soy sauce",
+      "Cornstarch",
+      "Broth",
+      "Salt",
+      "Eggs",
+      "Bamboo shoots",
+      "Meat",
+      "Tofu",
+      "Pepper",
+      "Sesame oil",
+      "Chives"
+    ],
+    "steps": [
+      "Soak the mushrooms (shiitake or wood ear) in very hot water for 20 minutes. Drain, remove the stems if they are shiitake, and finely chop.",
+      "In a pot, bring the broth to a boil. Add vinegar, soy sauce, and salt to taste.",
+      "In a glass, make a slurry with rice flour or cornstarch and add it to the boiling broth. Let it boil for a few minutes until thickened.",
+      "Beat the eggs in a bowl and add them to the boiling broth, making a circular motion to form strands.",
+      "Add the mushrooms, bamboo shoots, meat, tofu, and pepper. Let it boil for two minutes.",
+      "Taste the soup and adjust the flavor with more soy sauce or vinegar if necessary.",
+      "Serve in individual bowls and sprinkle with fresh chives."
+    ]
+  },
+  {
+    "recipe": "macarons",
+    "id": 57,
+    "name": "macarons",
+    "servings": 6,
+    "ingredients": {
+      "macarons": [
+        "Ground almonds",
+        "Powdered sugar",
+        "Cocoa powder",
+        "Mineral water",
+        "Granulated sugar",
+        "Egg whites",
+        "Dark chocolate",
+        "Liquid cream",
+        "Unsalted butter"
+      ]
+    },
+    "steps": [
+      "In a bowl, mix and sift the ground almonds, powdered sugar, and cocoa powder. Repeat sifting if necessary.",
+      "Incorporate half of the egg whites into the almond, sugar, and cocoa mixture. Mix well and set aside.",
+      "Boil the mineral water with the granulated sugar for 13 minutes to make a syrup. Let it cool.",
+      "Whip the other egg whites until stiff peaks form. Add the syrup in a thin stream while continuing to beat until the whites are warm or almost cold.",
+      "Add the meringue to the almond, sugar, and cocoa mixture. Gently fold.",
+      "Pipe the batter onto a baking sheet lined with parchment paper. Let it rest until the surface of the macarons is dry to the touch.",
+      "Meanwhile, prepare the chocolate ganache: melt the chocolate in hot cream and add the chopped butter. Mix until smooth ganache forms and let cool.",
+      "Preheat the oven to 170°C (340°F). Bake the macarons for about 9 minutes or until cooked.",
+      "Once baked, let cool completely on a rack.",
+      "Fill the macarons with the chocolate ganache. Sandwich the cookies together and press lightly.",
+      "Let the filled macarons rest in the refrigerator before serving."
+    ]
+  },
+  {
+    "recipe": "guacamole",
+    "id": 58,
+    "name": "guacamole",
+    "ingredients": [
+      "Avocado",
+      "Tomato",
+      "Fresh cilantro",
+      "Green chili",
+      "Lemon juice"
+    ],
+    "steps": [
+      "To make traditional guacamole, peel the avocados and place them in a shallow dish. Set aside the avocado seed. Mash the fruit with a fork, crushing everything more or less evenly.",
+      "Dice the tomatoes and green chili into the smallest possible squares. The cilantro should also be finely chopped.",
+      "Next, mix the ingredients, stirring and mashing in an enveloping manner to distribute everything evenly. Adjust the seasoning with salt or spice if necessary.",
+      "Preserve the guacamole by placing the avocado seed inside the dish or container where you keep the prepared mixture. Enjoy this typical Mexican dish with tortilla chips, nachos, fajitas, or whatever you like."
+    ]
+  },
+  {
+    "recipe": "creme_brulee",
+    "id": 59,
+    "name": "creme_brulee",
+    "ingredients": [
+      "Ground almonds",
+      "Milk",
+      "Egg yolk",
+      "Brown sugar",
+      "Raspberries",
+      "Salt",
+      "Brown sugar for caramelizing"
+    ],
+    "steps": [
+      "Toast the ground almonds in a dry pan over medium heat.",
+      "Heat the milk with the almonds until it begins to boil, then remove from heat.",
+      "Whisk the egg yolks with the brown sugar until slightly fluffy.",
+      "Add some of the hot milk to the yolks and mix well.",
+      "Incorporate the yolks into the remaining milk and cook over low heat until thickened without boiling.",
+      "Fill glasses with the mixture and some raspberries, then bake at 140°C (284°F) for about an hour.",
+      "Sprinkle the surface with brown sugar and caramelize with a torch or in the oven.",
+      "Decorate with raspberries before serving."
+    ]
+  },
+  {
+    "recipe": "risotto",
+    "id": 60,
+    "name": "risotto",
+    "ingredients": [
+      "Arborio rice",
+      "Mushrooms",
+      "White wine",
+      "Onion",
+      "Vegetable broth",
+      "Olive oil",
+      "Salt",
+      "Grated parmesan cheese",
+      "Black pepper"
+    ],
+    "steps": [
+      "Peel and finely chop the onion. Clean and cut the mushrooms into medium pieces.",
+      "Heat some oil in a pot and sauté the onion until translucent. Then, add the mushrooms and brown them.",
+      "Heat the vegetable broth in another pot.",
+      "Add the rice to the pot with the mushrooms, stir, and pour in the white wine. Let it reduce for a few minutes.",
+      "Add the vegetable broth gradually, constantly stirring the rice to cook it evenly and become creamy.",
+      "When the rice is al dente, add salt, pepper, and grated parmesan cheese. Stir until the cheese melts and adds creaminess.",
+      "Taste and adjust the seasoning if necessary. Turn off the heat and let the risotto rest covered for 5 minutes before serving.",
+      "Serve the mushroom risotto hot, accompanied by more grated parmesan cheese if desired."
+    ]
+  },
+  {
+    "recipe": "scallops",
+    "id": 61,
+    "name": "scallops",
+    "ingredients": [
+      "Veal scallops",
+      "Grated cheese",
+      "Oil",
+      "Egg",
+      "Flour",
+      "Breadcrumbs",
+      "Lemon",
+      "Green peppers",
+      "Salt"
+    ],
+    "steps": [
+      "Season the thin and tender veal scallops with salt.",
+      "Coat the scallops with flour, beaten egg, grated cheese, and breadcrumbs, in that order.",
+      "Fry the breaded scallops in hot oil until golden brown on both sides.",
+      "To serve, accompany the scallops with lemon slices and fried green peppers cut into strips."
+    ]
+  },
+  {
+    "recipe": "cheese_cake",
+    "id": 62,
+    "name": "cheesecake",
+    "ingredients": [
+      "Oreo cookies",
+      "Butter",
+      "Cottage cheese or ricotta",
+      "Cream cheese",
+      "Sugar",
+      "Egg yolks",
+      "Egg whites",
+      "Unsweetened cocoa powder",
+      "Vanilla sugar",
+      "Salt",
+      "Cream cheese",
+      "Liquid cream",
+      "Lemon juice",
+      "Flour",
+      "Egg yolk",
+      "Melting chocolate"
+    ],
+    "steps": [
+      "Preheat the oven to 225°C (437°F).",
+      "Crush the Oreo cookies and mix with melted butter. Place this mixture in the base of a springform pan and press firmly. Set aside.",
+      "Whip the egg whites to stiff peaks with a pinch of salt and then add 50 grams of sugar while continuing to beat. Set aside.",
+      "In another bowl, mix the cottage cheese, cream cheese, cream, sugar, egg yolks, cocoa powder, and vanilla sugar. Gently fold in the beaten egg whites.",
+      "Repeat the previous step to make the cheese layer.",
+      "Pour one-third of the chocolate mixture into the pan over the cookie base, then add all the cheese mixture and finish with the remaining chocolate mixture.",
+      "Bake at 225°C (437°F) for 15 minutes, then lower the temperature to 125°C (257°F) and bake for another 55 minutes. Do not open the oven during baking. Let it rest for at least 20 minutes after removing from the oven.",
+      "For the glaze, boil the cream and butter, then add the chopped chocolate. Stir until smooth ganache forms and pour over the unmolded cheesecake.",
+      "Refrigerate for at least 4 hours before serving."
+    ]
+  },
+  {
+    "recipe": "chicken_curry",
+    "id": 63,
+    "name": "chicken_curry",
+    "ingredients": [
+      "Chicken breast",
+      "Spring onion",
+      "Garlic",
+      "Fresh ginger",
+      "Chili pepper",
+      "Ground curry",
+      "Ground turmeric",
+      "Ground cumin",
+      "Crushed tomatoes",
+      "Salt",
+      "Ground black pepper",
+      "Coconut milk",
+      "Extra virgin olive oil",
+      "Fresh cilantro or parsley"
+    ],
+    "steps": [
+      "Cut the chicken into small pieces.",
+      "Chop the spring onion, garlic clove, ginger, and chili pepper.",
+      "Heat a little oil in a pan and fry the spring onion for 2 minutes.",
+      "Add the garlic, ginger, and chili pepper to the pan and cook for a few minutes.",
+      "Add the crushed tomatoes and cook for another 1 minute.",
+      "Incorporate the spices (curry, turmeric, and cumin) and mix well.",
+      "Add the chicken to the pan, season with salt and pepper to taste, and cook over high heat until golden brown on all sides.",
+      "Pour the coconut milk over the chicken and let it reduce slightly.",
+      "Serve the hot chicken curry, garnished with chopped parsley or cilantro."
+    ]
+  },
+  {
+    "recipe": "crab_cakes",
+    "id": 64,
+    "name": "crab_cakes",
+    "ingredients": [
+      "Crab meat",
+      "Saltine crackers or crackers",
+      "Mayonnaise",
+      "Worcestershire sauce",
+      "Fish seasoning mix",
+      "Beaten egg",
+      "Dijon mustard",
+      "Salt",
+      "Pepper",
+      "Parsley"
+    ],
+    "steps": [
+      "Mix all ingredients except crab meat in a bowl to make a dressing.",
+      "Incorporate the shredded crab meat into the mixture and combine well.",
+      "Form 4 balls with the mixture and then flatten them to make patties the size of a burger. Let them rest in the refrigerator for 40 minutes.",
+      "Fry the crab cakes in hot oil for 3-4 minutes on each side, until golden brown.",
+      "They can also be cooked on the grill or in the oven until golden brown.",
+      "Serve the crab cakes hot, accompanied by salad or inside burger buns."
+    ]
+  },
+  {
+    "recipe": "spaghetti_bolognese",
+    "id": 65,
+    "name": "spaghetti_bolognese",
+    "ingredients": [
+      "Onion",
+      "Ground beef",
+      "Garlic",
+      "Salt",
+      "Olive oil",
+      "Tomatoes",
+      "Parmesan cheese",
+      "Bay leaf",
+      "Spaghetti",
+      "Black pepper",
+      "Basil"
+    ],
+    "steps": [
+      "Boil water in a large deep pot. Add salt and let it come to a boil again. Add the pasta and cook for 7 to 11 minutes or until al dente. Drain.",
+      "Finely chop the garlic and onion. Sauté the onion and garlic in a little olive oil for a couple of minutes until lightly translucent.",
+      "Add the ground beef, stir well, and cook until no longer pink.",
+      "Add the diced tomatoes and skinless, season with salt and cook over low heat for 15 minutes. Add some bay leaves and basil leaves.",
+      "Place the pasta on two plates, cover each with the sauce, sprinkle with Parmesan cheese, and serve immediately."
+    ]
+  },
+  {
+    "recipe": "breakfast_burrito",
+    "id": 66,
+    "name": "breakfast_burrito",
+    "portions": "For 8 burritos",
+    "ingredients": [
+      "Tortillas",
+      "Eggs",
+      "Salt",
+      "Pepper",
+      "Ham",
+      "Onion",
+      "Tomato",
+      "Oil",
+      "Avocado",
+      "Refried beans",
+      "Cheese"
+    ],
+    "steps": [
+      "Finely chop the onion and tomato, and cut the ham into small squares.",
+      "Beat the eggs in a bowl with salt and pepper.",
+      "Heat oil in a skillet and add the beaten eggs, chopped vegetables, and ham.",
+      "Cook and mix until done, then remove from heat and set aside.",
+      "Lightly heat the tortillas and spread with refried beans and avocado.",
+      "Add a portion of egg and cheese on each tortilla.",
+      "Roll up the tortillas, tucking in the edges to prevent the filling from escaping.",
+      "Heat the burritos in a skillet or griddle until lightly browned.",
+      "Serve hot and enjoy."
+    ]
+  },
+  {
+    "recipe": "mussels",
+    "id": 67,
+    "name": "mussels",
+    "ingredients": [
+      "Mussels",
+      "Bay leaf",
+      "Lemon"
+    ],
+    "steps": [
+      "Clean the mussels under running water, removing the hairs and beards.",
+      "In a saucepan with a lid, add 3 tablespoons of water and the bay leaf.",
+      "Add the clean mussels to the saucepan and cook over high heat.",
+      "Cover the saucepan and cook the mussels for 8-10 minutes, until they have fully opened.",
+      "Discard any mussels that do not open.",
+      "Remove the mussels from the heat once they are ready.",
+      "Serve the steamed mussels accompanied by lemon slices."
+    ]
+  },
+  {
+    "recipe": "ramen",
+    "id": 68,
+    "name": "Ramen",
+    "ingredients": [
+      "Chinese noodles",
+      "Pork",
+      "Chopped scallion",
+      "Soy sauce",
+      "Sake",
+      "Bamboo shoots",
+      "Komatsuna",
+      "Boiled egg",
+      "Water",
+      "Chicken bones",
+      "Garlic",
+      "Ginger",
+      "Green onion",
+      "Carrot",
+      "Onion",
+      "Kombu seaweed"
+    ],
+    "steps": [
+      "Prepare the chicken broth by boiling the chicken bones, garlic, ginger, green onion, carrot, onion, and kombu seaweed in water for four hours. Strain, let cool, and skim off any fat.",
+      "Cook the soy sauce and sake with the pork. Reserve the meat and sauce.",
+      "Cook the Chinese noodles in boiling water for two minutes, then drain and cool under cold water.",
+      "Mix the soy sauce and sake with some chicken broth. Add this mixture to a large bowl.",
+      "Add the cooked noodles to the sauce mixture in the bowl.",
+      "Slice the pork into thin pieces and add it to the noodles along with the bamboo shoots, komatsuna leaves, and halved boiled egg."
+    ]
+  },
+  {
+    "recipe": "hamburger",
+    "id": 69,
+    "name": "hamburger",
+    "ingredients": [
+      "Ground beef",
+      "Ground pork",
+      "Hamburger buns",
+      "Red tomatoes",
+      "Mozzarella cheese",
+      "White onion",
+      "Breadcrumbs",
+      "Salt",
+      "Pepper",
+      "Garlic paste"
+    ],
+    "steps": [
+      "In a bowl, mix the ground beef and pork with the spices and breadcrumbs.",
+      "Form medium-sized balls with the meat mixture and flatten them to form the burgers.",
+      "Heat a little oil in a skillet over medium heat and cook the burgers until golden brown on both sides and cooked inside.",
+      "Add a slice of mozzarella cheese on each burger and let it melt.",
+      "Serve the burgers on buns with slices of tomato and onion, and enjoy."
+    ]
+  },
+  {
+    "recipe": "pho",
+    "id": 70,
+    "name": "pho",
+    "ingredients": [
+      "Cow's knee bones",
+      "Medium onion",
+      "Fresh ginger",
+      "Spices",
+      "Chili",
+      "Beef",
+      "Rice noodles",
+      "Salt",
+      "Fresh basil",
+      "Limes cut into eighths"
+    ],
+    "steps": [
+      "Prepare the broth by boiling cow's knee bones, onion, ginger, spices, and chili in water for several hours.",
+      "Strain the broth and discard the solids. Add salt to taste.",
+      "Cook the rice noodles according to the package instructions and drain them.",
+      "In individual bowls, place the cooked rice noodles and thinly sliced raw beef.",
+      "Pour the hot broth over the noodles and beef. The beef will cook with the heat of the broth.",
+      "Serve the hot pho soup with fresh basil and lime to squeeze over the soup before eating."
+    ]
+  },
+  {
+    "recipe": "pancakes",
+    "id": 71,
+    "name": "pancakes",
+    "ingredients": [
+      "4 eggs",
+      "1 pinch of salt",
+      "1 tablespoon of sugar",
+      "1 can of milk",
+      "1 cup of prepared flour",
+      "1 pinch of oil"
+    ],
+    "steps": [
+      "To start making American pancakes, add the prepared flour in a wide-mouthed container that allows you to beat. Remember that prepared flour is the classic pastry flour that already comes with yeast and baking powder, it is also called leavening flour.",
+      "Add the eggs, whole, and yolk, along with a pinch of salt and sugar onto the flour.",
+      "Now, gradually add the milk and mix everything. Add as much milk as you consider necessary, the pancake batter should be slightly thick and without lumps.",
+      "Finally, add a splash of oil and continue stirring everything until integrated. You will see how the oil makes the last lumps dissolve and the batter is smooth and completely homogeneous.",
+      "To cook, heat a skillet over low heat, greased with butter or oil. When it is hot, pour a portion of the batter and let it cook until you see bubbles on the surface, then flip it and finish cooking on the other side. Repeat the operation until you finish the pancake batter.",
+      "Serve the fluffy pancakes with a little butter and honey or simply some fruits."
+    ]
+  },
+  {
+    "recipe": "grilled_salmon",
+    "id": 72,
+    "name": "grilled_salmon",
+    "ingredients": [
+      "Salmon",
+      "Eggs",
+      "White vinegar",
+      "Garlic paste",
+      "Salt",
+      "Pepper",
+      "Dried thyme"
+    ],
+    "steps": [
+      "Prepare all the ingredients and cut the salmon into desired portions.",
+      "Season the salmon with salt, pepper, garlic paste, and dried thyme.",
+      "Cook the salmon on the grill in a hot skillet with a little olive oil, over medium heat. Brown on both sides for 10-15 minutes.",
+      "To make poached eggs, place a sheet of transparent paper in a glass, add a little olive oil and an egg. Season with salt and pepper and close by tying a knot with the end.",
+      "In a pot with boiling water and a splash of white vinegar, place the eggs in the pouches and cook for 6 minutes for a soft yolk.",
+      "Serve the grilled salmon and place the poached egg on top. It can be accompanied by white rice or sautéed broccoli."
+    ]
+  },
+  {
+    "recipe": "hot_dog",
+    "id": 73,
+    "name": "hot_dog",
+    "ingredients": [
+      "Sausages",
+      "Buns",
+      "Onion",
+      "Green bell pepper",
+      "Bacon",
+      "Ketchup",
+      "American mustard"
+    ],
+    "steps": [
+      "Finely chop the onion and green bell pepper.",
+      "Cut the bacon into small pieces.",
+      "Fry the onion and pepper in a skillet with a little oil until softened.",
+      "Brown the bacon in the same skillet and set aside.",
+      "Cut the buns and lightly toast them on a griddle or skillet.",
+      "Grill the sausages in the skillet or griddle.",
+      "Place the sausages in the buns and top with the onion, pepper, and bacon.",
+      "Add ketchup and mustard to taste.",
+      "Serve with French fries or roasted potato wedges."
+    ]
+  },
+  {
+    "recipe": "gnocchi",
+    "id": 74,
+    "name": "gnocchi",
+    "ingredients": [
+      "potatoes",
+      "flour",
+      "egg",
+      "salt",
+      "basil",
+      "pistachios",
+      "walnuts",
+      "olive oil",
+      "water",
+      "garlic",
+      "parmesan cheese",
+      "manchego cheese",
+      "ground black pepper"
+    ],
+    "steps": [
+      "Cook the potatoes in the microwave or roast them in the oven.",
+      "Peel and mash the potatoes to make a smooth puree.",
+      "Add half an egg and salt to the potato puree and mix well.",
+      "Incorporate half a glass of flour and knead until obtaining a moldable dough.",
+      "Form churros with the dough and cut pieces of 1/2 cm to make the gnocchi.",
+      "Mark the gnocchi with the tips of a fork.",
+      "Cook the gnocchi in boiling water until they float.",
+      "Chop the walnuts and pistachios.",
+      "Chop the basil and mix with olive oil and water to make the sauce.",
+      "Add the chopped nuts, crushed garlic, grated cheese, and pepper to the sauce.",
+      "Serve the gnocchi with the pesto sauce."
+    ]
+  },
+  {
+    "recipe": "beef_carpaccio",
+    "id": 75,
+    "name": "beef_carpaccio",
+    "ingredients": [
+      "beef fillet",
+      "foie gras mousse",
+      "salt",
+      "pepper",
+      "butter",
+      "bovril sauce",
+      "lemon juice",
+      "olive oil",
+      "balsamic vinegar"
+    ],
+    "steps": [
+      "Spread a beef fillet with foie gras mousse on one side and roll it to form a roll.",
+      "Lightly season the roll with salt, pepper, butter, and bovril sauce.",
+      "Wrap the roll in plastic wrap, closing the sides well to press it, and take it to the freezer to harden.",
+      "When semi-frozen, cut thin slices with a carving knife and arrange them on the serving plate.",
+      "Season the carpaccio with salt, pepper, lemon juice mixed with balsamic vinegar, and extra virgin olive oil."
+    ]
+  },
+  {
+    "recipe": "garlic_bread",
+    "id": 76,
+    "name": "garlic_bread",
+    "ingredients": [
+      "bread",
+      "butter",
+      "garlic",
+      "parsley",
+      "salt"
+    ],
+    "steps": [
+      "Cut the bread loaf into slices without completely separating them.",
+      "Crush the garlic cloves in a mortar and mix with room temperature butter, chopped parsley, and a pinch of salt.",
+      "Spread each bread slice with portions of the butter and garlic mixture.",
+      "Wrap the bread loaf in aluminum foil and bake at 160°C for 5-6 minutes.",
+      "Remove the aluminum foil and bake for another 4 minutes, until the butter starts to melt.",
+      "Let cool slightly before serving."
+    ]
+  },
+  {
+    "recipe": "waffles",
+    "id": 77,
+    "name": "waffles",
+    "ingredients": [
+      "warm milk",
+      "fresh yeast",
+      "strong flour",
+      "salt",
+      "cinnamon",
+      "honey",
+      "egg",
+      "unsalted butter",
+      "pearl sugar"
+    ],
+    "steps": [
+      "Dissolve the yeast in warm milk.",
+      "Mix the flour, salt, and cinnamon in a bowl. Add the yeast dissolved in milk, honey, and egg. Knead for 5 minutes.",
+      "Incorporate the butter gradually and knead for another 10 minutes.",
+      "Cover the dough with plastic wrap and let it rest for 1 hour and 30 minutes in a warm place.",
+      "Add the pearl sugar to the dough and mix well.",
+      "Divide the dough into 8 equal portions and form the dough balls. Let them rest for another 30 minutes.",
+      "Heat the waffle maker and place a dough ball in each slot. Cook for 5 minutes or until golden brown.",
+      "Allow to cool slightly or cool before consuming."
+    ]
+  },
+  {
+    "recipe": "miso_soup",
+    "id": 78,
+    "name": "miso_soup",
+    "ingredients": [
+      "udon noodles",
+      "vegetable broth",
+      "miso paste",
+      "hondashi",
+      "egg",
+      "green onion"
+    ],
+    "steps": [
+      "In a pot, boil the vegetable broth with hondashi for 2 minutes.",
+      "Add the udon noodles and simmer for another 3 minutes.",
+      "Turn off the heat and add miso and chopped green onion to taste. Stir to dissolve the miso.",
+      "Optionally, prepare a poached egg: Boil water with vinegar, create a whirlpool, and crack the egg into the center. Cook for 2-3 minutes.",
+      "Serve the miso soup and, if desired, place the poached egg on top. Sprinkle with sesame seeds if preferred."
+    ]
+  },
+  {
+    "recipe": "pad_thai",
+    "id": 79,
+    "name": "pad_thai",
+    "ingredients": [
+      "red bell pepper",
+      "sweet onion",
+      "carrot",
+      "fish sauce",
+      "tamarind sauce",
+      "ginger",
+      "limes",
+      "rice noodles",
+      "prawns or shrimp",
+      "fresh cilantro",
+      "eggs",
+      "peeled and chopped peanuts",
+      "soft tofu"
+    ],
+    "steps": [
+      "Hydrate the noodles according to the manufacturer's instructions. Cut and rinse them in cold water. Set aside.",
+      "Grate the zest of one of the limes and squeeze its juice. Mix with soy sauce, tamarind sauce, fish sauce, and ginger zest. Let the mixture rest.",
+      "Remove the shells from the prawns, leaving the tail end intact. Sauté lightly in olive oil for a couple of minutes and then remove them from the wok.",
+      "Cut the tofu into small cubes and sauté for two minutes with a few drops of oil. Then, set aside and reserve.",
+      "Finely chop the onion, carrot, and bell pepper. Sauté in the wok with a little oil for three minutes over low heat.",
+      "Add the mixture of juices and sauces to the wok with the vegetables. Sauté for a few minutes.",
+      "Beat the eggs and add them to the wok to lightly scramble.",
+      "Drain the noodles and add them to the wok along with the other ingredients. Adjust the salt and stir carefully.",
+      "Add the chopped cilantro, peanuts, and tofu to the wok. Stir to combine everything.",
+      "Add the prawns to the wok and let them heat for one or two more minutes.",
+      "Serve the prawn pad thai garnished with lime wedges."
+    ]
+  },
+  {
+    "recipe": "clam_chowder",
+    "id": 80,
+    "name": "clam_chowder",
+    "ingredients": [
+      "diced bacon",
+      "clams",
+      "flour",
+      "sliced leeks",
+      "chopped celery",
+      "chopped green onions",
+      "diced potatoes",
+      "herbs",
+      "milk or cream",
+      "butter",
+      "salt",
+      "pepper"
+    ],
+    "steps": [
+      "Soak the clams in water to release the sand. Place them in a pot with a little water and steam them until they open. Remove, separate the clams from their shells, and reserve the cooking broth (complete with two and a half cups of broth, adding water if necessary). Cut the clams into small pieces and set aside.",
+      "In a skillet, slowly fry the bacon pieces until golden brown. Set aside.",
+      "In a pot, melt the butter and add the onion, leek, and celery. Cook until the onion is golden.",
+      "Add the flour and cook for about 3 minutes. Add the potatoes and pour in the clam broth. Let simmer over low heat for 10 minutes.",
+      "Add the clams and cook for a few more minutes, or until the potatoes are tender. Add the milk or cream, herbs, and season with salt and pepper.",
+      "Before serving, add the crispy bacon.",
+      "Serve the soup hot in individual bowls, with sourdough bread at the bottom or crispy salted crackers crumbled on top."
+    ]
+  },
+  {
+    "recipe": "poutine",
+    "id": 81,
+    "name": "poutine",
+    "description": "A classic recipe from Canadian fast food cuisine, poutine is a delicious and comforting dish that combines french fries, brown gravy, and cheese curds.",
+    "ingredients": [
+      "Cottage cheese or mozzarella",
+      "Potatoes",
+      "Flour",
+      "Butter",
+      "Beef or veal broth",
+      "Salt",
+      "Pepper"
+    ],
+    "steps": [
+      "In a skillet, melt the butter and add the flour. Mix and cook over medium heat until toasted and light golden brown.",
+      "Gradually add the broth and season with salt and pepper. Stir constantly.",
+      "Bring the sauce to a boil, then reduce the heat and simmer for 15 minutes.",
+      "Peel the potatoes and cut them into sticks about 1 cm thick.",
+      "Soak the potatoes in a bowl of cold water for several hours.",
+      "Drain the potatoes and pat them dry with a clean, dry cloth. Place them on paper towels to remove all moisture.",
+      "In a large pot, heat enough oil to 150°C.",
+      "Fry the potatoes in batches for 5 to 8 minutes, without letting them brown too much.",
+      "Place the potatoes on a rack and increase the heat of the oil.",
+      "When the oil is hotter, fry the potatoes again until golden and crispy.",
+      "Drain the potatoes and place them on paper towels. Lightly sprinkle with salt.",
+      "To serve, place the potatoes on a plate, add the cheese cut into squares, and pour a spoonful of hot sauce on top."
+    ]
+  },
+  {
+    "recipe": "dumplings",
+    "id": 82,
+    "name": "dumplings",
+    "ingredients": [
+      "flour",
+      "water",
+      "salt",
+      "chicken",
+      "cabbage",
+      "onion",
+      "garlic",
+      "ground ginger"
+    ],
+    "steps": [
+      "To make the dough, mix the flour with boiling water and stir until a homogeneous dough forms.",
+      "Knead the dough for about 10 minutes on a clean surface and let it rest for 20 minutes while preparing the filling.",
+      "To make the filling, finely chop the onion, garlic, chicken, and cabbage. Season with ground ginger and mix well.",
+      "Divide the dough into 23 balls of approximately 15 grams each.",
+      "Roll out each dough ball into a thin circular sheet.",
+      "Fill each dough sheet with a portion of the filling and seal it, moistening the edges with water and pinching them together in the center.",
+      "Steam the dumplings for about 7 minutes, covered.",
+      "Once cooked, check that the dough is cooked and translucent before serving."
+    ]
+  },
+  {
+    "recipe": "shrimp_and_grits",
+    "id": 83,
+    "name": "shrimp_and_grits",
+    "ingredients": [
+      "quick grits",
+      "water",
+      "nut milk (hazelnut)",
+      "salt",
+      "butter",
+      "heavy cream",
+      "canned cream of celery soup",
+      "grated cheddar cheese",
+      "smoked bacon",
+      "large shrimp",
+      "cajun seasoning",
+      "ground cayenne pepper",
+      "fresh parsley",
+      "lemon",
+      "avocado oil",
+      "red bell pepper",
+      "green onions",
+      "garlic cloves",
+      "smoked paprika",
+      "chicken or vegetable broth"
+    ],
+    "steps": [
+      "Cook the bacon in a skillet over medium heat until crispy.",
+      "Remove the bacon from the skillet and chop it into small pieces, reserving the fat in the skillet.",
+      "In a pot, bring 3 cups of water to a boil. Add the grits and salt, cook over medium heat for 5-7 minutes.",
+      "Remove from heat and add the grated cheddar cheese, nut milk, heavy cream, and butter. Stir until smooth.",
+      "In a skillet, sauté the green onion, garlic, and sliced red bell pepper in avocado oil over medium heat for 5-6 minutes.",
+      "Add the shrimp and seasonings (cajun seasoning, smoked paprika, and ground cayenne pepper). Cook over medium heat for 1-2 minutes or until the shrimp are golden.",
+      "Add the chicken or vegetable broth along with the sautéed vegetables to the shrimp. Simmer for 5 minutes over low heat.",
+      "Serve the cheese grits on a plate and pour the shrimp sauce over the top.",
+      "Sprinkle with chopped parsley and squeeze some fresh lemon over the shrimp. Ready to enjoy!"
+    ]
+  },
+  {
+    "recipe": "french_toast",
+    "id": 84,
+    "name": "french_toast",
+    "ingredients": [
+      "cinnamon powder",
+      "milk",
+      "salt",
+      "vanilla",
+      "large eggs",
+      "sandwich bread",
+      "oleomargarine",
+      "pancake syrup"
+    ],
+    "steps": [
+      "In a cup, pour the cinnamon. Add a little milk and mix until well dissolved. Then, add the remaining milk, salt, and vanilla. Mix well.",
+      "Heat a large skillet over moderate heat. Meanwhile, in a bowl, beat the eggs and slowly pour in the cup mixture, whisking continuously until well incorporated.",
+      "Dip a slice of bread lightly into the mixture and drain it. It should absorb some of the mixture but not be soaked.",
+      "Pour some oleomargarine into the hot skillet and place the bread slice on top. Repeat the process with as many slices as comfortably fit in the skillet and brown them without burning. Repeat this step until the mixture is used up.",
+      "Serve the French toasts immediately and drizzle them with syrup on top."
+    ]
+  },
+  {
+    "recipe": "spring_rolls",
+    "id": 85,
+    "name": "spring_rolls",
+    "ingredients": [
+      "spring roll wrappers",
+      "Chinese roots",
+      "carrots",
+      "white onion",
+      "small cabbage",
+      "leeks",
+      "zucchini",
+      "sukini",
+      "soy sauce"
+    ],
+    "steps": [
+      "Prepare all the ingredients.",
+      "Finely chop the white onion into very thin strips and the leeks into julienne. Cook in a pot with olive oil until soft.",
+      "Add the carrot cut into julienne strips and cook for 5 minutes.",
+      "Add the cabbage cut into julienne strips and the Chinese roots. Add a little soy sauce and adjust the flavor with salt and pepper. Let cook over low heat for 10 minutes.",
+      "Reserve the vegetable mixture in a container. Place 200 grams of hot water on a large plate. Pass a sheet of rice paper through the water and remove it when it is soft and easy to handle. Place it on a cutting board and in the center, place some vegetables. Cover with the bottom part.",
+      "Then, bring one side trying to keep it straight and then bring the other side.",
+      "Roll up to seal with the last part, leaving it downwards.",
+      "Fry the spring rolls on both sides in very hot oil. Remove when golden. Serve and accompany with soy sauce."
+    ]
+  },
+  {
+    "recipe": "frozen_yogurt",
+    "id": 86,
+    "name": "frozen_yogurt",
+    "ingredients": [
+      "Natural yogurt",
+      "Honey or Maple syrup",
+      "Vanilla essence"
+    ],
+    "steps": [
+      "Prepare all the ingredients.",
+      "Mix the yogurt with the honey.",
+      "Add the vanilla essence and continue mixing until it becomes light.",
+      "If you don't have an ice cream maker, place the mixture in the freezer for 4 hours. After that time, remove from the freezer, blend, and freeze again. Repeat this process at least 3 times.",
+      "If you have an ice cream maker, place the mixture in the machine and turn it on. Let it process until the natural yogurt ice cream forms."
+    ]
+  },
+  {
+    "recipe": "baklava",
+    "id": 87,
+    "name": "baklava",
+    "ingredients": [
+      "Walnuts",
+      "Almonds",
+      "Phyllo pastry sheets",
+      "Cloves",
+      "Lemon",
+      "Orange blossom water",
+      "Sugar",
+      "Cinnamon",
+      "Butter",
+      "Chopped pistachios"
+    ],
+    "steps": [
+      "Finely chop the walnuts and almonds, mix them with sugar and cinnamon.",
+      "Melt the butter and spread it on the base of an oven-safe dish.",
+      "Place two sheets of phyllo pastry in the dish, brush them with melted butter.",
+      "Add a layer of the walnut and almond mixture.",
+      "Repeat the process of layers of phyllo pastry and walnut and almond mixture until ending with a layer of phyllo pastry on top.",
+      "Refrigerate for 25 minutes to compact.",
+      "Preheat the oven to 180°C and bake for 15 minutes.",
+      "Meanwhile, prepare the syrup: in a saucepan, heat the remaining sugar with the cloves, lemon zest, and water.",
+      "Add the lemon juice and orange blossom water, boil for 10 minutes.",
+      "Once the baklava is golden, remove from the oven and pour the hot syrup over it.",
+      "Let cool completely before serving."
+    ]
+  },
+  {
+    "recipe": "eggs_benedict",
+    "id": 88,
+    "name": "eggs_benedict",
+    "ingredients": [
+      "Eggs",
+      "Smoked ham",
+      "English muffins or round milk bread",
+      "Vinegar",
+      "Water",
+      "Egg yolks",
+      "Butter",
+      "Lemon",
+      "Mustard",
+      "Salt"
+    ],
+    "steps": [
+      "Heat water, salt, and vinegar in a pot.",
+      "When boiling, poach the eggs one by one.",
+      "Split the English muffins in half, toast and place a slice of smoked ham on each half.",
+      "Place a poached egg on each half of the muffin with ham.",
+      "For the hollandaise sauce, squeeze the lemon and pour its juice into a blender along with the mustard, salt, and egg yolks.",
+      "Heat the butter until melted, then gradually add it to the blender while it is running.",
+      "Whisk until the sauce thickens.",
+      "Pour a tablespoon of hollandaise sauce over each eggs benedict.",
+      "Garnish with a sprig of parsley or dill and serve."
+    ]
+  },
+  {
+    "recipe": "bibimbap",
+    "id": 89,
+    "name": "bibimbap",
+    "servings": 2,
+    "ingredients": [
+      "Thin lean beef steaks",
+      "Small onion",
+      "Fresh shiitake mushrooms",
+      "Carrot",
+      "Zucchini",
+      "Fresh spinach",
+      "Soybean sprouts",
+      "Cooked round rice",
+      "Egg",
+      "Soy sauce",
+      "Sesame oil",
+      "Mirim or sweet white wine",
+      "Sugar",
+      "Honey",
+      "Peeled and grated garlic clove",
+      "Sesame seeds",
+      "Rice vinegar",
+      "Gochujang or hot pepper paste"
+    ],
+    "steps": [
+      "Prepare the cooked white rice and keep it warm.",
+      "Prepare the sauce by mixing the gochujang, sesame oil, rice vinegar, mirim, soy sauce, sugar, and set aside.",
+      "Marinate the beef with sesame oil, soy sauce, honey, grated garlic, and sesame seeds.",
+      "Sauté the shiitake mushrooms, onion, carrot, and zucchini separately until al dente.",
+      "Blanch the spinach and soybean sprouts, cool and drain well.",
+      "Chop the spinach and season with grated garlic, salt, and sesame oil.",
+      "Sauté the beef until cooked and caramelized.",
+      "Fry the eggs until the yolks are runny.",
+      "Assemble the plates by placing the rice on the bottom, the vegetables and meat on top, and the egg in the center.",
+      "Drizzle with the prepared sauce, sprinkle with sesame seeds, and serve."
+    ]
+  },
+  {
+    "recipe": "caesar_salad",
+    "id": 90,
+    "name": "caesar_salad",
+    "ingredients": [
+      "Romaine lettuce",
+      "Chicken breast",
+      "Sliced bread",
+      "Olive oil",
+      "Paprika",
+      "Lemon juice",
+      "Balsamic vinegar",
+      "Garlic powder",
+      "Rosemary",
+      "Neutral oil",
+      "Mustard seeds",
+      "Grated cheese",
+      "Worcestershire sauce",
+      "Canned tuna",
+      "Egg",
+      "Sesame seeds",
+      "Mustard",
+      "Garlic powder",
+      "Grated cheese",
+      "Worcestershire sauce",
+      "Canned tuna",
+      "Egg",
+      "Lemon juice"
+    ],
+    "steps": [
+      "Marinate the chicken strips with lemon juice, balsamic vinegar, oil, rosemary, and garlic powder.",
+      "Spread olive oil and paprika on the bread slices, and toast in the oven at 160°C until golden brown.",
+      "Wash and cut the lettuce, distribute it on the plate.",
+      "Cook the chicken in a skillet without oil until cooked.",
+      "Place the chicken on the lettuce and distribute the toasted bread over the chicken.",
+      "Prepare the dressing by boiling the egg for 12 minutes, then mix with mustard, garlic powder, grated cheese, Worcestershire sauce, tuna, and lemon juice."
+    ]
+  },
+  {
+    "recipe": "deviled_eggs",
+    "id": 91,
+    "name": "deviled_eggs",
+    "ingredients": [
+      "8 eggs",
+      "2 cans of oil-packed tuna",
+      "5 imitation crab sticks or surimi",
+      "200 grams of cooked shrimp",
+      "1 small can of red bell pepper",
+      "1 jar of mayonnaise",
+      "3 tablespoons of ketchup or tomato sauce"
+    ],
+    "steps": [
+      "Boil a pot of water, add the eggs and cook for 10-12 minutes once boiling begins. Once cooked, transfer them to a bowl of cold water to cool them down before peeling. Peel them, cut them lengthwise, separate the yolks from the whites, and set aside.",
+      "Finely chop the surimi with a knife into very small pieces.",
+      "Peel the cooked shrimp and chop them into small pieces, leaving some for garnishing the eggs. You can make the deviled eggs with more seafood ingredients, such as chopped mussels.",
+      "Place the chopped surimi sticks and chopped shrimp in a bowl. Drain the oil from the tuna cans, add it to the bowl with the other ingredients, and mix. Add half of the egg yolks to the mixture and stir everything well.",
+      "In another bowl, prepare a pink sauce. To do this, mix the mayonnaise with a few tablespoons of ketchup or tomato sauce and mix. Add tablespoons of tomato until it reaches your desired consistency. Taste to add salt if necessary. You can also add a few tablespoons of brandy or orange juice to the sauce for an extra flavor kick.",
+      "Add tablespoons of pink sauce to the filling and mix. Fill the eggs and place them in a serving dish.",
+      "Decorate the deviled eggs with seafood with a little mayonnaise on top. Chop the remaining egg yolks and sprinkle them over each egg. Finally, cut strips of red bell pepper and use them for decoration."
+    ]
+  },
+  {
+    "recipe": "huevos_rancheros",
+    "id": 92,
+    "name": "huevos_rancheros",
+    "ingredients": [
+      "Eggs",
+      "Corn tortillas",
+      "Salt",
+      "Oil",
+      "Tomato",
+      "Onion",
+      "Serrano pepper",
+      "Garlic",
+      "Beans"
+    ],
+    "steps": [
+      "Wash the vegetables and the eggs.",
+      "Chop the tomatoes, onion, chili, and garlic.",
+      "Fry the garlic and onion in a skillet with oil. When they are translucent, add the tomato and chili. Cook for 10 minutes, adding a little water to obtain a broth-like sauce.",
+      "In another skillet, fry the tortillas in hot oil. Drain them and place them on the serving plate.",
+      "Fry the eggs in the same skillet. Add a pinch of salt to the yolk and cook to taste.",
+      "Place the sauce over the fried tortillas and place the eggs on top.",
+      "Cover with more sauce and serve the Mexican huevos rancheros.",
+      "Optionally, serve with beans."
+    ]
+  },
+  {
+    "recipe": "tuna_tartare",
+    "id": 93,
+    "name": "tuna_tartare",
+    "ingredients": [
+      "Tuna belly",
+      "Old-style mustard",
+      "Salt",
+      "Pepper",
+      "Soy sauce",
+      "Tabasco sauce"
+    ],
+    "steps": [
+      "Finely chop the tuna belly into small pieces.",
+      "Place the tuna in a bowl and add the old-style mustard, salt, pepper, soy sauce, and a few drops of Tabasco sauce, to taste.",
+      "Stir well until all ingredients are combined. Adjust seasoning if necessary.",
+      "Refrigerate for at least 30 minutes for the tuna to absorb the marinade flavor.",
+      "Serve the spicy tuna tartare in a bowl or on salted crackers."
+    ]
+  },
+  {
+    "recipe": "ravioli",
+    "id": 94,
+    "name": "ravioli",
+    "ingredients": [
+      "Oil",
+      "Garlic clove",
+      "Onion",
+      "Chopped parsley",
+      "Ground black pepper",
+      "Grated cheese",
+      "Ravioli",
+      "Salt",
+      "Crushed tomatoes"
+    ],
+    "steps": [
+      "In a skillet, heat the oil and sauté the chopped garlic and onion until golden brown.",
+      "Add the crushed tomatoes and season with salt, pepper, sugar, and parsley. Cook until a thick sauce forms.",
+      "Cook the ravioli according to the package instructions. Drain well.",
+      "Place the cooked ravioli in an ovenproof dish.",
+      "Cover the ravioli with the prepared sauce and sprinkle with grated cheese.",
+      "Grill in the preheated oven at high temperature for about 5 minutes, until the cheese is golden and bubbly.",
+      "Serve hot directly from the ovenproof dish."
+    ]
+  },
+  {
+    "recipe": "grilled_cheese_sandwich",
+    "id": 95,
+    "name": "grilled_cheese_sandwich",
+    "ingredients": [
+      "White bread",
+      "Ham (your preferred type)",
+      "Grated Swiss cheese",
+      "Whole eggs",
+      "Cream milk",
+      "Butter"
+    ],
+    "steps": [
+      "Prepare the ingredients and remove the crust from the bread slices.",
+      "Place two slices of ham and some cheese between two slices of bread. Cut the sandwich into quarters by making diagonal cuts to obtain triangle-shaped canapés.",
+      "Mix the eggs with the cream and brush the sandwich quarters with this mixture.",
+      "Heat the butter in a skillet and fry the canapés until golden brown."
+    ]
+  },
+  {
+    "recipe": "fish_and_chips",
+    "id": 96,
+    "name": "fish_and_chips",
+    "ingredients": [
+      "Grouper fillet",
+      "Cooked potatoes",
+      "Salt",
+      "Pepper",
+      "Mustard",
+      "Flour"
+    ],
+    "steps": [
+      "Prepare the ingredients and cut the grouper fillet into medium strips. Season the strips with salt and pepper and coat them with flour until completely coated.",
+      "Fry the potatoes in plenty of oil until golden brown. Set aside.",
+      "Fry the fish strips in the same oil until golden brown.",
+      "Serve the fish and chips in a parchment paper cone and accompany with mustard or preferred sauce."
+    ]
+  },
+  {
+    "recipe": "ceviche",
+    "id": 97,
+    "name": "ceviche",
+    "ingredients": [
+      "Hake or Chilean hake (boneless)",
+      "Avocado",
+      "Cherry tomatoes",
+      "Cilantro",
+      "Lemon juice",
+      "Red onion",
+      "Hot peppers or chili peppers (optional)",
+      "Garlic powder",
+      "Salt",
+      "White pepper"
+    ],
+    "steps": [
+      "Wash the hake and cut it into cubes. Season with salt and refrigerate.",
+      "Dice the tomatoes and slice the avocado. Also, chop the onion, cilantro, and chili peppers into very small pieces.",
+      "In a bowl, mix the hake, onion, chili, garlic, and cilantro. Add the cherry tomatoes, avocado, and season with salt and white pepper to taste. Finally, pour everything with lemon juice.",
+      "Refrigerate for a few hours, serve, and enjoy."
+    ]
+  },
+  {
+    "recipe": "red_velvet_cake",
+    "id": 98,
+    "name": "red_velvet_cake",
+    "ingredients": [
+      "Flour",
+      "Cocoa powder",
+      "Sugar",
+      "Baking powder",
+      "Baking soda",
+      "Salt",
+      "Unsalted butter",
+      "Vegetable oil",
+      "Eggs",
+      "White vinegar",
+      "Buttermilk",
+      "Vanilla extract",
+      "Red food coloring",
+      "Cream cheese",
+      "Milk"
+    ],
+    "steps": [
+      "Preheat the oven to 350º F and prepare the mold.",
+      "Sift the flour, baking powder, baking soda, salt, and cocoa powder into a mold.",
+      "Beat the butter with the sugar and oil, then add the eggs, vanilla, and buttermilk.",
+      "Mix the buttermilk with vinegar and red food coloring, then add this mixture to the mold with the dry ingredients and stir.",
+      "Bake the cake for about 25 minutes, let it cool, and unmold.",
+      "Prepare the cream cheese frosting by beating all the ingredients until creamy.",
+      "Once the cake is cold, decorate it with the cream cheese frosting and enjoy."
+    ]
+  },
+  {
+    "recipe": "lobster_roll_sandwich",
+    "id": 99,
+    "name": "lobster_roll_sandwich",
+    "ingredients": {
+      "For the filling": [
+        "Frozen and cooked lobsters",
+        "Celery",
+        "Lemon",
+        "Mayonnaise",
+        "Butter",
+        "Paprika",
+        "Ground cayenne pepper",
+        "Hot dog buns",
+        "Fresh chives"
+      ]
+    },
+    "steps": [
+      "Remove the meat from the lobsters, remove the veins and intestines, and finely chop the meat.",
+      "Peel and chop the celery, and squeeze the lemon.",
+      "In a small bowl, mix the chopped celery, juice of half a lemon, and ground cayenne pepper. Let it rest for a few minutes.",
+      "In a large bowl, place the chopped lobster meat and add the mayonnaise. Mix well.",
+      "Add the celery mixture to the bowl with the lobster meat and stir everything.",
+      "Open the hot dog buns in half and melt the butter on a griddle. Once melted, add the buns and flatten them slightly. Toast on both sides.",
+      "Fill the buns with the lobster mixture.",
+      "Sprinkle paprika over the filled buns and garnish with chopped chives.",
+      "Serve the lobster rolls with french fries, if desired."
+    ]
+  },
+  {
+    "recipe": "samosa",
+    "id": 100,
+    "name": "samosa",
+    "ingredients": [
+      "Wheat flour",
+      "Water",
+      "Salt",
+      "Oil",
+      "Carom seeds",
+      "Potato",
+      "Cumin",
+      "Cilantro",
+      "Turmeric"
+    ],
+    "steps": [
+      "The first step to make the famous vegetable samosas is to make the dough for the empanada. To do this, mix all the ingredients until completely integrated. Knead the dough several times against the work surface to soften it, then form rolls and cut individual pieces as shown in the image. Set aside.",
+      "To make the filling, first peel the potatoes and boil them as if making mashed potatoes. Set aside.",
+      "Separately, fry the cilantro seeds with turmeric in enough oil. You will see that the oil begins to take on a fairly dark yellow color.",
+      "After a few minutes, when it has taken on color, add the cooked peas and fry everything together. If you wish, you can use frozen peas.",
+      "Next, add a little salt and cumin to the samosa filling. Check the seasoning carefully not to burn yourself and adjust if necessary.",
+      "Let it cook for a few more minutes and then add this hot pea mixture to the potatoes, previously mashed. The texture of the filling should be that of a rustic puree, with small pieces of potato and not completely mashed.",
+      "The color of the puree should be intense yellow. To continue with the preparation of this delicious Indian food, add the fresh cilantro to the mashed potatoes and mix until fully integrated into the samosa filling and set aside.",
+      "Retrieve the pieces of dough and roll out with a rolling pin until you get a very thin oval-shaped sheet, then cut each oval of dough in half. Remember to flour the work surface.",
+      "With everything ready, what remains is to assemble the samosa. This process is an art, so pay attention. First, join the ends forming a cone with the dough, moisten your fingers slightly to join and seal the edges.",
+      "Next, fill the samosa with a tablespoon of potato and pea puree. Be careful not to exceed with the amount of filling.",
+      "Finally, close the edges forming a straight line. Remember to moisten the tips of your fingers to help seal the dough. The samosa should be triangular in shape as shown in the photograph.",
+      "Finally, fry the samosas in plenty of hot oil."
+    ]
+  }
+]
