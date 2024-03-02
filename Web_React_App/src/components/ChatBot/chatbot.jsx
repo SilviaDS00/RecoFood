@@ -1,52 +1,65 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+import './chatbot.css';
 
-const chatWithBot = async (prompt) => {
-  try {
-    const response = await axios.post('http://localhost:8000/chatbot/', { prompt: prompt }, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-
-    return response.data;
-  } catch (error) {
-    console.error('Error al enviar la solicitud:', error);
-    throw error; 
+class ChatBot extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputValue: '',
+      responseMessage: ''
+    };
   }
-};
 
-const ChatBot = () => {
-  const [userInput, setUserInput] = useState('');
-  const [chatHistory, setChatHistory] = useState([]);
-  const [errorMessage, setErrorMessage] = useState('');
+  enviarDatos = async () => {
+    const inputValue = this.state.inputValue.trim();
+    if (inputValue !== '') {
+      try {
+        const response = await fetch('http://localhost:8000/chatbot/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ prompt: inputValue })
+        });
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+        if (!response.ok) {
+          throw new Error('Error en la solicitud');
+        }
 
-    try {
-      const response = await chatWithBot(userInput);
-      console.log(response); // Verifica la respuesta en la consola
-      setChatHistory([...chatHistory, { role: 'user', text: userInput }, { role: 'assistant', text: response.message }]);
-      setUserInput('');
-    } catch (error) {
-      console.error('Error al enviar la solicitud:', error);
-      setErrorMessage('Error al enviar la solicitud al servidor.');
+        const data = await response.json();
+        this.setState({ responseMessage: data.message }); // Guarda el mensaje de respuesta en el estado
+      } catch (error) {
+        console.error('Error al enviar datos:', error);
+      }
     }
-  };
+  }
 
-  return (
-    <div>
-      {chatHistory.map((message, index) => (
-        <p key={index}><strong>{message.role}:</strong> {message.text}</p>
-      ))}
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={userInput} onChange={e => setUserInput(e.target.value)} />
-        <button type="submit">Enviar</button>
-      </form>
-      {errorMessage && <p>{errorMessage}</p>}
-    </div>
-  );
+  handleInputChange = (event) => {
+    this.setState({ inputValue: event.target.value });
+  }
+
+  render() {
+    return (
+      <div>
+        <input 
+          id="textinput"
+          value={this.state.inputValue}
+          onChange={this.handleInputChange}
+          onKeyUp={(e) => { if (e.key === 'Enter' && this.state.inputValue !== '') this.enviarDatos() }}
+          placeholder="Escriba aquí..." 
+        />
+        <button 
+          id="sendButton" 
+          onClick={this.enviarDatos}
+        >
+          Enviar
+        </button>
+        <div>
+          {this.state.responseMessage && <p>{this.state.responseMessage}</p>} {/* Muestra el mensaje de respuesta si está disponible */}
+        </div>
+      </div>
+    );
+  }
 }
 
 export default ChatBot;
