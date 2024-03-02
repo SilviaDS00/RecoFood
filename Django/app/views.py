@@ -28,12 +28,23 @@ def chatbot_view(request):
         try:
             data = json.loads(request.body)
             ingredientes_usuario = data.get("ingredientes", [])
+            nombre_receta = data.get("nombreReceta")
 
             asistente_recetas = AsistenteRecetas()
-            resultados = asistente_recetas.buscar_recetas(ingredientes_usuario)
 
-            # Devuelve una respuesta JSON con los resultados
-            return JsonResponse({"resultados": resultados})
+            if ingredientes_usuario:
+                # Si se proporcionaron ingredientes, busca recetas
+                resultados = asistente_recetas.buscar_recetas(ingredientes_usuario)
+                return JsonResponse({"resultados": resultados})
+            elif nombre_receta:
+                # Si se proporcionó un nombre de receta, muestra la receta
+                receta = asistente_recetas.mostrar_receta(nombre_receta)
+                if receta:
+                    return JsonResponse({"receta": receta})
+                else:
+                    return JsonResponse({"receta": None, "message": "Receta no encontrada."})
+            else:
+                return JsonResponse({"error": "Datos insuficientes"}, status=400)
         except Exception as e:
             return JsonResponse({"error": str(e)}, status=500)
     elif request.method == "GET":
@@ -42,6 +53,7 @@ def chatbot_view(request):
         # Si la solicitud no es ni POST ni GET, devuelve un error
         return JsonResponse({"error": "Método no permitido"}, status=405)
 
+    
 model = tf.keras.models.load_model("model/best_model_trained.h5")
 @csrf_exempt
 def prediction(request):
