@@ -1,52 +1,85 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from "react";
 
-const chatWithBot = async (prompt) => {
-  try {
-    const response = await axios.post('http://localhost:8000/chatbot/', { prompt: prompt }, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+const Chatbot = () => {
+  const [input, setInput] = useState("");
+  const [messages, setMessages] = useState([]);
 
-    return response.data;
-  } catch (error) {
-    console.error('Error al enviar la solicitud:', error);
-    throw error; 
-  }
-};
+  const handleInputChange = (e) => {
+    setInput(e.target.value);
+  };
 
-const ChatBot = () => {
-  const [userInput, setUserInput] = useState('');
-  const [chatHistory, setChatHistory] = useState([]);
-  const [errorMessage, setErrorMessage] = useState('');
+  const sendMessage = async () => {
+    if (!input.trim()) return;
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+    const newMessages = [...messages, { text: input, sender: "user" }];
+    setMessages(newMessages);
+    setInput("");
 
     try {
-      const response = await chatWithBot(userInput);
-      console.log(response); // Verifica la respuesta en la consola
-      setChatHistory([...chatHistory, { role: 'user', text: userInput }, { role: 'assistant', text: response.message }]);
-      setUserInput('');
+      const response = await fetch("http://localhost:8000/chatbot/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ingredientes: input.split(",") }),
+      });
+    
+      const data = await response.json();
+    
+      const botResponse =
+        data.resultados && Array.isArray(data.resultados)
+          ? data.resultados.map((receta) => ({
+              text: `Receta: ${
+                receta.nombre || "Nombre no disponible"
+              }\nIngredientes: ${
+                receta.ingredientes
+                  ? receta.ingredientes.join(", ")
+                  : "Ingredientes no disponibles"
+              }\nPasos: ${
+                receta.pasos ? receta.pasos.join("\n") : "Pasos no disponibles"
+              }`,
+              sender: "bot",
+            }))
+          : [];
+    
+      setMessages([...newMessages, ...botResponse]);
+      
+      console.log(botResponse);
+    
+      setMessages([...newMessages, ...botResponse]);
     } catch (error) {
-      console.error('Error al enviar la solicitud:', error);
-      setErrorMessage('Error al enviar la solicitud al servidor.');
+      console.error("Error al consultar recetas:", error);
     }
   };
 
   return (
     <div>
-      {chatHistory.map((message, index) => (
-        <p key={index}><strong>{message.role}:</strong> {message.text}</p>
-      ))}
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={userInput} onChange={e => setUserInput(e.target.value)} />
-        <button type="submit">Enviar</button>
-      </form>
-      {errorMessage && <p>{errorMessage}</p>}
+      <div
+        style={{
+          height: "300px",
+          overflowY: "auto",
+          border: "1px solid #ccc",
+          padding: "10px",
+        }}
+      >
+        {messages.map((message, index) => (
+          <div
+            key={index}
+            style={{
+              marginBottom: "10px",
+              color: message.sender === "user" ? "blue" : "green",
+            }}
+          >
+            {message.text}
+          </div>
+        ))}
+      </div>
+      <div style={{ marginTop: "10px" }}>
+        <input type="text" value={input} onChange={handleInputChange} />
+        <button onClick={sendMessage}>Enviar</button>
+      </div>
     </div>
   );
-}
+};
 
-export default ChatBot;
+export default Chatbot;

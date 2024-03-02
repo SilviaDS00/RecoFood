@@ -1,3 +1,5 @@
 from django.db import models
-
-# Create your models here.
+class Receta(models.Model):
+    nombre = models.CharField(max_length=255)
+    ingredientes = models.TextField()
+    pasos = models.TextField()

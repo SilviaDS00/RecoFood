@@ -26,26 +26,23 @@ logger = logging.getLogger(__name__)
 def chatbot_view(request):
     if request.method == "POST":
         try:
-            # Obtén los datos de la solicitud POST
             data = json.loads(request.body)
-            prompt = data.get("prompt", "")
+            ingredientes_usuario = data.get("ingredientes", [])
 
             asistente_recetas = AsistenteRecetas()
-            respuesta = asistente_recetas.responder(prompt)
+            resultados = asistente_recetas.buscar_recetas(ingredientes_usuario)
 
-            # Devuelve una respuesta JSON con el mensaje generado por el asistente
-            return JsonResponse({"message": respuesta})
+            # Devuelve una respuesta JSON con los resultados
+            return JsonResponse({"resultados": resultados})
         except Exception as e:
             return JsonResponse({"error": str(e)}, status=500)
     elif request.method == "GET":
-        return HttpResponse("Esta vista responde a solicitudes GET.")
+        return JsonResponse({"message": "Esta vista responde a solicitudes GET."})
     else:
         # Si la solicitud no es ni POST ni GET, devuelve un error
         return JsonResponse({"error": "Método no permitido"}, status=405)
 
-
 model = tf.keras.models.load_model("model/best_model_trained.h5")
-
 @csrf_exempt
 def prediction(request):
     if request.method == "POST":
