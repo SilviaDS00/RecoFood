@@ -59,7 +59,7 @@ model = tf.keras.models.load_model('model/model_inception.h5')
 def prediction(request):
     if request.method == "POST":
         try:
-        
+
             # Obtén la imagen del cuerpo de la solicitud POST
             image_data = request.FILES['imagen'].read()
             image = Image.open(io.BytesIO(image_data))
