@@ -15,44 +15,93 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import json
-from .asistente_receta import AsistenteRecetas
-# from dotenv import load_dotenv
-# import google.generativeai as gen_ai
+# from .asistente_receta import AsistenteRecetas
+from dotenv import load_dotenv
+import google.generativeai as gen_ai
+import requests
 
 
 logger = logging.getLogger(__name__)
 
+# @csrf_exempt
+# def chatbot_view(request):
+#     if request.method == "POST":
+#         try:
+#             data = json.loads(request.body)
+#             ingredientes_usuario = data.get("ingredientes", [])
+#             nombre_receta = data.get("nombreReceta")
+
+#             asistente_recetas = AsistenteRecetas()
+
+#             if ingredientes_usuario:
+#                 # Si se proporcionaron ingredientes, busca recetas
+#                 resultados = asistente_recetas.buscar_recetas(ingredientes_usuario)
+#                 return JsonResponse({"resultados": resultados})
+#             elif nombre_receta:
+#                 # Si se proporcionó un nombre de receta, muestra la receta
+#                 receta = asistente_recetas.mostrar_receta(nombre_receta)
+#                 if receta:
+#                     return JsonResponse({"receta": receta})
+#                 else:
+#                     return JsonResponse({"receta": None, "message": "Receta no encontrada."})
+#             else:
+#                 return JsonResponse({"error": "Datos insuficientes"}, status=400)
+#         except Exception as e:
+#             return JsonResponse({"error": str(e)}, status=500)
+#     elif request.method == "GET":
+#         return JsonResponse({"message": "Esta vista responde a solicitudes GET."})
+#     else:
+#         # Si la solicitud no es ni POST ni GET, devuelve un error
+#         return JsonResponse({"error": "Método no permitido"}, status=405)
+
+# Carga las variables de entorno
+load_dotenv()
+
+# Configura la clave API de Google
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+
+# Configura el modelo de Gemini-Pro
+gen_ai.configure(api_key=GOOGLE_API_KEY)
+model = gen_ai.GenerativeModel("gemini-pro")
+
+# Inicia la sesión de chat
+chat_session = model.start_chat(history=[])
+
 @csrf_exempt
 def chatbot_view(request):
-    if request.method == "POST":
-        try:
-            data = json.loads(request.body)
-            ingredientes_usuario = data.get("ingredientes", [])
-            nombre_receta = data.get("nombreReceta")
+    logger.info("Received a POST request to chatbot_view")
+    if request.method == "GET":
+        response_data = {
+            "message": "Hola. Has realizado una solicitud GET a la página de inicio."
+        }
+        return JsonResponse(response_data)
 
-            asistente_recetas = AsistenteRecetas()
+    elif request.method == "POST":
+        # Obtiene los datos de la solicitud POST
+        data = json.loads(request.body)
+        user_prompt = data.get("prompt", "")
+        
+        # Imprime el contenido de la solicitud POST
+        logger.debug("Contenido de la solicitud POST:", data)
 
-            if ingredientes_usuario:
-                # Si se proporcionaron ingredientes, busca recetas
-                resultados = asistente_recetas.buscar_recetas(ingredientes_usuario)
-                return JsonResponse({"resultados": resultados})
-            elif nombre_receta:
-                # Si se proporcionó un nombre de receta, muestra la receta
-                receta = asistente_recetas.mostrar_receta(nombre_receta)
-                if receta:
-                    return JsonResponse({"receta": receta})
-                else:
-                    return JsonResponse({"receta": None, "message": "Receta no encontrada."})
-            else:
-                return JsonResponse({"error": "Datos insuficientes"}, status=400)
-        except Exception as e:
-            return JsonResponse({"error": str(e)}, status=500)
-    elif request.method == "GET":
-        return JsonResponse({"message": "Esta vista responde a solicitudes GET."})
+        if user_prompt:
+            # Envía el mensaje del usuario a Gemini-Pro y obtiene la respuesta
+            gemini_response = chat_session.send_message(user_prompt)
+
+            # Imprime la respuesta de Gemini-Pro
+            logger.debug("Respuesta de Gemini-Pro:", gemini_response.text)
+
+            # Devuelve la respuesta de Gemini-Pro
+            response_data = {"message": gemini_response.text}
+        else:
+            response_data = {
+                "error": "No se proporcionó ningún prompt de usuario en la solicitud POST."
+            }
+
+        return JsonResponse(response_data)
     else:
-        # Si la solicitud no es ni POST ni GET, devuelve un error
-        return JsonResponse({"error": "Método no permitido"}, status=405)
-
+        return HttpResponse(status=405)
+    
     
 model = tf.keras.models.load_model("model/best_model_trained.h5")
 @csrf_exempt
@@ -138,49 +187,3 @@ def prediction_bmi(request):
         return JsonResponse({"message": "Método no permitido"}, status=405)
 
 
-# # Load environment variables
-# load_dotenv()
-
-# GOOGLE_API_KEY = "AIzaSyBgMaYQkaDOv-4OGykVdXLPZcTrN9dM-WY"
-# GOOGLE_API_KEY1 = os.getenv("GOOGLE_API_KEY")
-
-# # Set up Google Gemini-Pro AI model
-# gen_ai.configure(api_key=GOOGLE_API_KEY1)
-# model = gen_ai.GenerativeModel("gemini-pro")
-
-# # Start chat session
-# chat_session = model.start_chat(history=[])
-
-
-# # Function to translate roles between Gemini-Pro and Streamlit terminology
-# def translate_role(user_role):
-#     if user_role == "model":
-#         return "assistant"
-#     else:
-#         return user_role
-
-# @csrf_exempt
-# def chatbot_view(request):
-#     if request.method == "GET":
-#         response_data = {
-#             "message": "Hola. Has realizado una solicitud GET a la página de inicio."
-#         }
-#         return JsonResponse(response_data)
-
-#     elif request.method == "POST":
-#         # Get user prompt from POST data
-#         user_prompt = request.POST.get("prompt", "")
-#         if user_prompt:
-#             # Send user's message to Gemini-Pro and get the response
-#             gemini_response = chat_session.send_message(user_prompt)
-
-#             # Return Gemini-Pro's response
-#             response_data = {"message": gemini_response.text}
-#         else:
-#             response_data = {
-#                 "error": "No se proporcionó ningún prompt de usuario en la solicitud POST."
-#             }
-
-#         return JsonResponse(response_data)
-#     else:
-#         return HttpResponse(status=405)
