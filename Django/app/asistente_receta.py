@@ -9,11 +9,11 @@ class AsistenteRecetas:
         # self.idioma_elegido = self.elegir_idioma()
         self.translator = Translator()
 
-    # def elegir_idioma(self, usuario):
-    # # Aquí podrías recuperar el idioma del usuario desde la base de datos o cualquier otra fuente
-    # # Por simplicidad, asumiremos que el idioma es español por defecto
-    #     idioma_usuario = usuario.idioma if usuario.idioma else 'español'
-    #     return idioma_usuario
+    def elegir_idioma(self, usuario):
+    # Aquí podrías recuperar el idioma del usuario desde la base de datos o cualquier otra fuente
+    # Por simplicidad, asumiremos que el idioma es español por defecto
+        idioma_usuario = usuario.idioma if usuario.idioma else 'español'
+        return idioma_usuario
 
     # Carga las recetas del archivo JSON
     def carga_json(self):
@@ -78,7 +78,6 @@ class AsistenteRecetas:
         else:
             print("Receta no encontrada")
             return None
-
 
 
 ############################################################
@@ -160,3 +159,16 @@ class AsistenteRecetas:
 #     else:
 #         print(self.traducir("Respuesta no válida."))
 #         return True
+    # def preguntar_otra_receta(self, respuesta):
+    #     if respuesta.startswith('s') or respuesta.startswith('y'):
+    #         return True
+    #     elif respuesta.startswith('n'):
+    #         respuesta_nueva = input(self.traducir("\n¿Desea ver una receta con otros ingredientes?: ")).lower()
+    #         if respuesta_nueva.startswith('s') or respuesta_nueva.startswith('y'):
+    #             self.ingredientes_usuario.clear()
+    #             return True
+    #         elif respuesta_nueva.startswith('n'):
+    #             return False
+    #     else:
+    #         return True
+        

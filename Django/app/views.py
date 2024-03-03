@@ -29,6 +29,7 @@ def chatbot_view(request):
             data = json.loads(request.body)
             ingredientes_usuario = data.get("ingredientes", [])
             nombre_receta = data.get("nombreReceta")
+            action = data.get("action")
 
             asistente_recetas = AsistenteRecetas()
 
@@ -52,6 +53,7 @@ def chatbot_view(request):
     else:
         # Si la solicitud no es ni POST ni GET, devuelve un error
         return JsonResponse({"error": "Método no permitido"}, status=405)
+
 
     
 model = tf.keras.models.load_model('model/best_model_densenet.h5')
