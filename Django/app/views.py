@@ -14,7 +14,7 @@ import os, io, json, logging, joblib
 import tensorflow as tf
 import numpy as np
 from PIL import Image
-import json
+import json, requests
 from .asistente_receta import AsistenteRecetas
 # from dotenv import load_dotenv
 # import google.generativeai as gen_ai
@@ -53,13 +53,28 @@ def chatbot_view(request):
         # Si la solicitud no es ni POST ni GET, devuelve un error
         return JsonResponse({"error": "Método no permitido"}, status=405)
 
-    
-model = tf.keras.models.load_model('model/model_inception.h5')
+ruta_local_modelo = "model/model_inception.h5"
+modelo_nube_url = 'https://github.com/SilviaDS00/RecoFood/raw/main/Modelo_Entrenado/model_inception.h5'
+
+def descargar_modelo():
+    try:
+        response = requests.get(modelo_nube_url)
+        with open(ruta_local_modelo, 'wb') as file:
+            file.write(response.content)
+    except Exception as e:
+        logger.error(f"Error al descargar el modelo: {str(e)}")
+
+
 @csrf_exempt
 def prediction(request):
+    if "model" not in globals():
+        try:
+            descargar_modelo()
+            model = tf.keras.models.load_model(ruta_local_modelo)
+        except Exception as e:
+            return JsonResponse({"error": f"Error al cargar el modelo: {str(e)}"}, status=500)
     if request.method == "POST":
         try:
-
             # Obtén la imagen del cuerpo de la solicitud POST
             image_data = request.FILES['imagen'].read()
             image = Image.open(io.BytesIO(image_data))
