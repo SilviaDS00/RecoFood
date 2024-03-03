@@ -102,7 +102,7 @@ from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
 import joblib
 
-modelo_bmi = joblib.load("model/entrenamiento_bmi.pkl")
+modelo_bmi = joblib.load("model/modelo_bmi.pkl")
 
 
 @csrf_exempt
