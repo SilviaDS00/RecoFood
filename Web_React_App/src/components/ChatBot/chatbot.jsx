@@ -94,6 +94,12 @@ const Chatbot = () => {
   
   return (
     <div className="Chatbot">
+      <h2>Bienvenid@ a nuestro ChatBot</h2>
+      <p>Selecciona tu idioma:</p>
+      <select onChange={(e) => setIdioma(e.target.value)}>
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+      </select>
       <div className="chat-container">
         {messages.map((message, index) => (
           <div

@@ -47,14 +47,14 @@ const RegisterForm = () => {
   });
   return (
     <div className="form-container-signup">
-      <h3>Registrarse</h3>
+      <h3 className="title-register">Registrarse</h3>
       <Form onSubmit={formik.handleSubmit}>
         {isLoading && (
           <Dimmer active inverted>
             <Loader size="large">Loading</Loader>
           </Dimmer>
         )}
-        <p>Datos del usuario</p>
+        <p className="text-data">Datos del usuario</p>
         {formik.status && <Message negative content={formik.status} />}
         <Form.Group widths="equal">
           <Form.Input
@@ -117,7 +117,7 @@ const RegisterForm = () => {
             }
           />
         </Form.Group >
-        <p>Datos personales</p>
+        <p className="text-data">Datos personales</p>
         <Form.Group widths="equal">
           <Form.Input
             fluid

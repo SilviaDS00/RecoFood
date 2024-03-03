@@ -1,11 +1,18 @@
-// LoginForm.scss
+@import "../../../scss/colors.scss"
+;
 .form-container-login {
+  background-color: $blue;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .title-login {
+    text-align: center;
+    color: white;
   }
   
   .error-message {
@@ -18,7 +25,6 @@
   }
   
   .submit-button {
-    // background-color: #007bff;
     color: #fff;
   }
   

@@ -7,7 +7,7 @@
     width: 100%;
     padding: 1.3rem 0;
     z-index: 5;
-    background-color: rgb(255, 255, 255);
+    background-color: $orange;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     margin-bottom: 5rem;
   }
@@ -15,14 +15,14 @@
 .menuItem {
   font-size: 1.1rem;
   text-decoration: none;
-  color: black;
+  color: white;
   &:hover {
     text-decoration: underline;
-    color: $orange; /* Color al pasar el ratón */
+    color: white; /* Color al pasar el ratón */
   }
 
   &.active {
-    color: $orange; /* Color cuando está activo */
+    color: white; /* Color cuando está activo */
   }
 
   &.visited {
@@ -37,10 +37,10 @@
     a{
       margin-top: auto;
       font-size: 1.4rem;
-      color: $orange;
+      color: white;
       font-weight: bold;
       &:hover {
-        color: $orange; /* Color al pasar el ratón */
+        color: white; /* Color al pasar el ratón */
       }
     }
   }
@@ -52,7 +52,33 @@
     text-align: center;
     width: 40%;
     gap: 2rem;
+
+    @media (max-width: 768px) {
+      .menuIcon {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .menuItems {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: $orange;
+        padding: 1rem;
+        z-index: 10;
+      }
+
+      .menuItems.show {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
   }
+
   
   .right {
     color: black;
