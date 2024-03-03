@@ -18,7 +18,7 @@ function App() {
       <div className="topBar">
         <div className="left">
           <img
-            src="/logo-pequeno.png"
+            src="/logo-blanco.png"
             alt="Logo"
             className="logo"
             width="25px"
