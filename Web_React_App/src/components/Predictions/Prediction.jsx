@@ -9,7 +9,7 @@ const predictImage = async (imageBlob) => {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
-      withCredentials: true,
+      // withCredentials: true,
     });
     return response.data;
   } catch (error) {
