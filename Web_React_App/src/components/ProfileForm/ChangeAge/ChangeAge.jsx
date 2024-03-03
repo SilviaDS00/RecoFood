@@ -8,7 +8,7 @@ import "../ProfileForm.scss";
 
 const userCtrl = new User();
 export function ChangeAge() {
-    const { user, logout } = useAuth();
+    const { user } = useAuth();
     const [isAgeChanged, setIsAgeChanged] = useState(false);
   
     const formik = useFormik({

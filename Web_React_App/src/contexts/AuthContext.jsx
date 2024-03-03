@@ -27,6 +27,7 @@ export function AuthProvider(props) {
         await login(token);
       }
     })();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const login = async (token) => {

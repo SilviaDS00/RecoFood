@@ -54,7 +54,7 @@ def chatbot_view(request):
         return JsonResponse({"error": "Método no permitido"}, status=405)
 
     
-model = tf.keras.models.load_model('model/best_model_densenet.h5')
+model = tf.keras.models.load_model('model/model_inception.h5')
 @csrf_exempt
 def prediction(request):
     if request.method == "POST":
@@ -65,7 +65,7 @@ def prediction(request):
             image = Image.open(io.BytesIO(image_data))
 
             # Preprocesa la imagen para que coincida con el formato esperado por el modelo
-            image = image.resize((150, 150)) 
+            image = image.resize((200, 200)) 
             image = np.array(image) / 255.0
             image = np.expand_dims(image, axis=0)
 
@@ -102,7 +102,7 @@ from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
 import joblib
 
-modelo_bmi = joblib.load("model/entrenamiento_bmi.pkl")
+modelo_bmi = joblib.load("model/modelo_bmi.pkl")
 
 
 @csrf_exempt

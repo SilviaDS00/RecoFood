@@ -8,7 +8,7 @@ import "../ProfileForm.scss";
 
 const userCtrl = new User();
 export function ChangeUsernameForm() {
-    const { user, logout } = useAuth();
+    const { user } = useAuth();
     const [isUsernameChanged, setIsUsernameChanged] = useState(false);
   
     const formik = useFormik({
