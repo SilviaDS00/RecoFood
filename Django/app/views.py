@@ -64,13 +64,17 @@ def descargar_modelo():
     except Exception as e:
         logger.error(f"Error al descargar el modelo: {str(e)}")
 
+def model_compile():
+    model = tf.keras.models.load_model(ruta_local_modelo)
+    model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+    return model
 
 @csrf_exempt
 def prediction(request):
     if "model" not in globals():
         try:
             descargar_modelo()
-            model = tf.keras.models.load_model(ruta_local_modelo)
+            model = model_compile()
         except Exception as e:
             return JsonResponse({"error": f"Error al cargar el modelo: {str(e)}"}, status=500)
     if request.method == "POST":
