@@ -1,13 +1,15 @@
-// Chatbot.scss
+@import "../../scss/colors.scss";
 
 .Chatbot {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
-  
+    background-color: $blue;
+    padding: 2rem;
+    border-radius: 8px;
+
     .chat-container {
-      border: 1px solid #ccc;
       border-radius: 8px;
       overflow: hidden;
       max-height: 600px;
@@ -44,14 +46,14 @@
   
       button {
         padding: 8px 12px;
-        background-color: #007bff;
+        background-color: $orange;
         color: #fff;
         border: none;
         border-radius: 5px;
         cursor: pointer;
   
         &:hover {
-          background-color: #0056b3;
+          background-color: $dark-orange;
         }
       }
     }
