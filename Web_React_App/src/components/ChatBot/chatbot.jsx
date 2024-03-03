@@ -5,7 +5,6 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([{ text: "¡Hola! Soy tu asistente de recetas", sender: "bot" }]);
   const [step, setStep] = useState(0);
   const [ingredientes, setIngredientes] = useState([]);
-  const [idioma, setIdioma] = useState("español");
 
   const handleInputChange = (e) => {
     setInput(e.target.value);
