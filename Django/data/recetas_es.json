@@ -1,0 +1,2635 @@
+[
+  {
+    "receta": "donuts",
+    "id": 0,
+    "nombre": "donas",
+    "ingredientes": [
+      "levadura",
+      "agua tibia",
+      "leche",
+      "manteca",
+      "azúcar",
+      "sal",
+      "nuez moscada",
+      "huevos batidos",
+      "harina",
+      "mantequilla derretida",
+      "azúcar",
+      "canela en polvo"
+    ],
+    "pasos": [
+      "Disolver la levadura en agua tibia. Derretir la manteca con la leche y dejar enfriar.",
+      "Mezclar la levadura con la leche y manteca derretida. Agregar azúcar, sal, nuez moscada, huevos batidos y 2 tazas de harina. Batir hasta obtener una masa homogénea.",
+      "Incorporar la harina restante y batir hasta que la mezcla esté suave. Dejar reposar la masa tapada durante 1 hora para que doble su tamaño.",
+      "Amasar la masa sobre una superficie enharinada, extender con un rodillo y formar los donuts.",
+      "Colocar los donuts en una bandeja de horno engrasada y dejar reposar 20 minutos. Precalentar el horno a 200ºC.",
+      "Hornear los donuts durante 10 minutos o hasta que estén dorados. Untar con mantequilla derretida y pasar por la mezcla de azúcar y canela. Servir calientes o dejar enfriar."
+    ]
+  },
+  {
+    "receta": "macaroni_and_cheese",
+    "id": 1,
+    "nombre": "macarrones_con_queso",
+    "ingredientes": [
+      "Macarrones",
+      "Queso cheddar",
+      "Queso rallado",
+      "Pimienta blanca",
+      "Tomate cherry",
+      "Aceite",
+      "Albahaca fresca",
+      "Sal"
+    ],
+    "pasos": [
+      "Cocinar la pasta en agua hirviendo con sal hasta que esté al dente. Escurrir y reservar.",
+      "Picar los tomates en cuartos y mezclar con aceite, sal, pimienta y albahaca fresca.",
+      "Volver a colocar la pasta en la olla y mezclar con el queso cheddar fundido a fuego bajo.",
+      "Servir los macarrones con queso y añadir encima los tomates con albahaca. Espolvorear con queso rallado y gratinar en el horno.",
+      "Disfrutar de unos deliciosos macarrones con queso y tomate."
+    ]
+  },
+  {
+    "receta": "filet_mignon",
+    "id": 2,
+    "nombre": "filet_mignon",
+    "ingredientes": [
+      "solomillo de ternera",
+      "Salsa Oporto",
+      "alcachofas",
+      "hebras de trufa",
+      "Mantequilla",
+      "Queso rallado",
+      "guisantes"
+    ],
+    "pasos": [
+      "Cocer los corazones de alcachofa con agua, sal y limón. También se pueden utilizar alcachofas en conserva.",
+      "Cocer los guisantes y rellenar las alcachofas. Espolvorear queso rallado por encima y gratinar.",
+      "Preparar una salsa para carnes, como una reducción de vino de Oporto.",
+      "Saltear los solomillos en una sartén con mantequilla o cocinar a la plancha o parrilla.",
+      "Montar el plato colocando el solomillo en un lado, la alcachofa en otro y encima del solomillo una hebra de trufa. Bañar con la salsa."
+    ]
+  },
+  {
+    "receta": "greek_salad",
+    "id": 3,
+    "nombre": "ensalada_griega",
+    "ingredientes": [
+      "Lechuga romana",
+      "Tomate rojo firme",
+      "Pepino",
+      "Cebolla morada",
+      "Aceitunas negras",
+      "Queso fresco",
+      "Yogur griego",
+      "Vinagre balsámico",
+      "Azúcar",
+      "hierbas",
+      "Sal",
+      "Pimienta"
+    ],
+    "pasos": [
+      "Preparar y cortar todos los ingredientes.",
+      "Mezclar el yogur con vinagre balsámico, azúcar, sal, pimienta y finas hierbas.",
+      "Armar la ensalada en un plato con los ingredientes cortados.",
+      "Servir la ensalada con la vinagreta de yogur."
+    ]
+  },
+  {
+    "receta": "paella",
+    "id": 5,
+    "nombre": "paella",
+    "ingredientes": [
+      "pollo",
+      "conejo",
+      "aceite de oliva",
+      "ajo",
+      "judías",
+      "tomates maduros",
+      "hebras de azafrán",
+      "pimentón dulce",
+      "arroz",
+      "garrofón",
+      "colorante",
+      "agua",
+      "sal"
+    ],
+    "pasos": [
+      "Saltear las piezas de pollo y conejo en aceite de oliva con ajos.",
+      "Agregar judías verdes, tomates triturados, azafrán y pimentón.",
+      "Cocinar durante unos minutos, luego añadir agua y sal. Cocinar durante 30 minutos.",
+      "Añadir arroz, garrofón y colorante natural. Cocinar durante 20 minutos más.",
+      "Dejar reposar la paella antes de servir."
+    ]
+  },
+  {
+    "receta": "Lasagna",
+    "id": 5,
+    "nombre": "lasaña",
+    "ingredientes": [
+      "Salsa bechamel",
+      "Láminas de pasta para lasaña",
+      "Carne picada",
+      "Cebolla",
+      "Ajo",
+      "Tomate triturado",
+      "Tomate frito",
+      "Aceite de oliva",
+      "Queso rallado",
+      "Mantequilla",
+      "Agua",
+      "Sal"
+    ],
+    "pasos": [
+      "Preparar una salsa de tomate con la cebolla, ajo, tomate triturado y tomate frito.",
+      "Cocinar la carne picada en aceite de oliva.",
+      "Montar las capas de lasaña alternando pasta, carne y salsa bechamel.",
+      "Hornear la lasaña a 180ºC hasta que el queso gratine.",
+      "Dejar reposar antes de servir."
+    ]
+  },
+  {
+    "receta": "french_onion_soup",
+    "id": 6,
+    "nombre": "sopa_de_cebolla_francesa",
+    "ingredientes": [
+      "Cebollas",
+      "Escalonias",
+      "Ajo",
+      "Rama de tomillo",
+      "Mantequilla",
+      "Caldo de pollo",
+      "Agua",
+      "Queso Emental",
+      "Vino blanco",
+      "Sal",
+      "Aceite de oliva",
+      "Pimienta",
+      "Pan"
+    ],
+    "pasos": [
+      "Cortar las cebollas en plumas y las chalotas o Escalonias.",
+      "Pochear las cebollas y chalotas en mantequilla y aceite a fuego bajo durante 30 minutos.",
+      "Agregar el vino blanco y cocinar hasta que se evapore el alcohol.",
+      "Añadir el caldo, el agua y la rama de tomillo. Cocinar a fuego lento durante una hora.",
+      "Tostar el pan y frotarlo con ajo.",
+      "Retirar la rama de tomillo de la sopa y corregir la sazón con sal y pimienta.",
+      "Servir la sopa en cazuelas individuales, colocar las rebanadas de pan sobre cada porción y cubrir con queso rallado.",
+      "Gratinar en el horno hasta que el queso esté dorado y crujiente."
+    ]
+  },
+  {
+    "receta": "omelette",
+    "id": 7,
+    "nombre": "tortilla",
+    "ingredientes": [
+      "Patatas",
+      "Huevos",
+      "Pimiento verde",
+      "Pimiento rojo",
+      "Pimiento amarillo",
+      "Cebolla",
+      "Puerro",
+      "Aceite",
+      "Sal"
+    ],
+    "pasos": [
+      "Pelar y cortar las patatas en dados. Freírlas en abundante aceite hasta que estén bien doradas.",
+      "Cortar la cebolla, el puerro y los pimientos en trozos de tamaño similar.",
+      "En una sartén con un poco de aceite, saltear las verduras hasta que estén tiernas.",
+      "Batir los huevos y mezclarlos con las patatas fritas y las verduras salteadas. Añadir sal al gusto.",
+      "Verter la mezcla en una sartén con un poco de aceite caliente y cocinarla a fuego medio-bajo hasta que esté cuajada por un lado.",
+      "Con la ayuda de un plato o tapadera, dar la vuelta a la tortilla y cocinarla por el otro lado hasta que esté dorada y completamente cuajada."
+    ]
+  },
+  {
+    "receta": "spaghetti_carbonara",
+    "id": 8,
+    "nombre": "espaquetis_a_la_carbonara",
+    "ingredientes": [
+      "Espaguetis",
+      "Tocineta o bacon ahumado",
+      "Huevo",
+      "Crema de leche o nata",
+      "Mantequilla",
+      "Queso parmesano",
+      "Sal",
+      "Pimienta"
+    ],
+    "pasos": [
+      "Cocinar los espaguetis en agua hirviendo con sal hasta que estén al dente.",
+      "En una sartén, dorar la tocineta en la mantequilla hasta que esté bien dorada.",
+      "Mezclar la crema de leche, los huevos, la sal y la pimienta en un bol y reservar.",
+      "Agregar los espaguetis a la sartén con la tocineta y cocinar durante 1 minuto.",
+      "Agregar la mezcla de huevos y crema de leche a la sartén y cocinar durante 2 minutos, revolviendo constantemente.",
+      "Servir en un plato hondo y cubrir con queso parmesano."
+    ]
+  },
+  {
+    "receta": "churros",
+    "id": 9,
+    "nombre": "churros",
+    "ingredientes": [
+      "Harina",
+      "Agua",
+      "Sal",
+      "Levadura",
+      "Aceite para freír",
+      "Aceite de oliva virgen",
+      "Azúcar"
+    ],
+    "pasos": [
+      "Calentar el agua (tibia) y agregar un chorrito de aceite de oliva virgen.",
+      "En un bol, colocar la harina tamizada, la sal y la levadura. Mezclar bien.",
+      "Agregar el agua caliente con aceite a la mezcla de harina y mezclar con un tenedor o cuchara de madera hasta obtener una masa homogénea.",
+      "Dejar reposar la masa bien tapada con un paño durante aproximadamente media hora.",
+      "Llenar la churrera con la masa y comenzar a freír en aceite caliente."
+    ]
+  },
+  {
+    "receta": "oysters",
+    "id": 10,
+    "nombre": "ostras",
+    "ingredientes": [
+      "Ostras",
+      "Cebolleta",
+      "Zumo de limón",
+      "Vino blanco",
+      "Mantequilla",
+      "Sal",
+      "Pimienta"
+    ],
+    "pasos": [
+      "Abrir las ostras y colocar la parte con la carne en una fuente.",
+      "En una sartén, derretir la mantequilla y saltear las cebolletas hasta que estén blandas.",
+      "Agregar el zumo de limón y el vino blanco a las cebolletas en la sartén. Dejar reducir a una tercera parte y sazonar con sal y pimienta.",
+      "Distribuir este fondo sobre las ostras en la fuente.",
+      "Hornear a temperatura alta durante 10-15 minutos.",
+      "Servir caliente."
+    ]
+  },
+  {
+    "receta": "chicken_wings",
+    "id": 11,
+    "nombre": "alitas de pollo",
+    "ingredientes": [
+      "alitas de pollo",
+      "pimentón dulce",
+      "orégano",
+      "comino",
+      "curry",
+      "cebolla en polvo",
+      "sal",
+      "pimienta negra",
+      "aceite de oliva",
+      "mantequilla"
+    ],
+    "pasos": [
+      "Añade sal a las alitas de pollo por todos los lados.",
+      "En un bol, mezcla una cucharada sopera de pimentón dulce, otra de orégano, otra de comino, una de cebolla en polvo y una cucharada de postre de curry. Agrega también la pimienta negra recién molida y las dos cucharadas de aceite de oliva. Incorpora las alitas de pollo y mezcla bien con las manos hasta que estén cubiertas uniformemente con las especias. Reserva en la nevera tapado con papel film durante al menos 30 minutos.",
+      "Precalienta el horno a 200 ºC.",
+      "Derrite la mantequilla en el microondas y mézclala con una cucharada sopera de pimentón dulce, otra de orégano, otra de comino, otra de cebolla en polvo y una cucharada de postre de curry. Mezcla bien.",
+      "Coloca las alitas de pollo en una bandeja de horno y pincélalas con la mezcla de mantequilla y especias por la cara que ha quedado hacia arriba. Hornea con calor arriba y abajo durante 25 minutos.",
+      "Saca las alitas del horno y dales la vuelta. Pincela la cara que ha quedado hacia arriba con la mezcla de mantequilla y especias y hornea durante 20 minutos más o hasta que la piel esté tostada a tu gusto.",
+      "Sirve las alitas de pollo al horno directamente de la fuente o en platos individuales."
+    ]
+  },
+  {
+    "receta": "escargots",
+    "id": 12,
+    "nombre": "caracoles",
+    "ingredientes": [
+      "caracoles",
+      "laurel",
+      "cayenas",
+      "chorizo",
+      "jamón serrano",
+      "aceite de oliva",
+      "salsa de pollo",
+      "tomate frito",
+      "dientes de ajo",
+      "sal",
+      "pimienta negra"
+    ],
+    "pasos": [
+      "Para empezar, elabora una salsa de pollo casera con anticipación.",
+      "Limpia los caracoles y ponlos en un cazo con agua, una hoja de laurel, una cayena y sal. Cocina durante 1 hora.",
+      "Trocea el chorizo y el jamón serrano.",
+      "En una olla, calienta una cucharada de aceite de oliva y sofríe el chorizo y el jamón con una hoja de laurel, una cayena y un poco de pimienta negra.",
+      "Agrega los caracoles escurridos y cocina por 2 minutos.",
+      "Incorpora la salsa de pollo y el tomate frito. Cocina durante 10 minutos.",
+      "En un mortero, machaca los dientes de ajo con una cucharada de aceite de oliva.",
+      "Añade los ajos triturados a la olla de los caracoles y cocina por 2 minutos más."
+    ]
+  },
+  {
+    "receta": "french fries",
+    "id": 13,
+    "nombre": "patatas fritas",
+    "ingredientes": [
+      "patatas",
+      "aceite de oliva",
+      "sal"
+    ],
+    "pasos": [
+      "Pela las patatas, lávalas y sécalas con papel absorbente de cocina.",
+      "Corta las patatas en bastones del mismo tamaño y colócalas en un bol apto para microondas.",
+      "Vierte las tres cucharadas de aceite de oliva sobre las patatas en el bol.",
+      "Introduce el bol en el microondas y cocina a máxima potencia durante 5 minutos.",
+      "Remueve las patatas y vuelve a cocinar en el microondas por otros 5 minutos a máxima potencia.",
+      "Comprueba el punto de cocción y, si es necesario, cocina por 3 a 5 minutos adicionales.",
+      "Una vez listas, retira las patatas del microondas, añade sal al gusto y sirve caliente."
+    ]
+  },
+  {
+    "receta": "panna_cotta",
+    "id": 14,
+    "nombre": "panacota",
+    "ingredientes": [
+      "nata",
+      "leche",
+      "azucar",
+      "gelatina",
+      "vainilla",
+      "brandy"
+    ],
+    "pasos": [
+      "Remojar las hojas de gelatina y reservar.",
+      "En el vaso de la Thermomix, combinar la nata, el licor, la leche, el azúcar y la vainilla.",
+      "Programar por 10 minutos a 90ºC y velocidad 2.",
+      "A los 8-9 minutos, agregar la gelatina remojada a la mezcla en la Thermomix y asegurarse de que se integre bien.",
+      "Verter la mezcla en un molde de flan o gelatina y refrigerar durante varias horas hasta que cuaje.",
+      "Decorar con mermelada o fruta antes de servir, si se desea."
+    ]
+  },
+  {
+    "receta": "takoyaki",
+    "id": 15,
+    "nombre": "takoyaki",
+    "ingredientes": [
+      "harina",
+      "huevo",
+      "agua",
+      "pulpo",
+      "repollo",
+      "cebolla",
+      "tenkasu",
+      "benishoga",
+      "salsa takoyaki",
+      "mayonesa japonesa",
+      "katsuobushi",
+      "aonori"
+    ],
+    "pasos": [
+      "En primer lugar, prepara los ingredientes sólidos. Corta el pulpo en trozos pequeños que quepan dentro del takoyaki, pica el repollo lo más pequeño posible y pica la cebolla y el benishōga.",
+      "A continuación, en un cuenco grande, añade la harina, el huevo y el agua. Mezcla bien hasta que obtengas una pasta cremosa pero no excesivamente líquida.",
+      "Añade a la mezcla un puñado de tenkasu, de benishōga y de cebolla y bastante repollo. Mezcla todo bien.",
+      "Calienta la plancha de takoyaki y añade un poco de aceite a los huecos, para evitar que los buñuelos se peguen.",
+      "Cuando esté caliente, añade mezcla de masa a cada uno de los huecos hasta que quede rasante. Pon un trozo de pulpo en el centro. Vierte un poco más de masa por encima, aunque se salga.",
+      "Al poco rato, verás que ese lado del buñuelo ya está listo. Con un pincho, gira el takoyaki con un rápido movimiento de muñeca y deja que se cocine por el otro lado. La idea es conseguir una esfera lo más perfecta posible.",
+      "Una vez listos los takoyaki, ponlos en una fuente plana, sin amontonar. Echa por encima mayonesa, salsa de takoyaki, katsuoboshi y aonori y a disfrutar."
+    ]
+  },
+  {
+    "receta": "tacos",
+    "id": 16,
+    "nombre": "tacos",
+    "ingredientes": [
+      "harina",
+      "huevo",
+      "agua",
+      "pulpo",
+      "repollo",
+      "cebolla",
+      "tenkasu",
+      "benishoga",
+      "salsa takoyaki",
+      "mayonesa japonesa",
+      "katsuobushi",
+      "aonori"
+    ],
+    "pasos": [
+      "Lava muy bien los jitomates, la cebolla, los chiles serranos, los dientes de ajo y la rama de cilantro. Luego, córtalos en trozos medianos.",
+      "Lleva los vegetales cortados a la licuadora con media taza de agua, una pizca de sal, pimienta y comino seco, y licua durante 2 minutos.",
+      "Calienta una cucharada de aceite en una olla y vierte la salsa licuada. Cocina a temperatura media-alta durante 5 o 6 minutos hasta que empiece a hervir y cambie de color. Ajusta la sazón si es necesario.",
+      "En un recipiente, bate los huevos con sal y pimienta. Cocina la torta de huevo en una sartén con aceite caliente hasta que esté completamente cocida.",
+      "Calienta las tortillas de maíz y rellénalas con la torta de huevo cocida. Dobla las tortillas y sírvelas. Baña con la salsa ranchera, agrega queso fresco desmoronado y rábano en cubitos."
+    ]
+  },
+  {
+    "receta": "chocolate_cake",
+    "id": 17,
+    "nombre": "pastel_de_chocolate",
+    "ingredientes": [
+      "azucar",
+      "aceite_oliva",
+      "huevos",
+      "yogurt_griego",
+      "cacao_puro",
+      "cafe_caliente",
+      "harina",
+      "bicarbonato_sodio",
+      "maicena",
+      "sal",
+      "agua",
+      "vainilla"
+    ],
+    "pasos": [
+      "Mezcla el azúcar, el aceite de oliva y los huevos en un bol.",
+      "Añade el yogurt griego y mezcla bien.",
+      "Hidrata el cacao en polvo con el café caliente y añádelo a la mezcla anterior.",
+      "Tamiza la harina, el bicarbonato y la maicena sobre la mezcla y remueve hasta obtener una masa homogénea.",
+      "Enmantequilla un molde para bizcocho, coloca un disco de papel manteca en la base y enharina.",
+      "Vierte la masa en el molde y hornea a 165 °C por 45 minutos.",
+      "Deja enfriar el bizcocho, córtalo por la mitad y baña cada mitad con almíbar simple.",
+      "Prepara la chantilly de ganache calentando la crema de leche y vertiéndola sobre el chocolate bitter troceado. Mezcla hasta obtener una crema uniforme. Refrigera durante toda la noche.",
+      "Al día siguiente, bate la ganache y la crema de leche fría hasta obtener picos semi-firmes.",
+      "Rellena y cubre el bizcocho con la crema, decorando al gusto."
+    ]
+  },
+  {
+    "receta": "lobster_bisque",
+    "id": 18,
+    "nombre": "bisqué_de_marisco",
+    "ingredientes": [
+      "tomates",
+      "cebolla",
+      "apio",
+      "albahaca",
+      "pimiento",
+      "mix_mariscos",
+      "pasta_ajo",
+      "crema_leche",
+      "sal",
+      "pimienta",
+      "laurel",
+      "tomillo",
+      "vino_blanco"
+    ],
+    "pasos": [
+      "El primer paso para realizar nuestra receta de bisque es prealistar los ingredientes.",
+      "Lleva una olla profunda a fuego medio y adiciona un poco de aceite de oliva. Agrega la cebolla morada en trozos grandes.",
+      "Una vez la cebolla tome un color transparente adiciona el apio y el pimiento o pimentón rojo. Deja saltear durante algunos minutos.",
+      "Adiciona los tomates en cascos sin pepas, es muy importante retirar las semillas ya que éstas hacen que la preparación sea un poco más ácida. Añade un poco de pasta de ajo al gusto.",
+      "Añade agua a la preparación hasta cubrir todo el contenido. Agrega sal, pimienta, laurel y tomillo al gusto. Deja cocinar durante unos 20 a 30 minutos y apaga el fuego. Licua o procesa nuestra base hasta que se integren todos los ingredientes.",
+      "Una vez licues nuestra crema base lleva nuevamente a una olla. Si deseas puedes pasar la mezcla por un colador para conseguir una consistencia más fina.",
+      "Cocina a fuego lento y adiciona las hojas de albahaca frescas para darle un toque especial al bisque de marisco.",
+      "Mientras, cocina a fuego medio, en una sartén aparte y con una cucharadita de mantequilla, el mix de mariscos. Saltea brevemente sin llegar a superar los 5 minutos.",
+      "Incorpora el mix de mariscos salteado a nuestro bisque y añade la crema de leche. Deja conservar a fuego lento durante unos 10 minutos más.",
+      "Sirve el bisque de mariscos acompañando con croutones o pan frito. También puedes añadir un poco de queso parmesano al gusto y un poco de crema de leche para decorar el plato que será un entrante perfecto para una reunión especial."
+    ]
+  },
+  {
+    "receta": "chocolate_mousse",
+    "id": 19,
+    "nombre": "mousse_de_chocolate",
+    "ingredientes": [
+      "chocolate_negro",
+      "azucar_refinado",
+      "huevos"
+    ],
+    "pasos": [
+      "Separa las claras de las yemas de huevo. Coloca las claras en un bol grande y bate con las varillas eléctricas hasta que estén bien montadas y consistentes, a punto de nieve.",
+      "Rompe el chocolate en pedazos y derrítelo en un cazo al baño María o en el microondas, en ciclos de 30 segundos y mezclando entre cada ciclo.",
+      "Añade el azúcar a las yemas y bate hasta obtener una mezcla cremosa. Agrega el chocolate derretido en hilo, sin dejar de batir, hasta incorporarlo completamente.",
+      "Finalmente, añade las claras de huevo batidas a la mezcla de chocolate y yemas, de manera suave y gradual, mezclando con movimientos envolventes para mantener la esponjosidad.",
+      "Refrigera la mousse durante al menos 4 horas antes de servir, para que adquiera la consistencia adecuada."
+    ]
+  },
+  {
+    "receta": "chicken_quesadilla",
+    "id": 20,
+    "nombre": "quesadilla_de_pollo",
+    "ingredientes": [
+      "tortillas_maiz",
+      "pechuga_pollo",
+      "queso_panela",
+      "tomate_rojo",
+      "cebolla_blanca",
+      "cilantro",
+      "sal",
+      "pimienta",
+      "aceite"
+    ],
+    "pasos": [
+      "En la siguiente imagen podrás observar los ingredientes que necesitaremos para la preparación de estas deliciosas quesadillas de pollo mexicanas.",
+      "Vamos a comenzar la receta de quesadillas mexicanas lavando y picando muy finamente las verduras, es decir, la cebolla, el tomate rojo y el cilantro.",
+      "Una vez lista la verdura, tomamos la cebolla y el tomate rojo, y sofreímos estos ingredientes en una sartén con aceite caliente para empezar a preparar el relleno de la quesadilla de pollo.",
+      "Cuando se observe transparente la cebolla, añadimos el pollo cortado en fajitas o tiras y perfectamente salpimentado. Dejamos que se cueza todo junto, moviendo constantemente la preparación con una espátula o cuchara de madera.",
+      "Una vez cocido el pollo casi en su totalidad, agregamos el cilantro picado y dejamos que se cocine todo junto durante 5 minutos más. Pasado este tiempo, retiramos la preparación del fuego y reservamos un momento.",
+      "Por otro lado, tomamos trozos de queso panela, los colocamos dentro de la tortilla de maíz y llevamos las quesadillas a la plancha caliente para fundir el queso. Este es el único ingrediente que no puede faltar en las quesadillas mexicanas, de manera que te recomendamos no obviarlo.",
+      "Cuando el queso esté prácticamente fundido, rellenamos las quesadillas con el guiso de pollo y volvemos a cerrarlas. Si quieres, puedes volver a calentarlas unos segundos más para que el queso se acabe de fundir, o consumirlas tal cual."
+    ]
+  },
+  {
+    "receta": "club_sandwich",
+    "id": 21,
+    "nombre": "sanwich_club",
+    "ingredientes": [
+      "pan",
+      "jamon_york",
+      "queso",
+      "pollo",
+      "lechuga",
+      "mayonesa",
+      "tomate",
+      "mantequilla",
+      "sal",
+      "vinagre",
+      "aceite"
+    ],
+    "pasos": [
+      "Tostar las rebanadas de pan y untarlas con mantequilla.",
+      "Sobre la primera rebanada se coloca lechuga, que se adereza con aceite, vinagre y sal; se añade 1 loncha de jamón y un poco de mayonesa sobre ella y encima una loncha de queso.",
+      "Encima la segunda rebanada de pan del sandwich club pondremos lechuga y unas rodajas de tomates aderezados, encima el pollo a trocitos y mezclado con mayonesa.",
+      "Encima la tercera rebanada de pan del super sandwich club que se untará también con una capa de mayonesa, encima 1 loncha de queso, 1/4 de tomate y una aceituna negra.",
+      "Se puede adornar el sándwich poniendo unos pequeños montículos de mayonesa en los bordes de la rebanada de pan superior."
+    ]
+  },
+  {
+    "receta": "apple_pie",
+    "id": 22,
+    "nombre": "tarta_de_manzana",
+    "ingredientes": [
+      "azucar",
+      "harina",
+      "manteca",
+      "huevos",
+      "leche",
+      "manzanas",
+      "vainilla",
+      "canela"
+    ],
+    "pasos": [
+      "Coge un recipiente y mezcla la harina con el azúcar y la manteca formando una pasta arenosa. Puedes utilizar tus dedos para integrar estos ingredientes. Luego, coloca en un molde apto para horno la mitad de esta preparación y repártelo por toda la base.",
+      "Aparte, trocea las manzanas en rodajas finas y colócalas sobre la base arenosa. Espolvorea un poco de canela en polvo.",
+      "En un recipiente aparte, mezcla la leche con la esencia de vainilla y los huevos. Vierte el líquido sobre las manzanas y, por último, cubre con el resto de masa de harina y manteca.",
+      "Precalienta el horno a 170ºC y, cuando esté caliente, hornea la tarta de manzanas verdes hasta que veas que está lista. Puede llevar entre 30 y 40 minutos aproximadamente, dependiendo de la potencia de tu horno."
+    ]
+  },
+  {
+    "receta": "peking_duck",
+    "id": 23,
+    "nombre": "pato_pekinés",
+    "ingredientes": [
+      "pato",
+      "especias",
+      "glaseado",
+      "salsa",
+      "masa crepe",
+      "jengibre maduro",
+      "laurel",
+      "vinagre_arroz",
+      "vino tinto",
+      "azucar",
+      "salsa ostras",
+      "pasta soja",
+      "salsa hoisin",
+      "aceite",
+      "harina",
+      "agua",
+      "aceite sesamo",
+      "guindillas rojas",
+      "cebolla"
+    ],
+    "pasos": [
+      "Para preparar el pato al estilo pekinés, extraiga todas las vísceras y límpielo bien por dentro y por fuera. Después, déjelo escurrir y séquelo con un trapo.",
+      "A continuación, mezcle cuidadosamente los ingredientes de la marinada y unte con ella el interior del pato, procurando sobre todo no manchar la piel. Luego, déjelo macerar durante unos 20 minutos.",
+      "Luego rellene el pato con las especias y ciérrelo con un palillo.",
+      "Sumérjalo 5 segundos en agua hirviendo, retírelo y al instante, vuelva a sumergirlo en agua helada durante otros 5 segundos para interrumpir el proceso de cocción. Vuelva a retirarlo y séquelo con un trapo. A este procedimiento se le llama escaldar.",
+      "Seguidamente, mezcle los ingredientes del glaseado y embadurne la piel del pato para que, una vez cocido, adquiera esa tonalidad arcillosa y ese aspecto jugoso tan característicos del pato Pekín.",
+      "Cuelgue el pato laqueado y déjelo secar durante 6 horas en un lugar fresco.",
+      "Por otro lado, mezcle todos los ingredientes de la salsa (excepto la cucharadita de aceite). Caliente el aceite en una sartén, vierta la mezcla y, sin dejar de remover, llévela a ebullición. Retírela del fuego y déjela enfriar.",
+      "Caliente el horno a 150 ºC. Ponga a cocer el pato a la pekinesa con el pecho hacia arriba en la parrilla (con un recipiente debajo para recoger el jugo y la grasa que desprenda), dele la vuelta y déjelo cocer durante 15 minutos.",
+      "Retire el pato al estilo pekinés del horno, caliente un poco de aceite y viértalo por encima del pato. Con un cuchillo muy afilado, separe con sumo cuidado la piel de las pechugas, de los laterales y de la espalda. Corte la piel en trozos (de unos 4x6 cm), retirando a la vez la capa de grasa de la piel.",
+      "Para elaborar los ramitos de cebolletas, corte la parte blanca de las cebolletas en tiras de 5 cm y, a continuación, haga cuatro cortes en cada parte. Ponga las tiras de cebolletas en agua helada y guárdelas en el frigorífico hasta que se doblen las puntas. Antes de servir, escúrralas bien. También ponga aro de guindilla en cada extremo.",
+      "Para elaborar las crêpes o las tortitas para el pato Pekín, tamice la harina en un cuenco y haga un hueco en el centro para poder verter el agua hirviendo. Amase la harina y el agua hasta formar una masa elástica.",
+      "Estire la masa sobre una tabla espolvoreada con un poco de harina, hasta dejarla bien lisa y con un grosor de 5 mm. Con la ayuda de un molde circular de 7 cm de diámetro, troquee la masa de las tortitas del pato Pekín tantas veces como sea posible. Reúna los restos de la misma y repita la operación. Unte la mitad de los círculos con un poco de aceite de sésamo y cúbralos con la otra mitad. Estire las porciones de masa con"
+    ]
+  },
+  {
+    "receta": "caprese_salad",
+    "id": 24,
+    "nombre": "ensalada_caprese",
+    "ingredientes": [
+      "tomates_perita",
+      "mozzarella",
+      "albahaca",
+      "sal",
+      "pimienta_negra",
+      "aceite_oliva"
+    ],
+    "pasos": [
+      "Para realizar esta ensalada caprese debemos alistar todos los ingredientes.",
+      "Para esta ensalada italiana les aconsejo elegir tomates perita porque no expulsan tanto jugo. Cortamos los tomates en rodajas, ni muy finas ni muy gruesas, y reservamos.",
+      "Tomamos el queso mozzarella y lo cortamos en rodajas similares a las del tomate. Reservamos.",
+      "Por otro lado, para sazonar esta exquisita ensalada caprese, realizamos una preparación con unas hojitas de albahaca fresca picada, aceite de oliva virgen extra, sal y pimienta negra recién molida. Otra opción totalmente válida es condimentar la ensalada con salsa pesto casera.",
+      "Por último, para la presentación de la ensalada, tomamos un plato o una fuente plana y vamos acomodando los ingredientes intercalando una rodaja de tomate, una de mozzarella, una hoja de albahaca fresca y así sucesivamente. Aderezamos con la preparación realizada con anterioridad y espolvoreamos con un toque de pimienta en grano recién molida para completar la decoración de esta deliciosa e irresistible ensalada caprese. Esta ensalada se puede consumir sola como entrante, pero también, es ideal para acompañar cualquier tipo de carne asada."
+    ]
+  },
+  {
+    "receta": "ice_cream",
+    "id": 25,
+    "nombre": "helado",
+    "ingredientes": [
+      "naranjas",
+      "limon",
+      "nata",
+      "agua_azahar",
+      "azucar",
+      "ralladura_chocolate"
+    ],
+    "pasos": [
+      "Para comenzar con el helado de naranja casero, exprime el jugo de las naranjas y reserva. Evita colarlo ya que la pulpa le dará mucha textura a tu postre, además de que la mayoría de vitaminas y fibra se concentran en esta parte de la fruta.",
+      "Si lo deseas, exprime también el jugo de medio limón. Este detalle servirá de impulsor del sabor cítrico del helado, aunque es totalmente opcional. Truco: el limón ayuda a detener la oxidación del postre.",
+      "Es primordial que la nata esté muy fría para que monte sin problemas. Añade un poco de azúcar y bate, empezando despacio y haciendo picos de intensidad. Puedes ayudarte de una batidora eléctrica u optar por hacerlo manualmente. Continúa batiendo hasta que la nata se cuaje. Truco: para preparar un helado de naranja sin nata, puedes substituir este ingrediente por yogur, ya que aportará una textura similar.",
+      "Incorpora el resto del azúcar y el agua de azahar en el zumo de naranja y limón. Mezcla hasta que ambos ingredientes se hayan diluido en el zumo y viértelo sobre la nata a pequeños chorritos. Remueve con movimientos envolventes y suaves para conseguir un helado de naranja cremoso.",
+      "Cubre con una capa de film protector e introduce el recipiente en el congelador durante al menos 4 horas.",
+      "Pasado este tiempo, sirve tu helado de naranja casero en un bol y decora con raspadura de chocolate."
+    ]
+  },
+  {
+    "receta": "pulled_pork_sandwich",
+    "id": 26,
+    "nombre": "sándwich_de_cerdo_desmenuzado",
+    "ingredientes": [
+      "cerdo",
+      "comino",
+      "oregano",
+      "mostaza",
+      "pimiento",
+      "cebolla",
+      "humo_madera",
+      "pasta_ajo",
+      "sal",
+      "pimienta",
+      "pan_sandwich",
+      "salsa_barbacoa",
+      "queso_cheddar"
+    ],
+    "pasos": [
+      "Nuestro primer paso para realizar esta receta americana es prealistar los ingredientes.",
+      "Lleva una olla a presión a fuego medio, una vez caliente agrega un poco de aceite de girasol y adiciona la pieza de cerdo previamente salpimentada.",
+      "Una vez se selle nuestra proteína, agrega los pimientos en cuadros y la cebolla en cascos con un poco de pasta de ajo en la olla donde tenemos el pulled pork.",
+      "Adiciona un poco de orégano al gusto y si deseas más sal y pimienta a la preparación americana.",
+      "Cubre la pieza de cerdo con suficiente agua y adiciona el humo líquido, el cual se consigue en cualquier supermercado y dará el toque tradicional ahumado que necesitamos en la preparación de este sándwich. Tapa la olla a presión y deja cocinar la carne durante unos 30-40 minutos, o hasta que esté blanda y pueda desmecharse con facilidad.",
+      "Retira la pieza de cerdo y deja enfriar, guarda el caldo donde realizamos la cocción pues este será parte fundamental de la receta. Desmecha el cerdo y adiciona un poco de salsa barbacoa de cualquier marca que desees o elaborada por ti mismo, y un poco de caldo que sobró de la preparación. Lo ideal es que nuestro pulled pork quede húmedo, entonces estará listo para servir."
+    ]
+  },
+  {
+    "receta": "tiramisu",
+    "id": 27,
+    "nombre": "tiramisú",
+    "ingredientes": [
+      "huevo",
+      "azucar glass",
+      "queso",
+      "cafe",
+      "amaretto",
+      "chocolate",
+      "cacao en polvo"
+    ],
+    "pasos": [
+      "Lo primero que debes hacer para poder ponerte manos a la obra cuando antes es dejar listos todos los ingredientes. Para darle un toque especial al tiramisú, mezclaremos el café con un buen chorro de Amaretto.",
+      "Ahora sí, ¡empezamos! Cogemos un bol y mezclamos las yemas de huevo con el azúcar glass hasta integrar por completo.",
+      "Cogemos otro recipiente y batimos las claras a punto de nieve.",
+      "Retomamos el bol donde mezclamos las yemas con el azúcar e incorporamos el queso Mascarpone, mezclamos bien. Una vez incorporado, añadimos las claras a punto de nieve poco a poco y las integramos realizando movimientos lentos de abajo hacia arriba.",
+      "Cogemos la fuente o molde donde tenemos previsto elaborar el tiramisú casero y empezamos a montarlo. Para ello, colocamos una capa de bizcochos de soletilla en el fondo, previamente bañados en la mezcla de café y Amaretto.",
+      "Luego, añadimos una buena capa de la mezcla de yemas, claras, queso Mascarpone y azúcar. Espolvoreamos de forma uniforme el chocolate rallado y volvemos a colocar otra capa de bizcochos empapados en café.",
+      "Para finalizar el tiramisú casero, colocamos otra capa de crema y espolvoreamos una buena cantidad de cacao en polvo.",
+      "Podéis hacer vuestro tiramisú en un molde más o grande o en fuentes individuales, o añadir más o menos capas de bizcochos, aunque, para mi gusto, dos capas es más que suficiente. Reservamos el tiramisú en el frigorífico durante 12-24 horas para que cuaje bien y esté perfecto."
+    ]
+  },
+  {
+    "receta": "falafel",
+    "id": 28,
+    "nombre": "falafel",
+    "ingredientes": [
+      "habas secas",
+      "cebolla",
+      "ajo",
+      "perejil",
+      "harina",
+      "comino",
+      "sal",
+      "aceite de oliva"
+    ],
+    "pasos": [
+      "Pelar las habas y dejarlas en remojo con agua durante unas seis horas. Luego escurrirlas bien.",
+      "Colocar las habas escurridas en una batidora junto con la cebolla troceada, el ajo, el perejil, el comino en polvo, la sal y el polvo para hornear. Triturar hasta obtener una mezcla con consistencia de puré.",
+      "Verter la mezcla en un bol y dejar reposar en un lugar cálido.",
+      "Cuando la mezcla haya aumentado de tamaño, añadir harina y mezclar bien. Formar pequeñas bolitas del tamaño de una nuez grande.",
+      "Dejar reposar las bolitas durante unos veinte minutos y luego pasarlas por harina.",
+      "Calentar aceite de oliva en una sartén honda hasta que alcance la temperatura adecuada para freír.",
+      "Freír las bolitas de falafel hasta que estén doradas por fuera y cocidas por dentro.",
+      "Escurrir el exceso de aceite sobre papel absorbente y servir caliente."
+    ]
+  },
+  {
+    "receta": "beignets",
+    "id": 29,
+    "nombre": "buñuelos",
+    "ingredientes": [
+      "harina",
+      "huevo",
+      "azucar",
+      "leche",
+      "mantequilla",
+      "levadura",
+      "anis",
+      "azucar",
+      "aceite",
+      "sal"
+    ],
+    "pasos": [
+      "En un bol, mezcla el huevo, la mantequilla derretida y el azúcar.",
+      "Bate bien la mezcla y añade la copita de anís, sigue removiendo.",
+      "Agrega la leche a la mezcla y bate bien.",
+      "En otro bol, mezcla la harina con la levadura y una pizca de sal.",
+      "Añade la harina poco a poco a la mezcla líquida, mezclando para evitar grumos.",
+      "Deja reposar la masa en la nevera durante unos 10 minutos.",
+      "Calienta abundante aceite en una sartén.",
+      "Con una cuchara, vierte porciones de masa en el aceite caliente y fríe hasta que estén dorados por todos los lados.",
+      "Coloca los buñuelos en un plato con papel absorbente para eliminar el exceso de aceite.",
+      "Mezcla azúcar y canela en polvo en un plato y rebózalos los buñuelos mientras estén templados."
+    ]
+  },
+  {
+    "receta": "foie_gras",
+    "id": 30,
+    "nombre": "foie_grass",
+    "porciones": "4 personas",
+    "ingredientes": [
+      "foie gras",
+      "pimienta",
+      "jerez",
+      "sal",
+      "perejil",
+      "queso fresco"
+    ],
+    "pasos": [
+      "En la batidora, mezcla el foie-gras, el queso fresco, el jerez y el perejil.",
+      "Sazona la mezcla con sal y pimienta.",
+      "Coloca la mezcla en una tarrina grande.",
+      "Refrigera durante 4 o 5 horas antes de servir."
+    ]
+  },
+  {
+    "receta": "sushi",
+    "id": 31,
+    "nombre": "sushi",
+    "ingredientes": [
+      "arroz_sushi",
+      "agua",
+      "vinagre_sushi",
+      "makisu",
+      "alga_nori",
+      "ajonjoli",
+      "queso_crema",
+      "pepino",
+      "aguacate",
+      "camarones",
+      "salsa"
+    ],
+    "pasos": [
+      "Lava el arroz hasta que el agua salga transparente. Cuece el arroz con agua a fuego medio.",
+      "Cuando esté cocido, deja reposar durante 10 minutos, luego mézclalo con el vinagre para sushi y déjalo enfriar.",
+      "Coloca una hoja de nori sobre el makisu, cúbrelo con arroz y espolvorea con ajonjolí.",
+      "Voltea la hoja, agrega una capa fina de queso crema, una tira de pepino, una de aguacate y camarón.",
+      "Enrolla y presiona con el makisu para formar los rollos. Repite con las otras hojas de nori.",
+      "Humedece un cuchillo con agua y corta los rollos en 6 u 8 piezas.",
+      "Sirve acompañado de salsa de soya con jugo de limón y naranja."
+    ]
+  },
+  {
+    "receta": "cannoli",
+    "id": 32,
+    "nombre": "cannoli",
+    "ingredientes": [
+      "azucar_glas",
+      "huevo",
+      "mantequilla",
+      "vino_marsala",
+      "cacao",
+      "canela",
+      "harina",
+      "chocolate negro",
+      "azucar glas",
+      "queso"
+    ],
+    "pasos": [
+      "En un bol, mezcla todos los ingredientes de la masa excepto el vino dulce Marsala.",
+      "Añade el vino Marsala y mezcla bien. Luego amasa durante 8 minutos y reserva la masa en la nevera durante 2 horas.",
+      "Mientras tanto, prepara el relleno mezclando el queso ricotta escurrido, el azúcar glas y el chocolate amargo picado fino. Reserva en la nevera.",
+      "Divide la masa en dos y estírala finamente. Corta círculos y envuelve cada círculo alrededor de un molde cilíndrico para darle la forma de cannoli.",
+      "Fríe los cannolis en aceite caliente hasta que estén dorados. Escúrrelos en papel absorbente y deja que se enfríen.",
+      "Rellena los cannolis con la mezcla de queso ricotta y chocolate.",
+      "Opcionalmente, espolvorea azúcar glas por encima antes de servir."
+    ]
+  },
+  {
+    "receta": "fried_rice",
+    "id": 33,
+    "nombre": "arroz_frito",
+    "ingredientes": [
+      "Arroz",
+      "Pechuga de pollo",
+      "Calabacín",
+      "Cebolleta",
+      "Zanahorias",
+      "Champiñones",
+      "Huevos",
+      "Aceite de semillas",
+      "Sal",
+      "Jengibre en polvo"
+    ],
+    "pasos": [
+      "Lava el arroz varias veces hasta que el agua salga clara. Cuécelo según las instrucciones del fabricante, luego aclara y deja escurrir.",
+      "Corta todas las verduras en trozos pequeños y sofríelas en una sartén con aceite. Agrega los champiñones cuando las verduras estén medio pochadas.",
+      "Añade el pollo picado a la sartén con las verduras y continúa cocinando hasta que esté bien cocido. Sazona con un poco de sal.",
+      "Prepara una tortilla con los huevos y córtala en tiras o trozos pequeños.",
+      "En una cazuela amplia, saltea el arroz cocido con un poco de aceite, salsa de soja y jengibre.",
+      "Agrega las verduras, el pollo y la tortilla al arroz y saltea todo junto por unos minutos.",
+      "Prueba y ajusta la sazón según sea necesario.",
+      "Sirve el arroz frito japonés caliente y disfruta."
+    ]
+  },
+  {
+    "receta": "cupcakes",
+    "id": 34,
+    "nombre": "magdalenas",
+    "ingredientes": [
+      "Harina",
+      "Mantequilla",
+      "Azúcar",
+      "Huevos",
+      "Plátano",
+      "Esencia",
+      "Polvo de hornear",
+      "Leche"
+    ],
+    "pasos": [
+      "Alista todos los ingredientes necesarios para hacer los cupcakes.",
+      "Batir la mantequilla con el azúcar hasta obtener una mezcla cremosa. Agregar la esencia de plátano.",
+      "Agregar los huevos y la leche, y mezclar bien.",
+      "Incorporar la harina y el polvo de hornear tamizados. Añadir el plátano hecho puré y mezclar hasta que esté todo bien combinado.",
+      "Colocar la masa en los moldes para cupcakes y hornear a 170ºC durante aproximadamente 20 minutos, o hasta que estén dorados y cocidos.",
+      "Decorar los cupcakes como desees. Puedes optar por"
+    ]
+  },
+  {
+    "receta": "pizza",
+    "id": 35,
+    "nombre": "pizza",
+    "ingredientes": [
+      "Harina de fuerza",
+      "Leche",
+      "Levadura fresca de panadero",
+      "Sal",
+      "Pimiento verde italiano",
+      "Cebolla dulce",
+      "Pepperoni",
+      "Orégano y pimienta",
+      "Tomate triturado",
+      "Queso cheddar rallado"
+    ]
+  },
+  {
+    "pasos": [
+      "Preparar el polish: Mezclar la mitad del vaso de leche tibia con la levadura y 2 cucharadas de harina. Reposar por 15 minutos.",
+      "En otro recipiente, mezclar el resto de la harina con la leche tibia, añadir el polish y la sal. Amasar durante 5 minutos.",
+      "Dejar reposar la masa en un recipiente tapado durante 1 hora. Luego, formar una bola y dejar reposar 30 minutos más o hasta que doble su tamaño.",
+      "Cortar la cebolla en juliana y el pimiento en rodajas. Rallar el queso cheddar.",
+      "Extender la masa sobre papel de horno. Cubrir con tomate triturado y esparcir las especias por encima.",
+      "Agregar el queso rallado, el pepperoni, el pimiento y la cebolla sobre la salsa de tomate.",
+      "Llevar al horno precalentado a 180 ºC durante aproximadamente 20 minutos o hasta que la pizza esté dorada y crujiente."
+    ]
+  },
+  {
+    "receta": "strawberry_shortcake",
+    "id": 36,
+    "nombre": "pastel_de_fresas",
+    "ingredientes": {
+      "bizcocho": [
+        "Huevos",
+        "Azúcar",
+        "Zumo de limón",
+        "Ralladura de limón",
+        "Harina",
+        "Sal",
+        "Mantequilla sin sal derretida",
+        "Extracto de vainilla",
+        "Nata montada",
+        "Queso crema",
+        "Azúcar",
+        "Ralladura de limón",
+        "Zumo de limón",
+        "Fresas en rodajas",
+        "Mermelada de fresa",
+        "Azúcar glas"
+      ]
+    },
+    "pasos": [
+      "Precalentar el horno a 190ºC.",
+      "Batir los huevos con el azúcar durante 5 minutos. Agregar la ralladura y el zumo de limón mientras se bate.",
+      "Tamizar la harina con la sal y agregarla gradualmente al batido de huevos y azúcar.",
+      "Incorporar la mantequilla derretida y la vainilla. Verter la masa en un molde redondo de 22 centímetros forrado con papel de horno y hornear durante 40 minutos.",
+      "Dejar enfriar el bizcocho.",
+      "Para el relleno, mezclar la nata montada con el queso crema, el azúcar, la vainilla, la ralladura de limón y el zumo de limón.",
+      "Bañar la mitad de las fresas en la mermelada.",
+      "Cortar el bizcocho por la mitad transversalmente y extender la mitad de la nata sobre una de las partes.",
+      "Colocar las fresas bañadas en mermelada sobre la nata y cubrir con la otra mitad del bizcocho.",
+      "Cubrir con el resto de la nata y decorar con las fresas restantes.",
+      "Espolvorear con azúcar glas antes de servir."
+    ]
+  },
+  {
+    "receta": "steak",
+    "nombre": "filete",
+    "id": 37,
+    "ingredientes": [
+      "Solomillos de ternera",
+      "Puerros cortados en juliana",
+      "Pimienta negra en grano",
+      "Brandy",
+      "Salsa Worcester",
+      "Mantequilla",
+      "Caldo concentrado de carne",
+      "Sal"
+    ],
+    "pasos": [
+      "Machacar la pimienta en el mortero.",
+      "Sazonar los solomillos con sal y cubrir con pimienta por ambas caras.",
+      "Dorar los solomillos en una sartén con mantequilla.",
+      "Agregar el brandy y flambearte.",
+      "Dejar que el fuego se apague por sí solo.",
+      "Añadir los puerros cortados en juliana y dorar.",
+      "Incorporar el caldo de carne, ketchup y salsa Worcester. Reducir casi por completo.",
+      "Servir los solomillos con la salsa por encima."
+    ]
+  },
+  {
+    "receta": "seaweed_salad",
+    "id": 38,
+    "nombre": "Ensalada_de_algas",
+    "ingredientes_principales": [
+      "Hojas de lechuga",
+      "Berros",
+      "3 ó 4 rabanitos",
+      "Germinados variados",
+      "Zanahoria rallada",
+      "2 endibias",
+      "Hojas de apio",
+      "2 cucharadas soperas de maíz",
+      "1 trozo de alga dulce",
+      "1 trozo de alga wakame",
+      "Aceitunas",
+      "Semillas de sésamo tostado",
+      "zumo_de_limón",
+      "salsa_de_soja",
+      "aceite_de_oliva_virgen_extra",
+      "oregano"
+    ],
+    "pasos": [
+      "Cortar la lechuga en trozos no muy grandes.",
+      "Preparar las algas: ponerlas en remojo con un poco de agua y zumo de limón y dejarlas macerar unos instantes.",
+      "En una fuente colocar la lechuga, la zanahoria, los germinados, las hojas de apio, el maíz y las algas.",
+      "Preparar la salsa mezclando bien todos los ingredientes.",
+      "Colocar las endivias en una fuente con las puntas hacia fuera.",
+      "Adornar con unas aceitunas y unas semillas de sésamo tostado."
+    ]
+  },
+
+  
+{
+    "receta": "gyoza",
+    "id": 39,
+    "nombre": "gyoza",
+    "ingredientes": [
+      "100 gramos de carne picada de cerdo",
+      "100 gramos de repollo",
+      "1 diente de ajo",
+      "Sal al gusto",
+      "1 cucharada de jengibre en polvo",
+      "100 gramos de harina 000",
+      "60 centímetros cúbicos de agua",
+      "Harina extra para estirar"
+    ],
+    "pasos": [
+      "Para la masa, extender harina sobre un mármol limpio y verter agua caliente en el centro. Amasar durante unos 10 minutos hasta obtener una masa lisa y blanda.",
+      "Tapar la masa y dejar reposar durante unos 30 minutos.",
+      "Picar el repollo en trozos muy pequeños y mezclarlo con la carne picada de cerdo, el ajo picado y el jengibre rallado.",
+      "Dividir la masa en 15 partes iguales de aproximadamente 10 gramos cada una.",
+      "Estirar cada porción de masa hasta obtener discos de unos 8 centímetros de diámetro y 2 o 3 milímetros de grosor, espolvoreando harina extra para evitar que se peguen.",
+      "Rellenar cada disco de masa con la mezcla de carne y repollo.",
+      "Humedecer los bordes de cada disco con agua y hacer un repulgue para cerrar las gyozas.",
+      "Calentar una sartén u olla antiadherente con aceite y dorar la base de las gyozas durante 1 a 5 minutos.",
+      "Agregar 200 centímetros cúbicos de agua a la sartén u olla, tapar y cocinar las gyozas durante aproximadamente 7 minutos.",
+      "Destapar y permitir que el agua se termine de evaporar."
+    ]
+  },
+  {
+    "receta": "fried_calamari",
+    "id": 40,
+    "nombre": "calamares_fritos",
+    "ingredientes": [
+      "2 kilos de calamar fresco",
+      "Harina, cantidad necesaria"
+    ],
+    "pasos": [
+      "Limpiar los calamares y cortarlos en anillos.",
+      "Pasar los anillos de calamar por harina, sacudiendo el exceso.",
+      "Freír los calamares en aceite a 250 grados Celsius hasta que estén dorados.",
+      "Una vez dorados, retirar los calamares del aceite y servir con un trozo de limón."
+    ]
+  },
+  {
+    "receta": "onion_rings",
+    "id": 41,
+    "nombre": "aros_de_cebolla",
+    "ingredientes": [
+      "2 cebollas grandes",
+      "2 huevos",
+      "Sal, al gusto",
+      "Pimienta, al gusto",
+      "3 cucharadas de queso rallado",
+      "Harina, cantidad necesaria",
+      "Aceite para freír, cantidad necesaria"
+    ],
+    "pasos": [
+      "Cortar las cebollas en aros gruesos.",
+      "Batir los huevos en un recipiente.",
+      "Salpimentar los huevos batidos.",
+      "Agregar el queso rallado y luego la harina, mezclando bien hasta obtener una masa homogénea.",
+      "Sumergir los aros de cebolla en la masa preparada, asegurándose de cubrirlos completamente.",
+      "Freír los aros de cebolla en abundante aceite caliente hasta que estén dorados.",
+      "Retirar los aros de cebolla del aceite y colocar sobre papel absorbente para eliminar el exceso de grasa.",
+      "Servir caliente y disfrutar."
+    ]
+  },
+
+  
+{
+    "receta": "bread_pudding",
+    "id": 42,
+    "nombre": "Budín_de_pan",
+    "ingredientes": [
+      "leche",
+      "pan duro ",
+      "polvo para hacer flan",
+      "canela en polvo",
+      "esencia de vainilla",
+      "Caramelo líquido"
+    ],
+    "pasos": [
+      "Colocar el caramelo líquido en el molde o bandeja.",
+      "Mezclar la esencia de vainilla con la leche.",
+      "En un bol, combinar el preparado para flan con la canela y agregar gradualmente la leche, mezclando bien.",
+      "Llevar la mezcla a ebullición en una olla a fuego medio, removiendo constantemente con las varillas.",
+      "Verter la mezcla caliente sobre las rodajas de pan duro en el molde, asegurándose de que se empapen bien.",
+      "Dejar enfriar a temperatura ambiente y luego refrigerar durante aproximadamente 2 horas.",
+      "Desmoldar el budín y servir."
+    ]
+  },
+
+{
+    "receta": "carrot_cake",
+    "id": 43,
+    "nombre": "tarta_de_zanahorias",
+    "ingredientes": [
+      "zanahorias",
+      "canela en rama",
+      "azúcar",
+      "Coco rallado",
+      "Galletas María",
+      "Licor para mojar las galletas",
+      "Fideos de chocolate para adornar"
+    ],
+    "pasos": [
+      "Pelar y trocear las zanahorias, y cocerlas con la canela y el azúcar hasta que estén blandas.",
+      "Escurrir bien las zanahorias cocidas y machacarlas.",
+      "En un molde, colocar una capa de galletas maría previamente bañadas en licor, seguida de una capa de puré de zanahorias y una capa de coco rallado. Repetir este proceso de capas unas 3 o 4 veces.",
+      "Terminar con una última capa de coco rallado y decorar con fideos de chocolate.",
+      "Refrigerar en el frigorífico antes de servir."
+    ]
+  },
+
+{
+    "receta": "nachos",
+    "id": 44,
+    "nombre": "nachos",
+    "ingredientes": [
+      "harina",
+      "harina de trigo",
+      "agua caliente",
+      "aceite de girasol",
+      "sal",
+      "pimienta",
+      "aceite de oliva"
+    ],
+    "pasos": [
+      "Mezcla en un recipiente la harina de maíz y la harina de trigo. Añade la sal y la pimienta, y remueve bien para integrar todos los ingredientes.",
+      "Transfiere la mezcla a un recipiente amplio. Agrega el aceite y remueve para que se mezcle. Luego, añade poco a poco el agua caliente mientras amasas la masa.",
+      "Forma una bola con la masa y tápala con un paño limpio. Deja reposar en la nevera durante 20 minutos.",
+      "Después del reposo, extiende la masa sobre un papel de hornear con ayuda de un rodillo, formando una placa fina y rectangular. Corta los bordes para hacer un rectángulo preciso y luego corta la masa en triángulos en zigzag con un cuchillo.",
+      "Calienta el aceite de girasol en una sartén. Cuando esté caliente, fríe los nachos en pequeñas porciones durante aproximadamente 2 minutos. Retíralos y colócalos sobre papel absorbente para eliminar el exceso de aceite.",
+      "Sirve los nachos caseros con salsas o como acompañamiento. ¡Listos para disfrutar!"
+    ]
+  },
+
+{
+    "receta": "beet_salad",
+    "id": 45,
+    "nombre": "ensalada_de_remolacha",
+    "ingredientes": [
+      "Membrillo",
+      "Azúcar",
+      "Zumo de limón",
+      "Chalota seca",
+      "Vinagre de arándano",
+      "Curry",
+      "Aceite de oliva",
+      "Lechuga",
+      "Tomate",
+      "Remolacha cocida",
+      "Cristales de sal",
+      "Hierbabuena"
+    ],
+    "pasos": [
+      "Para preparar la compota de membrillo, pela la fruta, elimina la parte central y córtala en cubos de tamaño regular. Coloca los cubos de membrillo en un cazo, cúbrelos con agua, añade el azúcar y unas gotas de zumo de limón. Calienta y cocina la compota hasta que la fruta esté tierna pero sin perder consistencia. Luego, reserva en la nevera.",
+      "El día de la preparación, haz el aliño para la ensalada mezclando todos los ingredientes y dejando reposar por unos minutos para que la chalota se hidrate bien.",
+      "Para montar la ensalada, coloca unas hojas de lechuga en el fondo de cada plato, luego añade los tomates cortados y la remolacha en cubos. Agrega una porción de membrillo en el centro de cada plato y rocía las verduras con el aliño, evitando que toque el membrillo.",
+      "Por último, rocía cada plato con aceite de oliva, añade una pizca de sal y espolvorea hierbabuena sobre el membrillo. ¡Listo para servir!"
+    ]
+  },
+
+{
+    "receta": "bruschetta",
+    "id": 46,
+    "nombre": "brusqueta",
+    "ingredientes": [
+      "Tomate",
+      "Pan baguette",
+      "Aceite de oliva",
+      "Sal",
+      "Pimienta",
+      "Albahaca fresca",
+      "Ajo"
+    ],
+    "pasos": [
+      "Alistar todos los ingredientes.",
+      "Picar los tomates sin semillas en cuadros muy finos.",
+      "Agregar el aceite de oliva, la sal y la pimienta al gusto.",
+      "Añadir la albahaca cortada en tiras y dejar en la nevera hasta que se necesite.",
+      "Cortar el pan en rodajas, dorarlas con un poco de aceite de oliva y frotarlas con ajo.",
+      "Servir y disfrutar estas deliciosas bruschettas de tomate como una perfecta entrada."
+    ]
+  },
+
+{
+    "receta": "croque_madame",
+    "id": 47,
+    "nombre": "sándwich_croque_madame",
+    "ingredientes": [
+      "Pan de molde",
+      "Queso",
+      "Mantequilla",
+      "Huevo",
+      "Jamón cocido"
+    ],
+    "pasos": [
+      "Reunir todos los ingredientes necesarios.",
+      "Rallar el queso si es necesario.",
+      "Extender la mantequilla en una cara de cada rebanada de pan.",
+      "Colocar la mitad del queso rallado y las lonchas de jamón cocido sobre una de las rebanadas, sobre la parte untada con mantequilla.",
+      "Cubrir el sándwich con la otra rebanada de pan, con la parte untada hacia abajo, y extender más mantequilla en la cara superior del sándwich.",
+      "Cubrir el sándwich con el resto del queso rallado.",
+      "Añadir un huevo encima",
+      "Meter al horno y gratinar hasta que el queso se derrita."
+    ]
+  },
+
+  
+{
+    "receta": "baby_back_ribs",
+    "id": 48,
+    "nombre": "costillitas",
+    "ingredientes": [
+      "Costillita de puerco",
+      "Sal",
+      "Pimiento",
+      "Miel de abeja",
+      "Salsa de soya",
+      "Jugo de limón",
+      "Gengibre en polvo",
+      "Piña",
+      "Vinagre"
+    ],
+    "pasos": [
+      "Corte las costillitas para separarlas y colóquelas en un platón. Espolvoree con sal y métalas al horno tapadas a 375°F (190°C) durante unos 45 minutos.",
+      "Mientras tanto, prepare la salsa mezclando la miel, salsa de soya, jugo de limón y gengibre en polvo.",
+      "Saque las costillitas del horno y retire el exceso de grasa si lo desea. Rocíe la mitad de las costillitas con la mezcla de miel y vuelva a meter al horno, destapadas, reduciendo un poco la temperatura, durante otros 25 minutos o hasta que estén doradas.",
+      "Mientras tanto, escurra el almíbar de la piña y añada el vinagre. Incorpore todo con la mezcla de miel reservada.",
+      "Corte el pimiento en cuadritos y póngalos a macerar en este líquido.",
+      "Agregue los pedacitos de piña y cocine por unos cinco minutos.",
+      "Saque las costillitas del horno, rocíelas con esta mezcla y hornee por otros 15 minutos para que se caramelice."
+    ]
+  },
+
+{
+    "receta": "pork_chop",
+    "id": 49,
+    "nombre": "chuleta_de_cerdo",
+    "ingredientes": [
+      "Chuletas de cerdo con huesos",
+      "Ajo majado",
+      "Salsa de soja",
+      "Jugo de limón",
+      "Aceite de oliva",
+      "Sal y pimienta al gusto"
+    ],
+    "pasos": [
+      "Marinar las chuletas de cerdo con todos los ingredientes: ajo majado, salsa de soya, jugo de limón y aceite de oliva. Mezclar bien y reservar durante 1 hora para que absorban todos los aromas.",
+      "Calentar la plancha y engrasar con un poco de aceite o mantequilla.",
+      "Cocinar las chuletas de cerdo a la plancha hasta que estén doradas por ambos lados.",
+      "Servir las chuletas acompañadas de patatas asadas o una ensalada verde."
+    ]
+  },
+
+{
+    "receta": "hummus",
+    "id": 50,
+    "nombre": "hummus",
+    "ingredientes": [
+      "Garbanzo cocido",
+      "½ diente de Ajo",
+      "1 cucharada postre de Tahini o pasta de semillas de sésamo",
+      "Aceite de oliva",
+      "6 unidades de Aceitunas negras",
+      "1 pizca de Comino molido",
+      "1 pizca de Sal",
+      "1 pizca de Pimienta negra molida",
+      "1 chorro de Zumo de limón"
+    ],
+    "pasos": [
+      "Lavar los garbanzos y escurrirlos bien. Colocarlos en un vaso para la batidora.",
+      "Añadir las aceitunas negras, el ajo, un poco de sal, pimienta negra al gusto y un poco de comino molido.",
+      "Agregar una cucharadita de tahini o pasta de sésamo.",
+      "Batir el hummus árabe con la batidora, añadiendo un poco de aceite de oliva y zumo de limón al gusto.",
+      "Servir el hummus árabe acompañado de un poco de pimentón dulce por encima y aceite de oliva."
+    ]
+  },
+
+  
+  
+{
+    "receta": "sashimi",
+    "id": 51,
+    "nombre": "sashimi",
+    "ingredientes": [
+      "500 gramos de Salmón",
+      "50 gramos de Albahaca seca",
+      "100 gramos de Piñones",
+      "1 chorro de Zumo de limón",
+      "100 mililitros de Aceite de oliva",
+      "1 pizca de Sal",
+      "1 pizca de Pimienta"
+    ],
+    "pasos": [
+      "Cortar el salmón en tiras gruesas y colocarlas en el centro de un plato.",
+      "Añadir el zumo de limón sobre el salmón y dejar marinar durante unos 10 minutos.",
+      "Agregar el aceite de oliva sobre el salmón.",
+      "Esparcir la albahaca seca sobre el salmón y decorar con piñones.",
+      "Servir el sashimi de salmón acompañado de salsa de soja y, opcionalmente, con arroz de sushi."
+    ]
+  },
+
+{
+    "receta": "cheese_plate",
+    "id": 52,
+    "nombre": "tabla_de_queso",
+    "ingredientes": [
+      "papa",
+      "cebolla",
+      "tomate",
+      "ajo",
+      "ají",
+      "queso",
+      "caldo de camarones o agua",
+      "leche evaporada",
+      "huacatay",
+      "pimienta negra molida",
+      "sal",
+      "aceite"
+    ],
+    "pasos": [
+      "Lava y coloca las papas en una olla grande con agua y sal. Cocínalas hasta que estén tiernas, luego pélalas y córtalas en mitades o rodajas.",
+      "Corta las cebollas en gajos gruesos y los tomates en cubos pequeños.",
+      "En una sartén, caliente un chorro de aceite y sofríe el ajo molido. Agrega las cebollas y cocina hasta que estén suaves.",
+      "Añade el ají panca y cocina por unos minutos más.",
+      "Incorpora los tomates picados y cocina hasta que se deshagan.",
+      "Agrega el caldo de camarones (o agua), las ramas de huacatay, sal y pimienta al gusto.",
+      "Añade las papas y cubre con las tajadas de queso.",
+      "Deja hervir hasta que el queso se derrita, luego vierte un chorro de leche evaporada.",
+      "Sirve caliente, retirando las ramas de huacatay y decora con una rodaja de rocoto."
+    ]
+  },
+
+{
+    "receta": "edamame",
+    "id": 53,
+    "nombre": "edamame",
+    "ingredientes": [
+      "edamame",
+      "sal",
+      "agua",
+      "escamas de sal",
+      "pimentón dulce"
+    ],
+    "pasos": [
+      "Hierve agua en una cazuela y añade un pellizco de sal.",
+      "Cuando el agua esté hirviendo, agrega las vainas de edamame y cocina durante 5 minutos a fuego alto, hasta que las vainas estén tiernas y suban a la superficie.",
+      "Cuela las vainas de edamame y deja que se enfríen.",
+      "Sirve las edamame espolvoreadas con pimentón dulce y escamas de sal."
+    ]
+  },
+
+  
+{
+    "receta": "prime_rib",
+    "id": 54,
+    "nombre": "costillar_premium",
+    "ingredientes": [
+      "costillas de cerdo",
+      "especias morunas",
+      "aceite de oliva",
+      "sal del Himalaya",
+      "cebolla deshidratada",
+      "reducción de Pedro Ximénez"
+    ],
+    "pasos": [
+      "Precalienta el horno a 180 ºC con calor arriba y abajo.",
+      "En una bandeja previamente bañada en aceite de oliva, coloca las tiras de costillas de cerdo.",
+      "Riega las costillas con un poco de aceite de oliva y espolvorea por encima especias morunas, sal del Himalaya y escamas de cebolla deshidratada.",
+      "Hornea las costillas adobadas durante aproximadamente 1 hora y 45 minutos, o hasta que estén bien cocidas.",
+      "Al sacarlas del horno, rocía las costillas con reducción de Pedro Ximénez antes de servir."
+    ]
+  },
+
+{
+    "receta": "beef_tartare",
+    "id": 55,
+    "nombre": "tartar_de_carne",
+    "ingredientes": [
+      "ternera",
+      "perejil",
+      "limón",
+      "sal",
+      "aceite de oliva",
+      "mostaza",
+      "curry",
+      "pimienta negra"
+    ],
+    "pasos": [
+      "Picar la carne de ternera en trozos pequeños o usar carne picada.",
+      "Picar finamente el perejil.",
+      "Exprimir el limón y reservar el zumo.",
+      "En un bol grande, mezclar la carne de ternera con el perejil y regar con el zumo de limón. Dejar reposar unos minutos.",
+      "Preparar la salsa de especias en otro bol, mezclando la mostaza de Dijon con un poco de aceite, y añadiendo pimienta negra, curry y sal.",
+      "Verter el aliño de especias sobre la carne y mezclar bien para que se impregne.",
+      "Servir el tartar de ternera con especias y darle forma si se desea. Se puede acompañar con tomatitos cherry y tostadas."
+    ]
+  },
+
+{
+    "receta": "hot_and_sour_soup",
+    "id": 56,
+    "nombre": "sopa_agripicante",
+    "ingredientes": [
+      "setas",
+      "vinagre",
+      "salsa de soja",
+      "harina de maíz",
+      "caldo",
+      "sal",
+      "huevos",
+      "bambu",
+      "carne",
+      "tofu",
+      "pimienta",
+      "aceite de sésamo",
+      "cebollino"
+    ],
+    "pasos": [
+      "Poner a remojar en agua muy caliente las setas (shiitake u oreja de árbol) durante 20 minutos. Escurrir, eliminar los tallos si son shiitake y picar muy finamente.",
+      "En una olla, llevar a ebullición el caldo. Añadir el vinagre, la salsa de soja y sal al gusto.",
+      "En un vaso, hacer una lechada con la harina de arroz o la maicena y añadir al caldo hirviendo. Dejar hervir unos minutos hasta que espese.",
+      "Batir los huevos en un cuenco y añadirlos al caldo hirviendo, haciendo un movimiento circular para que se formen hebras.",
+      "Añadir las setas, los tallos de bambú, la carne, el tofu y la pimienta. Dejar hervir dos minutos.",
+      "Probar la sopa y ajustar el sabor con más salsa de soja o vinagre si es necesario.",
+      "Servir en cuencos individuales y espolvorear con cebollino fresco."
+    ]
+  },
+
+{
+    "receta": "macarons",
+    "id": 57,
+    "nombre": "macarons",
+    "porciones": 6,
+    "ingredientes": {
+      "macarons": [
+        "almendra molida",
+        "azúcar glas",
+        "cacao en polvo",
+        "agua mineral",
+        "azúcar granulada",
+        "claras de huevo",
+        "chocolate negro",
+        "nata líquida",
+        "mantequilla sin sal"
+      ]
+    },
+    "pasos": [
+      "En un bol, mezcla y tamiza la almendra molida, el azúcar glas y el cacao en polvo. Repite el tamizado si es necesario.",
+      "Incorpora la mitad de las claras de huevo a la mezcla de almendra, azúcar y cacao. Mezcla bien y reserva.",
+      "Hierve el agua mineral con el azúcar granulado durante 13 minutos para hacer un almíbar. Deja enfriar.",
+      "Bate las otras claras de huevo hasta formar picos firmes. Añade el almíbar en forma de hilo mientras sigues batiendo hasta que las claras estén templadas o casi frías.",
+      "Agrega el merengue a la mezcla de almendra, azúcar y cacao. Mezcla suavemente.",
+      "Coloca la masa en una manga pastelera y forma círculos sobre una bandeja de horno forrada con papel de hornear. Deja reposar hasta que la superficie de los macarons esté seca al tacto.",
+      "Mientras tanto, prepara la ganache de chocolate: derrite el chocolate en la nata caliente y agrega la mantequilla troceada. Mezcla hasta obtener una ganache brillante y deja enfriar.",
+      "Precalienta el horno a 170 ºC. Hornea los macarons durante unos 9 minutos o hasta que estén cocidos.",
+      "Una vez horneados, deja enfriar completamente sobre una rejilla.",
+      "Rellena los macarons con la ganache de chocolate. Une las galletas formando sándwiches y presiona ligeramente.",
+      "Deja reposar los macarons rellenos en la nevera antes de servir."
+    ]
+  },
+
+{
+    "receta": "guacamole",
+    "id": 58,
+    "nombre": "guacamole",
+    "ingredientes": [
+      "aguacate",
+      "tomate",
+      "cilantro fresco",
+      "chile verde",
+      "zumo de limón"
+    ],
+    "pasos": [
+      "Para hacer el guacamole tradicional, pela los aguacates y colócalos en un plato hondo. Reserva la semilla de la fruta aparte. Tritura la fruta con ayuda de un tenedor, aplastando todo de forma más o menos uniforme.",
+      "Corta los tomates y el chile verde en cuadros lo más pequeño posible. El cilantro también debe estar cortado finamente.",
+      "A continuación mezcla los ingredientes, revolviendo y triturando de forma envolvente para que se reparta todo de forma uniforme. Corrige la sazón con sal o picante si lo consideras necesario.",
+      "Conserva el guacamole colocando la semilla de aguacate dentro del plato o envase donde conserves el preparado. Disfruta de este plato típico mexicano con totopos, nachos, fajitas o lo que desees."
+    ]
+  },
+
+{
+    "receta": "creme_brulee",
+    "id": 59,
+    "nombre": "crema_quemada",
+    "ingredientes": [
+      "almendras molidas",
+      "leche",
+      "yema de huevo",
+      "azúcar moreno",
+      "frambuesas",
+      "sal",
+      "azúcar moreno para caramelizar"
+    ],
+    "pasos": [
+      "Dorar las almendras molidas en una sartén sin grasa a fuego medio.",
+      "Calentar la leche con las almendras hasta que comience a hervir, luego retirar del fuego.",
+      "Batir las yemas con el azúcar moreno hasta obtener una consistencia ligeramente esponjosa.",
+      "Agregar parte de la leche caliente a las yemas y mezclar bien.",
+      "Incorporar las yemas a la leche restante y cocinar a fuego bajo hasta que espese sin hervir.",
+      "Rellenar vasitos con la mezcla y algunas frambuesas, luego hornear a 140ºC durante aproximadamente una hora.",
+      "Espolvorear la superficie con azúcar moreno y caramelizar con un soplete o en el horno.",
+      "Decorar con frambuesas antes de servir."
+    ]
+  },
+
+{
+    "receta": "risotto",
+    "id": 60,
+    "nombre": "risotto",
+    "ingredientes": [
+      "arroz arborio",
+      "champiñones",
+      "vino blanco",
+      "cebolla",
+      "caldo de verduras",
+      "aceite de oliva",
+      "sal",
+      "queso parmesano rallado",
+      "pimienta negra"
+    ],
+    "pasos": [
+      "Pela y pica finamente la cebolla. Limpia y corta los champiñones en trozos medianos.",
+      "Calienta un poco de aceite en una cazuela y sofríe la cebolla hasta que esté transparente. Luego, añade los champiñones y dóralos.",
+      "Calienta el caldo de verduras en otra olla.",
+      "Añade el arroz a la cazuela con los champiñones, remueve y vierte el vino blanco. Deja reducir unos minutos.",
+      "Agrega el caldo de verduras poco a poco, removiendo constantemente el arroz para que se cocine de manera uniforme y quede cremoso.",
+      "Cuando el arroz esté al dente, incorpora sal, pimienta y queso parmesano rallado. Remueve hasta que el queso se derrita y aporte cremosidad.",
+      "Prueba y ajusta la sazón si es necesario. Apaga el fuego y deja reposar el risotto tapado durante 5 minutos antes de servir.",
+      "Sirve el risotto de champiñones caliente, acompañado de más queso parmesano si se desea."
+    ]
+  },
+
+{
+    "receta": "scallops",
+    "id": 61,
+    "nombre": "Escalope",
+    "ingredientes": [
+      "escalopes de ternera",
+      "queso rallado",
+      "aceite",
+      "huevo",
+      "harina",
+      "pan rallado",
+      "limón",
+      "pimientos verdes",
+      "sal"
+    ],
+    "pasos": [
+      "Sazona los escalopes finos y tiernos con sal.",
+      "Pasa los escalopes por harina, huevo batido, queso rallado y pan rallado, en ese orden.",
+      "Fríe los escalopes empanados en aceite caliente hasta que estén dorados por ambos lados.",
+      "Para servir, acompaña los escalopes con rodajas de limón y pimientos verdes fritos cortados en tiras."
+    ]
+  },
+{
+    "receta": "cheese_cake",
+    "id": 62,
+    "nombre": "pastel_de_queso",
+    "ingredientes": [
+      "galletas Oreo",
+      "mantequilla",
+      "requesón o ricotta",
+      "queso crema",
+      "azúcar",
+      "yemas de huevo",
+      "claras de huevo",
+      "cacao en polvo sin azúcar",
+      "azúcar vainilla",
+      "sal",
+      "queso crema",
+      "nata líquida",
+      "zumo de limón",
+      "harina",
+      "yema de huevo",
+      "chocolate para fundir"
+    ],
+    "pasos": [
+      "Precalienta el horno a 225 ºC.",
+      "Tritura las galletas Oreo y mezcla con la mantequilla derretida. Coloca esta mezcla en la base de un molde desmontable y presiona firmemente. Reserva.",
+      "Bate las claras a punto de nieve con una pizca de sal y luego añade 50 gramos de azúcar sin dejar de batir. Reserva.",
+      "En otro bol, mezcla el requesón, queso crema, nata, azúcar, yemas de huevo, cacao en polvo y azúcar de vainilla. Incorpora suavemente las claras batidas.",
+      "Repite el proceso anterior para hacer la capa de queso.",
+      "Vierte un tercio de la mezcla de chocolate en el molde sobre la base de galleta, luego agrega toda la mezcla de queso y finaliza con el resto de la mezcla de chocolate.",
+      "Hornea a 225 ºC durante 15 minutos, luego baja la temperatura a 125 ºC y hornea por otros 55 minutos. No abras el horno durante la cocción. Deja reposar al menos 20 minutos después de sacar del horno.",
+      "Para el glaseado, hierve la nata y la mantequilla, luego añade el chocolate picado. Remueve hasta obtener una crema homogénea y vierte sobre el cheesecake desmoldado.",
+      "Refrigera por al menos 4 horas antes de servir."
+    ]
+  },
+  
+{
+    "receta": "chicken_curry",
+    "id": 63,
+    "nombre": "pollo_al_curry",
+    "ingredientes": [
+      "Pechuga de pollo",
+      "Cebolleta",
+      "Ajo",
+      "Jengibre fresco",
+      "Guindilla",
+      "Curry molido",
+      "Cúrcuma molida",
+      "Comino molido",
+      "Tomate triturado",
+      "Sal",
+      "Pimienta negra molida",
+      "Leche de coco",
+      "Aceite de oliva virgen extra",
+      "Cilantro fresco o perejil"
+    ],
+    "pasos": [
+      "Cortar el pollo en trozos pequeños.",
+      "Picar la cebolleta, el diente de ajo, el jengibre y la guindilla.",
+      "Calentar un poco de aceite en una sartén y freír la cebolleta durante 2 minutos.",
+      "Agregar el ajo, el jengibre y la guindilla a la sartén y cocinar por unos minutos.",
+      "Añadir el tomate triturado y cocinar por 1 minuto más.",
+      "Incorporar las especias (curry, cúrcuma y comino) y mezclar bien.",
+      "Agregar el pollo a la sartén, salpimentar al gusto y cocinar a fuego alto hasta que esté dorado por todas partes.",
+      "Verter la leche de coco sobre el pollo y dejar reducir ligeramente.",
+      "Servir el pollo al curry caliente, acompañado de perejil o cilantro fresco picado."
+    ]
+  },
+
+{
+    "receta": "crab_cakes",
+    "id": 64,
+    "nombre": "tortas_de_cangrejo",
+    "ingredientes": [
+      "Carne de cangrejo",
+      "Galletas saladas o crackers",
+      "Mayonesa",
+      "Salsa Perrins",
+      "Mezcla de especias para pescado",
+      "Huevo batido",
+      "Mostaza de Dijon",
+      "Sal",
+      "Pimienta",
+      "Perejil"
+    ],
+    "pasos": [
+      "Mezclar todos los ingredientes excepto la carne de cangrejo en un bol para hacer un aliño.",
+      "Incorporar la carne de cangrejo deshebrada a la mezcla y combinar bien.",
+      "Formar 4 bolas con la mezcla y luego aplastarlas para formar tortitas o pastelitos del tamaño de una hamburguesa. Dejar reposar en el refrigerador durante 40 minutos.",
+      "Freír los pasteles de cangrejo en aceite caliente durante 3-4 minutos por cada lado, hasta que estén dorados.",
+      "También se pueden cocinar a la plancha o en el horno hasta que estén dorados.",
+      "Servir los crab cakes calientes, acompañados de ensalada o dentro de panes de hamburguesa."
+    ]
+  },
+
+{
+    "receta": "spaghetti_bolognese",
+    "id": 65,
+    "nombre": "espagueti_a_la_boloñesa",
+    "ingredientes": [
+      "Cebolla",
+      "Carne picada",
+      "Ajo",
+      "Sal",
+      "Aceite de oliva",
+      "Tomates",
+      "Queso parmesano",
+      "Laurel",
+      "Espaguetis",
+      "Pimienta negra",
+      "Albahaca"
+    ],
+    "pasos": [
+      "Hervir agua en una olla grande y hondo. Agregar sal y dejar que recupere el hervor. Agregar la pasta y cocinar de 7 a 11 minutos o hasta que esté al dente. Escurrir.",
+      "Picar finamente el ajo y la cebolla. Acitronar la cebolla y el ajo en un poco de aceite de oliva durante un par de minutos hasta que estén ligeramente transparentes.",
+      "Añadir la carne molida, revolver bien y cocinar hasta que ya no esté rosada.",
+      "Agregar los tomates cortados en cubos y sin piel, sazonar con sal y cocinar a fuego bajo durante 15 minutos. Agregar algunas hojas de laurel y albahaca.",
+      "Colocar la pasta en dos platos, cubrir cada uno con la salsa, espolvorear con queso parmesano y servir inmediatamente."
+    ]
+  },
+
+  
+{
+    "receta": "breakfast_burrito",
+    "id": 66,
+    "nombre": "burrito_de_desayuno",
+    "porciones": "Para 8 burritos",
+    "ingredientes": [
+      "Tortillas",
+      "Huevos",
+      "Sal",
+      "Pimienta",
+      "Jamón",
+      "Cebolla",
+      "Jitomate",
+      "Aceite",
+      "Aguacate",
+      "Frijoles refritos",
+      "Queso"
+    ],
+    "pasos": [
+      "Picar finamente la cebolla y el jitomate, y cortar el jamón en cuadros pequeños.",
+      "Batir los huevos en un recipiente con sal y pimienta.",
+      "Calentar aceite en una sartén y agregar los huevos batidos, las verduras picadas y el jamón.",
+      "Cocinar y mezclar hasta que esté listo, luego retirar del fuego y reservar.",
+      "Calentar ligeramente las tortillas y untar con frijoles refritos y aguacate.",
+      "Agregar una porción de huevo y queso sobre cada tortilla.",
+      "Enrollar las tortillas, metiendo los bordes para evitar que el relleno se escape.",
+      "Calentar los burritos en una sartén o comal hasta que se doren ligeramente.",
+      "Servir calientes y disfrutar."
+    ]
+  },
+{
+    "receta": "mussels",
+    "id": 67,
+    "nombre": "mejillones",
+    "ingredientes": [
+      "mejillones",
+      "hoja de laurel",
+      "limón"
+    ],
+    "pasos": [
+      "Limpia los mejillones bajo el grifo, retirando los pelos y las barbas.",
+      "En una cazuela con tapadera, agrega 3 cucharadas de agua y la hoja de laurel.",
+      "Añade los mejillones limpios a la cazuela y cocina a fuego fuerte.",
+      "Tapa la cazuela y cocina los mejillones durante 8-10 minutos, hasta que se abran completamente.",
+      "Descarta los mejillones que no se hayan abierto.",
+      "Retira los mejillones del fuego una vez estén listos.",
+      "Sirve los mejillones al vapor acompañados de rodajas de limón."
+    ]
+  },
+
+{
+    "receta": "ramen",
+    "id": 68,
+    "nombre": "ramen",
+    "ingredientes": [
+      "fideos chinos",
+      "carne de cerdo",
+      "cebollleta picada",
+      "salsa de soja",
+      "sake",
+      "brotes de bambu",
+      "komatsuna",
+      "huevo cocido",
+      "agua",
+      "huesos de pollo",
+      "ajo",
+      "jengibre",
+      "cebollleta verde",
+      "zanahoria",
+      "cebolla",
+      "algas kombu"
+    ],
+    "pasos": [
+      "Prepara el caldo de pollo hirviendo los huesos de pollo, ajo, jengibre, cebolleta verde, zanahoria, cebolla y algas kombu en agua durante cuatro horas. Cuela, deja enfriar y desengrasa.",
+      "Cuece la salsa de soja y el sake con la carne de cerdo. Reserva la carne y la salsa.",
+      "Cuece los fideos chinos en agua hirviendo durante dos minutos, luego escúrrelos y enfríalos bajo agua fría.",
+      "Mezcla la salsa de soja y sake con un poco de caldo de pollo. Agrega esta mezcla a un bol grande.",
+      "Añade los fideos cocidos a la mezcla de salsa en el bol.",
+      "Corta la carne de cerdo en trozos finos y agrégala a los fideos junto con los brotes de bambú, las hojas de komatsuna y el huevo cocido cortado por la mitad."
+    ]
+  },
+{
+    "receta": "hamburger",
+    "id": 69,
+    "nombre": "hamburguesa",
+    "ingredientes": [
+      "carne molida de ternera",
+      "carne molida de cerdo",
+      "pan de hamburguesa",
+      "tomates rojos",
+      "queso mozzarella",
+      "cebolla blanca",
+      "miga de pan",
+      "sal",
+      "pimienta",
+      "pasta de ajo"
+    ],
+    "pasos": [
+      "En un bol, mezcla la carne molida de ternera y de cerdo con las especias y la miga de pan.",
+      "Forma bolas medianas con la mezcla de carne y aplástalas para formar las hamburguesas.",
+      "Calienta un poco de aceite en una sartén a fuego medio y cocina las hamburguesas hasta que estén doradas por ambos lados y cocidas en el interior.",
+      "Agrega una loncha de queso mozzarella sobre cada hamburguesa y deja que se derrita.",
+      "Sirve las hamburguesas en los panes con rodajas de tomate y cebolla, y disfruta."
+    ]
+  },
+
+{
+    "receta": "pho",
+    "id": 70,
+    "nombre": "pho",
+    "ingredientes": [
+      "huesos de rodilla de vaca",
+      "cebolla mediana",
+      "jengibre fresco",
+      "especias",
+      "guindilla",
+      "carne de ternera",
+      "fideos de arroz",
+      "sal",
+      "albahaca fresca",
+      "limas cortadas en octavos"
+    ],
+    "pasos": [
+      "Prepara el caldo de huesos de rodilla de vaca, cebolla, jengibre, especias y guindilla hirviéndolos en agua durante varias horas.",
+      "Cuela el caldo y desecha los sólidos. Añade sal al gusto.",
+      "Cuece los fideos de arroz según las instrucciones del paquete y escúrrelos.",
+      "En platos individuales, coloca los fideos de arroz cocidos y la carne de ternera cruda en rodajas muy finas.",
+      "Vierte el caldo caliente sobre los fideos y la carne. La carne se cocinará con el calor del caldo.",
+      "Sirve la sopa pho caliente con albahaca fresca y lima para exprimir sobre la sopa antes de comer."
+    ]
+ 
+},
+{
+    "Receta": "pancakes",
+    "id": 71,
+    "nombre": "panqueques",
+    "Ingredientes": [
+      "4 huevos",
+      "1 pizca de sal",
+      "1 cucharada sopera de azúcar",
+      "1 tarro de leche",
+      "1 taza de harina preparada",
+      "1 pizca de aceite"
+    ],
+    "Pasos": [
+      "Para empezar a hacer los pancakes americanos, debes añadir la harina preparada en un recipiente de boca ancha que te permita batir. Recuerda que la harina preparada es la clásica harina de repostería que ya viene con levadura y polvo de hornear, también se llama harina leudante.",
+      "Agrega sobre la harina los huevos enteros, clara y yema, junto con una pizca de sal y el azúcar.",
+      "Ahora, ve añadiendo poco a poco la leche y ve mezclando todo. Añade la cantidad de leche que consideres necesario, la masa de las tortitas debe quedar ligeramente espesa y sin grumos.",
+      "Por último, añade un chorrito de aceite y continua removiendo todo hasta que se integre. Verás como el aceite hace que se disuelvan los últimos grumos y la masa queda con una textura lisa y completamente homogénea.",
+      "Para cocinar, calienta una sartén a fuego bajo, untada con mantequilla o aceite. Cuanto esté caliente, vierte una porción de masa y deja al fuego hasta que veas que salen burbujeas en la superficie, entonces dale la vuelta y termina de cocinar por el otro lado. Repite la operación hasta acabar con la masa de los panqueques.",
+      "Sirve los pancakes esponjosos con un poco de mantequilla y miel o simplemente algunas frutas."
+    ]
+  },
+  
+{
+    "receta": "grilled_salmon",
+    "id": 72,
+    "nombre": "salmón_a_la_parrilla",
+    "ingredientes": [
+      "salmón",
+      "huevos",
+      "vinagre blanco",
+      "pasta de ajo",
+      "sal",
+      "pimienta",
+      "tomillo seco"
+    ],
+    "pasos": [
+      "Alistar todos los ingredientes y cortar el salmón en porciones deseadas.",
+      "Sazonar el salmón con sal, pimienta, pasta de ajo y tomillo seco.",
+      "Cocinar el salmón a la plancha en una sartén caliente con un poco de aceite de oliva, a fuego medio. Dorar por ambos lados durante 10-15 minutos.",
+      "Para hacer huevos pochados, colocar una lámina de papel transparente en un vaso, agregar un poco de aceite de oliva y un huevo. Salpimentar y cerrar haciendo un nudo con el extremo.",
+      "En una olla con agua hirviendo y un chorro de vinagre blanco, colocar los huevos en las bolsitas y cocinar durante 6 minutos para que la yema quede blanda.",
+      "Servir el salmón a la plancha y colocar el huevo pochado encima. Se puede acompañar con arroz blanco o brócoli salteado."
+    ]
+  },
+      
+      {
+    "receta": "hot_dog",
+    "id": 73,
+    "nombre": "perrito_caliente",
+    "ingredientes": [
+      "salchichas",
+      "panecillos",
+      "cebolla",
+      "pimiento_verde",
+      "bacon",
+      "ketchup",
+      "mostaza_americana"
+    ],
+    "pasos": [
+      "Picar finamente la cebolla y el pimiento verde.",
+      "Trocear el bacon en pequeños trozos.",
+      "Freír la cebolla y el pimiento en una sartén con un poco de aceite hasta que estén pochados.",
+      "Dorar el bacon en la misma sartén y reservar.",
+      "Cortar los panecillos y calentarlos ligeramente en una plancha o sartén.",
+      "Marcar las salchichas en la sartén o plancha.",
+      "Colocar las salchichas en los panecillos y añadir por encima la cebolla, el pimiento y el bacon.",
+      "Agregar ketchup y mostaza al gusto.",
+      "Servir acompañado de patatas fritas o asadas en gajos."
+    ]
+  },
+  {
+    "receta": "gnocchi",
+    "id": 74,
+    "nombre": "gnocchi",
+    "ingredientes": [
+      "patatas",
+      "harina",
+      "huevo",
+      "sal",
+      "albahaca",
+      "pistachos",
+      "nueces",
+      "aceite de oliva",
+      "agua",
+      "ajo",
+      "queso parmesano",
+      "queso manchego",
+      "pimienta negra molida"
+    ],
+    "pasos": [
+      "Cocer las patatas en el microondas o asadas en el horno.",
+      "Pelar y aplastar las patatas para hacer un puré suave.",
+      "Agregar medio huevo y la sal al puré de patatas y mezclar bien.",
+      "Incorporar medio vaso de harina y amasar hasta obtener una masa moldeable.",
+      "Formar churros con la masa y cortar trozos de 1/2 cm para hacer los gnocchi.",
+      "Marcar los gnocchi con las puntas de un tenedor.",
+      "Cocer los gnocchi en agua hirviendo hasta que floten.",
+      "Picar las nueces y los pistachos.",
+      "Picar la albahaca y mezclar con el aceite de oliva y el agua para hacer la salsa.",
+      "Añadir los frutos secos picados, el ajo machacado, el queso rallado y la pimienta a la salsa.",
+      "Servir los gnocchi con la salsa pesto."
+    ]
+  },
+      
+      {
+    "receta": "beef_carpaccio",
+    "id": 75,
+    "nombre": "carpaccio_de_res",
+    "ingredientes": [
+      "filete de ternera",
+      "mousse de foie",
+      "sal",
+      "pimienta",
+      "mantequilla",
+      "salsa bovril",
+      "zumo de limón",
+      "aceite",
+      "vinagre de Módena"
+    ],
+    "pasos": [
+      "Untar un filete de ternera con mousse de foie por uno de sus lados y enrollarlo para formar un rulo.",
+      "Sazonar ligeramente el rulo con sal, pimienta, mantequilla y salsa bovril.",
+      "Envolver el rulo en film transparente, cerrando bien los laterales para prensarlo, y llevarlo al congelador para que se endurezca.",
+      "Cuando esté semi-congelado, cortar lonchas finas con un cuchillo jamonero y disponerlas en el plato de servir.",
+      "Aliñar el carpaccio con sal, pimienta, zumo de limón mezclado con vinagre de Módena y aceite de oliva virgen extra."
+    ]
+  },
+      
+      {
+    "receta": "garlic_bread",
+    "id": 76,
+    "nombre": "Pan_de_ajo",
+    "ingredientes": [
+      "pan",
+      "mantequilla",
+      "ajo",
+      "perejil",
+      "sal"
+    ],
+    "pasos": [
+      "Cortar la barra de pan en rodajas sin separarlas completamente.",
+      "Machacar los dientes de ajo en un mortero y mezclar con la mantequilla a temperatura ambiente, el perejil picado y una pizca de sal.",
+      "Untar cada rodaja de pan con porciones de la mezcla de mantequilla y ajo.",
+      "Envolver la barra de pan en papel aluminio y hornear a 160°C durante 5-6 minutos.",
+      "Retirar el papel aluminio y hornear por otros 4 minutos, hasta que la mantequilla comience a derretirse.",
+      "Dejar enfriar un poco antes de servir."
+    ]
+  },
+      
+  
+      {
+    "receta": "waffles",
+    "id": 77,
+    "nombre": "gofres",
+    "ingredientes": [
+    "leche templada",
+    "levadura fresca",
+    "harina de fuerza",
+    "sal",
+    "canela",
+    "miel",
+    "huevo",
+    "mantequilla sin sal",
+    "azúcar perlado"
+    ],
+  
+    "pasos": [
+    "Deshacer la levadura en la leche templada.",
+    "Mezclar la harina, la sal y la canela en un bol. Agregar la levadura disuelta en la leche, la miel y el huevo. Amasar durante 5 minutos.",
+    "Incorporar la mantequilla poco a poco y amasar durante 10 minutos más.",
+    "Cubrir la masa con papel film y dejar reposar durante 1 hora y 30 minutos en un lugar cálido.",
+    "Agregar el azúcar perlado a la masa y mezclar bien.",
+    "Dividir la masa en 8 porciones iguales y formar las bolas de masa. Dejar reposar durante 30 minutos más.",
+    "Calentar la gofrera y colocar una bola de masa en cada hueco. Cocinar durante 5 minutos o hasta que estén dorados.",
+    "Dejar entibiar o enfriar antes de consumir."
+  ]
+    },   
+      
+        {
+    "receta": "miso_soup",
+    "id": 78,
+    "nombre": "sopa_de_miso",
+    "ingredientes": [
+      "pasta udon",
+      "caldo de verduras",
+      "miso",
+      "hondashi",
+      "huevo",
+      "cebolleta"
+    ],
+    "pasos": [
+      "En una olla, hierve el caldo de verduras con el hondashi durante 2 minutos.",
+      "Agrega la pasta udon y cocina a fuego lento durante 3 minutos más.",
+      "Apaga el fuego y añade el miso y la cebolleta picada al gusto. Remueve para disolver el miso.",
+      "Opcionalmente, prepara un huevo escalfado: Hierve agua con vinagre, forma un remolino y casca el huevo en el centro. Cocina durante 2-3 minutos.",
+      "Sirve la sopa de miso y, si deseas, coloca el huevo escalfado encima. Espolvorea con semillas de sésamo si lo prefieres."
+    ]
+  },
+      
+      {
+    "receta": "pad_thai",
+    "id": 79,
+    "nombre": "pad_thai",
+    "ingredientes": [
+      "pimiento rojo",
+      "cebolla dulce",
+      "zanahoria",
+      "salsa de pescado",
+      "salsa de tamarindo",
+      "jengibre",
+      "limas",
+      "noodles de arroz",
+      "gambón o gamba",
+      "cilantro fresco",
+      "huevos",
+      "cacahuetes pelados y troceados",
+      "tófu tierno"
+    ],
+    "pasos": [
+      "Hidrata los noodles según las instrucciones del fabricante. Córtalos y enjuágalos en agua fría. Resérvalos.",
+      "Ralla la cáscara de una de las limas y exprime su jugo. Mezcla con la salsa de soja, la salsa de tamarindo, la salsa de pescado y la ralladura de jengibre. Deja reposar la mezcla.",
+      "Retira la cáscara de las gambas dejando el extremo de la cola. Rehoga ligeramente en aceite de oliva durante un par de minutos y luego retíralas del wok.",
+      "Corta el tofu en cubos pequeños y sofríe durante dos minutos con unas gotas de aceite. Luego, aparta y reserva.",
+      "Pica finamente la cebolla, la zanahoria y el pimiento. Sofríe en el wok con un poco de aceite durante tres minutos a fuego bajo.",
+      "Agrega la mezcla de jugos y salsas al wok con las verduras. Saltea durante unos minutos.",
+      "Bate los huevos y agrégalos al wok para que se cuajen ligeramente.",
+      "Escurre los noodles y añádelos al wok junto con los demás ingredientes. Ajusta la sal y remueve con cuidado.",
+      "Añade el cilantro picado, los cacahuetes y el tofu al wok. Remueve para que todo se integre.",
+      "Agrega las gambas al wok y deja calentar por uno o dos minutos más.",
+      "Sirve el pad thai de gambas decorado con trozos de lima."
+    ]
+  },
+    
+  
+    {
+    "receta": "clam_chowder",
+    "id": 80,
+    "nombre": "sopa_de_almejas",
+    "ingredientes": [
+      "tocino en dados",
+      "almejas",
+      "harina",
+      "ajos puerros en rodajas",
+      "apio picado",
+      "cebollas tiernas picadas",
+      "patatas en dados",
+      "hierbas aromáticas",
+      "leche o nata",
+      "mantequilla",
+      "sal",
+      "pimienta"
+    ],
+    "pasos": [
+      "Remoja las almejas en agua para que suelten la arena. Colócalas en una olla con un poco de agua y cuécelas al vapor hasta que se abran. Retira, separa las almejas de sus conchas y reserva el caldo de cocción (completa dos tazas y media de caldo, agregando agua si es necesario). Corta las almejas en trozos pequeños y reserva.",
+      "En una sartén, fríe lentamente los trozos de tocino hasta que estén dorados. Reserva.",
+      "En una olla, derrite la mantequilla y agrega la cebolla, el puerro y el apio. Cocina hasta que la cebolla se dore.",
+      "Añade la harina y cocina durante unos 3 minutos. Incorpora las patatas y vierte el caldo de las almejas. Deja cocinar a fuego lento durante 10 minutos.",
+      "Agrega las almejas y cocina unos minutos más, o hasta que las patatas estén tiernas. Añade la leche o nata, las hierbas aromáticas y sazona con sal y pimienta.",
+      "Antes de servir, agrega el tocino crujiente.",
+      "Sirve la sopa bien caliente en cazuelitas individuales, con pan agrio en el fondo o galletas crujientes saladas desmenuzadas por encima."
+    ]
+  },
+  {
+    "receta": "poutine",
+    "id": 81,
+    "nombre": "poutine",
+    "descripcion": "Una receta clásica de la cocina rápida canadiense, la poutine es un plato delicioso y reconfortante que combina patatas fritas, salsa marrón y cuajada de queso.",
+    "ingredientes": [
+      "Queso cottage o mozzarella",
+      "Patatas",
+      "Harina",
+      "Mantequilla",
+      "Caldo de vaca o de ternera",
+      "Sal",
+      "Pimienta"
+    ],
+    "pasos": [
+      "En una sartén, derretir la mantequilla y añadir la harina. Mezclar y cocinar a fuego medio hasta que se tueste y adquiera un color dorado claro.",
+      "Agregar el caldo poco a poco y salpimentar. Remover constantemente.",
+      "Llevar la salsa a ebullición, luego reducir el fuego y cocinar a fuego lento durante 15 minutos.",
+      "Pelar las patatas y cortarlas en bastones de aproximadamente 1 cm de grosor.",
+      "Remojar las patatas en un bol de agua fría durante varias horas.",
+      "Escurrir las patatas y secarlas bien con un paño limpio y seco. Colocarlas sobre papel absorbente para eliminar toda la humedad.",
+      "En una cacerola grande, calentar suficiente aceite a 150°C.",
+      "Freír las patatas en tandas durante 5 a 8 minutos, sin dejar que se doren demasiado.",
+      "Colocar las patatas en una rejilla y aumentar el fuego del aceite.",
+      "Cuando el aceite esté más caliente, volver a freír las patatas hasta que estén doradas y crujientes.",
+      "Escurrir las patatas y colocarlas sobre papel absorbente. Espolvorearlas ligeramente con sal.",
+      "Para servir, colocar las patatas en un plato, añadir el queso cortado en cuadrados y verter una cucharada de salsa caliente por encima."
+    ]
+  },
+
+{
+    "receta": "dumplings",
+    "id": 82,
+    "nombre": "empanadillas",
+    "ingredientes": [
+      "harina",
+      "agua",
+      "sal",
+      "pollo",
+      "repollo",
+      "cebolla",
+      "ajo",
+      "jengibre en polvo"
+    ],
+    "pasos": [
+      "Para hacer la masa, mezcla la harina con el agua hirviendo y remueve hasta formar una masa homogénea.",
+      "Amasa la masa durante unos 10 minutos en una superficie limpia y déjala reposar durante 20 minutos mientras preparas el relleno.",
+      "Para hacer el relleno, pica finamente la cebolla, el ajo, el pollo y el repollo. Condimenta con jengibre en polvo y mezcla bien.",
+      "Separa la masa en 23 bolas de aproximadamente 15 gramos cada una.",
+      "Estira cada bola de masa hasta formar una lámina circular fina.",
+      "Rellena cada lámina de masa con una porción del relleno y ciérrala, humedeciendo los bordes con agua y pellizcándolos juntos en el centro.",
+      "Cocina los dumplings al vapor durante unos 7 minutos, tapados.",
+      "Una vez cocidos, verifica que la masa esté cocida y transparente antes de servir."
+    ]
+  },
+
+{
+    "receta": "shrimp_and_grits",
+    "id": 83,
+    "nombre": "gambas_con_gachas",
+    "ingredientes": [
+      "sémola rápida",
+      "agua",
+      "leche de frutos secos (avellana)",
+      "sal",
+      "mantequilla",
+      "nata líquida",
+      "sopa de apio en lata",
+      "queso cheddar rallado",
+      "tocino ahumado",
+      "gambas grandes",
+      "condimento cajún",
+      "pimienta de cayena molida",
+      "perejil fresco",
+      "limón",
+      "aceite de aguacate",
+      "pimiento rojo",
+      "cebollas verdes",
+      "dientes de ajo",
+      "pimentón ahumado",
+      "caldo de pollo o de verduras"
+    ],
+  
+    "pasos": [
+    "Cocina el tocino en una sartén a fuego medio hasta que esté crujiente.",
+    "Retira el tocino de la sartén y córtalo en trozos pequeños, reservando la grasa en la sartén.",
+    "En una olla, lleva 3 tazas de agua a ebullición. Agrega la sémola y la sal, cocina a fuego medio durante 5-7 minutos.",
+    "Retira del fuego y agrega el queso cheddar rallado, la leche de frutos secos, la nata líquida y la mantequilla. Mezcla hasta que quede suave.",
+    "En una sartén, saltea la cebolla verde, el ajo y el pimiento rojo en rodajas en el aceite de aguacate a fuego medio durante 5-6 minutos.",
+    "Añade las gambas y los condimentos (condimento cajún, pimentón ahumado y pimienta de cayena). Cocina a fuego medio durante 1-2 minutos o hasta que las gambas se doren.",
+    "Agrega el caldo de pollo o de verduras junto con las verduras salteadas a las gambas. Cocina a fuego lento durante 5 minutos.",
+    "Sirve la sémola de maíz con queso en un plato y vierte la salsa con las gambas encima.",
+    "Espolvorea con perejil picado y exprime un poco de limón fresco sobre las gambas. ¡Listo para disfrutar!"
+  ]
+},
+
+  {
+    "receta": "french_toast",
+    "id": 84,
+    "nombre": "tostada_francesa",
+    "ingredientes": [
+      "polvo de canela",
+      "leche",
+      "sal",
+      "vainilla",
+      "huevos grandes",
+      "pan de emparedados (sandwich)",
+      "oleomargarina",
+      "sirope de pancakes"
+    ],
+    "pasos": [
+      "En una taza, vierta la canela. Agregue un poco de leche y mezcle hasta diluir bien. Luego, añada el resto de la leche, la sal y la vainilla. Mezcle bien.",
+      "Caliente una sartén grande a fuego moderado. Mientras tanto, en un tazón, bata los huevos y vierta lentamente la mezcla de la taza, batiendo continuamente hasta que esté bien incorporada.",
+      "Sumerja una rebanada de pan ligeramente en la mezcla y escúrrala. Debe absorber un poco de la mezcla, pero no quedar empapada.",
+      "Vierta un poco de oleomargarina en la sartén caliente y coloque la rebanada de pan encima. Repita el procedimiento con cuantas rebanadas quepan cómodamente en la sartén y dórelas sin quemarlas. Repita este paso hasta haber agotado la mezcla.",
+      "Sirva las tostadas francesas de inmediato y riéguelas con sirope por encima."
+    ]
+  },
+
+        
+{
+    "receta": "spring_rolls",
+    "id": 85,
+    "nombre": "rollos_de_primavera",
+    "ingredientes": [
+      "hojas especial para rollos",
+      "raíces chinas",
+      "zanahorias",
+      "cebolla blanca",
+      "repollo pequeño",
+      "cebolla puerro",
+      "calabazín",
+      "sukini",
+      "salsa soja"
+    ],
+    "pasos": [
+      "Alistar todos los ingredientes.",
+      "Picar la cebolla blanca en plumas muy finas y la cebolla puerro en julianas. Cocinar en una olla con aceite de oliva hasta que estén blandas.",
+      "Agregar la zanahoria cortada en julianas y cocinar por 5 minutos.",
+      "Agregar el repollo cortado en julianas y las raíces chinas. Añadir un poco de salsa de soja y rectificar el sabor con sal y pimienta. Dejar cocinar a fuego bajo durante 10 minutos.",
+      "Reservar la mezcla de verduras en un recipiente. Colocar en un plato grande 200 gramos de agua caliente. Pasar por el agua una hoja de papel de arroz y retirar del agua cuando esté blanda y fácil de manejar. Colocar sobre una tabla y en el centro colocar un poco de verduras. Cubrir con la parte de abajo.",
+      "Luego, llevar un lado tratando de que quede recto y luego llevar el otro lado.",
+      "Enrollar hasta sellar con la última parte, dejando hacia abajo.",
+      "Freír los rollitos de primavera por ambos lados en aceite muy caliente. Retirar cuando estén dorados. Servir y acompañar con salsa de soja."
+    ]
+  },
+
+{
+    "receta": "frozen_yogurt",
+    "id": 86,
+    "nombre": "yogur_helado",
+    "ingredientes": [
+      "Yogur natural",
+      "Miel o Maple",
+      "Esencia de vainilla"
+    ],
+    "pasos": [
+      "Alistar todos los ingredientes.",
+      "Mezclar el yogur con la miel.",
+      "Agregar la esencia de vainilla y seguir mezclando hasta que quede bien ligero.",
+      "Si no tienes una máquina para hacer helados, coloca la mezcla en el congelador durante 4 horas. Pasado ese tiempo, retira del congelador, pasa por la licuadora y vuelve a congelar. Repite este proceso al menos 3 veces.",
+      "Si tienes una máquina para hacer helados, coloca la mezcla en la máquina y enciéndela. Deja que haga el proceso hasta que se forme el helado de yogur natural."
+    ]
+  },
+
+{
+    "receta": "baklava",
+    "id": 87,
+    "nombre": "baklava",
+    "ingredientes": [
+      "Nueces",
+      "Almendras",
+      "Hojas de masa filo",
+      "Clavos de olor",
+      "Limón",
+      "Agua de azahar",
+      "Azúcar",
+      "Canela",
+      "Manteca o mantequilla",
+      "Pistachos picados"
+    ],
+    "pasos": [
+      "Picar finamente las nueces y las almendras, mezclarlas con azúcar y canela.",
+      "Derretir la manteca y untarla en la base de un molde apto para horno.",
+      "Colocar dos hojas de masa filo en el molde, untarlas con manteca derretida.",
+      "Agregar una capa de la mezcla de nueces y almendras.",
+      "Repetir el proceso de capas de masa filo y mezcla de nueces y almendras hasta terminar con una capa de masa filo en la parte superior.",
+      "Refrigerar durante 25 minutos para compactar.",
+      "Precalentar el horno a 180 ºC y hornear durante 15 minutos.",
+      "Mientras tanto, preparar el almíbar: en una cazuela, calentar el resto del azúcar con los clavos de olor, la cáscara de limón y el agua.",
+      "Agregar el jugo de limón y el agua de azahar, dejar hervir durante 10 minutos.",
+      "Una vez que la baklava esté dorada, retirar del horno y verter el almíbar caliente sobre ella.",
+      "Dejar enfriar completamente antes de servir."
+    ]
+  },
+
+            
+{
+    "receta": "eggs_benedict",
+    "id": 88,
+    "nombre": "huevos_benedict",
+    "ingredientes": [
+      "Huevos",
+      "Jamón ahumado",
+      "Muffins ingleses o pan redondo de leche",
+      "Vinagre",
+      "Agua",
+      "Yemas de huevo",
+      "Manteca",
+      "Limón",
+      "Mostaza",
+      "Sal"
+    ],
+    "pasos": [
+      "Poner a calentar agua, sal y vinagre en una olla.",
+      "Cuando esté hirviendo, escalfar los huevos de uno en uno.",
+      "Partir a la mitad los muffins ingleses, tostar y colocar una lonja de jamón ahumado sobre cada mitad.",
+      "Colocar un huevo escalfado sobre cada mitad de muffin con jamón.",
+      "Para la salsa holandesa, exprimir el limón y verter su jugo en una licuadora junto con la mostaza, la sal y las yemas de huevo.",
+      "Calentar la manteca hasta derretirla, luego agregarla poco a poco a la licuadora mientras esta está encendida.",
+      "Batir hasta que la salsa espese.",
+      "Verter una cucharada de salsa holandesa sobre cada huevo benedictino.",
+      "Adornar con una hojita de perejil o eneldo y servir."
+    ]
+  },
+
+{
+    "receta": "bibimbap",
+    "id": 89,
+    "nombre": "bibimbap",
+    "porciones": 2,
+    "ingredientes": [
+      "Filetes de ternera finos y magros",
+      "Cebolla pequeña",
+      "Setas shiitake frescas",
+      "Zanahoria",
+      "Calabacín",
+      "Espinaca fresca",
+      "Brotes de soja",
+      "Arroz redondo cocido",
+      "Huevo",
+      "Salsa de soja",
+      "Aceite de sésamo",
+      "Salsa de mirim o vino blanco dulce",
+      "Azúcar",
+      "Miel",
+      "Diente de ajo pelado y rallado",
+      "Semillas de sésamo",
+      "Vinagre de arroz",
+      "Gochujang o pasta de pimiento picante"
+    ],
+    "pasos": [
+      "Preparar el arroz blanco cocido y mantenerlo caliente.",
+      "Preparar la salsa mezclando el gochujang, aceite de sésamo, vinagre de arroz, salsa de mirim, salsa de soja, azúcar y reservar.",
+      "Marinar la ternera con aceite de sésamo, salsa de soja, miel, ajo rallado y semillas de sésamo.",
+      "Saltear por separado las setas shiitake, cebolla, zanahoria y calabacín hasta que estén al dente.",
+      "Escaldar las espinacas y los brotes de soja, enfriar y escurrir bien.",
+      "Picar las espinacas y sazonarlas con ajo rallado, sal y aceite de sésamo.",
+      "Saltear la ternera hasta que esté cocida y caramelizada.",
+      "Freír los huevos hasta que las yemas estén líquidas.",
+      "Montar los platos colocando el arroz en la base, las verduras y la carne por encima, el huevo en el centro.",
+      "Salsear con la salsa preparada, espolvorear con semillas de sésamo y servir."
+    ]
+  },
+
+{
+    "receta": "caesar_salad",
+    "id": 90,
+    "nombre": "ensalada_césar",
+    "ingredientes": [
+      "Lechuga capuchina",
+      "Pechuga de pollo",
+      "Pan de molde",
+      "Aceite de oliva",
+      "Pimentón",
+      "Jugo de limón",
+      "Vinagre balsámico",
+      "Ajo en polvo",
+      "Romero",
+      "Aceite neutro",
+      "Semillas de mostaza",
+      "Queso rallado",
+      "Salsa inglesa",
+      "Atún al natural",
+      "Huevo",
+      "Semillas de sésamo",
+      "Mostaza",
+      "Ajo en polvo",
+      "Queso rallado",
+      "Salsa inglesa",
+      "Atún al natural",
+      "Huevo",
+      "Jugo de limón"
+    ],
+    "pasos": [
+      "Macerar las tiras de pollo con jugo de limón, vinagre balsámico, aceite, romero y ajo en polvo.",
+      "Untar las rodajas de pan con aceite de oliva y pimentón, y tostar en el horno a 160 ºC hasta que estén doradas.",
+      "Lavar y cortar la lechuga, distribuir en la base del plato.",
+      "Cocinar el pollo en una sartén sin aceite hasta que esté cocido.",
+      "Colocar el pollo sobre la lechuga y distribuir el pan tostado sobre el pollo.",
+      "Preparar el aderezo hirviendo el huevo durante 12 minutos, luego mezclar con mostaza, ajo en polvo, queso rallado, salsa inglesa, atún y jugo de limón."
+    ]
+  },
+  {
+    "Receta": "deviled_eggs",
+    "id": 91,
+    "nombre": "huevos_rellenos",
+    "Ingredientes": [
+      "8 huevos",
+      "2 latas de atún en aceite",
+      "5 palitos de cangrejo o surimi",
+      "200 gramos de gambas cocidas",
+      "1 lata pequeña de pimiento morrón",
+      "1 bote de mayonesa",
+      "3 cucharadas soperas de kétchup o tomate frito"
+    ],
+    "Pasos": [
+      "Pon un cazo con agua, añade los huevos y deja cocer durante 10-12 minutos cuando empiecen a hervir. Una vez cocidos, pásalos a un bol con agua fría para que se enfríen antes y así poder pelarlos. Pélalos, córtalos a lo largo, separa las yemas de las claras y reserva.",
+      "Pica el surimi con un cuchillo en trozos muy pequeños.",
+      "Pela los langostinos cocidos y córtalos en trozos pequeños dejando algunos para adornar los huevos. Puedes hacer los huevos rellenos de marisco con más ingredientes, como mejillones picados.",
+      "Introduce en un bol los palitos de surimi picados y las gambas también picadas. Escurre el aceite de las latas de atún, añádelo al bol con los demás ingredientes y mezcla. Añade la mitad de las yemas a la mezcla y remueve todo bien.",
+      "En otro bol, prepara una salsa rosa. Para ello, introduce la mayonesa con unas cucharadas de kétchup o tomate frito y mezcla. Ve añadiendo cucharadas de tomate hasta conseguir que quede a tu gusto. Prueba para agregar sal si es necesario. También puedes añadir unas cucharadas de brandy o zumo de naranja a la salsa para darle un toque extra de sabor.",
+      "Añade cucharadas de salsa rosa al relleno e integra. Rellena los huevos y colócalos en una fuente servir.",
+      "Decora los huevos rellenos de marisco con un poco de mayonesa por encima. Pica las yemas restantes y añádelas también por encima de cada huevo. Por último, corta tiras de pimiento morrón y úsalas para decorar."
+    ]
+  },
+  
+            
+{
+    "receta": "huevos_rancheros",
+    "id": 92,
+    "nombre": "huevos_rancheros",
+    "ingredientes": [
+      "Huevos",
+      "Tortillas de maíz",
+      "Sal",
+      "Aceite",
+      "Jitomate",
+      "Cebolla",
+      "Chile cuaresmeño",
+      "Ajo",
+      "Frijoles"
+    ],
+    "pasos": [
+      "Lavar las verduras y los huevos.",
+      "Picar los jitomates, cebolla, chile y ajo.",
+      "Freír el ajo y la cebolla en una sartén con aceite. Cuando estén transparentes, agregar el jitomate y el chile. Cocinar por 10 minutos, añadiendo un poco de agua para obtener una salsa caldosa.",
+      "En otra sartén, freír las tortillas en aceite caliente. Escurrirlas y colocarlas en el plato de servir.",
+      "Freír los huevos en la misma sartén. Añadir una pizca de sal a la yema y cocinar al gusto.",
+      "Colocar la salsa sobre las tortillas fritas y disponer los huevos encima.",
+      "Cubrir con más salsa y servir los huevos rancheros mexicanos.",
+      "Opcionalmente, servir con frijoles."
+    ]
+  },
+{
+    "receta": "tuna_tartare",
+    "id": 93,
+    "nombre": "tartar_de_atún",
+    "ingredientes": [
+      "Ventresca de atún",
+      "Mostaza antigua",
+      "Sal",
+      "Pimienta",
+      "Salsa de soja",
+      "Salsa tabasco"
+    ],
+    "pasos": [
+      "Cortar finamente la ventresca de atún en trozos pequeños.",
+      "Colocar el atún en un bol y agregar la mostaza antigua, la sal, la pimienta, la salsa de soja y unas gotas de salsa tabasco, al gusto.",
+      "Revolver bien hasta que todos los ingredientes estén integrados. Corregir la sazón si es necesario.",
+      "Reservar en la nevera durante al menos 30 minutos para que el atún absorba el sabor del marinado.",
+      "Servir el tartar de atún picante en un bol o sobre galletas saladas."
+    ]
+  },
+
+{
+    "receta": "ravioli",
+    "id": 94,
+    "nombre": "ravioli",
+    "ingredientes": [
+      "Aceite",
+      "Diente de ajo",
+      "Cebolla",
+      "Perejil picado",
+      "Pimienta negra molida",
+      "Queso rallado",
+      "Ravioli",
+      "Sal",
+      "Tomate natural triturado"
+    ],
+    "pasos": [
+      "En una sartén, calentar el aceite y sofreír el ajo y la cebolla picados hasta que estén dorados.",
+      "Agregar el tomate triturado y condimentar con sal, pimienta, azúcar y perejil. Cocinar hasta que se forme una salsa espesa.",
+      "Cocer los ravioli según las instrucciones del paquete. Escurrir bien.",
+      "Colocar los ravioli cocidos en una fuente para horno.",
+      "Cubrir los ravioli con la salsa preparada y espolvorear con queso rallado.",
+      "Gratinar en el horno precalentado a temperatura alta durante aproximadamente 5 minutos, hasta que el queso esté dorado y burbujeante.",
+      "Servir caliente directamente de la fuente de horno."
+    ]
+  },
+
+            
+{
+    "receta": "grilled_cheese_sandwich",
+    "id": 95,
+    "nombre": "sándwich_de_queso_asado",
+    "ingredientes": [
+      "Pan blanco",
+      "Jamón (el que prefieras)",
+      "Queso suizo rallado",
+      "Huevos enteros",
+      "Leche crema",
+      "Mantequilla"
+    ],
+    "pasos": [
+      "Alistar los ingredientes y quitar la corteza de las rebanadas de pan.",
+      "Colocar dos rodajas de jamón y un poco de queso entre dos rebanadas de pan. Cortar en cuatro el sándwich realizando cortes en diagonal para obtener canapés en forma de triángulo.",
+      "Mezclar los huevos con la crema y pintar los cuartos de sándwich con esta mezcla.",
+      "Calentar la mantequilla en una sartén y freír los canapés hasta que estén dorados."
+    ]
+  },
+
+{
+    "receta": "fish_and_chips",
+    "id": 96,
+    "nombre": "pescado_y_papas_fritas",
+    "ingredientes": [
+      "Filete de Mero",
+      "Patatas cocidas",
+      "Sal",
+      "Pimienta",
+      "Mostaza",
+      "Harina"
+    ],
+    "pasos": [
+      "Alistar los ingredientes y cortar el filete de mero en tiras medianas. Salpimentar las tiras y pasarlas por harina hasta impregnar por completo.",
+      "Freír las patatas en abundante aceite hasta que estén doradas. Reservar.",
+      "Freír las tiras de pescado en el mismo aceite hasta que estén doradas.",
+      "Servir el fish and chips en un cono de papel mantequilla y acompañar con mostaza o la salsa de preferencia."
+    ]
+  },
+
+{
+    "receta": "ceviche",
+    "id": 97,
+    "nombre": "ceviche",
+    "ingredientes": [
+      "Merluza o merluza austral (sin espinas)",
+      "Aguacate",
+      "Tomates cherry",
+      "Cilantro",
+      "Zumo de limones",
+      "Cebolla morada",
+      "Ajíes picantes o guindillas (opcional)",
+      "Ajo molido",
+      "Sal",
+      "Pimienta blanca"
+    ],
+    "pasos": [
+      "Lava la merluza y córtala en dados. Condimenta con sal y reserva en el refrigerador.",
+      "Corta los tomates en dados y el aguacate en rebanadas. Corta también la cebolla, el cilantro y los ajíes en trocitos muy finitos.",
+      "En un bol, mezcla la merluza, la cebolla, el ají, el ajo y el cilantro. Agrega los tomates cherry, el aguacate y condimenta con sal y pimienta al gusto. Por último, baña todo con el zumo de limón.",
+      "Reserva en el refrigerador por unas horas, sirve y disfruta."
+    ]
+  },
+
+{
+    "receta": "red_velvet_cake",
+    "id": 98,
+    "nombre": "pastel_de_terciopelo_rojo",
+    "ingredientes": [
+      "Harina",
+      "cacao en polvo",
+      "Azúcar",
+      "Polvo de hornear",
+      "Bicarbonato de sodio",
+      "Sal",
+      "Mantequilla sin sal",
+      "Aceite vegetal",
+      "Huevos",
+      "Vinagre blanco",
+      "Suero de leche",
+      "Extracto de vainilla",
+      "Colorante rojo de pastelería",
+      "Queso crema",
+      "Leche"
+    ],
+  
+    "pasos": [
+    "Precalienta el horno a 350º F y prepara el molde.",
+    "Cierne la harina, el polvo de hornear, el bicarbonato, la sal y el cacao en un molde.",
+    "Bate la mantequilla con el azúcar y el aceite, luego incorpora los huevos, la vainilla y el suero de leche.",
+    "Mezcla el suero de leche con el vinagre y el colorante rojo, luego añade esta mezcla al molde con los ingredientes secos y revuelve.",
+    "Hornea el bizcocho durante unos 25 minutos, deja enfriar y desmolda.",
+    "Prepara el frosting de queso crema batiendo todos los ingredientes hasta obtener una consistencia cremosa.",
+    "Una vez frío el bizcocho, decóralo con el frosting de queso crema y disfruta."
+  ]
+},
+
+  {
+    "receta": "lobster_roll_sandwich",
+    "id": 99,
+    "nombre": "sandwich_de_langosta",
+    "ingredientes": {
+      "Para el relleno": [
+        "Langostas congeladas y cocidas",
+        "Apio",
+        "Limón",
+        "Mayonesa",
+        "Mantequilla",
+        "Pimentón",
+        "Cayena molida",
+        "Panes de hot dog",
+        "Cebollino fresco"
+      ]
+    },
+    "pasos": [
+      "Saca la carne de las langostas, retira las venas y el intestino, y trocea la carne finamente.",
+      "Pela y pica el apio, y exprime el limón.",
+      "En un bol pequeño, mezcla el apio picado, el zumo de medio limón y la cayena molida. Deja reposar unos minutos.",
+      "En un bol grande, coloca la carne de langosta picada y añade la mayonesa. Mezcla bien.",
+      "Añade la mezcla de apio al bol con la carne de langosta y remueve todo.",
+      "Abre los panes de hot dog por la mitad y derrite la mantequilla en una plancha. Cuando esté fundida, incorpora los panes y aplástalos ligeramente. Tuesta por ambos lados.",
+      "Rellena los panes con la mezcla de langosta.",
+      "Espolvorea el pimentón sobre los panes rellenos y decora con cebollino picado.",
+      "Sirve los lobster rolls acompañados de patatas fritas, si lo deseas."
+    ]
+  },
+  {
+    "Receta": "samosa",
+    "id": 100,
+    "nombre": "samosa",
+    "Ingredientes": [
+      "trigo",
+      "Agua",
+      "Sal",
+      "Aceite",
+      "Ajwain",
+      "Patata",
+      "Comino",
+      "cilantro",
+      "Cúrcuma"
+      
+    ],
+  
+  "Pasos": [
+    "El primer paso para hacer las famosas samosas de verdura es elaborar la masa para la empanadilla. Para ello, mezcla todos los ingredientes hasta que se integren por completo. Golpea la masas varias veces contra la superficie de trabajo para ablandarla, luego forma rulos y corta piezas individuales como se observa en la imagen. Reserva.",
+    "Para hacer el relleno, primer pela las patatas y hierve como si se tratase de la preparación de un puré. Reserva.",
+    "Aparte, fríe las semillas de cilantro con cúrcuma en suficiente aceite. Verás que el aceite empieza a tomar un color amarillo bastante oscuro.",
+    "Pasados unos minutos, cuando ya haya tomado color, añade los guisantes cocidos y sofríe todo junto. Si deseas puedes usar guisantes congelados.",
+    "A continuación, añade al relleno de las samosas vegetarianas un poco de sal y comino. Comprueba la sazón con cuidado de no quemarte y corrige si es necesario.",
+    "Deja cocinar unos minutos más y luego añade esta preparado de guisantes caliente a las patatas, previamente trituradas. La textura del relleno debe ser la de un puré rústico, con pequeños trozos de patata y no triturado completamente.",
+    "El color del puré debe ser un amarillo intenso. Para continuar con la preparación de esta deliciosa comida hindú, añade el cilantro fresco al puré y mezcla hasta que se integre por completo al relleno de las samosas y reserva.",
+    "Recupera las piezas de masa y estira con ayuda de un rodillo hasta conseguir una lámina muy fina con forma ovalada, luego corta cada ovalo de masa por la mitad. Recuerda enharinar la superficie de trabajo.",
+    "Con todo ya listo lo que queda es armar la samosa. Este proceso es un arte, así que presta atención. Primero, une las puntas formando un cono con la masa, húmedece ligeramente los dedos para unir y sellar los bordes.",
+    "A continuación, rellena la samosa con una cucharada de puré de patata y guisantes. Ten cuidado en no excederte con la cantidad de relleno.",
+    "Para finalizar, cierra los bordes formando una línea recta. Recuerda humedecer la puntas de los dedos para ayudar a sellar la masa. La samosa debe quedar de forma triangular como aparece en la fotografía.",
+    "Finalmente, fríe las samosas en abundante aceite caliente"
+  ]
+}
+
+]
