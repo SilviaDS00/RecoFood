@@ -17,7 +17,7 @@ class AsistenteRecetas:
 
     # Carga las recetas del archivo JSON
     def carga_json(self):
-        with open(f"recetas_{self.idioma[self.idioma_elegido]}.json", "r") as archivo:
+        with open(f"data/recetas_{self.idioma[self.idioma_elegido]}.json", "r") as archivo:
             return json.load(archivo)
 
     # def traducir(self, text):
@@ -33,7 +33,7 @@ class AsistenteRecetas:
         resultados = []
         print(ingredientes_usuario)
 
-        with open("recetas_es.json", "r", encoding="utf-8") as archivo:
+        with open("data/recetas_es.json", "r", encoding="utf-8") as archivo:
             recetas = json.load(archivo)
         recetas_posibles = [
             receta
@@ -61,7 +61,7 @@ class AsistenteRecetas:
     def mostrar_receta(self, nombre_receta):
         print("Nombre de la receta a buscar:", nombre_receta)
 
-        with open("recetas_es.json", "r", encoding="utf-8") as archivo:
+        with open("data/recetas_es.json", "r", encoding="utf-8") as archivo:
             recetas = json.load(archivo)
 
         receta_encontrada = next(
