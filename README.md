@@ -168,19 +168,15 @@ A continuación se mostrarán los pasos del entrenamiento con el modelo finalmen
 
 En este paso creamos el modelo de entrenamiento, utilizamos la arquitectura `InceptionV3` preentrenada en el conjunto de datos _ImageNet_.
 
-- `inception = InceptionV3(weights='imagenet', include_top=False)`: Se crea una instancia del modelo InceptionV3. La opción `weights='imagenet'` carga los pesos preentrenados del modelo en el conjunto de datos "ImageNet". `include_top=False` excluye las capas densas (totalmente conectadas) en la parte superior del modelo, ya que se agregarán capas personalizadas más adelante para adaptar el modelo a un problema específico.
+- `inception = InceptionV3(weights='imagenet', include_top=False, input_shape(img_height, img_weight))`: Se crea una instancia del modelo InceptionV3. La opción `weights='imagenet'` carga los pesos preentrenados del modelo en el conjunto de datos "ImageNet". `include_top=False` excluye las capas densas (totalmente conectadas) en la parte superior del modelo, ya que se agregarán capas personalizadas más adelante para adaptar el modelo a un problema específico.
 
-- `x = inception.output`: Se toma la salida de la última capa de la red InceptionV3. Esta salida es una representación de características de alto nivel de la entrada de la imagen.
+- `x_inception = inception.output`: Se toma la salida de la última capa de la red InceptionV3. Esta salida es una representación de características de alto nivel de la entrada de la imagen.
 
-- `x = GlobalAveragePooling2D()(x)`: Se aplica una capa de pooling global promedio, que toma la media de cada canal a lo largo de todas las posiciones espaciales. Esto reduce la dimensionalidad de la representación de características, capturando la información esencial de las características.
+- `x_inception = GlobalAveragePooling2D()(x_inception)`: Se aplica una capa de pooling global promedio, que toma la media de cada canal a lo largo de todas las posiciones espaciales. Esto reduce la dimensionalidad de la representación de características, capturando la información esencial de las características.
 
-- `x = Dense(128, activation='relu')(x)`: Se agrega una capa densa con 128 neuronas y función de activación ReLU. Esta capa totalmente conectada ayuda a aprender patrones más complejos en los datos.
+- `predictions_inception = Dense(len(class_names), kernel_regularizer=l1(0.005), activation='softmax')(x_inception)`: Se añade la capa de salida. Esta capa tiene un número de neuronas igual a la cantidad de clases en tu problema (determinado por `len(class_names)`), con una regularización **L1** para penalizar los pesos grandes. La función de activación **softmax** se utiliza para obtener probabilidades normalizadas para cada clase.
 
-- `x = Dropout(0.2)(x)`: Se aplica una capa de Dropout con una tasa del 20%. El Dropout ayuda a prevenir el sobreajuste al "apagar" aleatoriamente un porcentaje de las neuronas durante el entrenamiento.
-
-- `predictions = Dense(len(class_names), kernel_regularizer=l1(0.005), activation='softmax')(x)`: Se añade la capa de salida. Esta capa tiene un número de neuronas igual a la cantidad de clases en tu problema (determinado por `len(class_names)`), con una regularización **L1** para penalizar los pesos grandes. La función de activación **softmax** se utiliza para obtener probabilidades normalizadas para cada clase.
-
-- `model = Model(inputs=inception.input, outputs=predictions)`: Se crea el modelo final utilizando el modelo **InceptionV3** como base y añadiendo las capas personalizadas. `inputs=inception.input` establece la entrada del modelo como la entrada original de InceptionV3, y `outputs=predictions` establece la salida del modelo como la capa de predicciones recién añadida.
+- `model_inception = Model(inputs=inception.input, outputs=predictions_inception)`: Se crea el modelo final utilizando el modelo **InceptionV3** como base y añadiendo las capas personalizadas. `inputs=inception.input` establece la entrada del modelo como la entrada original de InceptionV3, y `outputs=predictions_inception` establece la salida del modelo como la capa de predicciones recién añadida.
 
 ![Creacion modelo](/Capturas_Codigo/Model_Creation.png)
 
