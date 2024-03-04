@@ -71,26 +71,29 @@ def chatbot_view(request):
         return HttpResponse(status=405)
         
 @csrf_exempt
-def generar_dieta_view(request):
+def generar_resultado_view(request):
     if request.method == "POST":
+        data = json.loads(request.body)
+        tipo = data.get('tipo') 
+        userData = data.get('userData')
 
-        gemini_response = chat_session.send_message("Generame una dieta")
+        if tipo == 'dieta':
+            user_prompt = f"Hazme una dieta que sea específica para una persona de, {userData['age']}, años de edad, {userData['height']} centímetros de altura y {userData['weight']}kg de peso"
+        elif tipo == 'entrenamiento':
+            user_prompt = f"Hazme una entrenamiento que sea específico para una persona de, {userData['age']}, años de edad, {userData['height']} centímetros de altura y {userData['weight']}kg de peso"
+        else:
+            return HttpResponse(status=400)  # Si el tipo de acción no es válido, devuelve un error
 
-        response_data = {"dieta": gemini_response.text}
+        # Envía el mensaje del usuario a Gemini-Pro y obtiene la respuesta
+        gemini_response = chat_session.send_message(user_prompt)
+
+        # Devuelve la respuesta de Gemini-Pro
+        response_data = {tipo: gemini_response.text}
         return JsonResponse(response_data)
     else:
         return HttpResponse(status=405)
 
-@csrf_exempt
-def generar_entrenamiento_view(request):
-    if request.method == "POST":
 
-        gemini_response = chat_session.send_message("Generame una entrenamiento")
-
-        response_data = {"Entrenamiento": gemini_response.text}
-        return JsonResponse(response_data)
-    else:
-        return HttpResponse(status=405)
 
 model = tf.keras.models.load_model("model/best_model_trained.h5")
 @csrf_exempt
