@@ -44,9 +44,9 @@ Además de la clasificación de alimentos, el proyecto se propone ofrecer inform
 
 La clasificación de alimentos a través de Food101 es esencial para ayudar a los usuarios a identificar y comprender rápidamente los componentes de sus comidas. Sin embargo, reconocemos que la información sobre la clasificación sola puede no ser suficiente para guiar a los usuarios hacia elecciones alimentarias más saludables. Es por eso que hemos decidido incorporar un chatbot especializado en ofrecer recetas.
 
-## Entrenamiento de clasificación de imágenes
+### Entrenamiento de clasificación de imágenes
 
-### 2. Obtención de los datos<a name="id2"></a>
+## 2. Obtención de los datos<a name="id2"></a>
 
 **NOTA:** Todos los pasos de obtención de los datos, visualización de los datos y entrenamiento del modelo se hacen en [este Cuaderno de Jupyter](https://github.com/SilviaDS00/RecoFood/blob/main/Modelo_Entrenamiento/Modelo_RecoFood.ipynb)
 
@@ -60,7 +60,7 @@ Se han descargado y extraído desde el cuaderno de Jupyter de la siguiente maner
 
 ![Obtencion de las imagenes](/Capturas_Codigo/Data_obtein.png)
 
-### 3. Exploración y visualización de los datos<a name="id3"></a>
+## 3. Exploración y visualización de los datos<a name="id3"></a>
 
 Primero visualizamos todas las clases de comida que hay en el conjunto de datos:
 
@@ -122,7 +122,7 @@ A continuación visualizamos una imagen aleatoria de cada clase:
 
 ![Imagenes aleatorias](/Capturas_Codigo/Imagenes_Aleatorias.png)
 
-### 4. Preparación de los datos para Machine Learning<a name="id4"></a>
+## 4. Preparación de los datos para Machine Learning<a name="id4"></a>
 
 Primero realizamos la configuración los generadores de los datos de las imágenes:
 
@@ -170,7 +170,7 @@ Found 80800 images belonging to 101 classes.
 Found 20200 images belonging to 101 classes.
 ```
 
-### 5. Entrenamiento del modelo y comprobación del rendimiento<a name="id5"></a>
+## 5. Entrenamiento del modelo y comprobación del rendimiento<a name="id5"></a>
 
 Hemos realizado pruebas con 3 modelos preentrenados: `InceptionV3`, `ResNet50`, `DenseNet121`.
 
@@ -178,7 +178,7 @@ El que mejores métricas ha dado es: `InceptionV3`.
 
 A continuación se mostrarán los pasos del entrenamiento con el modelo finalmente elegido.
 
-#### 5.1 Creación del modelo
+### 5.1 Creación del modelo
 
 En este paso creamos el modelo de entrenamiento, utilizamos la arquitectura `InceptionV3` preentrenada en el conjunto de datos _ImageNet_.
 
@@ -194,7 +194,7 @@ En este paso creamos el modelo de entrenamiento, utilizamos la arquitectura `Inc
 
 ![Creacion modelo](/Capturas_Codigo/Model_Creation.png)
 
-#### 5.2 Compilación del modelo
+### 5.2 Compilación del modelo
 
 Compilamos el modelo:
 
@@ -206,7 +206,7 @@ Compilamos el modelo:
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Compile.png)
 
-#### 5.3 Callbacks
+### 5.3 Callbacks
 
 Antes de entrenar el modelo establecemos el callback `EarlyStopping`, que usa una técnica que detiene el entrenamiento si no hay mejoreas de las métricas:
 
@@ -226,7 +226,7 @@ Y también añadimos el callback de `ModelCheckpoint`, que éste guarda el model
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Callbacks.png)
 
-#### 5.4 Entrenamiento del modelo
+### 5.4 Entrenamiento del modelo
 
 Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo.
 
@@ -234,7 +234,7 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Fit.png)
 
-#### 5.5 Métricas del entrenamiento
+### 5.5 Métricas del entrenamiento
 
 El modelo, como hemos dicho anteriormente, ha sido entrenado con 3 modelos preentrenados diferentes, a continuación se muestran las gráficas de cada resultado obtenido:
 
