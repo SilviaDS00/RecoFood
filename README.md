@@ -513,3 +513,5 @@ Y ya el resto de apartados serían otras configuraciones, pero otra sección imp
 ![Strapi Roles](/Capturas_Codigo/Strapi_Roles.PNG)
 
 ## 9. Conclusiones<a name="id9"></a>
+
+Holi
