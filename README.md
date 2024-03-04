@@ -427,15 +427,21 @@ El historial de las comidas se vería de la siguiente manera:
 
 ![Profile History](/Capturas_Codigo/Profile_History.PNG)
 
-En la sección de predecir IMC encontramos los datos con los que se hará la predicción y un botón donde se aplicará el modelo mostranto posteriormente el resultado:
+En la sección de predecir IMC encontramos los datos con los que se hará la predicción y un botón donde se aplicará el modelo, mostrando posteriormente el resultado:
 
 ![IMC Prediction](/Capturas_Codigo/IMC_Prediction.PNG)
+
+El usuario también podrá actualizar sus datos cuando sea necesario.
+
+![IMC Prediction](/Capturas_Codigo/User_Update.PNG)
 
 ### 8.2 Implementación de los modelos en React.js
 
 El código de Django lo puedes encontrar [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Django)
 
-Usando Django hemo creado una vista con un endpoint de petición `POST` para las predicciones de los modelos, el de clasificación de imágenes procesando la imagen para adecuarlo al modelo entrenado antes de hacer el predict.
+#### Implementación del modelo de clasificación de imágenes
+
+Usando Django hemo creado una vista con un endpoint de petición `POST` para el modelo de clasificación de imágenes, procesando a su vez la imagen para adecuarlo al modelo entrenado antes de hacer la clasificación.
 
 ![Implementacion modelo](/Capturas_Codigo/Model_Implementation.png)
 
@@ -449,15 +455,35 @@ Desde un componente de React.js, llamamos al endpoint creado con Django de la si
 
 Este componente lo utilizaremos en otros componentes para realizar la predicción, en este, de dos maneras, haciendo una foto o directamente subiendo la foto.
 
-Por ejemplo, dentro del componente de [ImageUploadComponent](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/ImageUpload/ImageUploadComponent.jsx) utilizamos el componente creado para realizar la predicción pasándole la imagen subida por el usuario:
+Por ejemplo, dentro del componente de [ImageUploadComponent](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/ImageUpload/ImageUploadComponent.jsx) utilizamos el componente creado para realizar la clasificación pasándole la imagen subida por el usuario:
 
 ![Image predict](/Capturas_Codigo/Predict_Image.png)
 
-### 8.3 Back de usuarios
+#### Implementación del modelo predictivo del IMC
+
+Usando Django hemo creado una vista con un endpoint de petición `POST` para la predicción del modelo, procesando la imagen para adecuarlo al modelo entrenado antes de hacer el predict.
+
+![Implementacion modelo](/Capturas_Codigo/Model_Implementation_bmi.png)
+
+Creamos la url para el endpoint:
+
+![Url endpoint](/Capturas_Codigo/Url_Endpoint_bmi.png)
+
+Desde un componente de React.js, llamamos al endpoint creado con Django de la siguiente manera:
+
+![Endpoint React](/Capturas_Codigo/Endpoint_React_bmi.png)
+
+Dentro del componente de [UserBmi](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/UserBmi/UserBmi.jsx) utilizamos el componente creado para realizar la predicción pasándole los datos del usuario.
+
+Los datos utilizados serán los que se pidieron al usuario al registarse.
+
+![Image predict](/Capturas_Codigo/Predict_bmi.png)
+
+### 8.3 Back de usuarios e historial
 
 [Ver el proyecto de Strapi aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Strapi)
 
-Para realizar el back para los usuarios, hemos utilizado **Strapi**, ya que proporciona una interfaz sencilla de utilizar e intuitiva.
+Para realizar el back para los usuarios y el historial, hemos utilizado **Strapi**, ya que proporciona una interfaz sencilla de utilizar e intuitiva.
 
 Para instalar Strapi primero ejecutamos el siguiente comando: `npm install -g create-strapi-app`.
 
