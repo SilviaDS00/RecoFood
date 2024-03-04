@@ -10,7 +10,7 @@ _TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, 
 
 ---
 
-#### Entrenamiento de clasificación de imágenes
+#### Modelo de entrenamiento de clasificación de imágenes
 
 :mag: [2. Obtención de los datos](#id2)
 
@@ -22,23 +22,17 @@ _TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, 
 
 ---
 
-#### Entrenamiento de predicción del IMC
+#### Modelo de entrenamiendo de predicción del IMC
 
-:mag: [6. Obtención de los datos](#id6)
-
-:bar_chart: [7. Exploración y visualización de los datos](#id7)
-
-:hourglass: [8. Preparación de los datos para Machine Learning](#id8)
-
-:chart_with_upwards_trend: [9. Entrenamiento del modelo y comprobación del rendimiento](#id9)
+:chart_with_upwards_trend: [6. Entrenamiento del modelo predictivo del IMC](#id6)
 
 ---
 
-:space_invader: [10. Procesamiento del lenguaje natural - ChatBot](#id10)
+:space_invader: [7. Procesamiento del lenguaje natural - ChatBot](#id7)
 
-:computer: [11. Aplicación Web](#id11)
+:computer: [8. Aplicación Web](#id8)
 
-:pencil: [12. Conclusiones](#id12)
+:pencil: [9. Conclusiones](#id9)
 
 ## 1. Justificación y descripción del proyecto<a name="id1"></a>
 
@@ -50,7 +44,9 @@ Además de la clasificación de alimentos, el proyecto se propone ofrecer inform
 
 La clasificación de alimentos a través de Food101 es esencial para ayudar a los usuarios a identificar y comprender rápidamente los componentes de sus comidas. Sin embargo, reconocemos que la información sobre la clasificación sola puede no ser suficiente para guiar a los usuarios hacia elecciones alimentarias más saludables. Es por eso que hemos decidido incorporar un chatbot especializado en ofrecer recetas.
 
-## 2. Obtención de los datos<a name="id2"></a>
+## Entrenamiento de clasificación de imágenes
+
+### 2. Obtención de los datos<a name="id2"></a>
 
 **NOTA:** Todos los pasos de obtención de los datos, visualización de los datos y entrenamiento del modelo se hacen en [este Cuaderno de Jupyter](https://github.com/SilviaDS00/RecoFood/blob/main/Modelo_Entrenamiento/Modelo_RecoFood.ipynb)
 
@@ -64,7 +60,7 @@ Se han descargado y extraído desde el cuaderno de Jupyter de la siguiente maner
 
 ![Obtencion de las imagenes](/Capturas_Codigo/Data_obtein.png)
 
-## 3. Exploración y visualización de los datos<a name="id3"></a>
+### 3. Exploración y visualización de los datos<a name="id3"></a>
 
 Primero visualizamos todas las clases de comida que hay en el conjunto de datos:
 
@@ -126,7 +122,7 @@ A continuación visualizamos una imagen aleatoria de cada clase:
 
 ![Imagenes aleatorias](/Capturas_Codigo/Imagenes_Aleatorias.png)
 
-## 4. Preparación de los datos para Machine Learning<a name="id4"></a>
+### 4. Preparación de los datos para Machine Learning<a name="id4"></a>
 
 Primero realizamos la configuración los generadores de los datos de las imágenes:
 
@@ -174,7 +170,7 @@ Found 80800 images belonging to 101 classes.
 Found 20200 images belonging to 101 classes.
 ```
 
-## 5. Entrenamiento del modelo y comprobación del rendimiento<a name="id5"></a>
+### 5. Entrenamiento del modelo y comprobación del rendimiento<a name="id5"></a>
 
 Hemos realizado pruebas con 3 modelos preentrenados: `InceptionV3`, `ResNet50`, `DenseNet121`.
 
@@ -182,7 +178,7 @@ El que mejores métricas ha dado es: `InceptionV3`.
 
 A continuación se mostrarán los pasos del entrenamiento con el modelo finalmente elegido.
 
-### 5.1 Creación del modelo
+#### 5.1 Creación del modelo
 
 En este paso creamos el modelo de entrenamiento, utilizamos la arquitectura `InceptionV3` preentrenada en el conjunto de datos _ImageNet_.
 
@@ -198,7 +194,7 @@ En este paso creamos el modelo de entrenamiento, utilizamos la arquitectura `Inc
 
 ![Creacion modelo](/Capturas_Codigo/Model_Creation.png)
 
-### 5.2 Compilación del modelo
+#### 5.2 Compilación del modelo
 
 Compilamos el modelo:
 
@@ -210,7 +206,7 @@ Compilamos el modelo:
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Compile.png)
 
-### 5.3 Callbacks
+#### 5.3 Callbacks
 
 Antes de entrenar el modelo establecemos el callback `EarlyStopping`, que usa una técnica que detiene el entrenamiento si no hay mejoreas de las métricas:
 
@@ -230,7 +226,7 @@ Y también añadimos el callback de `ModelCheckpoint`, que éste guarda el model
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Callbacks.png)
 
-### 5.4 Entrenamiento del modelo
+#### 5.4 Entrenamiento del modelo
 
 Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo.
 
@@ -238,7 +234,7 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 ![Compilacion modelo](/Capturas_Codigo/Model_Fit.png)
 
-### 5.5 Métricas del entrenamiento
+#### 5.5 Métricas del entrenamiento
 
 El modelo, como hemos dicho anteriormente, ha sido entrenado con 3 modelos preentrenados diferentes, a continuación se muestran las gráficas de cada resultado obtenido:
 
@@ -295,11 +291,16 @@ Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/DenseNet_Metrics.png)
 
-## 10. Procesamiento del lenguaje natural - ChatBot<a name="id10"></a>
+## 6. Entrenamiento de predicción del IMC<a name="id6"></>
+
+El entrenamiendo del modelo de predicción del IMC lo puedes encontrar en este cuaderno de [Jupyter](https://github.com/SilviaDS00/RecoFood/blob/main/Modelos_Entrenamiento/Entrenamiento_bmi/Modelo_BMI.ipynb)
+
+
+## 7. Procesamiento del lenguaje natural - ChatBot<a name="id7"></a>
 
 En esta sección, se detalla el progreso de nuestro Asistente de Recetas. Este emplea el Procesamiento de Lenguaje Natural (PLN) para interactuar con los usuarios de una manera más accesible. En particular, hemos implementado la traducción automática, que es una aplicación del PLN, para permitir que los usuarios accedan a las recetas en dos idiomas: inglés y español.
 
-### 10.1 Importación de paquetes
+### 7.1 Importación de paquetes
 
 Importamos aquellos paquetes necesarios para ejecutar nuestro programa
 
@@ -308,7 +309,7 @@ Importamos aquellos paquetes necesarios para ejecutar nuestro programa
 
 ![importacion](https://github.com/SilviaDS00/RecoFood/assets/146923466/eef3995c-3e77-4b5a-aa0b-9376443b888e)
 
-### 10.2 Definición de la clase AsistenteRecetas
+### 7.2 Definición de la clase AsistenteRecetas
 
 La clase `AsistenteRecetas` es la principal de nuestro programa, donde implementamos todas las funcionalidades relacionadas con la gestión y visualización de recetas.
 
@@ -346,19 +347,19 @@ Por último, el método `otras_recetas` muestra todas las recetas disponibles y 
 
 Después de definir la clase, creamos una instancia de esta clase llamada Bot.
 
-### 10.3 Interacción con el usuario
+### 7.3 Interacción con el usuario
 
 El código proporciona un bucle que permite al usuario interactuar con el asistente de recetas. Dependiendo de la opción seleccionada, el programa ejecuta el método correspondiente de la clase, garantizando una interacción fluida y amigable con el usuario. En caso de ingresar una opción no válida, se muestra un mensaje de error y se solicita al usuario que ingrese nuevamente una opción válida.
 
 ![menu](https://github.com/SilviaDS00/RecoFood/assets/146923466/1ff6434d-9e2f-4842-a46c-8ece0fb186d3)
 
-## 11. Aplicación web<a name="id11"></a>
+## 8. Aplicación web<a name="id8"></a>
 
 [Aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Web_React_App) puedes encontrar todos los ficheros de la aplicación de ReactJS.
 
 La aplicación web está realizada en ReactJS, en la cual hemos implementado el modelo entrenado con Django.
 
-### 11.1 Creación de la web
+### 8.1 Creación de la web
 
 La idea del diseño de la web la hemos obtenido con una AI de creación de diseño para interfaces, llamada [galileo.ai](https://www.usegalileo.ai/explore), la cual le explicas qué diseño quieres y te lo genera.
 
@@ -434,7 +435,7 @@ Por ejemplo, dentro del componente de [ImageUploadComponent](https://github.com/
 
 ![Image predict](/Capturas_Codigo/Predict_Image.png)
 
-### 11.3 Back de usuarios
+### 8.3 Back de usuarios
 
 [Ver el proyecto de Strapi aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Strapi)
 
@@ -462,4 +463,4 @@ Y ya el resto de apartados serían otras configuraciones, pero otra sección imp
 
 ![Strapi Roles](/Capturas_Codigo/Strapi_Roles.PNG)
 
-## 12. Conclusiones<a name="id12"></a>
+## 9. Conclusiones<a name="id9"></a>
