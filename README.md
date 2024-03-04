@@ -44,6 +44,8 @@ Además de la clasificación de alimentos, el proyecto se propone ofrecer inform
 
 La clasificación de alimentos a través de Food101 es esencial para ayudar a los usuarios a identificar y comprender rápidamente los componentes de sus comidas. Sin embargo, reconocemos que la información sobre la clasificación sola puede no ser suficiente para guiar a los usuarios hacia elecciones alimentarias más saludables. Es por eso que hemos decidido incorporar un chatbot especializado en ofrecer recetas.
 
+---
+
 ### Entrenamiento de clasificación de imágenes
 
 ## 2. Obtención de los datos<a name="id2"></a>
@@ -291,10 +293,13 @@ Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/DenseNet_Metrics.png)
 
+---
+
 ## 6. Entrenamiento de predicción del IMC<a name="id6"></a>
 
 El entrenamiendo del modelo de predicción del IMC lo puedes encontrar en este cuaderno de [Jupyter](https://github.com/SilviaDS00/RecoFood/blob/main/Modelos_Entrenamiento/Entrenamiento_bmi/Modelo_BMI.ipynb)
 
+---
 
 ## 7. Procesamiento del lenguaje natural - ChatBot<a name="id7"></a>
 
