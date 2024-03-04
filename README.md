@@ -224,6 +224,8 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 El modelo, como hemos dicho anteriormente, ha sido entrenado con 3 modelos preentrenados diferentes, a continuación se muestran las gráficas de cada resultado obtenido:
 
+#### InceptionV3
+
 En el modelo de `InceptionV3` se ha establecido un callback de EarlyStopping con los siguientes parámetros:
 
 ```
