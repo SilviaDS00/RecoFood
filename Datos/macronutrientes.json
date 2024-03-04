@@ -1,0 +1,810 @@
+[
+    {
+        "name": "caprese_salad",
+        "nombre": "ensalada_caprese",
+        "calories_per_100g": 141,
+        "carbs_per_100g": 3,
+        "protein_per_100g": 6,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "hummus",
+        "nombre": "hummus",
+        "calories_per_100g": 166,
+        "carbs_per_100g": 9,
+        "protein_per_100g": 6,
+        "fat_per_100g": 13
+    },
+    {
+        "name": "steak",
+        "nombre": "filete",
+        "calories_per_100g": 250,
+        "carbs_per_100g": 0,
+        "protein_per_100g": 31,
+        "fat_per_100g": 11
+    },
+    {
+        "name": "cup_cakes",
+        "nombre": "magdalenas",
+        "calories_per_100g": 262,
+        "carbs_per_100g": 40,
+        "protein_per_100g": 2,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "frozen_yogurt",
+        "nombre": "yogur_helado",
+        "calories_per_100g": 159,
+        "carbs_per_100g": 25,
+        "protein_per_100g": 5,
+        "fat_per_100g": 4
+    },
+    {
+        "name": "creme_brulee",
+        "nombre": "crema_quemada",
+        "calories_per_100g": 287,
+        "carbs_per_100g": 25,
+        "protein_per_100g": 4,
+        "fat_per_100g": 19
+    },
+    {
+        "name": "cheesecake",
+        "nombre": "pastel_de_queso",
+        "calories_per_100g": 321,
+        "carbs_per_100g": 31,
+        "protein_per_100g": 5,
+        "fat_per_100g": 20
+    },
+    {
+        "name": "ceviche",
+        "nombre": "ceviche",
+        "calories_per_100g": 119,
+        "carbs_per_100g": 12,
+        "protein_per_100g": 17,
+        "fat_per_100g": 1
+    },
+    {
+        "name": "french_onion_soup",
+        "nombre": "sopa_de_cebolla_francesa",
+        "calories_per_100g": 307,
+        "carbs_per_100g": 32,
+        "protein_per_100g": 12,
+        "fat_per_100g": 14
+    },
+    {
+        "name": "greek_salad",
+        "nombre": "ensalada_griega",
+        "calories_per_100g": 236,
+        "carbs_per_100g": 14,
+        "protein_per_100g": 8,
+        "fat_per_100g": 18
+    },
+    {
+        "name": "shrimp_and_grits",
+        "nombre": "camarones_y_gachas",
+        "calories_per_100g": 474,
+        "carbs_per_100g": 34,
+        "protein_per_100g": 23,
+        "fat_per_100g": 27
+    },
+    {
+        "name": "beef_tartare",
+        "nombre": "tártaro_de_carne",
+        "calories_per_100g": 200,
+        "carbs_per_100g": 0,
+        "protein_per_100g": 20,
+        "fat_per_100g": 14
+    },
+    {
+        "name": "oysters",
+        "nombre": "ostras",
+        "calories_per_100g": 50,
+        "carbs_per_100g": 3,
+        "protein_per_100g": 14,
+        "fat_per_100g": 2
+    },
+    {
+        "name": "guacamole",
+        "nombre": "guacamole",
+        "calories_per_100g": 160,
+        "carbs_per_100g": 9,
+        "protein_per_100g": 2,
+        "fat_per_100g": 15
+    },
+    {
+        "name": "chocolate_cake",
+        "nombre": "pastel_de_chocolate",
+        "calories_per_100g": 350,
+        "carbs_per_100g": 46,
+        "protein_per_100g": 5,
+        "fat_per_100g": 17
+    },
+    {
+        "name": "baklava",
+        "nombre": "baklava",
+        "calories_per_100g": 480,
+        "carbs_per_100g": 60,
+        "protein_per_100g": 6,
+        "fat_per_100g": 26
+    },
+    {
+        "name": "crab_cakes",
+        "nombre": "tortas_de_cangrejo",
+        "calories_per_100g": 155,
+        "carbs_per_100g": 9,
+        "protein_per_100g": 17,
+        "fat_per_100g": 6
+    },
+    {
+        "name": "baby_back_ribs",
+        "nombre": "costillas_de_cerdo_bebé",
+        "calories_per_100g": 361,
+        "carbs_per_100g": 10,
+        "protein_per_100g": 29,
+        "fat_per_100g": 24
+    },
+    {
+        "name": "bibimbap",
+        "nombre": "bibimbap",
+        "calories_per_100g": 360,
+        "carbs_per_100g": 44,
+        "protein_per_100g": 10,
+        "fat_per_100g": 15
+    },
+    {
+        "name": "takoyaki",
+        "nombre": "takoyaki",
+        "calories_per_100g": 166,
+        "carbs_per_100g": 21,
+        "protein_per_100g": 5,
+        "fat_per_100g": 7
+    },
+    {
+        "name": "chocolate_mousse",
+        "nombre": "mousse_de_chocolate",
+        "calories_per_100g": 328,
+        "carbs_per_100g": 24,
+        "protein_per_100g": 3,
+        "fat_per_100g": 24
+    },
+    {
+        "name": "pizza",
+        "nombre": "pizza",
+        "calories_per_100g": 266,
+        "carbs_per_100g": 30,
+        "protein_per_100g": 12,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "escargots",
+        "nombre": "caracoles",
+        "calories_per_100g": 90,
+        "carbs_per_100g": 2,
+        "protein_per_100g": 16,
+        "fat_per_100g": 1
+    },
+    {
+        "name": "onion_rings",
+        "nombre": "aros_de_cebolla",
+        "calories_per_100g": 348,
+        "carbs_per_100g": 48,
+        "protein_per_100g": 4,
+        "fat_per_100g": 15
+    },
+    {
+        "name": "tuna_tartare",
+        "nombre": "tártaro_de_atún",
+        "calories_per_100g": 220,
+        "carbs_per_100g": 7,
+        "protein_per_100g": 29,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "cannoli",
+        "nombre": "cannoli",
+        "calories_per_100g": 340,
+        "carbs_per_100g": 45,
+        "protein_per_100g": 7,
+        "fat_per_100g": 15
+    },
+    {
+        "name": "sashimi",
+        "nombre": "sashimi",
+        "calories_per_100g": 134,
+        "carbs_per_100g": 0,
+        "protein_per_100g": 26,
+        "fat_per_100g": 3
+    },
+    {
+        "name": "french_toast",
+        "nombre": "pan_francés",
+        "calories_per_100g": 303,
+        "carbs_per_100g": 40,
+        "protein_per_100g": 7,
+        "fat_per_100g": 13
+    },
+    {
+        "name": "hot_dog",
+        "nombre": "perro_caliente",
+        "calories_per_100g": 296,
+        "carbs_per_100g": 19,
+        "protein_per_100g": 10,
+        "fat_per_100g": 21
+    },
+    {
+        "name": "strawberry_shortcake",
+        "nombre": "pastel_de_fresas",
+        "calories_per_100g": 278,
+        "carbs_per_100g": 32,
+        "protein_per_100g": 4,
+        "fat_per_100g": 15
+    },
+    {
+        "name": "fried_rice",
+        "nombre": "arroz_frito",
+        "calories_per_100g": 130,
+        "carbs_per_100g": 22,
+        "protein_per_100g": 3,
+        "fat_per_100g": 3
+    },
+    {
+        "name": "samosa",
+        "nombre": "samosa",
+        "calories_per_100g": 160,
+        "carbs_per_100g": 19,
+        "protein_per_100g": 3,
+        "fat_per_100g": 8
+    },
+    {
+        "name": "macarons",
+        "nombre": "macarons",
+        "calories_per_100g": 449,
+        "carbs_per_100g": 50,
+        "protein_per_100g": 5,
+        "fat_per_100g": 25
+    },
+    {
+        "name": "caesar_salad",
+        "nombre": "ensalada_césar",
+        "calories_per_100g": 155,
+        "carbs_per_100g": 8,
+        "protein_per_100g": 7,
+        "fat_per_100g": 12
+    },
+    {
+        "name": "chicken_wings",
+        "nombre": "alitas_de_pollo",
+        "calories_per_100g": 203,
+        "carbs_per_100g": 1,
+        "protein_per_100g": 28,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "fried_calamari",
+        "nombre": "calamares_fritos",
+        "calories_per_100g": 198,
+        "carbs_per_100g": 18,
+        "protein_per_100g": 10,
+        "fat_per_100g": 9
+    },
+    {
+        "name": "edamame",
+        "nombre": "edamame",
+        "calories_per_100g": 121,
+        "carbs_per_100g": 10,
+        "protein_per_100g": 11,
+        "fat_per_100g": 5
+    },
+    {
+        "name": "risotto",
+        "nombre": "risotto",
+        "calories_per_100g": 130,
+        "carbs_per_100g": 22,
+        "protein_per_100g": 3,
+        "fat_per_100g": 3
+    },
+    {
+        "name": "carrot_cake",
+        "nombre": "pastel_de_zanahoria",
+        "calories_per_100g": 365,
+        "carbs_per_100g": 46,
+        "protein_per_100g": 5,
+        "fat_per_100g": 19
+    },
+    {
+        "name": "sushi",
+        "nombre": "sushi",
+        "calories_per_100g": 129,
+        "carbs_per_100g": 21,
+        "protein_per_100g": 6,
+        "fat_per_100g": 2
+    },
+    {
+        "name": "grilled_salmon",
+        "nombre": "salmón_a_la_parrilla",
+        "calories_per_100g": 206,
+        "carbs_per_100g": 0,
+        "protein_per_100g": 22,
+        "fat_per_100g": 13
+    },
+    {
+        "name": "peking_duck",
+        "nombre": "pato_pekinés",
+        "calories_per_100g": 380,
+        "carbs_per_100g": 6,
+        "protein_per_100g": 15,
+        "fat_per_100g": 33
+    },
+    {
+        "name": "deviled_eggs",
+        "nombre": "huevos_rellenos",
+        "calories_per_100g": 170,
+        "carbs_per_100g": 2,
+        "protein_per_100g": 12,
+        "fat_per_100g": 13
+    },
+    {
+        "name": "huevos_rancheros",
+        "nombre": "huevos_rancheros",
+        "calories_per_100g": 143,
+        "carbs_per_100g": 12,
+        "protein_per_100g": 7,
+        "fat_per_100g": 8
+    },
+    {
+        "name": "lasagna",
+        "nombre": "lasaña",
+        "calories_per_100g": 133,
+        "carbs_per_100g": 13,
+        "protein_per_100g": 9,
+        "fat_per_100g": 4
+    },
+    {
+        "name": "apple_pie",
+        "nombre": "tarta_de_manzana",
+        "calories_per_100g": 237,
+        "carbs_per_100g": 36,
+        "protein_per_100g": 2,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "seaweed_salad",
+        "nombre": "ensalada_de_algas",
+        "calories_per_100g": 45,
+        "carbs_per_100g": 5,
+        "protein_per_100g": 2,
+        "fat_per_100g": 2
+    },
+    {
+        "name": "bread_pudding",
+        "nombre": "budín_de_pan",
+        "calories_per_100g": 195,
+        "carbs_per_100g": 27,
+        "protein_per_100g": 4,
+        "fat_per_100g": 8
+    },
+    {
+        "name": "red_velvet_cake",
+        "nombre": "pastel_de_terciopelo_rojo",
+        "calories_per_100g": 289,
+        "carbs_per_100g": 38,
+        "protein_per_100g": 3,
+        "fat_per_100g": 14
+    },
+    {
+        "name": "macaroni_and_cheese",
+        "nombre": "macarrones_con_queso",
+        "calories_per_100g": 310,
+        "carbs_per_100g": 29,
+        "protein_per_100g": 11,
+        "fat_per_100g": 16
+    },
+    {
+        "name": "spaghetti_bolognese",
+        "nombre": "espagueti_a_la_boloñesa",
+        "calories_per_100g": 253,
+        "carbs_per_100g": 23,
+        "protein_per_100g": 15,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "clam_chowder",
+        "nombre": "sopa_de_almejas",
+        "calories_per_100g": 163,
+        "carbs_per_100g": 12,
+        "protein_per_100g": 6,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "omelette",
+        "nombre": "tortilla",
+        "calories_per_100g": 154,
+        "carbs_per_100g": 1,
+        "protein_per_100g": 13,
+        "fat_per_100g": 11
+    },
+    {
+        "name": "ice_cream",
+        "nombre": "helado",
+        "calories_per_100g": 207,
+        "carbs_per_100g": 27,
+        "protein_per_100g": 3,
+        "fat_per_100g": 11
+    },
+    {
+        "name": "chicken_curry",
+        "nombre": "curry_de_pollo",
+        "calories_per_100g": 185,
+        "carbs_per_100g": 6,
+        "protein_per_100g": 19,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "fish_and_chips",
+        "nombre": "pescado_y_papas_fritas",
+        "calories_per_100g": 255,
+        "carbs_per_100g": 23,
+        "protein_per_100g": 12,
+        "fat_per_100g": 13
+    },
+    {
+        "name": "gyoza",
+        "nombre": "gyoza",
+        "calories_per_100g": 191,
+        "carbs_per_100g": 21,
+        "protein_per_100g": 8,
+        "fat_per_100g": 8
+    },
+    {
+        "name": "foie_gras",
+        "nombre": "foie_gras",
+        "calories_per_100g": 459,
+        "carbs_per_100g": 2,
+        "protein_per_100g": 6,
+        "fat_per_100g": 48
+    },
+    {
+        "name": "beet_salad",
+        "nombre": "ensalada_de_remolacha",
+        "calories_per_100g": 80,
+        "carbs_per_100g": 12,
+        "protein_per_100g": 3,
+        "fat_per_100g": 3
+    },
+    {
+        "name": "gnocchi",
+        "nombre": "ñoquis",
+        "calories_per_100g": 130,
+        "carbs_per_100g": 21,
+        "protein_per_100g": 3,
+        "fat_per_100g": 4
+    },
+    {
+        "name": "prime_rib",
+        "nombre": "costilla_premium",
+        "calories_per_100g": 330,
+        "carbs_per_100g": 0,
+        "protein_per_100g": 26,
+        "fat_per_100g": 25
+    },
+    {
+        "name": "bruschetta",
+        "nombre": "bruschetta",
+        "calories_per_100g": 99,
+        "carbs_per_100g": 13,
+        "protein_per_100g": 3,
+        "fat_per_100g": 4
+    },
+    {
+        "name": "french_fries",
+        "nombre": "papas_fritas",
+        "calories_per_100g": 312,
+        "carbs_per_100g": 35,
+        "protein_per_100g": 3,
+        "fat_per_100g": 17
+    },
+    {
+        "name": "donuts",
+        "nombre": "donas",
+        "calories_per_100g": 452,
+        "carbs_per_100g": 49,
+        "protein_per_100g": 5,
+        "fat_per_100g": 26
+    },
+    {
+        "name": "grilled_cheese_sandwich",
+        "nombre": "sándwich_de_queso_asado",
+        "calories_per_100g": 350,
+        "carbs_per_100g": 30,
+        "protein_per_100g": 16,
+        "fat_per_100g": 18
+    },
+    {
+        "name": "cheese_plate",
+        "nombre": "plato_de_queso",
+        "calories_per_100g": 402,
+        "carbs_per_100g": 4,
+        "protein_per_100g": 25,
+        "fat_per_100g": 32
+    },
+    {
+        "name": "waffles",
+        "nombre": "gofres",
+        "calories_per_100g": 291,
+        "carbs_per_100g": 38,
+        "protein_per_100g": 6,
+        "fat_per_100g": 13
+    },
+    {
+        "name": "pulled_pork_sandwich",
+        "nombre": "sándwich_de_cerdo_desmenuzado",
+        "calories_per_100g": 267,
+        "carbs_per_100g": 22,
+        "protein_per_100g": 16,
+        "fat_per_100g": 13
+    },
+    {
+        "name": "pad_thai",
+        "nombre": "pad_thai",
+        "calories_per_100g": 373,
+        "carbs_per_100g": 37,
+        "protein_per_100g": 12,
+        "fat_per_100g": 21
+    },
+    {
+        "name": "garlic_bread",
+        "nombre": "pan_de_ajo",
+        "calories_per_100g": 361,
+        "carbs_per_100g": 45,
+        "protein_per_100g": 9,
+        "fat_per_100g": 15
+    },
+    {
+        "name": "pork_chop",
+        "nombre": "chuleta_de_cerdo",
+        "calories_per_100g": 250,
+        "carbs_per_100g": 0,
+        "protein_per_100g": 27,
+        "fat_per_100g": 16
+    },
+    {
+        "name": "chicken_quesadilla",
+        "nombre": "quesadilla_de_pollo",
+        "calories_per_100g": 212,
+        "carbs_per_100g": 19,
+        "protein_per_100g": 11,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "breakfast_burrito",
+        "nombre": "burrito_de_desayuno",
+        "calories_per_100g": 240,
+        "carbs_per_100g": 21,
+        "protein_per_100g": 9,
+        "fat_per_100g": 14
+    },
+    {
+        "name": "ravioli",
+        "nombre": "ravioli",
+        "calories_per_100g": 250,
+        "carbs_per_100g": 32,
+        "protein_per_100g": 10,
+        "fat_per_100g": 9
+    },
+    {
+        "name": "filet_mignon",
+        "nombre": "filete_mignon",
+        "calories_per_100g": 250,
+        "carbs_per_100g": 0,
+        "protein_per_100g": 25,
+        "fat_per_100g": 17
+    },
+    {
+        "name": "ramen",
+        "nombre": "ramen",
+        "calories_per_100g": 356,
+        "carbs_per_100g": 52,
+        "protein_per_100g": 12,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "beef_carpaccio",
+        "nombre": "carpaccio_de_res",
+        "calories_per_100g": 150,
+        "carbs_per_100g": 0,
+        "protein_per_100g": 23,
+        "fat_per_100g": 6
+    },
+    {
+        "name": "spaghetti_carbonara",
+        "nombre": "espagueti_a_la_carbonara",
+        "calories_per_100g": 418,
+        "carbs_per_100g": 45,
+        "protein_per_100g": 16,
+        "fat_per_100g": 20
+    },
+    {
+        "name": "mussels",
+        "nombre": "mejillones",
+        "calories_per_100g": 86,
+        "carbs_per_100g": 3,
+        "protein_per_100g": 12,
+        "fat_per_100g": 3
+    },
+    {
+        "name": "nachos",
+        "nombre": "nachos",
+        "calories_per_100g": 466,
+        "carbs_per_100g": 50,
+        "protein_per_100g": 10,
+        "fat_per_100g": 25
+    },
+    {
+        "name": "dumplings",
+        "nombre": "empanadillas",
+        "calories_per_100g": 338,
+        "carbs_per_100g": 32,
+        "protein_per_100g": 15,
+        "fat_per_100g": 17
+    },
+    {
+        "name": "falafel",
+        "nombre": "falafel",
+        "calories_per_100g": 333,
+        "carbs_per_100g": 23,
+        "protein_per_100g": 13,
+        "fat_per_100g": 19
+    },
+    {
+        "name": "scallops",
+        "nombre": "vieiras",
+        "calories_per_100g": 111,
+        "carbs_per_100g": 3,
+        "protein_per_100g": 20,
+        "fat_per_100g": 2
+    },
+    {
+        "name": "spring_rolls",
+        "nombre": "rollo_de_primavera",
+        "calories_per_100g": 220,
+        "carbs_per_100g": 27,
+        "protein_per_100g": 6,
+        "fat_per_100g": 9
+    },
+    {
+        "name": "beignets",
+        "nombre": "beignets",
+        "calories_per_100g": 368,
+        "carbs_per_100g": 47,
+        "protein_per_100g": 5,
+        "fat_per_100g": 18
+    },
+    {
+        "name": "croque_madame",
+        "nombre": "croque_madame",
+        "calories_per_100g": 342,
+        "carbs_per_100g": 26,
+        "protein_per_100g": 16,
+        "fat_per_100g": 19
+    },
+    {
+        "name": "hamburger",
+        "nombre": "hamburguesa",
+        "calories_per_100g": 250,
+        "carbs_per_100g": 24,
+        "protein_per_100g": 13,
+        "fat_per_100g": 12
+    },
+    {
+        "name": "miso_soup",
+        "nombre": "sopa_de_miso",
+        "calories_per_100g": 45,
+        "carbs_per_100g": 5,
+        "protein_per_100g": 2,
+        "fat_per_100g": 2
+    },
+    {
+        "name": "club_sandwich",
+        "nombre": "sándwich_club",
+        "calories_per_100g": 239,
+        "carbs_per_100g": 19,
+        "protein_per_100g": 11,
+        "fat_per_100g": 14
+    },
+    {
+        "name": "paella",
+        "nombre": "paella",
+        "calories_per_100g": 200,
+        "carbs_per_100g": 17,
+        "protein_per_100g": 10,
+        "fat_per_100g": 9
+    },
+    {
+        "name": "churros",
+        "nombre": "churros",
+        "calories_per_100g": 398,
+        "carbs_per_100g": 50,
+        "protein_per_100g": 5,
+        "fat_per_100g": 21
+    },
+    {
+        "name": "pho",
+        "nombre": "pho",
+        "calories_per_100g": 290,
+        "carbs_per_100g": 32,
+        "protein_per_100g": 16,
+        "fat_per_100g": 10
+    },
+    {
+        "name": "pancakes",
+        "nombre": "panqueques",
+        "calories_per_100g": 227,
+        "carbs_per_100g": 26,
+        "protein_per_100g": 5,
+        "fat_per_100g": 12
+    },
+    {
+        "name": "eggs_benedict",
+        "nombre": "huevos_benedict",
+        "calories_per_100g": 270,
+        "carbs_per_100g": 2,
+        "protein_per_100g": 11,
+        "fat_per_100g": 24
+    },
+    {
+        "name": "tiramisu",
+        "nombre": "tiramisú",
+        "calories_per_100g": 370,
+        "carbs_per_100g": 30,
+        "protein_per_100g": 5,
+        "fat_per_100g": 26
+    },
+    {
+        "name": "panna_cotta",
+        "nombre": "panna_cotta",
+        "calories_per_100g": 121,
+        "carbs_per_100g": 14,
+        "protein_per_100g": 3,
+        "fat_per_100g": 6
+    },
+    {
+        "name": "lobster_bisque",
+        "nombre": "sopa_de_langosta",
+        "calories_per_100g": 120,
+        "carbs_per_100g": 9,
+        "protein_per_100g": 6,
+        "fat_per_100g": 7
+    },
+    {
+        "name": "hot_and_sour_soup",
+        "nombre": "sopa_agripicante",
+        "calories_per_100g": 75,
+        "carbs_per_100g": 9,
+        "protein_per_100g": 6,
+        "fat_per_100g": 2
+    },
+    {
+        "name": "tacos",
+        "nombre": "tacos",
+        "calories_per_100g": 226,
+        "carbs_per_100g": 16,
+        "protein_per_100g": 15,
+        "fat_per_100g": 12
+    },
+    {
+        "name": "lobster_roll_sandwich",
+        "nombre": "sándwich_de_langosta",
+        "calories_per_100g": 200,
+        "carbs_per_100g": 16,
+        "protein_per_100g": 11,
+        "fat_per_100g": 11
+    },
+    {
+        "name": "poutine",
+        "nombre": "poutine",
+        "calories_per_100g": 420,
+        "carbs_per_100g": 20,
+        "protein_per_100g": 12,
+        "fat_per_100g": 30
+    }
+]

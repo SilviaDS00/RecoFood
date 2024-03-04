@@ -5,7 +5,7 @@
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
-    background-color: $blue;
+    background-color: #eaeaea;
     padding: 2rem;
     border-radius: 8px;
 
@@ -23,11 +23,11 @@
         border-radius: 5px;
   
         &.bot {
-          background-color: #dfdfdf;
+          background-color: #90d5f5;
         }
   
         &.user {
-          background-color: #beeaff;
+          background-color: #ababab;
         }
       }
     }

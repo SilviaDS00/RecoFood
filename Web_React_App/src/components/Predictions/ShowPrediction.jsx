@@ -281,10 +281,10 @@ const ShowPrediction = ({ predictionResult }) => {
   
     predictionResult.predicted_class = option.classIndex;
     predictionResult.predicted_class_name = option.className;
-    predictedClassInfo.calories_per_100g = selectedClassInfo.calories_per_100g;
-    predictedClassInfo.protein_per_100g = selectedClassInfo.protein_per_100g;
-    predictedClassInfo.fat_per_100g = selectedClassInfo.fat_per_100g;
-    predictedClassInfo.carbs_per_100g = selectedClassInfo.carbs_per_100g;
+    predictedClassInfo.calories_per_100g = selectedClassInfo.calories_per_100g.toFixed(0);
+    predictedClassInfo.protein_per_100g = selectedClassInfo.protein_per_100g.toFixed(0);
+    predictedClassInfo.fat_per_100g = selectedClassInfo.fat_per_100g.toFixed(0);
+    predictedClassInfo.carbs_per_100g = selectedClassInfo.carbs_per_100g.toFixed(0);
   };
 
   const topClasses = predictionResult.top5_classes.map((classIndex) => ({

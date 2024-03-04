@@ -53,30 +53,10 @@ def chatbot_view(request):
         # Si la solicitud no es ni POST ni GET, devuelve un error
         return JsonResponse({"error": "Método no permitido"}, status=405)
 
-ruta_local_modelo = "model/model_inception.h5"
-modelo_nube_url = 'https://github.com/SilviaDS00/RecoFood/raw/main/Modelo_Entrenado/model_inception.h5'
-
-def descargar_modelo():
-    try:
-        response = requests.get(modelo_nube_url)
-        with open(ruta_local_modelo, 'wb') as file:
-            file.write(response.content)
-    except Exception as e:
-        logger.error(f"Error al descargar el modelo: {str(e)}")
-
-def model_compile():
-    model = tf.keras.models.load_model(ruta_local_modelo)
-    model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-    return model
-
+    
+model = tf.keras.models.load_model('model/best_model_densenet.h5')
 @csrf_exempt
 def prediction(request):
-    if "model" not in globals():
-        try:
-            descargar_modelo()
-            model = model_compile()
-        except Exception as e:
-            return JsonResponse({"error": f"Error al cargar el modelo: {str(e)}"}, status=500)
     if request.method == "POST":
         try:
             # Obtén la imagen del cuerpo de la solicitud POST
@@ -90,13 +70,10 @@ def prediction(request):
 
             # Realiza la predicción con el modelo cargado
             prediction = model.predict(image)
-            # En este ejemplo, simplemente se obtiene la clase con la mayor probabilidad
             top5_classes = np.argsort(-prediction[0])[:6]
             print("Top 5 clases: ",top5_classes)
-# En este ejemplo, simplemente se obtiene la clase con la mayor probabilidad
             predicted_class = top5_classes[0]
 
-            # Devuelve la respuesta en formato JSON
             response_data = {
                 "message": "Predicción exitosa",
                 "predicted_class": int(predicted_class),
@@ -115,7 +92,6 @@ def prediction(request):
 
     else:
         return JsonResponse({"message": "Método no permitido"}, status=405)
-
 import json
 from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
@@ -157,51 +133,3 @@ def prediction_bmi(request):
         return JsonResponse(response_data)
     else:
         return JsonResponse({"message": "Método no permitido"}, status=405)
-
-
-# # Load environment variables
-# load_dotenv()
-
-# GOOGLE_API_KEY = "AIzaSyBgMaYQkaDOv-4OGykVdXLPZcTrN9dM-WY"
-# GOOGLE_API_KEY1 = os.getenv("GOOGLE_API_KEY")
-
-# # Set up Google Gemini-Pro AI model
-# gen_ai.configure(api_key=GOOGLE_API_KEY1)
-# model = gen_ai.GenerativeModel("gemini-pro")
-
-# # Start chat session
-# chat_session = model.start_chat(history=[])
-
-
-# # Function to translate roles between Gemini-Pro and Streamlit terminology
-# def translate_role(user_role):
-#     if user_role == "model":
-#         return "assistant"
-#     else:
-#         return user_role
-
-# @csrf_exempt
-# def chatbot_view(request):
-#     if request.method == "GET":
-#         response_data = {
-#             "message": "Hola. Has realizado una solicitud GET a la página de inicio."
-#         }
-#         return JsonResponse(response_data)
-
-#     elif request.method == "POST":
-#         # Get user prompt from POST data
-#         user_prompt = request.POST.get("prompt", "")
-#         if user_prompt:
-#             # Send user's message to Gemini-Pro and get the response
-#             gemini_response = chat_session.send_message(user_prompt)
-
-#             # Return Gemini-Pro's response
-#             response_data = {"message": gemini_response.text}
-#         else:
-#             response_data = {
-#                 "error": "No se proporcionó ningún prompt de usuario en la solicitud POST."
-#             }
-
-#         return JsonResponse(response_data)
-#     else:
-#         return HttpResponse(status=405)
