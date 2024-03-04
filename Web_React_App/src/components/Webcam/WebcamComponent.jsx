@@ -81,7 +81,7 @@ const WebcamComponent = () => {
           <img src={capturedImage} alt="Captured" className="captured-image" />
           {capturedImage && !showPrediction && (
             <button onClick={togglePrediction} className="prediction-button">
-              Ver Predicción
+              Procesar imagen
             </button>
           )}
           <button onClick={deleteCapture} className="delete-button">

@@ -34,7 +34,7 @@ function App() {
             ChatBot
           </Link>
           <Link to="/contact" className="menuItem">
-            Contacto
+            Entrenamientos / Dietas
           </Link>
         </div>
 
