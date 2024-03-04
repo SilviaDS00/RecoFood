@@ -508,7 +508,7 @@ Después tenemos *Content-Type Builder*, que sería para crear las colecciones:
 
 ![Strapi Collections](/Capturas_Codigo/Strapi_Collections.PNG)
 
-Y ya el resto de apartados serían otras configuraciones, pero otra sección importante sería para habilitar los **endpoints** para gestionar los usuarios. Dentro de **Settings**, en el apartado de roles de *users & permissions plugin*, accedemos a la parte para habilitar los endpoints, por ejemplo dentro de public estaría el endpoint para poder registrar un usuario o el de iniciar sesión. Dentro de autenticated, estaría por ejemplo el endpoint de ver los datos del usuario o de actualizar sus datos o contraseña.
+Y ya el resto de apartados serían otras configuraciones, pero otra sección importante sería para habilitar los **endpoints** para gestionar los usuarios. Dentro de **Settings**, en el apartado de roles de *users & permissions plugin*, accedemos a la parte para habilitar los endpoints, por ejemplo dentro de public estaría el endpoint para poder registrar un usuario o el de iniciar sesión. Dentro de autenticated, estaría por ejemplo el endpoint de ver los datos del usuario o de actualizar sus datos o contraseña, obtener el hitorial de un usuario, etc.
 
 ![Strapi Roles](/Capturas_Codigo/Strapi_Roles.PNG)
 
