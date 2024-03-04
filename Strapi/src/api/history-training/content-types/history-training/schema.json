@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "history_trainings",
+  "info": {
+    "singularName": "history-training",
+    "pluralName": "history-trainings",
+    "displayName": "History-training"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "training": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

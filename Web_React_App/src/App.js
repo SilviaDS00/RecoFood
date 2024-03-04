@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.scss";
 import Home from "./pages/Home/home";
 import ChatBot from "./pages/chatbot";
-import Contact from "./pages/contact";
+import Generator from "./pages/generator";
 import LoginPage from "./pages/log-in";
 import SignUpPage from "./pages/sign-up";
 import Profile from "./pages/profile";
@@ -33,7 +33,7 @@ function App() {
           <Link to="/chatbot" className="menuItem">
             ChatBot
           </Link>
-          <Link to="/contact" className="menuItem">
+          <Link to="/generator" className="menuItem">
             Entrenamientos / Dietas
           </Link>
         </div>
@@ -64,7 +64,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/chatbot" element={<ChatBot />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/generator" element={<Generator />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<SignUpPage />} />
         <Route path="/profile" element={<Profile />} />

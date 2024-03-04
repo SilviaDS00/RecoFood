@@ -400,6 +400,75 @@ export interface ApiHistoryHistory extends Schema.CollectionType {
   };
 }
 
+export interface ApiHistoryDietHistoryDiet extends Schema.CollectionType {
+  collectionName: 'history_diets';
+  info: {
+    singularName: 'history-diet';
+    pluralName: 'history-diets';
+    displayName: 'History-diet';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    diet: Attribute.Text;
+    user: Attribute.Relation<
+      'api::history-diet.history-diet',
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::history-diet.history-diet',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::history-diet.history-diet',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiHistoryTrainingHistoryTraining
+  extends Schema.CollectionType {
+  collectionName: 'history_trainings';
+  info: {
+    singularName: 'history-training';
+    pluralName: 'history-trainings';
+    displayName: 'History-training';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    training: Attribute.Text;
+    user: Attribute.Relation<
+      'api::history-training.history-training',
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::history-training.history-training',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::history-training.history-training',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -836,6 +905,8 @@ declare module '@strapi/types' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'api::history.history': ApiHistoryHistory;
+      'api::history-diet.history-diet': ApiHistoryDietHistoryDiet;
+      'api::history-training.history-training': ApiHistoryTrainingHistoryTraining;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;

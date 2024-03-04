@@ -2,6 +2,8 @@ import React from "react";
 import ProfileForm from "../components/ProfileForm/ProfileForm";
 import { ProfileInfo } from "../components/ProfileInfo/ProfileInfo";
 import { ProfileHistory } from "../components/ProfileHistory/ProfileHistory";
+import { ProfileHistoryDiets } from "../components/ProfileHistoryDiets/ProfileHistoryDiets";
+import { ProfileHistoryTrainings } from "../components/ProfileHistoryTrainings/ProfileHistoryTrainings";
 import { UserBmi } from "../components/UserBmi/UserBmi";
 import { Tab } from "semantic-ui-react";
 import "./profile.scss";
@@ -42,6 +44,22 @@ const Profile = () => {
       render: () => (
         <Tab.Pane attached={false}>
           <ProfileHistory />
+        </Tab.Pane>
+      ),
+    },
+    {
+      menuItem: "Historial de Dietas",
+      render: () => (
+        <Tab.Pane attached={false}>
+          <ProfileHistoryDiets />
+        </Tab.Pane>
+      ),
+    },
+    {
+      menuItem: "Historial de Entrenamientos",
+      render: () => (
+        <Tab.Pane attached={false}>
+          <ProfileHistoryTrainings />
         </Tab.Pane>
       ),
     },
