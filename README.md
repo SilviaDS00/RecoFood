@@ -160,7 +160,7 @@ Found 20200 images belonging to 101 classes.
 
 Hemos realizado pruebas con 3 modelos preentrenados: `InceptionV3`, `ResNet50`, `DenseNet121`.
 
-El que mejores métricas ha dado es: ``.
+El que mejores métricas ha dado es: `InceptionV3`.
 
 A continuación se mostrarán los pasos del entrenamiento con el modelo finalmente elegido.
 
@@ -233,19 +233,19 @@ En el modelo de `InceptionV3` se ha establecido un callback de EarlyStopping con
 ```
 early_stopping_inception = EarlyStopping(
     monitor='val_loss',
-    patience=15,
+    patience=10,
     restore_best_weights=True)
 ```
 
-Se ha usado un patience de 15, es decir, que cuando en 15 épocas no se ha mejorado la métrica de `val_loss`, el entrenamiento se detiene.
+Se ha usado un patience de 10, es decir, que cuando en 10 épocas no se ha mejorado la métrica de `val_loss`, el entrenamiento se detiene.
 
-El modelo se ha detenido a las 73 épocas de entrenamiento.
+El modelo se ha detenido a las 42 épocas de entrenamiento.
 
 Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/Inception_Metrics.png)
 
-En el modelo entrenado con `ResNet50` se ha establecido el mismo callback pero con un patience de 10:
+En el modelo entrenado con `ResNet50` se ha establecido el mismo callback:
 
 ```
 early_stopping_resnet = EarlyStopping(
@@ -254,13 +254,13 @@ early_stopping_resnet = EarlyStopping(
     restore_best_weights=True)
 ```
 
-El modelo se ha detenido a las 30 épocas de entrenamiento.
+El modelo se ha detenido a las 22 épocas de entrenamiento.
 
 Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/ResNet_Metrics.png)
 
-En el modelo entrenado con `ResNet50` se ha establecido el mismo callback con un patience de 10:
+En el modelo entrenado con `DenseNet121` se ha establecido el mismo callback:
 
 ```
 early_stopping_densenet = EarlyStopping(
@@ -269,7 +269,7 @@ early_stopping_densenet = EarlyStopping(
     restore_best_weights=True)
 ```
 
-El modelo se ha detenido a las 25 épocas de entrenamiento.
+El modelo se ha detenido a las 32 épocas de entrenamiento.
 
 Las métricas de este modelo entrenado son las siguientes:
 
