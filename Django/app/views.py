@@ -16,11 +16,23 @@ import numpy as np
 from PIL import Image
 import json
 from .asistente_receta import AsistenteRecetas
-# from dotenv import load_dotenv
-# import google.generativeai as gen_ai
+from dotenv import load_dotenv
+import google.generativeai as gen_ai
 
 
 logger = logging.getLogger(__name__)
+# Carga las variables de entorno
+load_dotenv()
+
+# Configura la clave API de Google
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+
+# Configura el modelo de Gemini-Pro
+gen_ai.configure(api_key=GOOGLE_API_KEY)
+model = gen_ai.GenerativeModel("gemini-pro")
+
+# Inicia la sesión de chat
+chat_session = model.start_chat(history=[])
 
 @csrf_exempt
 def chatbot_view(request):
@@ -29,7 +41,6 @@ def chatbot_view(request):
             data = json.loads(request.body)
             ingredientes_usuario = data.get("ingredientes", [])
             nombre_receta = data.get("nombreReceta")
-            action = data.get("action")
 
             asistente_recetas = AsistenteRecetas()
 
@@ -51,8 +62,7 @@ def chatbot_view(request):
     elif request.method == "GET":
         return JsonResponse({"message": "Esta vista responde a solicitudes GET."})
     else:
-        # Si la solicitud no es ni POST ni GET, devuelve un error
-        return JsonResponse({"error": "Método no permitido"}, status=405)
+        return HttpResponse(status=405)
 
 
     

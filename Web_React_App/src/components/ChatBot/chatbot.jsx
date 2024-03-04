@@ -1,72 +1,35 @@
 import React, { useState } from "react";
+import "./chatbot.scss";
 
 const Chatbot = () => {
   const [input, setInput] = useState("");
-  const [messages, setMessages] = useState([{ text: "¡Hola! Soy tu asistente de recetas", sender: "bot" }]);
+  const [messages, setMessages] = useState([]);
+  const [idioma, setIdioma] = useState("");
   const [step, setStep] = useState(0);
-  const [ingredientes, setIngredientes] = useState([]);
 
-  const handleInputChange = (e) => {
-    setInput(e.target.value);
-  };
+//   const handleInputChange = (e) => {
+//     setInput(e.target.value);
+//   };
 
   const sendMessage = async () => {
     if (!input.trim()) return;
-  
+
     const newMessages = [...messages, { text: input, sender: "user" }];
     setMessages(newMessages);
     setInput("");
-  
-    switch (step) {
-      case 0:
-        setMessages([...newMessages, { text: "Ingrese los ingredientes que tiene: ", sender: "bot" }]);
-        setStep(1);
-        break;
-  
-      case 1:
-        const ingredientesUsuario = input.split(",");
-        setIngredientes(ingredientesUsuario);
-        setMessages([...newMessages, { text: "Buscando recetas...", sender: "bot" }]);
-        buscarRecetas(ingredientesUsuario);
-        break;
-  
-      case 2:
-        const nombreReceta = input;
-        setMessages([...messages, { text: `Seleccionaste la receta: ${nombreReceta}`, sender: "bot" }]);
-        mostrarReceta(nombreReceta);
-        break;
-  
-      case 3:
-        setMessages([...messages, { text: "¿Desea ver otra receta de la lista? (s/n): ", sender: "bot" }]);
-        setStep(4);
-        break;
-  
-      case 4:
-        const respuesta4 = input.toLowerCase();
-        if (respuesta4 === "s" || respuesta4 === "si") {
-          setMessages([...messages, { text: "Buscando recetas...", sender: "bot" }]);
-          buscarRecetas(ingredientes); // busca recetas con los mismos ingredientes
-        } else if (respuesta4 === "n" || respuesta4 === "no") {
-          setMessages([...messages, { text: "¿Desea ver una receta con otros ingredientes? (s/n): ", sender: "bot" }]);
-          setStep(5);
-        } else {
-          setMessages([...messages, { text: "Respuesta no válida.", sender: "bot" }]);
-        }
-        break;
-  
-      case 5:
-        const respuesta5 = input.toLowerCase();
-        if (respuesta5 === "s" || respuesta5 === "si") {
-          setMessages([...messages, { text: "Ingrese los ingredientes que tiene: ", sender: "bot" }]);
-          setStep(1);
-        } else {
-          setMessages([...messages, { text: "Espero haberle sido de ayuda, ¡Hasta luego! 😊", sender: "bot" }]);
-          setStep(0);
-        }
-        break;
-  
-      default:
-        break;
+
+    if (step === 0) {
+      setIdioma(input);
+      setMessages(prevMessages => [...prevMessages, { text: "Ingrese los ingredientes que tiene: ", sender: "bot" }]);
+      setStep(1);
+    } else if (step === 1) {
+      const ingredientes = input.split(",");
+      setMessages(prevMessages => [...prevMessages, { text: "Buscando recetas...", sender: "bot" }]);
+      buscarRecetas(ingredientes);
+    } else if (step === 2) {
+      const nombreReceta = input;
+      setMessages(prevMessages => [...prevMessages, { text: `Seleccionaste la receta: ${nombreReceta}`, sender: "bot" }]);
+      mostrarReceta(nombreReceta);
     }
   };
 
@@ -77,7 +40,7 @@ const Chatbot = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ingredientes }),
+        body: JSON.stringify({ ingredientes, idioma }),
       });
 
       const data = await response.json();
@@ -87,8 +50,8 @@ const Chatbot = () => {
           ? data.resultados.map((receta) => receta.nombre || "Nombre no disponible")
           : [];
 
-      setMessages([
-        ...messages,
+      setMessages(prevMessages => [
+        ...prevMessages,
         { text: "Recetas encontradas:", sender: "bot" },
         ...nombresRecetas.map((nombreReceta) => ({ text: `- ${nombreReceta}`, sender: "bot" })),
         { text: "Selecciona la receta de la que quieras ver la elaboración:", sender: "bot" },
@@ -106,7 +69,7 @@ const Chatbot = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ nombreReceta }),
+        body: JSON.stringify({ nombreReceta, idioma }),
       });
 
       const data = await response.json();
@@ -123,22 +86,24 @@ const Chatbot = () => {
         }
         : { text: "Receta no encontrada.", sender: "bot" };
 
-      setMessages([...messages, botResponse]);
-      setStep(3);
+      setMessages(prevMessages => [...prevMessages, botResponse]);
     } catch (error) {
       console.error("Error al obtener detalles de la receta:", error);
     }
   };
-
+  
   return (
     <div className="Chatbot">
       <div className="chat-container">
         {messages.map((message, index) => (
           <div
             key={index}
-            className={`message ${message.sender}`}
+            className={`message ${message.sender === "user" ? "user" : "bot"}`}
           >
+            {message.sender === "user" && <div className="user-icon">👤</div>}
+            {message.sender === "bot" && <div className="bot-icon">🤖</div>}
             {message.text}
+            
           </div>
         ))}
       </div>
@@ -150,4 +115,4 @@ const Chatbot = () => {
   );
 };
 
-export default Chatbot;
+export default ChatComponent;
