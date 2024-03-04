@@ -15,44 +15,12 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import json
-# from .asistente_receta import AsistenteRecetas
 from dotenv import load_dotenv
 import google.generativeai as gen_ai
-import requests
+# from .asistente_receta import AsistenteRecetas
 
 
 logger = logging.getLogger(__name__)
-
-# @csrf_exempt
-# def chatbot_view(request):
-#     if request.method == "POST":
-#         try:
-#             data = json.loads(request.body)
-#             ingredientes_usuario = data.get("ingredientes", [])
-#             nombre_receta = data.get("nombreReceta")
-
-#             asistente_recetas = AsistenteRecetas()
-
-#             if ingredientes_usuario:
-#                 # Si se proporcionaron ingredientes, busca recetas
-#                 resultados = asistente_recetas.buscar_recetas(ingredientes_usuario)
-#                 return JsonResponse({"resultados": resultados})
-#             elif nombre_receta:
-#                 # Si se proporcionó un nombre de receta, muestra la receta
-#                 receta = asistente_recetas.mostrar_receta(nombre_receta)
-#                 if receta:
-#                     return JsonResponse({"receta": receta})
-#                 else:
-#                     return JsonResponse({"receta": None, "message": "Receta no encontrada."})
-#             else:
-#                 return JsonResponse({"error": "Datos insuficientes"}, status=400)
-#         except Exception as e:
-#             return JsonResponse({"error": str(e)}, status=500)
-#     elif request.method == "GET":
-#         return JsonResponse({"message": "Esta vista responde a solicitudes GET."})
-#     else:
-#         # Si la solicitud no es ni POST ni GET, devuelve un error
-#         return JsonResponse({"error": "Método no permitido"}, status=405)
 
 # Carga las variables de entorno
 load_dotenv()
@@ -101,8 +69,29 @@ def chatbot_view(request):
         return JsonResponse(response_data)
     else:
         return HttpResponse(status=405)
-    
-    
+        
+@csrf_exempt
+def generar_dieta_view(request):
+    if request.method == "POST":
+
+        gemini_response = chat_session.send_message("Generame una dieta")
+
+        response_data = {"dieta": gemini_response.text}
+        return JsonResponse(response_data)
+    else:
+        return HttpResponse(status=405)
+
+@csrf_exempt
+def generar_entrenamiento_view(request):
+    if request.method == "POST":
+
+        gemini_response = chat_session.send_message("Generame una entrenamiento")
+
+        response_data = {"Entrenamiento": gemini_response.text}
+        return JsonResponse(response_data)
+    else:
+        return HttpResponse(status=405)
+
 model = tf.keras.models.load_model("model/best_model_trained.h5")
 @csrf_exempt
 def prediction(request):
@@ -187,3 +176,33 @@ def prediction_bmi(request):
         return JsonResponse({"message": "Método no permitido"}, status=405)
 
 
+# @csrf_exempt
+# def chatbot_view(request):
+#     if request.method == "POST":
+#         try:
+#             data = json.loads(request.body)
+#             ingredientes_usuario = data.get("ingredientes", [])
+#             nombre_receta = data.get("nombreReceta")
+
+#             asistente_recetas = AsistenteRecetas()
+
+#             if ingredientes_usuario:
+#                 # Si se proporcionaron ingredientes, busca recetas
+#                 resultados = asistente_recetas.buscar_recetas(ingredientes_usuario)
+#                 return JsonResponse({"resultados": resultados})
+#             elif nombre_receta:
+#                 # Si se proporcionó un nombre de receta, muestra la receta
+#                 receta = asistente_recetas.mostrar_receta(nombre_receta)
+#                 if receta:
+#                     return JsonResponse({"receta": receta})
+#                 else:
+#                     return JsonResponse({"receta": None, "message": "Receta no encontrada."})
+#             else:
+#                 return JsonResponse({"error": "Datos insuficientes"}, status=400)
+#         except Exception as e:
+#             return JsonResponse({"error": str(e)}, status=500)
+#     elif request.method == "GET":
+#         return JsonResponse({"message": "Esta vista responde a solicitudes GET."})
+#     else:
+#         # Si la solicitud no es ni POST ni GET, devuelve un error
+#         return JsonResponse({"error": "Método no permitido"}, status=405)
