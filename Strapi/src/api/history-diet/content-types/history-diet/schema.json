@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "history_diets",
+  "info": {
+    "singularName": "history-diet",
+    "pluralName": "history-diets",
+    "displayName": "History-diet"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "diet": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

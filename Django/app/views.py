@@ -14,46 +14,87 @@ import os, io, json, logging, joblib
 import tensorflow as tf
 import numpy as np
 from PIL import Image
-import json, requests
-from .asistente_receta import AsistenteRecetas
-# from dotenv import load_dotenv
-# import google.generativeai as gen_ai
+import json
+from dotenv import load_dotenv
+import google.generativeai as gen_ai
+# from .asistente_receta import AsistenteRecetas
 
 
 logger = logging.getLogger(__name__)
 
+# Carga las variables de entorno
+load_dotenv()
+
+# Configura la clave API de Google
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+
+# Configura el modelo de Gemini-Pro
+gen_ai.configure(api_key=GOOGLE_API_KEY)
+model = gen_ai.GenerativeModel("gemini-pro")
+
+# Inicia la sesión de chat
+chat_session = model.start_chat(history=[])
+
 @csrf_exempt
 def chatbot_view(request):
-    if request.method == "POST":
-        try:
-            data = json.loads(request.body)
-            ingredientes_usuario = data.get("ingredientes", [])
-            nombre_receta = data.get("nombreReceta")
+    logger.info("Received a POST request to chatbot_view")
+    if request.method == "GET":
+        response_data = {
+            "message": "Hola. Has realizado una solicitud GET a la página de inicio."
+        }
+        return JsonResponse(response_data)
 
-            asistente_recetas = AsistenteRecetas()
+    elif request.method == "POST":
+        # Obtiene los datos de la solicitud POST
+        data = json.loads(request.body)
+        user_prompt = data.get("prompt", "")
+        
+        # Imprime el contenido de la solicitud POST
+        logger.debug("Contenido de la solicitud POST:", data)
 
-            if ingredientes_usuario:
-                # Si se proporcionaron ingredientes, busca recetas
-                resultados = asistente_recetas.buscar_recetas(ingredientes_usuario)
-                return JsonResponse({"resultados": resultados})
-            elif nombre_receta:
-                # Si se proporcionó un nombre de receta, muestra la receta
-                receta = asistente_recetas.mostrar_receta(nombre_receta)
-                if receta:
-                    return JsonResponse({"receta": receta})
-                else:
-                    return JsonResponse({"receta": None, "message": "Receta no encontrada."})
-            else:
-                return JsonResponse({"error": "Datos insuficientes"}, status=400)
-        except Exception as e:
-            return JsonResponse({"error": str(e)}, status=500)
-    elif request.method == "GET":
-        return JsonResponse({"message": "Esta vista responde a solicitudes GET."})
+        if user_prompt:
+            # Envía el mensaje del usuario a Gemini-Pro y obtiene la respuesta
+            gemini_response = chat_session.send_message(user_prompt)
+
+            # Imprime la respuesta de Gemini-Pro
+            logger.debug("Respuesta de Gemini-Pro:", gemini_response.text)
+
+            # Devuelve la respuesta de Gemini-Pro
+            response_data = {"message": gemini_response.text}
+        else:
+            response_data = {
+                "error": "No se proporcionó ningún prompt de usuario en la solicitud POST."
+            }
+
+        return JsonResponse(response_data)
     else:
-        # Si la solicitud no es ni POST ni GET, devuelve un error
-        return JsonResponse({"error": "Método no permitido"}, status=405)
+        return HttpResponse(status=405)
+        
+@csrf_exempt
+def generar_resultado_view(request):
+    if request.method == "POST":
+        data = json.loads(request.body)
+        tipo = data.get('tipo') 
+        userData = data.get('userData')
 
-    
+        if tipo == 'dieta':
+            user_prompt = f"Hazme una dieta que sea específica para una persona de, {userData['age']}, años de edad, {userData['height']} centímetros de altura y {userData['weight']}kg de peso"
+        elif tipo == 'entrenamiento':
+            user_prompt = f"Hazme una entrenamiento que sea específico para una persona de, {userData['age']}, años de edad, {userData['height']} centímetros de altura y {userData['weight']}kg de peso"
+        else:
+            return HttpResponse(status=400)  # Si el tipo de acción no es válido, devuelve un error
+
+        # Envía el mensaje del usuario a Gemini-Pro y obtiene la respuesta
+        gemini_response = chat_session.send_message(user_prompt)
+
+        # Devuelve la respuesta de Gemini-Pro
+        response_data = {tipo: gemini_response.text}
+        return JsonResponse(response_data)
+    else:
+        return HttpResponse(status=405)
+
+
+
 model = tf.keras.models.load_model('model/model_inception.h5')
 @csrf_exempt
 def prediction(request):
@@ -94,7 +135,7 @@ def prediction(request):
         return JsonResponse({"message": "Método no permitido"}, status=405)
 
 
-modelo_bmi = joblib.load("model/modelo_bmi.pkl")
+modelo_bmi = joblib.load("model/model_bmi.pkl")
 @csrf_exempt
 def prediction_bmi(request):
     print("Servidor:", request)
