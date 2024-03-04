@@ -1,10 +1,11 @@
 import React from 'react';
-import ContactComponent from '../components/Contact/contact';
+import ContactDieta from '../components/Contact/generar-dieta';
 
 const ContactPage = () => {
   return (
     <div>
-      <ContactComponent />
+      <ContactDieta />
+      <br />
     </div>
   );
 };
