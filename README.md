@@ -395,7 +395,7 @@ Si el usuario tiene la sesión iniciada, podrá calcular los macronutrientes seg
 
 Si la clasificación de la comida falla (ya que el modelo no tiene una precisión del 100%), el usuario podrá ver las 5 comidas más aproximadas, teniendo la opción de seleccionar la que sea correcta para ver los macros, calcularlos y guardarlo correctamente en el historial.
 
-![If prediction fails](/Capturas_Codigo/Prediction_Falied.PNG)
+![If prediction fails](/Capturas_Codigo/Prediction_Failed.PNG)
 
 Para el registro de usuarios hemos hecho el siguiente diseño de la interfaz:
 
