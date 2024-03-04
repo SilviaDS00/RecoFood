@@ -385,9 +385,17 @@ Cuando se escanea la imagen o se sube desde el explorador de archivos, se vería
 
 Una vez pulsado el botón de procesar imagen se mostraría el resultado de la predicción y los macronutrientes de esa comida, permitiendo al usuario calcular los macronutrientes según los gramos que pesa su comida:
 
+**NOTA:** Para calcular los macros de cada comida, hemos creado un [json](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/data/macronutrientes.json) con todos los valores aproximados de los macros de cada comida, haciendo la importación dentro de react y procesando los datos. [Aquí](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/Prediction/ShowPrediction.jsx) puedes encontrar el componente donde se importa el json dicho.
+
 ![Macros](/Capturas_Codigo/Macros_Layout.PNG)
 
-**NOTA:** Para calcular los macros de cada comida, hemos creado un [json](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/data/macronutrientes.json) con todos los valores aproximados de los macros de cada comida, haciendo la importación dentro de react y procesando los datos. [Aquí](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/Prediction/ShowPrediction.jsx) puedes encontrar el componente donde se importa el json dicho.
+Si el usuario tiene la sesión iniciada, podrá calcular los macronutrientes según los gramos que tenga su comida, y los resultados se guardarán en el historial del usuario.
+
+![Macros Calculated](/Capturas_Codigo/Macros_Calculated.PNG)
+
+Si la clasificación de la comida falla (ya que el modelo no tiene una precisión del 100%), el usuario podrá ver las 5 comidas más aproximadas, teniendo la opción de seleccionar la que sea correcta para ver los macros, calcularlos y guardarlo correctamente en el historial.
+
+![If prediction fails](/Capturas_Codigo/Prediction_Falied.PNG)
 
 Para el registro de usuarios hemos hecho el siguiente diseño de la interfaz:
 
@@ -413,11 +421,21 @@ También se han incluido pop-ups informativos con una librería llamada `toastif
 ![Register Success](/Capturas_Codigo/Register.PNG)
 ![Login Success](/Capturas_Codigo/Login_Success.PNG)
 
-### 11.2 Implementación del modelo en React.js
+El perfil del usuario está compuesto por los datos del usuario, un historial de las comidas escaneadas, predicción del IMC y ajustes del usuario.
+
+El historial de las comidas se vería de la siguiente manera:
+
+![Profile History](/Capturas_Codigo/Profile_History.PNG)
+
+En la sección de predecir IMC encontramos los datos con los que se hará la predicción y un botón donde se aplicará el modelo mostranto posteriormente el resultado:
+
+![IMC Prediction](/Capturas_Codigo/IMC_Prediction.PNG)
+
+### 8.2 Implementación de los modelos en React.js
 
 El código de Django lo puedes encontrar [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Django)
 
-Usando Django hemo creado una vista con un endpoint de petición `POST` para la predicción del modelo, procesando la imagen para adecuarlo al modelo entrenado antes de hacer el predict.
+Usando Django hemo creado una vista con un endpoint de petición `POST` para las predicciones de los modelos, el de clasificación de imágenes procesando la imagen para adecuarlo al modelo entrenado antes de hacer el predict.
 
 ![Implementacion modelo](/Capturas_Codigo/Model_Implementation.png)
 
