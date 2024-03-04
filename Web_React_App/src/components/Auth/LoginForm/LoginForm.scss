@@ -1,7 +1,6 @@
 @import "../../../scss/colors.scss"
 ;
 .form-container-login {
-  background-color: $blue;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -12,7 +11,6 @@
 
   .title-login {
     text-align: center;
-    color: white;
   }
   
   .error-message {
@@ -22,10 +20,6 @@
   
   .input-field {
     margin-bottom: 15px;
-  }
-  
-  .submit-button {
-    color: #fff;
   }
   
   
