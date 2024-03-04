@@ -1,0 +1,46 @@
+{
+    "donuts": {
+      "nombre": "Donuts caseros",
+      "ingredientes": [
+        "2 sobres de levadura",
+        "80 ml de agua tibia",
+        "1½ tazas de leche (360 ml)",
+        "75 g de manteca",
+        "55 g de azúcar",
+        "2 cucharaditas de sal",
+        "2 cucharaditas de nuez moscada",
+        "2 huevos batidos",
+        "4½ tazas de harina (630 g)",
+        "½ taza de mantequilla derretida",
+        "1 taza de azúcar (200 g)",
+        "1 cucharadita de canela en polvo"
+      ],
+      "pasos": [
+        "Disolver la levadura en agua tibia. Derretir la manteca con la leche y dejar enfriar.",
+        "Mezclar la levadura con la leche y manteca derretida. Agregar azúcar, sal, nuez moscada, huevos batidos y 2 tazas de harina. Batir hasta obtener una masa homogénea.",
+        "Incorporar la harina restante y batir hasta que la mezcla esté suave. Dejar reposar la masa tapada durante 1 hora para que doble su tamaño.",
+        "Amasar la masa sobre una superficie enharinada, extender con un rodillo y formar los donuts.",
+        "Colocar los donuts en una bandeja de horno engrasada y dejar reposar 20 minutos. Precalentar el horno a 200ºC.",
+        "Hornear los donuts durante 10 minutos o hasta que estén dorados. Untar con mantequilla derretida y pasar por la mezcla de azúcar y canela. Servir calientes o dejar enfriar."
+      ]
+    },
+    "pizza": {
+      "nombre": "Pizza de Pepperoni",
+      "ingredientes": [
+        "Masa para pizza",
+        "Salsa de tomate",
+        "Queso mozzarella rallado",
+        "Pepperoni"
+      ],
+      "pasos": [
+        "Precalienta el horno a 220°C.",
+        "Extiende la masa para pizza sobre una bandeja.",
+        "Cubre la masa con salsa de tomate.",
+        "Espolvorea el queso mozzarella rallado sobre la salsa.",
+        "Coloca las rodajas de pepperoni sobre el queso.",
+        "Hornea la pizza durante 12-15 minutos, o hasta que esté dorada y burbujeante.",
+        "¡Sirve caliente y disfruta tu pizza de pepperoni!"
+      ]
+    }
+  }
+  

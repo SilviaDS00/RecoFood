@@ -54,7 +54,7 @@ def chatbot_view(request):
         return JsonResponse({"error": "Método no permitido"}, status=405)
 
     
-model = tf.keras.models.load_model('model/model_inception.h5')
+model = tf.keras.models.load_model('model/best_model_densenet.h5')
 @csrf_exempt
 def prediction(request):
     if request.method == "POST":
