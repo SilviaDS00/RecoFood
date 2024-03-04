@@ -224,7 +224,7 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 El modelo, como hemos dicho anteriormente, ha sido entrenado con 3 modelos preentrenados diferentes, a continuación se muestran las gráficas de cada resultado obtenido:
 
-#### _InceptionV3_
+#### InceptionV3
 
 En el modelo de `InceptionV3` se ha establecido un callback de EarlyStopping con los siguientes parámetros:
 
@@ -243,6 +243,8 @@ Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/Inception_Metrics.png)
 
+#### ResNet50
+
 En el modelo entrenado con `ResNet50` se ha establecido el mismo callback:
 
 ```
@@ -257,6 +259,8 @@ El modelo se ha detenido a las 22 épocas de entrenamiento.
 Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/ResNet_Metrics.png)
+
+#### DenseNet121
 
 En el modelo entrenado con `DenseNet121` se ha establecido el mismo callback:
 
