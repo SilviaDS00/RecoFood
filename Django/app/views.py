@@ -8,6 +8,7 @@ Hay que instalar esto antes de ejecutar:
     - Arrancar el Servidor: python manage.py runserver 
 """
 
+from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, JsonResponse, HttpResponseBadRequest
 import os, io, json, logging, joblib
@@ -17,7 +18,7 @@ from PIL import Image
 import json
 from dotenv import load_dotenv
 import google.generativeai as gen_ai
-# from .asistente_receta import AsistenteRecetas
+from gtts import gTTS
 
 
 logger = logging.getLogger(__name__)
@@ -53,14 +54,18 @@ def chatbot_view(request):
         logger.debug("Contenido de la solicitud POST:", data)
 
         if user_prompt:
-            # Envía el mensaje del usuario a Gemini-Pro y obtiene la respuesta
+        # Envía el mensaje del usuario a Gemini-Pro y obtiene la respuesta
             gemini_response = chat_session.send_message(user_prompt)
 
             # Imprime la respuesta de Gemini-Pro
             logger.debug("Respuesta de Gemini-Pro:", gemini_response.text)
 
+            # Convierte la respuesta del chatbot en audio
+            tts = gTTS(text=gemini_response.text, lang='es')
+            tts.save(os.path.join(settings.MEDIA_ROOT, "respuesta.mp3"))
+
             # Devuelve la respuesta de Gemini-Pro
-            response_data = {"message": gemini_response.text}
+            response_data = {"message": gemini_response.text, "audio": "respuesta.mp3"}
         else:
             response_data = {
                 "error": "No se proporcionó ningún prompt de usuario en la solicitud POST."
@@ -143,7 +148,6 @@ import joblib
 
 modelo_bmi = joblib.load("model/entrenamiento_bmi.pkl")
 
-
 @csrf_exempt
 def prediction_bmi(request):
     print("Servidor:", request)
@@ -179,33 +183,3 @@ def prediction_bmi(request):
         return JsonResponse({"message": "Método no permitido"}, status=405)
 
 
-# @csrf_exempt
-# def chatbot_view(request):
-#     if request.method == "POST":
-#         try:
-#             data = json.loads(request.body)
-#             ingredientes_usuario = data.get("ingredientes", [])
-#             nombre_receta = data.get("nombreReceta")
-
-#             asistente_recetas = AsistenteRecetas()
-
-#             if ingredientes_usuario:
-#                 # Si se proporcionaron ingredientes, busca recetas
-#                 resultados = asistente_recetas.buscar_recetas(ingredientes_usuario)
-#                 return JsonResponse({"resultados": resultados})
-#             elif nombre_receta:
-#                 # Si se proporcionó un nombre de receta, muestra la receta
-#                 receta = asistente_recetas.mostrar_receta(nombre_receta)
-#                 if receta:
-#                     return JsonResponse({"receta": receta})
-#                 else:
-#                     return JsonResponse({"receta": None, "message": "Receta no encontrada."})
-#             else:
-#                 return JsonResponse({"error": "Datos insuficientes"}, status=400)
-#         except Exception as e:
-#             return JsonResponse({"error": str(e)}, status=500)
-#     elif request.method == "GET":
-#         return JsonResponse({"message": "Esta vista responde a solicitudes GET."})
-#     else:
-#         # Si la solicitud no es ni POST ni GET, devuelve un error
-#         return JsonResponse({"error": "Método no permitido"}, status=405)
