@@ -25,21 +25,7 @@ SECRET_KEY = 'django-insecure-gqs^-74$*p+6c9qslw--ghn&gj!ptk$tz*sa-5-70#g6zwjxrl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'django-app-recofood-9ere.onrender.com', 'django-app-recofood-9ere.onrender.com/']
-
-CORS_ORIGIN_ALLOW_ALL = True
-
-CORS_ALLOW_ALL_ORIGINS = True
-
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:3000',
-    "https://recofood.netlify.app", 
-)
-
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000",
-#     "https://recofood.netlify.app",   
-# ]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -51,8 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
-    'app'
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -86,7 +71,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Django.wsgi.application'
 
-
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -133,21 +118,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
-STATIC_ROOT = BASE_DIR / 'assets'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-CORS_ALLOW_METHODS = [
-'DELETE',
-'GET',
-'OPTIONS',
-'PATCH',
-'POST',
-'PUT',
-]
-
-# CORS_ALLOW_CREDENTIALS = True

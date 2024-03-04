@@ -27,7 +27,7 @@ const RegisterForm = () => {
         );
 
         setTimeout(() => {
-          navigate("/login");
+          navigate("/log-in");
         }, 2000);
       } catch (error) {
         if (
@@ -47,14 +47,14 @@ const RegisterForm = () => {
   });
   return (
     <div className="form-container-signup">
-      <h3 className="title-register">Registrarse</h3>
+      <h3>Registrarse</h3>
       <Form onSubmit={formik.handleSubmit}>
         {isLoading && (
           <Dimmer active inverted>
             <Loader size="large">Loading</Loader>
           </Dimmer>
         )}
-        <p className="text-data">Datos del usuario</p>
+        <p>Datos del usuario</p>
         {formik.status && <Message negative content={formik.status} />}
         <Form.Group widths="equal">
           <Form.Input
@@ -117,37 +117,7 @@ const RegisterForm = () => {
             }
           />
         </Form.Group >
-        <p className="text-data">Datos personales</p>
-        <Form.Group widths="equal">
-          <Form.Input
-            fluid
-            className="input-field"
-            name="firstname"
-            type="text"
-            placeholder="Nombre"
-            value={formik.values.firstname}
-            onChange={formik.handleChange}
-            error={
-              formik.touched.firstname && formik.errors.firstname
-                ? formik.errors.firstname
-                : null
-            }
-          />
-          <Form.Input
-            fluid
-            className="input-field"
-            name="lastname"
-            type="text"
-            placeholder="Apellidos"
-            value={formik.values.lastname}
-            onChange={formik.handleChange}
-            error={
-              formik.touched.lastname && formik.errors.lastname
-                ? formik.errors.lastname
-                : null
-            }
-          />
-        </Form.Group>
+        <p>Datos personales</p>
         <Form.Group widths="equal">
           <Form.Input
             fluid

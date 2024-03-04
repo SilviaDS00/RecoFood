@@ -8,7 +8,7 @@ import "../ProfileForm.scss";
 
 const userCtrl = new User();
 export function ChangePasswordForm() {
-    const { user } = useAuth();
+    const { user, logout } = useAuth();
     const [isPasswordChanged, setIsPasswordChanged] = useState(false);
   
     const formik = useFormik({

@@ -73,12 +73,6 @@
     },
     "age": {
       "type": "integer"
-    },
-    "firstname": {
-      "type": "string"
-    },
-    "lastname": {
-      "type": "string"
     }
   }
 }

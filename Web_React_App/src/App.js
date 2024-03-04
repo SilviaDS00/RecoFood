@@ -18,7 +18,7 @@ function App() {
       <div className="topBar">
         <div className="left">
           <img
-            src="/logo-blanco.png"
+            src="/logo-pequeno.png"
             alt="Logo"
             className="logo"
             width="25px"
@@ -34,7 +34,7 @@ function App() {
             ChatBot
           </Link>
           <Link to="/contact" className="menuItem">
-            Entrenamientos / Dietas
+            Contacto
           </Link>
         </div>
 

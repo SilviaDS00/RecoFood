@@ -18,7 +18,7 @@ export class History {
     }
   }
 
-  async add(userId, food, macros, grams) {
+  async add(userId, food, macros) {
     try {
       const url = `${ENV.API_URL}/${ENV.ENDPOINTS.HISTORY}`;
       const params = {
@@ -31,7 +31,6 @@ export class History {
             "user": userId,
             "food": food,
             "macros": macros,
-            "grams": grams
           }
         }),
       };

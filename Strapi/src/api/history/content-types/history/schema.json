@@ -31,9 +31,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "grams": {
-      "type": "integer"
     }
   }
 }

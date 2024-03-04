@@ -1,5 +1,4 @@
-@import '../../scss/colors.scss';
-
+// Home.scss
 .container {
     display: flex;
     flex-direction: column;
@@ -11,7 +10,6 @@
   h1, p {
     margin-bottom: 20px;
   }
-
-  h1{
-    color: $blue;
-  }
+  
+  // Ajusta los estilos según sea necesario para los componentes Webcam y ImageUpload
+  

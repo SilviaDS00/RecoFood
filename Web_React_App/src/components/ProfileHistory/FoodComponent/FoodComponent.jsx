@@ -8,10 +8,10 @@ export function FoodComponent(props) {
       <div className="card">
         <p className="title">{history.attributes.food}</p>
         <div className="macros">
-          <p>Calorías: <b>{history.attributes.macros.calories.toFixed(0)}</b></p>
-          <p>Proteínas: <b>{history.attributes.macros.protein.toFixed(0)}g</b></p>
-          <p>Carbohidratos: <b>{history.attributes.macros.carbs.toFixed(0)}g</b></p>
-          <p>Grasas: <b>{history.attributes.macros.fat.toFixed(0)}g</b></p>
+          <p>Calorías: {history.attributes.macros.calories}</p>
+          <p>Proteínas: {history.attributes.macros.protein}g</p>
+          <p>Carbohidratos: {history.attributes.macros.carbs}g</p>
+          <p>Grasas: {history.attributes.macros.fat}g</p>
         </div>
         <p className="updatedAt">Fecha: {history.attributes.updatedAt}</p>
       </div>

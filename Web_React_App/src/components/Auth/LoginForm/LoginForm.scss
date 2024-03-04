@@ -1,5 +1,4 @@
-@import "../../../scss/colors.scss"
-;
+// LoginForm.scss
 .form-container-login {
     max-width: 400px;
     margin: 0 auto;
@@ -7,10 +6,6 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .title-login {
-    text-align: center;
   }
   
   .error-message {
@@ -20,6 +15,11 @@
   
   .input-field {
     margin-bottom: 15px;
+  }
+  
+  .submit-button {
+    // background-color: #007bff;
+    color: #fff;
   }
   
   

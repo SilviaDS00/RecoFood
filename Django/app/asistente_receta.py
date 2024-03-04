@@ -17,7 +17,7 @@ class AsistenteRecetas:
 
     # Carga las recetas del archivo JSON
     def carga_json(self):
-        with open(f"data/recetas_{self.idioma[self.idioma_elegido]}.json", "r") as archivo:
+        with open(f"recetas_{self.idioma[self.idioma_elegido]}.json", "r") as archivo:
             return json.load(archivo)
 
     # def traducir(self, text):
@@ -33,7 +33,7 @@ class AsistenteRecetas:
         resultados = []
         print(ingredientes_usuario)
 
-        with open("data/recetas_es.json", "r", encoding="utf-8") as archivo:
+        with open("recetas_es.json", "r", encoding="utf-8") as archivo:
             recetas = json.load(archivo)
         recetas_posibles = [
             receta
@@ -59,24 +59,18 @@ class AsistenteRecetas:
         return resultados
 
     def mostrar_receta(self, nombre_receta):
-        print("Nombre de la receta a buscar:", nombre_receta)
-
-        with open("data/recetas_es.json", "r", encoding="utf-8") as archivo:
-            recetas = json.load(archivo)
-
-        receta_encontrada = next(
-            (receta for receta in recetas
-             if receta.get('nombre', '').lower() == nombre_receta.lower()), None)
+        print("Nombre de la receta a buscar:", nombre_receta)  # Agregar este print
+        receta_encontrada = next((receta for receta in self.recetas if receta.get('nombre' if self.idioma_elegido == 'español' else 'name', '').lower() == nombre_receta.lower()), None)
 
         if receta_encontrada:
-            print("Receta encontrada:", receta_encontrada)
+            print("Receta encontrada:", receta_encontrada)  # Agregar este print
             return {
                 "nombre": receta_encontrada.get('nombre', 'Nombre no disponible'),
                 "ingredientes": receta_encontrada.get('ingredientes', []),
                 "pasos": receta_encontrada.get('pasos', ['Receta no disponible']),
             }
         else:
-            print("Receta no encontrada")
+            print("Receta no encontrada")  # Agregar este print
             return None
 
 

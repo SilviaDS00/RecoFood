@@ -1,4 +1,3 @@
-@import "../../../scss/colors.scss";
 .card {
     border: 1px solid #ddd;
     padding: 10px 5rem 10px 1rem;
@@ -15,16 +14,10 @@
       margin-top: 8px;
       display: flex;
       justify-content: space-between;
-      >p{
-        >b{
-          color:$orange;
-        }
-        
-      }
     }
   
     .updatedAt {
-      color: $blue;
+      color: #888;
       font-size: 12px;
     }
   }

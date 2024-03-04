@@ -1,12 +1,13 @@
 import React from 'react';
+import ContactDieta from '../components/Contact/generar-dieta';
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <div>
-      <h1>Contact Page</h1>
-      <p>This is the contact page content.</p>
+      <ContactDieta />
+      <br />
     </div>
   );
 };
 
-export default Contact;
+export default ContactPage;

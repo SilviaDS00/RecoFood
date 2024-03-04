@@ -8,10 +8,6 @@ _TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, 
 
 :black_nib: [1. Justificación y descripción del proyecto](#id1)
 
----
-
-#### Modelo de entrenamiento de clasificación de imágenes
-
 :mag: [2. Obtención de los datos](#id2)
 
 :bar_chart: [3. Exploración y visualización de los datos](#id3)
@@ -20,19 +16,11 @@ _TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, 
 
 :chart_with_upwards_trend: [5. Entrenamiento del modelo y comprobación del rendimiento](#id5)
 
----
+:space_invader: [6. Procesamiento del lenguaje natural - ChatBot](#id6)
 
-#### Modelo de entrenamiendo de predicción del IMC
+:computer: [7. Aplicación Web](#id7)
 
-:chart_with_upwards_trend: [6. Entrenamiento del modelo predictivo del IMC](#id6)
-
----
-
-:space_invader: [7. Procesamiento del lenguaje natural - ChatBot](#id7)
-
-:computer: [8. Aplicación Web](#id8)
-
-:pencil: [9. Conclusiones](#id9)
+:pencil: [8. Conclusiones](#id8)
 
 ## 1. Justificación y descripción del proyecto<a name="id1"></a>
 
@@ -43,10 +31,6 @@ La clasificación de comidas mediante el conjunto de datos Food101 permitirá a 
 Además de la clasificación de alimentos, el proyecto se propone ofrecer información detallada sobre los macronutrientes presentes en cada comida. Esta funcionalidad responde a la demanda creciente de conocimientos nutricionales específicos, lo que permite a los usuarios adaptar sus dietas de acuerdo con sus necesidades individuales y metas de salud.
 
 La clasificación de alimentos a través de Food101 es esencial para ayudar a los usuarios a identificar y comprender rápidamente los componentes de sus comidas. Sin embargo, reconocemos que la información sobre la clasificación sola puede no ser suficiente para guiar a los usuarios hacia elecciones alimentarias más saludables. Es por eso que hemos decidido incorporar un chatbot especializado en ofrecer recetas.
-
----
-
-### Entrenamiento de clasificación de imágenes
 
 ## 2. Obtención de los datos<a name="id2"></a>
 
@@ -176,7 +160,7 @@ Found 20200 images belonging to 101 classes.
 
 Hemos realizado pruebas con 3 modelos preentrenados: `InceptionV3`, `ResNet50`, `DenseNet121`.
 
-El que mejores métricas ha dado es: `InceptionV3`.
+El que mejores métricas ha dado es: ``.
 
 A continuación se mostrarán los pasos del entrenamiento con el modelo finalmente elegido.
 
@@ -184,15 +168,19 @@ A continuación se mostrarán los pasos del entrenamiento con el modelo finalmen
 
 En este paso creamos el modelo de entrenamiento, utilizamos la arquitectura `InceptionV3` preentrenada en el conjunto de datos _ImageNet_.
 
-- `inception = InceptionV3(weights='imagenet', include_top=False, input_shape(img_height, img_weight))`: Se crea una instancia del modelo InceptionV3. La opción `weights='imagenet'` carga los pesos preentrenados del modelo en el conjunto de datos "ImageNet". `include_top=False` excluye las capas densas (totalmente conectadas) en la parte superior del modelo, ya que se agregarán capas personalizadas más adelante para adaptar el modelo a un problema específico.
+- `inception = InceptionV3(weights='imagenet', include_top=False)`: Se crea una instancia del modelo InceptionV3. La opción `weights='imagenet'` carga los pesos preentrenados del modelo en el conjunto de datos "ImageNet". `include_top=False` excluye las capas densas (totalmente conectadas) en la parte superior del modelo, ya que se agregarán capas personalizadas más adelante para adaptar el modelo a un problema específico.
 
-- `x_inception = inception.output`: Se toma la salida de la última capa de la red InceptionV3. Esta salida es una representación de características de alto nivel de la entrada de la imagen.
+- `x = inception.output`: Se toma la salida de la última capa de la red InceptionV3. Esta salida es una representación de características de alto nivel de la entrada de la imagen.
 
-- `x_inception = GlobalAveragePooling2D()(x_inception)`: Se aplica una capa de pooling global promedio, que toma la media de cada canal a lo largo de todas las posiciones espaciales. Esto reduce la dimensionalidad de la representación de características, capturando la información esencial de las características.
+- `x = GlobalAveragePooling2D()(x)`: Se aplica una capa de pooling global promedio, que toma la media de cada canal a lo largo de todas las posiciones espaciales. Esto reduce la dimensionalidad de la representación de características, capturando la información esencial de las características.
 
-- `predictions_inception = Dense(len(class_names), kernel_regularizer=l1(0.005), activation='softmax')(x_inception)`: Se añade la capa de salida. Esta capa tiene un número de neuronas igual a la cantidad de clases en tu problema (determinado por `len(class_names)`), con una regularización **L1** para penalizar los pesos grandes. La función de activación **softmax** se utiliza para obtener probabilidades normalizadas para cada clase.
+- `x = Dense(128, activation='relu')(x)`: Se agrega una capa densa con 128 neuronas y función de activación ReLU. Esta capa totalmente conectada ayuda a aprender patrones más complejos en los datos.
 
-- `model_inception = Model(inputs=inception.input, outputs=predictions_inception)`: Se crea el modelo final utilizando el modelo **InceptionV3** como base y añadiendo las capas personalizadas. `inputs=inception.input` establece la entrada del modelo como la entrada original de InceptionV3, y `outputs=predictions_inception` establece la salida del modelo como la capa de predicciones recién añadida.
+- `x = Dropout(0.2)(x)`: Se aplica una capa de Dropout con una tasa del 20%. El Dropout ayuda a prevenir el sobreajuste al "apagar" aleatoriamente un porcentaje de las neuronas durante el entrenamiento.
+
+- `predictions = Dense(len(class_names), kernel_regularizer=l1(0.005), activation='softmax')(x)`: Se añade la capa de salida. Esta capa tiene un número de neuronas igual a la cantidad de clases en tu problema (determinado por `len(class_names)`), con una regularización **L1** para penalizar los pesos grandes. La función de activación **softmax** se utiliza para obtener probabilidades normalizadas para cada clase.
+
+- `model = Model(inputs=inception.input, outputs=predictions)`: Se crea el modelo final utilizando el modelo **InceptionV3** como base y añadiendo las capas personalizadas. `inputs=inception.input` establece la entrada del modelo como la entrada original de InceptionV3, y `outputs=predictions` establece la salida del modelo como la capa de predicciones recién añadida.
 
 ![Creacion modelo](/Capturas_Codigo/Model_Creation.png)
 
@@ -240,28 +228,24 @@ Una ver realizado todos los pasos anteriores hacemos el entrenamiento del modelo
 
 El modelo, como hemos dicho anteriormente, ha sido entrenado con 3 modelos preentrenados diferentes, a continuación se muestran las gráficas de cada resultado obtenido:
 
-#### InceptionV3
-
 En el modelo de `InceptionV3` se ha establecido un callback de EarlyStopping con los siguientes parámetros:
 
 ```
 early_stopping_inception = EarlyStopping(
     monitor='val_loss',
-    patience=10,
+    patience=15,
     restore_best_weights=True)
 ```
 
-Se ha usado un patience de 10, es decir, que cuando en 10 épocas no se ha mejorado la métrica de `val_loss`, el entrenamiento se detiene.
+Se ha usado un patience de 15, es decir, que cuando en 15 épocas no se ha mejorado la métrica de `val_loss`, el entrenamiento se detiene.
 
-El modelo se ha detenido a las 42 épocas de entrenamiento.
+El modelo se ha detenido a las 73 épocas de entrenamiento.
 
 Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/Inception_Metrics.png)
 
-#### ResNet50
-
-En el modelo entrenado con `ResNet50` se ha establecido el mismo callback:
+En el modelo entrenado con `ResNet50` se ha establecido el mismo callback pero con un patience de 10:
 
 ```
 early_stopping_resnet = EarlyStopping(
@@ -270,15 +254,13 @@ early_stopping_resnet = EarlyStopping(
     restore_best_weights=True)
 ```
 
-El modelo se ha detenido a las 22 épocas de entrenamiento.
+El modelo se ha detenido a las 30 épocas de entrenamiento.
 
 Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/ResNet_Metrics.png)
 
-#### DenseNet121
-
-En el modelo entrenado con `DenseNet121` se ha establecido el mismo callback:
+En el modelo entrenado con `ResNet50` se ha establecido el mismo callback con un patience de 10:
 
 ```
 early_stopping_densenet = EarlyStopping(
@@ -287,25 +269,17 @@ early_stopping_densenet = EarlyStopping(
     restore_best_weights=True)
 ```
 
-El modelo se ha detenido a las 32 épocas de entrenamiento.
+El modelo se ha detenido a las 25 épocas de entrenamiento.
 
 Las métricas de este modelo entrenado son las siguientes:
 
 ![Compilacion modelo](/Capturas_Codigo/DenseNet_Metrics.png)
 
----
-
-## 6. Entrenamiento de predicción del IMC<a name="id6"></a>
-
-El entrenamiendo del modelo de predicción del IMC lo puedes encontrar en este cuaderno de [Jupyter](https://github.com/SilviaDS00/RecoFood/blob/main/Modelos_Entrenamiento/Entrenamiento_bmi/Modelo_BMI.ipynb)
-
----
-
-## 7. Procesamiento del lenguaje natural - ChatBot<a name="id7"></a>
+## 6. Procesamiento del lenguaje natural - ChatBot<a name="id6"></a>
 
 En esta sección, se detalla el progreso de nuestro Asistente de Recetas. Este emplea el Procesamiento de Lenguaje Natural (PLN) para interactuar con los usuarios de una manera más accesible. En particular, hemos implementado la traducción automática, que es una aplicación del PLN, para permitir que los usuarios accedan a las recetas en dos idiomas: inglés y español.
 
-### 7.1 Importación de paquetes
+### 6.1 Importación de paquetes
 
 Importamos aquellos paquetes necesarios para ejecutar nuestro programa
 
@@ -314,7 +288,7 @@ Importamos aquellos paquetes necesarios para ejecutar nuestro programa
 
 ![importacion](https://github.com/SilviaDS00/RecoFood/assets/146923466/eef3995c-3e77-4b5a-aa0b-9376443b888e)
 
-### 7.2 Definición de la clase AsistenteRecetas
+### 6.2 Definición de la clase AsistenteRecetas
 
 La clase `AsistenteRecetas` es la principal de nuestro programa, donde implementamos todas las funcionalidades relacionadas con la gestión y visualización de recetas.
 
@@ -352,19 +326,19 @@ Por último, el método `otras_recetas` muestra todas las recetas disponibles y 
 
 Después de definir la clase, creamos una instancia de esta clase llamada Bot.
 
-### 7.3 Interacción con el usuario
+### 6.3 Interacción con el usuario
 
 El código proporciona un bucle que permite al usuario interactuar con el asistente de recetas. Dependiendo de la opción seleccionada, el programa ejecuta el método correspondiente de la clase, garantizando una interacción fluida y amigable con el usuario. En caso de ingresar una opción no válida, se muestra un mensaje de error y se solicita al usuario que ingrese nuevamente una opción válida.
 
 ![menu](https://github.com/SilviaDS00/RecoFood/assets/146923466/1ff6434d-9e2f-4842-a46c-8ece0fb186d3)
 
-## 8. Aplicación web<a name="id8"></a>
+## 7. Aplicación web<a name="id7"></a>
 
 [Aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Web_React_App) puedes encontrar todos los ficheros de la aplicación de ReactJS.
 
 La aplicación web está realizada en ReactJS, en la cual hemos implementado el modelo entrenado con Django.
 
-### 8.1 Creación de la web
+### 7.1 Creación de la web
 
 La idea del diseño de la web la hemos obtenido con una AI de creación de diseño para interfaces, llamada [galileo.ai](https://www.usegalileo.ai/explore), la cual le explicas qué diseño quieres y te lo genera.
 
@@ -390,17 +364,9 @@ Cuando se escanea la imagen o se sube desde el explorador de archivos, se vería
 
 Una vez pulsado el botón de procesar imagen se mostraría el resultado de la predicción y los macronutrientes de esa comida, permitiendo al usuario calcular los macronutrientes según los gramos que pesa su comida:
 
-**NOTA:** Para calcular los macros de cada comida, hemos creado un [json](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/data/macronutrientes.json) con todos los valores aproximados de los macros de cada comida, haciendo la importación dentro de react y procesando los datos. [Aquí](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/Prediction/ShowPrediction.jsx) puedes encontrar el componente donde se importa el json dicho.
-
 ![Macros](/Capturas_Codigo/Macros_Layout.PNG)
 
-Si el usuario tiene la sesión iniciada, podrá calcular los macronutrientes según los gramos que tenga su comida, y los resultados se guardarán en el historial del usuario.
-
-![Macros Calculated](/Capturas_Codigo/Macros_Calculated.PNG)
-
-Si la clasificación de la comida falla (ya que el modelo no tiene una precisión del 100%), el usuario podrá ver las 5 comidas más aproximadas, teniendo la opción de seleccionar la que sea correcta para ver los macros, calcularlos y guardarlo correctamente en el historial.
-
-![If prediction fails](/Capturas_Codigo/Prediction_Failed.PNG)
+**NOTA:** Para calcular los macros de cada comida, hemos creado un [json](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/data/macronutrientes.json) con todos los valores aproximados de los macros de cada comida, haciendo la importación dentro de react y procesando los datos. [Aquí](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/Prediction/ShowPrediction.jsx) puedes encontrar el componente donde se importa el json dicho.
 
 Para el registro de usuarios hemos hecho el siguiente diseño de la interfaz:
 
@@ -426,27 +392,11 @@ También se han incluido pop-ups informativos con una librería llamada `toastif
 ![Register Success](/Capturas_Codigo/Register.PNG)
 ![Login Success](/Capturas_Codigo/Login_Success.PNG)
 
-El perfil del usuario está compuesto por los datos del usuario, un historial de las comidas escaneadas, predicción del IMC y ajustes del usuario.
-
-El historial de las comidas se vería de la siguiente manera:
-
-![Profile History](/Capturas_Codigo/Profile_History.PNG)
-
-En la sección de predecir IMC encontramos los datos con los que se hará la predicción y un botón donde se aplicará el modelo, mostrando posteriormente el resultado:
-
-![IMC Prediction](/Capturas_Codigo/IMC_Prediction.PNG)
-
-El usuario también podrá actualizar sus datos cuando sea necesario.
-
-![IMC Prediction](/Capturas_Codigo/User_Update.PNG)
-
-### 8.2 Implementación de los modelos en React.js
+### 7.2 Implementación del modelo en React.js
 
 El código de Django lo puedes encontrar [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Django)
 
-#### Implementación del modelo de clasificación de imágenes
-
-Usando Django hemo creado una vista con un endpoint de petición `POST` para el modelo de clasificación de imágenes, procesando a su vez la imagen para adecuarlo al modelo entrenado antes de hacer la clasificación.
+Usando Django hemo creado una vista con un endpoint de petición `POST` para la predicción del modelo, procesando la imagen para adecuarlo al modelo entrenado antes de hacer el predict.
 
 ![Implementacion modelo](/Capturas_Codigo/Model_Implementation.png)
 
@@ -460,35 +410,15 @@ Desde un componente de React.js, llamamos al endpoint creado con Django de la si
 
 Este componente lo utilizaremos en otros componentes para realizar la predicción, en este, de dos maneras, haciendo una foto o directamente subiendo la foto.
 
-Por ejemplo, dentro del componente de [ImageUploadComponent](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/ImageUpload/ImageUploadComponent.jsx) utilizamos el componente creado para realizar la clasificación pasándole la imagen subida por el usuario:
+Por ejemplo, dentro del componente de [ImageUploadComponent](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/ImageUpload/ImageUploadComponent.jsx) utilizamos el componente creado para realizar la predicción pasándole la imagen subida por el usuario:
 
 ![Image predict](/Capturas_Codigo/Predict_Image.png)
 
-#### Implementación del modelo predictivo del IMC
-
-Usando Django hemo creado una vista con un endpoint de petición `POST` para la predicción del modelo, procesando la imagen para adecuarlo al modelo entrenado antes de hacer el predict.
-
-![Implementacion modelo](/Capturas_Codigo/Model_Implementation_bmi.png)
-
-Creamos la url para el endpoint:
-
-![Url endpoint](/Capturas_Codigo/Url_Endpoint_bmi.png)
-
-Desde un componente de React.js, llamamos al endpoint creado con Django de la siguiente manera:
-
-![Endpoint React](/Capturas_Codigo/Endpoint_React_bmi.png)
-
-Dentro del componente de [UserBmi](https://github.com/SilviaDS00/RecoFood/blob/main/Web_React_App/src/components/UserBmi/UserBmi.jsx) utilizamos el componente creado para realizar la predicción pasándole los datos del usuario.
-
-Los datos utilizados serán los que se pidieron al usuario al registarse.
-
-![Image predict](/Capturas_Codigo/Predict_bmi.png)
-
-### 8.3 Back de usuarios e historial
+### 7.3 Back de usuarios
 
 [Ver el proyecto de Strapi aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Strapi)
 
-Para realizar el back para los usuarios y el historial, hemos utilizado **Strapi**, ya que proporciona una interfaz sencilla de utilizar e intuitiva.
+Para realizar el back para los usuarios, hemos utilizado **Strapi**, ya que proporciona una interfaz sencilla de utilizar e intuitiva.
 
 Para instalar Strapi primero ejecutamos el siguiente comando: `npm install -g create-strapi-app`.
 
@@ -508,8 +438,8 @@ Después tenemos *Content-Type Builder*, que sería para crear las colecciones:
 
 ![Strapi Collections](/Capturas_Codigo/Strapi_Collections.PNG)
 
-Y ya el resto de apartados serían otras configuraciones, pero otra sección importante sería para habilitar los **endpoints** para gestionar los usuarios. Dentro de **Settings**, en el apartado de roles de *users & permissions plugin*, accedemos a la parte para habilitar los endpoints, por ejemplo dentro de public estaría el endpoint para poder registrar un usuario o el de iniciar sesión. Dentro de autenticated, estaría por ejemplo el endpoint de ver los datos del usuario o de actualizar sus datos o contraseña, obtener el hitorial de un usuario, etc.
+Y ya el resto de apartados serían otras configuraciones, pero otra sección importante sería para habilitar los **endpoints** para gestionar los usuarios. Dentro de **Settings**, en el apartado de roles de *users & permissions plugin*, accedemos a la parte para habilitar los endpoints, por ejemplo dentro de public estaría el endpoint para poder registrar un usuario o el de iniciar sesión. Dentro de autenticated, estaría por ejemplo el endpoint de ver los datos del usuario o de actualizar sus datos o contraseña.
 
 ![Strapi Roles](/Capturas_Codigo/Strapi_Roles.PNG)
 
-## 9. Conclusiones<a name="id9"></a>
+## 8. Conclusiones<a name="id8"></a>

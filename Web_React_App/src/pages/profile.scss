@@ -10,12 +10,12 @@
                 position: absolute !important;
                 left: 0;
             }
-            &:nth-of-type(2){
-                position: absolute !important;
-                left: 6rem;
-            }
+            // &:nth-first-of-type(0){
+            //     position: absolute !important;
+            // }
+        }
     }
-}}
+}
 
 .containerForms{
     margin-top: 50px;
@@ -24,5 +24,6 @@
 .contentProfile{
     display: flex;
     flex-direction: column;
-    margin: 0 20%;
+    margin: 0 10rem;
+
 }

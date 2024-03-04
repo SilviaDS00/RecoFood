@@ -8,7 +8,7 @@ import "../ProfileForm.scss";
 
 const userCtrl = new User();
 export function ChangeEmailForm() {
-    const { user } = useAuth();
+    const { user, logout } = useAuth();
     const [isEmailChanged, setIsEmailChanged] = useState(false);
   
     const formik = useFormik({
@@ -55,7 +55,7 @@ export function ChangeEmailForm() {
   
         {isEmailChanged && (
           <div className="confirmationMessageEmail">
-            Se ha cambiado el email correctamente.
+            Se ha cambiado la contraseña correctamente.
           </div>
         )}
       </Form>
