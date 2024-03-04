@@ -5,9 +5,10 @@
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
-    background-color: #eaeaea;
-    padding: 2rem;
+    border: 1px solid #ddd;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
 
     .chat-container {
       border-radius: 8px;
