@@ -13,7 +13,7 @@ export function ProfileInfo() {
       <Button icon className="iconUser">
         <Icon name="user outline" />
       </Button>
-      <h2 className="title">Perfil de usuario</h2>
+      {/* <h2 className="title">Perfil de usuario</h2> */}
       <h3 className="username">@{user.username}</h3>
       <h4 className="name">
         {user.firstname} {user.lastname}

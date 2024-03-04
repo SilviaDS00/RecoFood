@@ -9,19 +9,20 @@
     
 
 .iconUser{
-    background-color: $orange !important;
+    background-color: rgb(225, 225, 225) !important;
     color: white !important;
     cursor: auto !important;
     >i{
         display: flex;
         align-items: center;
         justify-content: center;
+        color: black;
     }
 }
 
 .username{
     font-size: 1.5rem;
-    margin: 0;
+    margin: 1rem 0 0 0;
     color: $orange;
 }
 
