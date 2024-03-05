@@ -34,6 +34,7 @@ const ImageUploadComponent = () => {
 
       setLoading(false);
       setShowPrediction(true);
+      console.log("Predicción realizada:", result);
     } catch (error) {
       console.error("Error al realizar la predicción:", error);
       if (error.isAxiosError && error.response) {

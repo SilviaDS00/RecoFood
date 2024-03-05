@@ -131,11 +131,10 @@ def prediction(request):
                 "message": "Predicción exitosa",
                 "predicted_class": int(predicted_class),
                 "confidence": float(prediction[0][predicted_class]),
-                "top5_classes": (
-                    top5_classes.astype(int).tolist()
-                    if top5_classes is not None
-                    else None
-                ),
+                "top5_classes": {
+                    "classes": top5_classes.astype(int).tolist(),
+                    "confidences": prediction[0][top5_classes].astype(float).tolist(),
+                },
             }
             return JsonResponse(response_data)
         except Exception as e:

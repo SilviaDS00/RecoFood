@@ -286,8 +286,7 @@ const ShowPrediction = ({ predictionResult }) => {
     predictedClassInfo.fat_per_100g = selectedClassInfo.fat_per_100g;
     predictedClassInfo.carbs_per_100g = selectedClassInfo.carbs_per_100g;
   };
-
-  const topClasses = predictionResult.top5_classes.map((classIndex) => ({
+  const topClasses = predictionResult.top5_classes.classes.map((classIndex) => ({
     classIndex,
     className: classnames[classIndex],
     translation: translations[classnames[classIndex]],
@@ -299,6 +298,7 @@ const ShowPrediction = ({ predictionResult }) => {
       <p>
         <b>{predictedClassTranslation || predictClass}</b>
       </p>
+      <p>Con un {(predictionResult.confidence*100).toFixed(2)}% de precisión</p>
       <p className="incorrect-prediction">No es correcto?</p>
       <Button onClick={handleShowSimilarClick} className="more-options">
         Ver opciones aproximadas
