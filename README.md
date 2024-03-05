@@ -4,6 +4,15 @@
 
 _TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, **[Elena Racero González](https://github.com/ElenaRacero3)** y **[Manuel Fajardo Jiménez](https://github.com/Manufajimez)** del Máster de Inteligencia Arficial y Big Data del CPIFP Alan Turing_
 
+---
+<div align="center">
+
+[Presentación](https://github.com/SilviaDS00/RecoFood/blob/main/Presentaci%C3%B3n-RecoFood-TFM.pdf) | [Vídeo](#id15)
+
+</div>
+
+---
+
 ## Índice
 
 :black_nib: [1. Justificación y descripción del proyecto](#id1)
