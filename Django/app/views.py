@@ -17,6 +17,8 @@ from PIL import Image
 import json
 from dotenv import load_dotenv
 import google.generativeai as gen_ai
+from django.conf import settings
+from gtts import gTTS
 # from .asistente_receta import AsistenteRecetas
 
 
@@ -53,14 +55,18 @@ def chatbot_view(request):
         logger.debug("Contenido de la solicitud POST:", data)
 
         if user_prompt:
-            # Envía el mensaje del usuario a Gemini-Pro y obtiene la respuesta
+        # Envía el mensaje del usuario a Gemini-Pro y obtiene la respuesta
             gemini_response = chat_session.send_message(user_prompt)
 
             # Imprime la respuesta de Gemini-Pro
             logger.debug("Respuesta de Gemini-Pro:", gemini_response.text)
 
+            # Convierte la respuesta del chatbot en audio
+            tts = gTTS(text=gemini_response.text, lang='es')
+            tts.save(os.path.join(settings.MEDIA_ROOT, "respuesta.mp3"))
+
             # Devuelve la respuesta de Gemini-Pro
-            response_data = {"message": gemini_response.text}
+            response_data = {"message": gemini_response.text, "audio": "respuesta.mp3"}
         else:
             response_data = {
                 "error": "No se proporcionó ningún prompt de usuario en la solicitud POST."

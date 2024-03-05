@@ -16,6 +16,8 @@ Including another URLconf
 """
 
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from app.views import chatbot_view, prediction, prediction_bmi, generar_resultado_view
 
 urlpatterns = [
@@ -25,3 +27,6 @@ urlpatterns = [
     path("prediction/", prediction, name="prediction"), # Ruta para la predicción de la imagen
     path("prediction-bmi/", prediction_bmi, name="prediction_bmi") # Ruta para la predicción del BMI
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
