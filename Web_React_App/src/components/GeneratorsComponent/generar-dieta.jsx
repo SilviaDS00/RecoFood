@@ -17,6 +17,17 @@ function Generators() {
   const [diet, setDiet] = useState(false);
   const [training, setTraining] = useState(false);
   const navigate = useNavigate();
+  const [objetivo, setObjetivo] = useState(null);
+  const [mostrarObjetivos, setMostrarObjetivos] = useState(false);
+
+  const objetivos = [
+    'Perder peso',
+    'Ganar masa muscular',
+    'Mejorar la postura',
+    'Aumentar la flexibilidad',
+    'Fortalecer el sistema cardiovascular',
+    'Tonificar el cuerpo'
+  ];
 
   const generarResultado = async (tipo) => {
     try {
@@ -34,6 +45,7 @@ function Generators() {
         age: user.age,
         height: user.height,
         weight: user.weight,
+        objetivo
       };
 
       const response = await fetch("http://localhost:8000/generator/", {
@@ -44,13 +56,15 @@ function Generators() {
         body: JSON.stringify({ tipo, userData }),
       });
 
-      if (!response.ok) throw new Error("Error en la solicitud");
+      if (!response.ok) throw new Error('Error en la solicitud');
 
       const data = await response.json();
+      console.log('Respuesta del servidor:', data);
 
       setResultadoGenerado(data[tipo]);
+      setMostrarObjetivos(false);
     } catch (error) {
-      console.error("Error al generar el resultado:", error);
+      console.error('Error al generar el resultado:', error);
     } finally {
       setCargando(false); // Indicar que la carga ha finalizado, independientemente del resultado
     }
@@ -97,9 +111,18 @@ function Generators() {
             <Button onClick={() => generarResultado("dieta")}>
               Generar Dieta
             </Button>
-            <Button onClick={() => generarResultado("entrenamiento")}>
-              Generar Entrenamiento
-            </Button>
+            <Button onClick={() => setMostrarObjetivos(true)}>Generar Entrenamiento</Button>
+            {mostrarObjetivos && (
+              <div id="estilo">
+                {objetivos.map((obj, index) => (
+                  <div key={index}>
+                    <input type="radio" id={obj} name="objetivo" value={obj} onChange={(e) => setObjetivo(e.target.value)} />
+                    <label htmlFor={obj}>{obj}</label>
+                  </div>
+                ))}
+                <Button id="boton" onClick={() => generarResultado('entrenamiento')}>Seleccionar</Button>
+              </div>
+            )}
           </div>
 
           {cargando && <p>Estamos generando la respuesta adecuada a ti...</p>}

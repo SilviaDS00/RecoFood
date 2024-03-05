@@ -4,7 +4,9 @@ import "./chatbot.scss";
 
 function Chatbot() {
   const [inputValue, setInputValue] = useState("");
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    { type: "bot", text: "¡Hola! Me alegro de verte. ¿En qué puedo ayudarte hoy?" },
+  ]);
   const [audioUrl, setAudioUrl] = useState(null);
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -93,7 +95,7 @@ function Chatbot() {
               message.type === "user" ? "message-user" : "message-bot"
             }`}
           >
-            {message.type === "user" ? "You: " : "Bot: "}
+            {message.type === "user" ? "👤 Tú: " : " 🤖 Bot: "}
             {message.text}
             {message.type === "bot" && audioUrl && (
               <>

@@ -25,9 +25,9 @@ export function ProfileInfo() {
       </p>
       <h3>Datos personales</h3>
       <div className="user-personal-data">
-      <p>Edad: {user.age}</p>
-      <p>Peso: {user.weight}</p>
-      <p>Altura: {user.height}</p>
+      <p>Edad: {user.age} años</p>
+      <p>Peso: {user.weight} kg</p>
+      <p>Altura: {user.height} cm</p>
       </div>
     </div>
   );

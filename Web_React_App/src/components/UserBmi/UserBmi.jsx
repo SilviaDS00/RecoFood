@@ -43,7 +43,7 @@ export function UserBmi() {
       <h4>Tus datos:</h4>
         <p><b>Edad:</b> {user.age} años</p>
         <p><b>Peso:</b> {user.weight}kg</p>
-        <p><b>Altura:</b> {user.height}m</p>
+        <p><b>Altura:</b> {user.height}cm</p>
       </div>
       <Form className="form-container" onSubmit={handleSumit}>
         <Button type="submit">Predecir IMC</Button>

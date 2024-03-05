@@ -25,3 +25,22 @@
     padding: 1rem 3rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  input[type="radio"] {
+    margin: 10px 10px;
+    margin-right: 5px;
+  }
+  
+  #estilo{
+    margin-top: 5%;
+  }
+
+  #boton{
+    margin-top: 5%;
+    margin-left: 10px;
+  }
+
+  #boton:hover{
+    background-color: #0a6e66;
+    color: #eaeaea;
+  }
