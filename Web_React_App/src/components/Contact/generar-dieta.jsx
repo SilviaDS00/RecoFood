@@ -19,9 +19,9 @@ function Contact() {
     const generarResultado = async (tipo) => {
         try {
             const userData = {
-                age: 12, 
-                height: 143,
-                weight: 30,
+                age: user.age, 
+                height: user.height,
+                weight: user.weight,
                 objetivo
             };
 
