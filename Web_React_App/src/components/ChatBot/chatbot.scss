@@ -37,6 +37,12 @@
       background-color: #acdbf1;
     }
   }
+  .loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
 
   .text {
     flex-grow: 1;

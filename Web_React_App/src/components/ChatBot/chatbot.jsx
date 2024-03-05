@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Loader } from "semantic-ui-react";
 import "./chatbot.scss";
 
 function Chatbot() {
@@ -6,15 +7,18 @@ function Chatbot() {
   const [messages, setMessages] = useState([]);
   const [audioUrl, setAudioUrl] = useState(null);
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const audioRef = useRef();
+  const chatContainerRef = useRef();
 
   const enviarDatos = async () => {
     const trimmedInput = inputValue.trim();
     console.log("Enviando solicitud:", trimmedInput);
     if (trimmedInput !== "") {
       try {
-        // Agrega el mensaje del usuario al array de mensajes
+        setIsLoading(true);
+
         setMessages((prevMessages) => [
           ...prevMessages,
           { type: "user", text: trimmedInput },
@@ -31,24 +35,24 @@ function Chatbot() {
         if (!response.ok) throw new Error("Error en la solicitud");
 
         const data = await response.json();
-        console.log("Respuesta del servidor:", data); // Imprime la respuesta del servidor en la consola del navegador
+        console.log("Respuesta del servidor:", data);
 
-        // Agrega la respuesta al array de mensajes
         setMessages((prevMessages) => [
           ...prevMessages,
           { type: "bot", text: data.message },
         ]);
-        setInputValue(""); // Limpia el input
+        setInputValue("");
 
-        // Obtiene el archivo de audio desde el servidor
         const audioResponse = await fetch(
           `http://localhost:8000/media/respuesta.mp3`
         );
         const audioBlob = await audioResponse.blob();
         const audioUrl = URL.createObjectURL(audioBlob);
-        setAudioUrl(audioUrl); // Guarda la URL del audio
+        setAudioUrl(audioUrl);
       } catch (error) {
         console.error("Error al enviar datos:", error);
+      } finally {
+        setIsLoading(false);
       }
     }
   };
@@ -63,7 +67,6 @@ function Chatbot() {
   };
 
   const handleAudioEnded = () => {
-    // El evento 'ended' se activa cuando el audio termina de reproducirse
     setIsAudioPlaying(false);
   };
 
@@ -74,10 +77,15 @@ function Chatbot() {
     }
   }, [audioUrl]);
 
+  useEffect(() => {
+    // Desplázate hacia abajo automáticamente cuando los mensajes cambien
+    chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+  }, [messages]);
+
   return (
     <div className="Chatbot">
       <h2 className="title-chatbot">Bienvenid@ a nuestro ChatBot</h2>
-      <div className="chat-container">
+      <div className="chat-container" ref={chatContainerRef}>
         {messages.map((message, index) => (
           <div
             key={index}
@@ -89,10 +97,7 @@ function Chatbot() {
             {message.text}
             {message.type === "bot" && audioUrl && (
               <>
-                <button
-                  onClick={toggleAudio}
-                  className="audio-button"
-                >
+                <button onClick={toggleAudio} className="audio-button">
                   {isAudioPlaying ? "⏸️" : "🔊"}
                 </button>
                 <audio ref={audioRef} />
@@ -102,11 +107,19 @@ function Chatbot() {
         ))}
         <audio ref={audioRef} />
       </div>
+
+      {isLoading && (
+        <div className="loader-container">
+          <Loader active inline="centered" />
+        </div>
+      )}
+
       <div className="input-container">
         <input
           type="text"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
+          disabled={isLoading}
         />
         <button onClick={enviarDatos}>Enviar</button>
       </div>
