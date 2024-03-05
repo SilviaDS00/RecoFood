@@ -1,124 +1,117 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./chatbot.scss";
 
-const Chatbot = () => {
-  const [input, setInput] = useState("");
+function Chatbot() {
+  const [inputValue, setInputValue] = useState("");
   const [messages, setMessages] = useState([]);
-  const [idioma, setIdioma] = useState("");
-  const [step, setStep] = useState(0);
+  const [audioUrl, setAudioUrl] = useState(null);
+  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
 
-  const handleInputChange = (e) => {
-    setInput(e.target.value);
-  };
+  const audioRef = useRef();
 
-  const sendMessage = async () => {
-    if (!input.trim()) return;
+  const enviarDatos = async () => {
+    const trimmedInput = inputValue.trim();
+    console.log("Enviando solicitud:", trimmedInput);
+    if (trimmedInput !== "") {
+      try {
+        // Agrega el mensaje del usuario al array de mensajes
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          { type: "user", text: trimmedInput },
+        ]);
 
-    const newMessages = [...messages, { text: input, sender: "user" }];
-    setMessages(newMessages);
-    setInput("");
+        const response = await fetch("http://localhost:8000/chatbot/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ prompt: trimmedInput }),
+        });
 
-    if (step === 0) {
-      setIdioma(input);
-      setMessages(prevMessages => [...prevMessages, { text: "Ingrese los ingredientes que tiene: ", sender: "bot" }]);
-      setStep(1);
-    } else if (step === 1) {
-      const ingredientes = input.split(",");
-      setMessages(prevMessages => [...prevMessages, { text: "Buscando recetas...", sender: "bot" }]);
-      buscarRecetas(ingredientes);
-    } else if (step === 2) {
-      const nombreReceta = input;
-      setMessages(prevMessages => [...prevMessages, { text: `Seleccionaste la receta: ${nombreReceta}`, sender: "bot" }]);
-      mostrarReceta(nombreReceta);
+        if (!response.ok) throw new Error("Error en la solicitud");
+
+        const data = await response.json();
+        console.log("Respuesta del servidor:", data); // Imprime la respuesta del servidor en la consola del navegador
+
+        // Agrega la respuesta al array de mensajes
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          { type: "bot", text: data.message },
+        ]);
+        setInputValue(""); // Limpia el input
+
+        // Obtiene el archivo de audio desde el servidor
+        const audioResponse = await fetch(
+          `http://localhost:8000/media/respuesta.mp3`
+        );
+        const audioBlob = await audioResponse.blob();
+        const audioUrl = URL.createObjectURL(audioBlob);
+        setAudioUrl(audioUrl); // Guarda la URL del audio
+      } catch (error) {
+        console.error("Error al enviar datos:", error);
+      }
     }
   };
 
-  const buscarRecetas = async (ingredientes) => {
-    try {
-      const response = await fetch("http://localhost:8000/chatbot/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ingredientes, idioma }),
-      });
-
-      const data = await response.json();
-
-      const nombresRecetas =
-        data.resultados && Array.isArray(data.resultados)
-          ? data.resultados.map((receta) => receta.nombre || "Nombre no disponible")
-          : [];
-
-      setMessages(prevMessages => [
-        ...prevMessages,
-        { text: "Recetas encontradas:", sender: "bot" },
-        ...nombresRecetas.map((nombreReceta) => ({ text: `- ${nombreReceta}`, sender: "bot" })),
-        { text: "Selecciona la receta de la que quieras ver la elaboración:", sender: "bot" },
-      ]);
-      setStep(2);
-    } catch (error) {
-      console.error("Error al consultar recetas:", error);
+  const toggleAudio = () => {
+    if (isAudioPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
     }
+    setIsAudioPlaying(!isAudioPlaying);
   };
 
-  const mostrarReceta = async (nombreReceta) => {
-    try {
-      const response = await fetch("http://localhost:8000/chatbot/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ nombreReceta, idioma }),
-      });
-
-      const data = await response.json();
-
-      const botResponse = data.receta
-        ? {
-          text: `Receta: ${data.receta.nombre || "Nombre no disponible"
-            }\nIngredientes:\n${data.receta.ingredientes
-              ? data.receta.ingredientes.map((ingrediente) => `- ${ingrediente}`).join("\n")
-              : "Ingredientes no disponibles"
-            }\nPasos:\n${data.receta.pasos ? data.receta.pasos.map((paso, i) => `${i + 1}. ${paso}`).join("\n") : "Pasos no disponibles"
-            }`,
-          sender: "bot",
-        }
-        : { text: "Receta no encontrada.", sender: "bot" };
-
-      setMessages(prevMessages => [...prevMessages, botResponse]);
-    } catch (error) {
-      console.error("Error al obtener detalles de la receta:", error);
-    }
+  const handleAudioEnded = () => {
+    // El evento 'ended' se activa cuando el audio termina de reproducirse
+    setIsAudioPlaying(false);
   };
-  
+
+  useEffect(() => {
+    if (audioUrl) {
+      audioRef.current.src = audioUrl;
+      audioRef.current.addEventListener("ended", handleAudioEnded);
+    }
+  }, [audioUrl]);
+
   return (
     <div className="Chatbot">
-      <h2>Bienvenid@ a nuestro ChatBot</h2>
-      <p>Selecciona tu idioma:</p>
-      <select onChange={(e) => setIdioma(e.target.value)}>
-        <option value="es">Español</option>
-        <option value="en">Inglés</option>
-      </select>
+      <h2 className="title-chatbot">Bienvenid@ a nuestro ChatBot</h2>
       <div className="chat-container">
         {messages.map((message, index) => (
           <div
             key={index}
-            className={`message ${message.sender === "user" ? "user" : "bot"}`}
+            className={`${
+              message.type === "user" ? "message-user" : "message-bot"
+            }`}
           >
-            {message.sender === "user" && <div className="user-icon">👤</div>}
-            {message.sender === "bot" && <div className="bot-icon">🤖</div>}
+            {message.type === "user" ? "You: " : "Bot: "}
             {message.text}
-            
+            {message.type === "bot" && audioUrl && (
+              <>
+                <button
+                  onClick={toggleAudio}
+                  className="audio-button"
+                >
+                  {isAudioPlaying ? "⏸️" : "🔊"}
+                </button>
+                <audio ref={audioRef} />
+              </>
+            )}
           </div>
         ))}
+        <audio ref={audioRef} />
       </div>
       <div className="input-container">
-        <input type="text" value={input} onChange={handleInputChange} />
-        <button onClick={sendMessage}>Enviar</button>
+        <input
+          type="text"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+        />
+        <button onClick={enviarDatos}>Enviar</button>
       </div>
     </div>
   );
-};
+}
 
 export default Chatbot;

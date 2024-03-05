@@ -1,62 +1,81 @@
 @import "../../scss/colors.scss";
 
 .Chatbot {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
 
-    .chat-container {
-      border-radius: 8px;
-      overflow: hidden;
-      max-height: 600px;
-      overflow-y: auto;
-      padding: 10px;
-      margin-bottom: 10px;
-  
-      .message {
-        padding: 8px;
-        margin-bottom: 5px;
-        border-radius: 5px;
-  
-        &.bot {
-          background-color: #90d5f5;
-        }
-  
-        &.user {
-          background-color: #ababab;
-        }
-      }
+  .title-chatbot{
+    text-align: center;
+    color: $blue;
+  }
+
+  .chat-container {
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    .message-user {
+      padding: 8px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      background-color: #d5d5d5;
     }
-  
-    .input-container {
-      display: flex;
-      align-items: center;
-  
-      input {
-        flex-grow: 1;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-right: 10px;
-      }
-  
-      button {
-        padding: 8px 12px;
-        background-color: $orange;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-  
-        &:hover {
-          background-color: $dark-orange;
-        }
+
+    .message-bot {
+      padding: 8px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      background-color: #acdbf1;
+    }
+  }
+
+  .text {
+    flex-grow: 1;
+  }
+
+  .audio-button {
+    cursor: pointer;
+    background-color: $orange;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+
+    input {
+      flex-grow: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 8px 12px;
+      background-color: $orange;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $dark-orange;
       }
     }
   }
-  
+}
