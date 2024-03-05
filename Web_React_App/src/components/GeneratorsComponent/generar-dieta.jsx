@@ -19,6 +19,7 @@ function Generators() {
   const navigate = useNavigate();
   const [objetivo, setObjetivo] = useState(null);
   const [mostrarObjetivos, setMostrarObjetivos] = useState(false);
+  const [mostrarOpciones, setMostrarOpciones] = useState(false);
 
   const objetivos = [
     'Perder peso',
@@ -28,6 +29,12 @@ function Generators() {
     'Fortalecer el sistema cardiovascular',
     'Tonificar el cuerpo'
   ];
+
+  const opciones = [
+    "Normal",
+    "Vegetariana",
+    "Vegana"
+  ]
 
   const generarResultado = async (tipo) => {
     try {
@@ -45,7 +52,8 @@ function Generators() {
         age: user.age,
         height: user.height,
         weight: user.weight,
-        objetivo
+        objetivo,
+        opciones: tipo === 'dieta' ? mostrarOpciones : null
       };
 
       const response = await fetch("http://localhost:8000/generator/", {
@@ -108,9 +116,18 @@ function Generators() {
             para obtener tu resultado.
           </p>
           <div className="button-container">
-            <Button onClick={() => generarResultado("dieta")}>
-              Generar Dieta
-            </Button>
+            <Button onClick={() => setMostrarOpciones(true)}>Generar Dieta</Button>
+            {mostrarOpciones && (
+              <div>
+                {opciones.map((obj, index) => (
+                  <div key={index}>
+                    <input type="radio" id={obj} name="opciones" value={obj} onChange={(e) => setObjetivo(e.target.value)} />
+                    <label htmlFor={obj}>{obj}</label>
+                  </div>
+                ))}
+                <Button id="boton" onClick={() => generarResultado('dieta')}>Seleccionar</Button>
+              </div>
+            )}
             <Button onClick={() => setMostrarObjetivos(true)}>Generar Entrenamiento</Button>
             {mostrarObjetivos && (
               <div id="estilo">
