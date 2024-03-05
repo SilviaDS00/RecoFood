@@ -85,7 +85,7 @@ def generar_resultado_view(request):
         if tipo == 'dieta':
             user_prompt = f"Hazme una dieta que sea específica para una persona de, {userData['age']}, años de edad, {userData['height']} centímetros de altura y {userData['weight']}kg de peso"
         elif tipo == 'entrenamiento':
-            user_prompt = f"Hazme una entrenamiento que sea específico para una persona de, {userData['age']}, años de edad, {userData['height']} centímetros de altura y {userData['weight']}kg de peso"
+            user_prompt = f"Hazme una entrenamiento que sea específico para una persona de, {userData['age']}, años de edad, {userData['height']} centímetros de altura y {userData['weight']}kg de peso, cuyo objetivo es {userData['objetivo']}"
         else:
             return HttpResponse(status=400)  # Si el tipo de acción no es válido, devuelve un error
 
