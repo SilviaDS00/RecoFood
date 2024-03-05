@@ -7,7 +7,7 @@ export function TrainingComponent(props) {
     <>
       <div className="card">
         <h3>Entrenamiento</h3>
-        <p className="title">{history.attributes.training}</p>
+        <p className="text">{history.attributes.training}</p>
         <p className="updatedAt">Fecha: {history.attributes.updatedAt}</p>
       </div>
     </>

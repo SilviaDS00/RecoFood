@@ -6,8 +6,8 @@ export function DietComponent(props) {
   return (
     <>
       <div className="card">
-        <h2>Dieta</h2>
-        <p className="title">{history.attributes.diet}</p>
+        <h3>Dieta</h3>
+        <p className="text">{history.attributes.diet}</p>
         <p className="updatedAt">Fecha: {history.attributes.updatedAt}</p>
       </div>
     </>

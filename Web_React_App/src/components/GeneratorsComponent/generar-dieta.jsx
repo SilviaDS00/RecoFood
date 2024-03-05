@@ -57,7 +57,7 @@ function Generators() {
   };
 
   const guardarEnHistorial = async (tipo) => {
-    console.log(resultadoGenerado, user.id);
+    console.log(resultadoGenerado);
     try {
       setGuardandoEnHistorial(true);
 
