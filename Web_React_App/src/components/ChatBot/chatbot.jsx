@@ -10,9 +10,14 @@ function Chatbot() {
   const [audioUrl, setAudioUrl] = useState(null);
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [audioRefs, setAudioRefs] = useState({});
 
   const audioRef = useRef();
   const chatContainerRef = useRef();
+
+  const handleAudioEnded = () => {
+    setIsAudioPlaying(false);
+  };
 
   const enviarDatos = async () => {
     const trimmedInput = inputValue.trim();
@@ -46,11 +51,14 @@ function Chatbot() {
         setInputValue("");
 
         const audioResponse = await fetch(
-          `http://localhost:8000/media/respuesta.mp3`
+          `http://localhost:8000/media/${data.audio}`
         );
         const audioBlob = await audioResponse.blob();
         const audioUrl = URL.createObjectURL(audioBlob);
-        setAudioUrl(audioUrl);
+        setAudioRefs((prevRefs) => ({
+          ...prevRefs,
+          [data.message]: { url: audioUrl, isPlaying: false },
+        }));
       } catch (error) {
         console.error("Error al enviar datos:", error);
       } finally {
@@ -59,22 +67,34 @@ function Chatbot() {
     }
   };
 
-  const toggleAudio = () => {
-    if (isAudioPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
+  const toggleAudio = (message) => {
+    const audioRef = audioRefs[message];
+    
+    // Si no existe una instancia de Audio para este mensaje, la crea
+    if (!audioRef.audioInstance) {
+      audioRef.audioInstance = new Audio(audioRef.url);
     }
-    setIsAudioPlaying(!isAudioPlaying);
-  };
-
-  const handleAudioEnded = () => {
-    setIsAudioPlaying(false);
+    
+    // Si el audio está reproduciéndose, se detiene
+    if (audioRef.isPlaying) {
+      audioRef.audioInstance.pause();
+      setIsAudioPlaying(false); // Actualiza el estado a falso
+    } else {
+      audioRef.audioInstance.play();
+      setIsAudioPlaying(true); // Actualiza el estado a verdadero
+    }
+    
+    // Actualiza el estado para reflejar si el audio está reproduciéndose o no
+    setAudioRefs((prevRefs) => ({
+      ...prevRefs,
+      [message]: { ...audioRef, isPlaying: !audioRef.isPlaying },
+    }));
   };
 
   useEffect(() => {
+
     if (audioUrl) {
-      audioRef.current.src = audioUrl;
+      audioRef.current = new Audio(audioUrl);
       audioRef.current.addEventListener("ended", handleAudioEnded);
     }
   }, [audioUrl]);
@@ -91,18 +111,19 @@ function Chatbot() {
         {messages.map((message, index) => (
           <div
             key={index}
-            className={`${
-              message.type === "user" ? "message-user" : "message-bot"
-            }`}
+            className={`${message.type === "user" ? "message-user" : "message-bot"
+              }`}
           >
             {message.type === "user" ? "👤 Tú: " : " 🤖 Bot: "}
             {message.text}
-            {message.type === "bot" && audioUrl && (
+            {message.type === "bot" && audioRefs[message.text] && (
               <>
-                <button onClick={toggleAudio} className="audio-button">
-                  {isAudioPlaying ? "⏸️" : "🔊"}
+                <button
+                  onClick={() => toggleAudio(message.text)}
+                  className="audio-button"
+                >
+                  {audioRefs[message.text].isPlaying ? "⏸️" : "🔊"}
                 </button>
-                <audio ref={audioRef} />
               </>
             )}
           </div>

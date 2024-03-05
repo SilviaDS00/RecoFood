@@ -19,6 +19,8 @@ from dotenv import load_dotenv
 import google.generativeai as gen_ai
 from django.conf import settings
 from gtts import gTTS
+import re
+from datetime import datetime
 
 # from .asistente_receta import AsistenteRecetas
 
@@ -64,11 +66,17 @@ def chatbot_view(request):
             logger.debug("Respuesta de Gemini-Pro:", gemini_response.text)
 
             # Convierte la respuesta del chatbot en audio
-            tts = gTTS(text=gemini_response.text, lang="es")
-            tts.save(os.path.join(settings.MEDIA_ROOT, "respuesta.mp3"))
+            clean_text = re.sub(r'[^\w\s]', '', gemini_response.text)  # Elimina todos los caracteres no alfanuméricos
+            tts = gTTS(text=clean_text, lang="es")
+
+            # Genera un nombre de archivo único
+            timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+            filename = f"respuesta_{timestamp}.mp3"
+
+            tts.save(os.path.join(settings.MEDIA_ROOT, filename))
 
             # Devuelve la respuesta de Gemini-Pro
-            response_data = {"message": gemini_response.text, "audio": "respuesta.mp3"}
+            response_data = {"message": gemini_response.text, "audio": filename}
         else:
             response_data = {
                 "error": "No se proporcionó ningún prompt de usuario en la solicitud POST."
