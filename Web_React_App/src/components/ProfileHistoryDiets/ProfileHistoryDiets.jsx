@@ -17,7 +17,7 @@ export function ProfileHistoryDiets() {
         const response = await historyCtrl.getHistory(user.id);
         setHistory(response.data);
       } catch (error) {
-        console.error(error);
+        console.error("El usuario no tiene historial de dietas");
       }
     })();
   // eslint-disable-next-line react-hooks/exhaustive-deps

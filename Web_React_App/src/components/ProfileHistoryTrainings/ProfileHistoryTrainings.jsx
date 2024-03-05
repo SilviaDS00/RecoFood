@@ -17,7 +17,7 @@ export function ProfileHistoryTrainings() {
         const response = await historyCtrl.getHistory(user.id);
         setHistory(response.data);
       } catch (error) {
-        console.error(error);
+        console.error("El usuario no tiene historial de entrenamientos");
       }
     })();
   // eslint-disable-next-line react-hooks/exhaustive-deps
