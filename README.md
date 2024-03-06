@@ -513,15 +513,16 @@ manera precisa. Además le hemos integrado una opción de audio para que así la
 
 ![image](https://github.com/SilviaDS00/RecoFood/assets/146923466/f73d50ad-8c23-45eb-bc93-9f07be8209d5)
 
-Por último en la pestaña de Entrenamientos/Dietas, el usuario podrá generar una dieta y un entrenamiento personalizado. Incluyendo así los datos del usuario: edad, peso, altura y la opción seleccionada. 
+Por último en la pestaña de Entrenamientos/Dietas, el usuario podrá generar una dieta y un entrenamiento personalizado. Este procedimiento se ha realizado igual que el chatbot, la diferencia es que cuando el usuario pulsa el botón ya se envía
+un promp predefinido, que incluye sus datos: que son edad, peso y altura, y la opción elegida.
 
-- `Entrenamiento`: 
+- Entrenamiento: 
 
     ![image](https://github.com/SilviaDS00/RecoFood/assets/146923466/6d0f71cb-026b-47ff-94f2-9e549d7e6115)
 
     ![entrenamiento generado](https://github.com/SilviaDS00/RecoFood/assets/146923466/d5caaa3c-4105-4fa5-be5e-afd292a9737f)
 
-- `Dietas`
+- Dieta:
 
   ![image](https://github.com/SilviaDS00/RecoFood/assets/146923466/adc3efa5-023e-43ac-ab78-9783ceb887f8)
   
