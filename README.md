@@ -504,6 +504,28 @@ El usuario también podrá actualizar sus datos cuando sea necesario.
 
 ![IMC Prediction](/Capturas_Codigo/User_Update.PNG)
 
+Además nuestra página incluye un chatbot, el cual hemos optado por integrarlo porque es una forma interactiva de comunicarnos con los usuarios. Este chatbot está integrado con la API de Gemini, lo que le permite comprender y responder a las consultas de los usuarios de 
+manera precisa. Además le hemos integrado una opción de audio para que así la respuesta generada se pueda reproducir por voz, mejorando la accesibilidad de la página.
+
+![image](https://github.com/SilviaDS00/RecoFood/assets/146923466/f73d50ad-8c23-45eb-bc93-9f07be8209d5)
+
+Por último en la pestaña de Entrenamientos/Dietas, el usuario podrá generar una dieta y un entrenamiento personalizado. Incluyendo así los datos del usuario: edad, peso, altura y la opción seleccionada. 
+
+- `Entrenamiento`: 
+
+    ![image](https://github.com/SilviaDS00/RecoFood/assets/146923466/6d0f71cb-026b-47ff-94f2-9e549d7e6115)
+
+    ![entrenamiento generado](https://github.com/SilviaDS00/RecoFood/assets/146923466/d5caaa3c-4105-4fa5-be5e-afd292a9737f)
+
+- `Dietas`
+
+  ![image](https://github.com/SilviaDS00/RecoFood/assets/146923466/adc3efa5-023e-43ac-ab78-9783ceb887f8)
+  
+Este entrenamiento generado y dieta se pueden guardar en un historial, para que el usuario pueda acceder a él cuando prefiera.
+
+  ![image](https://github.com/SilviaDS00/RecoFood/assets/146923466/1fe3ae5a-35fb-4485-9905-6b1a09f63437)
+
+
 ### 8.2 Implementación de los modelos en React.js
 
 El código de Django lo puedes encontrar [aquí](https://github.com/SilviaDS00/RecoFood/tree/main/Django)
