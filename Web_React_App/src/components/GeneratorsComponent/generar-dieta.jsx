@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useAuth } from "../../hooks/useAuth";
 import "./generar-dieta.scss";
-import { Loader, Button, Form } from "semantic-ui-react";
+import { Loader, Button } from "semantic-ui-react";
 import { useNavigate } from "react-router-dom";
 import { HistoryDiet } from "../../api/history-diet";
 import { HistoryTraining } from "../../api/history-training";
@@ -20,7 +20,6 @@ function Generators() {
   const [objetivo, setObjetivo] = useState(null);
   const [mostrarObjetivos, setMostrarObjetivos] = useState(false);
   const [mostrarOpciones, setMostrarOpciones] = useState(false);
-  const [mostrarBotonCerrar, setMostrarBotonCerrar] = useState(false);
 
   const objetivos = [
     "Perder peso",
@@ -67,20 +66,12 @@ function Generators() {
       console.log("Respuesta del servidor:", data);
 
       setResultadoGenerado(data[tipo]);
-      setMostrarBotonCerrar(true); // Mostrar el botón después de generar el resultado
       setMostrarObjetivos(false);
     } catch (error) {
       console.error("Error al generar el resultado:", error);
     } finally {
       setCargando(false);
     }
-  };
-
-  const handleCloseButton = () => {
-    setMostrarBotonCerrar(false);
-    setResultadoGenerado(null); // Limpiar el resultado generado al cerrar
-    setDiet(false);
-    setTraining(false);
   };
 
   const guardarEnHistorial = async (tipo) => {
