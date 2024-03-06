@@ -356,14 +356,17 @@ La función enviarDatos se encarga de enviar la entrada del usuario al servidor 
 
 #### 7.3.1 Preparación del mensaje del usuario y envío de la solicitud al servidor
 
+![user_message](https://github.com/SilviaDS00/RecoFood/assets/146923466/0fbdf4fa-d4a1-4e10-979c-ebf2745d0549)
 
 
 #### 7.3.2 Obtención de la respuesta del servidor
 
+![image](https://github.com/SilviaDS00/RecoFood/assets/146923466/77b34b10-b9e0-4480-8458-4cefa521aaf0)
 
 
 #### 7.3.3 Obtención y preparación del audio de la respuesta del servidor
 
+![response_audio](https://github.com/SilviaDS00/RecoFood/assets/146923466/a5cc7142-0e2d-4dec-a67a-3013ab107d87)
 
 
 ### 7.4 Función para manejar la reproducción de audio
@@ -410,16 +413,17 @@ Definimos la vista chatbot_view que maneja las solicitudes GET y POST. En caso d
 
 #### 7.8.1 Obtiene los datos de la solicitud POST
 
+![server_POST](https://github.com/SilviaDS00/RecoFood/assets/146923466/4093e6b1-cd79-4487-a3ab-9bb55379eb3d)
 
 
 #### 7.8.2 Envía el mensaje del usuario a Gemini-Pro y obtiene la respuesta
 
+![response_gemini](https://github.com/SilviaDS00/RecoFood/assets/146923466/5d7274ea-935d-4aad-80a1-7f886ce900e4)
 
 
 #### 7.8.3 Convierte la respuesta del chatbot en audio y devuelve la respuesta al cliente
 
-
-
+![audio_conversion](https://github.com/SilviaDS00/RecoFood/assets/146923466/6e8bfcb1-5ab3-479a-be1e-8d02762ea1d5)
 
 
 ## 8. Aplicación web<a name="id8"></a>
