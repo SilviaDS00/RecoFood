@@ -595,11 +595,11 @@ Tecnologías usadas
 [![Keras](https://img.shields.io/badge/Keras-black?style=for-the-badge&logo=Keras&logoColor=red&labelColor=101010)]()
 [![scikit](https://img.shields.io/badge/scikit--learn-black?style=for-the-badge&logo=scikit-learn&logoColor=orange&labelColor=101010)]()
 
-[![React.js](https://img.shields.io/badge/React-black?style=for-the-badge&logo=React&logoColor=blue&labelColor=101010)]()
-[![Sass](https://img.shields.io/badge/sass-black?style=for-the-badge&logo=sass&logoColor=pink&labelColor=101010)]()
-
 [![django](https://img.shields.io/badge/Django-black?style=for-the-badge&logo=Django&logoColor=green&labelColor=101010)]()
 [![Strapi](https://img.shields.io/badge/Strapi-black?style=for-the-badge&logo=Strapi&logoColor=blue&labelColor=101010)]()
+
+[![React.js](https://img.shields.io/badge/React-black?style=for-the-badge&logo=React&logoColor=blue&labelColor=101010)]()
+[![Sass](https://img.shields.io/badge/sass-black?style=for-the-badge&logo=sass&logoColor=pink&labelColor=101010)]()
 
 [![Trello](https://img.shields.io/badge/trello-black?style=for-the-badge&logo=trello&logoColor=blue&labelColor=101010)]()
 [![Github](https://img.shields.io/badge/Github-black?style=for-the-badge&logo=Github&logoColor=white&labelColor=101010)]()
