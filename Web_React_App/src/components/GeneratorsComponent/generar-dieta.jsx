@@ -20,21 +20,18 @@ function Generators() {
   const [objetivo, setObjetivo] = useState(null);
   const [mostrarObjetivos, setMostrarObjetivos] = useState(false);
   const [mostrarOpciones, setMostrarOpciones] = useState(false);
+  const [mostrarBotonCerrar, setMostrarBotonCerrar] = useState(false);
 
   const objetivos = [
-    'Perder peso',
-    'Ganar masa muscular',
-    'Mejorar la postura',
-    'Aumentar la flexibilidad',
-    'Fortalecer el sistema cardiovascular',
-    'Tonificar el cuerpo'
+    "Perder peso",
+    "Ganar masa muscular",
+    "Mejorar la postura",
+    "Aumentar la flexibilidad",
+    "Fortalecer el sistema cardiovascular",
+    "Tonificar el cuerpo",
   ];
 
-  const opciones = [
-    "Normal",
-    "Vegetariana",
-    "Vegana"
-  ]
+  const opciones = ["Normal", "Vegetariana", "Vegana"];
 
   const generarResultado = async (tipo) => {
     try {
@@ -53,7 +50,7 @@ function Generators() {
         height: user.height,
         weight: user.weight,
         objetivo,
-        opciones: tipo === 'dieta' ? mostrarOpciones : null
+        opciones: tipo === "dieta" ? mostrarOpciones : null,
       };
 
       const response = await fetch("http://localhost:8000/generator/", {
@@ -64,18 +61,26 @@ function Generators() {
         body: JSON.stringify({ tipo, userData }),
       });
 
-      if (!response.ok) throw new Error('Error en la solicitud');
+      if (!response.ok) throw new Error("Error en la solicitud");
 
       const data = await response.json();
-      console.log('Respuesta del servidor:', data);
+      console.log("Respuesta del servidor:", data);
 
       setResultadoGenerado(data[tipo]);
+      setMostrarBotonCerrar(true); // Mostrar el botón después de generar el resultado
       setMostrarObjetivos(false);
     } catch (error) {
-      console.error('Error al generar el resultado:', error);
+      console.error("Error al generar el resultado:", error);
     } finally {
-      setCargando(false); // Indicar que la carga ha finalizado, independientemente del resultado
+      setCargando(false);
     }
+  };
+
+  const handleCloseButton = () => {
+    setMostrarBotonCerrar(false);
+    setResultadoGenerado(null); // Limpiar el resultado generado al cerrar
+    setDiet(false);
+    setTraining(false);
   };
 
   const guardarEnHistorial = async (tipo) => {
@@ -116,28 +121,63 @@ function Generators() {
             para obtener tu resultado.
           </p>
           <div className="button-container">
-            <Button onClick={() => setMostrarOpciones(true)}>Generar Dieta</Button>
+            {!mostrarObjetivos && (
+              <Button onClick={() => setMostrarOpciones(true)}>
+                Generar Dieta
+              </Button>
+            )}
+
+            {mostrarOpciones && (
+              <Button onClick={() => setMostrarOpciones(false)}>Cerrar</Button>
+            )}
             {mostrarOpciones && (
               <div>
                 {opciones.map((obj, index) => (
                   <div key={index}>
-                    <input type="radio" id={obj} name="opciones" value={obj} onChange={(e) => setObjetivo(e.target.value)} />
+                    <input
+                      type="radio"
+                      id={obj}
+                      name="opciones"
+                      value={obj}
+                      onChange={(e) => setObjetivo(e.target.value)}
+                    />
                     <label htmlFor={obj}>{obj}</label>
                   </div>
                 ))}
-                <Button id="boton" onClick={() => generarResultado('dieta')}>Seleccionar</Button>
+                <Button id="boton" onClick={() => generarResultado("dieta")}>
+                  Seleccionar
+                </Button>
               </div>
             )}
-            <Button onClick={() => setMostrarObjetivos(true)}>Generar Entrenamiento</Button>
+            {!mostrarOpciones && (
+              <Button onClick={() => setMostrarObjetivos(true)}>
+                Generar Entrenamiento
+              </Button>
+            )}
+            {mostrarObjetivos && (
+              <Button onClick={() => setMostrarObjetivos(false)}>Cerrar</Button>
+            )}
+
             {mostrarObjetivos && (
               <div id="estilo">
                 {objetivos.map((obj, index) => (
                   <div key={index}>
-                    <input type="radio" id={obj} name="objetivo" value={obj} onChange={(e) => setObjetivo(e.target.value)} />
+                    <input
+                      type="radio"
+                      id={obj}
+                      name="objetivo"
+                      value={obj}
+                      onChange={(e) => setObjetivo(e.target.value)}
+                    />
                     <label htmlFor={obj}>{obj}</label>
                   </div>
                 ))}
-                <Button id="boton" onClick={() => generarResultado('entrenamiento')}>Seleccionar</Button>
+                <Button
+                  id="boton"
+                  onClick={() => generarResultado("entrenamiento")}
+                >
+                  Seleccionar
+                </Button>
               </div>
             )}
           </div>
