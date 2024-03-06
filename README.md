@@ -615,3 +615,6 @@ Se ha provisto una atractiva web que ha sido específicamente diseñada con una 
 Este proyecto se ha sacado adelante no sin ciertos contratiempos, los cuales nos hemos sabido adaptar y gestionar con éxito.
 
 En resumen, este proyecto proporciona una visión más valiosa de la nutrición y una ayuda esencial para el usuario, en definitiva un proyecto del cual nos sentimos orgullosos.
+
+
+_TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, **[Elena Racero González](https://github.com/ElenaRacero3)** y **[Manuel Fajardo Jiménez](https://github.com/Manufajimez)** del Máster de Inteligencia Arficial y Big Data del CPIFP Alan Turing_
