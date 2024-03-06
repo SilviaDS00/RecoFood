@@ -596,7 +596,7 @@ Tecnologías usadas
 
 [![numpy](https://img.shields.io/badge/numpy-black?style=for-the-badge&logo=numpy&logoColor=blue&labelColor=101010)]()[![pandas](https://img.shields.io/badge/pandas-black?style=for-the-badge&logo=pandas&logoColor=purple&labelColor=101010)]()
 [![Plotly](https://img.shields.io/badge/Plotly-black?style=for-the-badge&logo=Plotly&logoColor=white&labelColor=101010)]()
-[![Seaborn](https://img.shields.io/badge/Seaborn-black?style=for-the-badge&logo=Seaborn&logoColor=blue&labelColor=101010)]()
+[![Seaborn](https://img.shields.io/badge/Seaborn-black?style=for-the-badge&logo=seaborn&logoColor=blue&labelColor=101010)]()
 
 [![Tensorflow](https://img.shields.io/badge/TensorFlow-black?style=for-the-badge&logo=TensorFlow&logoColor=orange&labelColor=101010)]()
 [![Keras](https://img.shields.io/badge/Keras-black?style=for-the-badge&logo=Keras&logoColor=red&labelColor=101010)]()
