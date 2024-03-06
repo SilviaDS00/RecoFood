@@ -504,7 +504,7 @@ El usuario también podrá actualizar sus datos cuando sea necesario.
 
 ![IMC Prediction](/Capturas_Codigo/User_Update.PNG)
 
-Además nuestra página incluye un chatbot, el cual hemos optado por integrarlo porque es una forma interactiva de comunicarnos con los usuarios. Este chatbot está integrado con la API de Gemini, lo que le permite comprender y responder a las consultas de los usuarios de 
+Además nuestra página incluye un chatbot, el cual hemos optado por integrarlo porque es una forma interactiva de comunicarse con los usuarios. Este chatbot está integrado con la API de Gemini, lo que le permite comprender y responder a las consultas de los usuarios de 
 manera precisa. Además le hemos integrado una opción de audio para que así la respuesta generada se pueda reproducir por voz, mejorando la accesibilidad de la página.
 
 ![image](https://github.com/SilviaDS00/RecoFood/assets/146923466/f73d50ad-8c23-45eb-bc93-9f07be8209d5)
