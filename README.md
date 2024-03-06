@@ -582,26 +582,26 @@ Tecnologías usadas
 ---
 
 [![python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python&logoColor=yellow&labelColor=101010)]()
----
+
 [![colab](https://img.shields.io/badge/Colab-black?style=for-the-badge&logo=Google-Colab&logoColor=orange&labelColor=101010)]()
 [![anaconda](https://img.shields.io/badge/anaconda-black?style=for-the-badge&logo=anaconda&logoColor=green&labelColor=101010)]()
 [![Jupyter](https://img.shields.io/badge/jupyter-black?style=for-the-badge&logo=jupyter&logoColor=orange&labelColor=101010)]()
 [![visualstudio](https://img.shields.io/badge/VisualStudio-black?style=for-the-badge&logo=visualstudio&logoColor=blue&labelColor=101010)]()
----
+
 [![React.js](https://img.shields.io/badge/React-black?style=for-the-badge&logo=React&logoColor=blue&labelColor=101010)]()
 [![Sass](https://img.shields.io/badge/sass-black?style=for-the-badge&logo=sass&logoColor=pink&labelColor=101010)]()
----
+
 [![django](https://img.shields.io/badge/Django-black?style=for-the-badge&logo=Django&logoColor=green&labelColor=101010)]()
 [![Strapi](https://img.shields.io/badge/Strapi-black?style=for-the-badge&logo=Strapi&logoColor=blue&labelColor=101010)]()
----
+
 [![numpy](https://img.shields.io/badge/numpy-black?style=for-the-badge&logo=numpy&logoColor=blue&labelColor=101010)]()[![pandas](https://img.shields.io/badge/pandas-black?style=for-the-badge&logo=pandas&logoColor=purple&labelColor=101010)]()
 [![Plotly](https://img.shields.io/badge/Plotly-black?style=for-the-badge&logo=Plotly&logoColor=white&labelColor=101010)]()
 [![Seaborn](https://img.shields.io/badge/Seaborn-black?style=for-the-badge&logo=Seaborn&logoColor=blue&labelColor=101010)]()
----
+
 [![Tensorflow](https://img.shields.io/badge/TensorFlow-black?style=for-the-badge&logo=TensorFlow&logoColor=orange&labelColor=101010)]()
 [![Keras](https://img.shields.io/badge/Keras-black?style=for-the-badge&logo=Keras&logoColor=red&labelColor=101010)]()
 [![scikit](https://img.shields.io/badge/scikit--learn-black?style=for-the-badge&logo=scikit-learn&logoColor=orange&labelColor=101010)]()
----
+
 [![Trello](https://img.shields.io/badge/trello-black?style=for-the-badge&logo=trello&logoColor=blue&labelColor=101010)]()
 [![Github](https://img.shields.io/badge/Github-black?style=for-the-badge&logo=Github&logoColor=white&labelColor=101010)]()
 
