@@ -578,31 +578,26 @@ Y ya el resto de apartados serían otras configuraciones, pero otra sección imp
 
 <div align="center">
 
-:computer: Tecnologías usadas
+Tecnologías usadas
 ---
-
-### :snake: Desarrollo
-
 
 [![python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python&logoColor=yellow&labelColor=101010)]()
 
-Entornos
+<!-- Entornos -->
 
 [![colab](https://img.shields.io/badge/Colab-black?style=for-the-badge&logo=Google-Colab&logoColor=orange&labelColor=101010)]()
 [![visualstudio](https://img.shields.io/badge/VisualStudio-black?style=for-the-badge&logo=visualstudio&logoColor=blue&labelColor=101010)]()
 [![anaconda](https://img.shields.io/badge/anaconda-black?style=for-the-badge&logo=anaconda&logoColor=green&labelColor=101010)]()
 
-FrontEnd
+<!-- FrontEnd -->
 
 [![React.js](https://img.shields.io/badge/React-black?style=for-the-badge&logo=React&logoColor=blue&labelColor=101010)]()
-[![Sass](https://img.shields.io/badge/sass-black?style=for-the-badge&logo=sass&logoColor=yellow&labelColor=101010)]()
+[![Sass](https://img.shields.io/badge/sass-black?style=for-the-badge&logo=sass&logoColor=pink&labelColor=101010)]()
 
-BackEnd
  
-[![googlecloud](https://img.shields.io/badge/Google--Cloud-black?style=for-the-badge&logo=googlecloud&logoColor=red&labelColor=101010)]()
-[![docker](https://img.shields.io/badge/docker-black?style=for-the-badge&logo=docker&logoColor=blue&labelColor=101010)]()
-[![Flask](https://img.shields.io/badge/Flask-black?style=for-the-badge&logo=Flask&logoColor=white&labelColor=101010)]()
-[![mongodb](https://img.shields.io/badge/Mongodb-black?style=for-the-badge&logo=mongodb&logoColor=green&labelColor=101010)]()
+[![django](https://img.shields.io/badge/Django-black?style=for-the-badge&logo=Django&logoColor=red&labelColor=101010)]()
+[![Strapi](https://img.shields.io/badge/Strapi-black?style=for-the-badge&logo=Strapi&logoColor=blue&labelColor=101010)]()
+
 
 Diseño
 
