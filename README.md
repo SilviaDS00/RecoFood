@@ -576,6 +576,19 @@ Y ya el resto de apartados serían otras configuraciones, pero otra sección imp
 
 ![Strapi Roles](/Capturas_Codigo/Strapi_Roles.PNG)
 
+
+
+## 9. Conclusiones<a name="id9"></a>
+
+En este proyecto hemos logrado plasmar un modelo clasificador de comida por imágenes, haciendo un análisis exhaustivo de cómo y qué métodos son los mejores para reconocer alimentos, siendo con reconocimiento de imagen por cámara la mejor opción, además identificando las propiedades nutritivas de estos, ya sea su aporte calórico, carbohidratos, grasas, proteico o en grasas. Por otra parte, hemos añadido predicción de IMC(índice de masa corporal), para contribuir con información útil en una futura dieta para el usuario.
+
+Se ha provisto una atractiva web que ha sido específicamente diseñada con una interfaz intuitiva para el usuario para el escaneo de sus comidas, y respaldada por un chatbot que responde y da información de los conceptos demandados y un generador de entrenamientos y dietas. Además de gestión de usuarios e historial.
+
+Este proyecto se ha sacado adelante no sin ciertos contratiempos, los cuales nos hemos sabido adaptar y gestionar con éxito.
+
+En resumen, este proyecto proporciona una visión más valiosa de la nutrición y una ayuda esencial para el usuario, en definitiva un proyecto del cual nos sentimos orgullosos.
+
+
 <div align="center">
 
 Tecnologías usadas
@@ -605,16 +618,6 @@ Tecnologías usadas
 [![Github](https://img.shields.io/badge/Github-black?style=for-the-badge&logo=Github&logoColor=white&labelColor=101010)]()
 
 </div>
-
-## 9. Conclusiones<a name="id9"></a>
-
-En este proyecto hemos logrado plasmar un modelo clasificador de comida por imágenes, haciendo un análisis exhaustivo de cómo y qué métodos son los mejores para reconocer alimentos, siendo con reconocimiento de imagen por cámara la mejor opción, además identificando las propiedades nutritivas de estos, ya sea su aporte calórico, carbohidratos, grasas, proteico o en grasas. Por otra parte, hemos añadido predicción de IMC(índice de masa corporal), para contribuir con información útil en una futura dieta para el usuario.
-
-Se ha provisto una atractiva web que ha sido específicamente diseñada con una interfaz intuitiva para el usuario para el escaneo de sus comidas, y respaldada por un chatbot que responde y da información de los conceptos demandados y un generador de entrenamientos y dietas. Además de gestión de usuarios e historial.
-
-Este proyecto se ha sacado adelante no sin ciertos contratiempos, los cuales nos hemos sabido adaptar y gestionar con éxito.
-
-En resumen, este proyecto proporciona una visión más valiosa de la nutrición y una ayuda esencial para el usuario, en definitiva un proyecto del cual nos sentimos orgullosos.
 
 ---
 
