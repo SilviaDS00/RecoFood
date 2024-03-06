@@ -310,62 +310,115 @@ El entrenamiendo del modelo de predicción del IMC lo puedes encontrar en este c
 
 ---
 
-## 7. Procesamiento del lenguaje natural - ChatBot<a name="id7"></a>
+## 7. Procesamiento del Lenguaje Natural - ChatBot<a name="id7"></a>
 
-En esta sección, se detalla el progreso de nuestro Asistente de Recetas. Este emplea el Procesamiento de Lenguaje Natural (PLN) para interactuar con los usuarios de una manera más accesible. En particular, hemos implementado la traducción automática, que es una aplicación del PLN, para permitir que los usuarios accedan a las recetas en dos idiomas: inglés y español.
+En esta sección, describiremos el funcionamiento de nuestro chatbot. Utilizamos el Procesamiento de Lenguaje Natural (PLN) para interactuar con los usuarios de manera más accesible. Además, hemos implementado la funcionalidad de generación de texto a audio. Esto significa que el usuario tiene la opción de recibir las respuestas del chatbot en formato de audio. Así, ofrecemos una experiencia más versátil y personalizada para nuestros usuarios. Nuestro chatbot ha sido implementado de manera completa, abarcando tanto el frontend como el backend.
 
-### 7.1 Importación de paquetes
+## **FRONT-END**
 
-Importamos aquellos paquetes necesarios para ejecutar nuestro programa
+### 7.1 Importación de módulos y componentes
 
-- `json`: nos permite trabajar con objetos JSON.
-- `googletrans`: es una biblioteca que implementa la API de Google Translate, permitiéndonos traducir texto de un idioma a otro.
+Empezamos importando los módulos necesarios de React, así como un componente de carga y los estilos CSS.
 
-![importacion](https://github.com/SilviaDS00/RecoFood/assets/146923466/eef3995c-3e77-4b5a-aa0b-9376443b888e)
+![modules_and_components](https://github.com/SilviaDS00/RecoFood/assets/146923466/f373c04c-1391-4fbc-8bab-8f31f49b34dd)
 
-### 7.2 Definición de la clase AsistenteRecetas
 
-La clase `AsistenteRecetas` es la principal de nuestro programa, donde implementamos todas las funcionalidades relacionadas con la gestión y visualización de recetas.
+### 7.2 Inicialización del componente Chatbot
 
-En su constructor (init), se inicializan varias variables de instancia:
+Se define el componente `Chatbot` y se inicializan varios estados y referencias. 
 
-- `self.translator`: Un objeto de la clase Translator que se utilizará para traducir texto.
+Los estados incluyen:
 
-- `self.idioma`: Un diccionario que mapea los nombres de los idiomas a sus códigos correspondientes (es o en).
+- `inputValue`: Almacena la entrada del usuario.
 
-- `self.idioma_elegido`: El idioma elegido por el usuario, obtenido llamando a la función elegir_idioma().
+- `messages`: Almacena los mensajes del chat.
 
-- `self.recetas`: Las recetas cargadas desde un archivo JSON, obtenidas llamando a la función carga_json().
+- `audioUrl`: Almacena la URL del audio.
 
-![Inicializador](https://github.com/SilviaDS00/RecoFood/assets/146923466/bbb1f866-1662-4e57-a7a3-04a5fc806b00)
+- `isLoading`: Indicar si se está cargando la respuesta del servidor.
+  
+- `audioRefs`: Almacena las referencias a los objetos de audio.
 
-El método `elegir_idioma` permite al usuario seleccionar un idioma. Continúa solicitando un idioma hasta que el usuario ingresa español o inglés.
+Las referencias incluyen:
 
-![eleccion_idioma](https://github.com/SilviaDS00/RecoFood/assets/146923466/e9d321ac-298b-459c-b0d0-2b92e33888dc)
+- `audioRef`: Para referenciar al objeto de audio actual.
 
-El método `traducir` utiliza el traductor para convertir un texto dado al idioma elegido por el usuario, lo que garantiza la comprensión adecuada de las recetas independientemente del idioma original.
+- `chatContainerRef`: Para referenciar al contenedor del chat.
 
-![traductor](https://github.com/SilviaDS00/RecoFood/assets/146923466/88032901-7586-4129-b0a0-1d9aa6cdf5e5)
+![chatbot_initiation](https://github.com/SilviaDS00/RecoFood/assets/146923466/fd3b2d05-4741-44cc-94af-eeb794824be0)
 
-El método `carga_json` carga las recetas desde archivos JSON según el idioma seleccionado
 
-![carga_json](https://github.com/SilviaDS00/RecoFood/assets/146923466/eb9154b1-f323-419d-b571-f0e5875eb0ea)
+### 7.3 Función para enviar datos al servidor
 
-El método `ver_receta` verifica si la receta especificada por el usuario existe en el sistema. Si existe, muestra el nombre de la receta, seguido de la lista de ingredientes y pasos de preparación, todo ello en el idioma elegido por el usuario. Si la receta no existe, muestra un mensaje indicando que no se encontró la receta.
+La función enviarDatos se encarga de enviar la entrada del usuario al servidor y procesar la respuesta. Esta función también maneja la creación y reproducción de archivos de audio.
 
-![ver_receta](https://github.com/SilviaDS00/RecoFood/assets/146923466/3c50b868-0ab9-4423-a03f-63f85aeb0cd0)
+![enviarDatos_function](https://github.com/SilviaDS00/RecoFood/assets/146923466/8a95a3f0-0fe7-4c3e-9d13-44324f1bd4f6)
 
-Por último, el método `otras_recetas` muestra todas las recetas disponibles y después pide al usuario que proporcione el nombre de una receta para poder mostrársela.
+### 7.4 Función para manejar la reproducción de audio
 
-![otras_recetas](https://github.com/SilviaDS00/RecoFood/assets/146923466/ff84bde7-9c56-483f-9b9f-0d0b17fc0bc3)
+La función toggleAudio se encarga de iniciar y detener la reproducción de audio.
 
-Después de definir la clase, creamos una instancia de esta clase llamada Bot.
+![toggleAudio_function](https://github.com/SilviaDS00/RecoFood/assets/146923466/0fa4fa6e-aab2-4663-98c1-69f15153d7c0)
 
-### 7.3 Interacción con el usuario
+### 7.5 Efectos secundarios
 
-El código proporciona un bucle que permite al usuario interactuar con el asistente de recetas. Dependiendo de la opción seleccionada, el programa ejecuta el método correspondiente de la clase, garantizando una interacción fluida y amigable con el usuario. En caso de ingresar una opción no válida, se muestra un mensaje de error y se solicita al usuario que ingrese nuevamente una opción válida.
+Se utilizan varios efectos secundarios (`useEffect`) para manejar la reproducción de audio y el desplazamiento automático de los mensajes.
 
-![menu](https://github.com/SilviaDS00/RecoFood/assets/146923466/1ff6434d-9e2f-4842-a46c-8ece0fb186d3)
+![useEffect_function](https://github.com/SilviaDS00/RecoFood/assets/146923466/a33408ea-49e1-47d0-81b0-81f72252e872)
+
+## **BACK-END**
+
+### 7.6 Importación de módulos y componentes
+
+Empezamos importando los módulos necesarios:
+
+- `Django`: Django: Se han utilizado varias funciones y clases de Django para manejar las solicitudes HTTP y las respuestas.
+
+- `Python Standard Library`: Se han utilizado varios módulos de la biblioteca estándar de Python para manejar las operaciones del sistema operativo, la entrada/salida, el registro, las fechas y horas, y las expresiones regulares.
+
+- `dotenv`: Para cargar las variables de entorno.
+
+- `gtts`: Para convertir el texto en voz.
+  
+- `google.generativeai`: Para interactuar con la API de Google Generative AI.
+
+![components_and_modules](https://github.com/SilviaDS00/RecoFood/assets/146923466/e7185291-25ef-4484-9401-5eca8979328e)
+
+
+### 7.7 Configuración del modelo de chat
+
+Configuramos el modelo de chat de Gemini-Pro y se inicia una nueva sesión de chat.
+
+![chat_configuration](https://github.com/SilviaDS00/RecoFood/assets/146923466/6614c9f5-4a5b-454d-9423-a777a4697be6)
+
+
+### 7.8 Definición de la vista del chatbot
+
+Definimos la vista chatbot_view que maneja las solicitudes GET y POST. En caso de una solicitud POST, se obtiene el mensaje del usuario, se envía al modelo de chat y se procesa la respuesta.
+
+![chatbot_view](https://github.com/SilviaDS00/RecoFood/assets/146923466/6cd5d339-1ecc-42f3-bb13-f65b96969924)
+
+
+### 7.9 Manejo de la solicitud POST
+
+Si se recibe una solicitud POST, se extrae el mensaje del usuario de los datos de la solicitud. Luego, se envía este mensaje al modelo de chat y se obtiene la respuesta.
+
+![post_request_handling](https://github.com/SilviaDS00/RecoFood/assets/146923466/3efdd2f7-5317-4227-b30d-f8f206f40085)
+
+
+### 7.10 Conversión de la respuesta a audio
+
+La respuesta del chatbot se convierte en audio utilizando la biblioteca gTTS. Se genera un nombre de archivo único para el archivo de audio y se guarda en el directorio de medios.
+
+![audio_conversion](https://github.com/SilviaDS00/RecoFood/assets/146923466/467c9af8-32cd-4f4f-951f-0c9024d225a9)
+
+
+### 7.11 Respuesta de la solicitud POST
+
+Finalmente, se devuelve la respuesta del chatbot y el nombre del archivo de audio como respuesta a la solicitud POST.
+
+![post_request_response](https://github.com/SilviaDS00/RecoFood/assets/146923466/7e4ea384-8cc0-4ad9-b08c-4f2a0d4c8316)
+
 
 ## 8. Aplicación web<a name="id8"></a>
 
