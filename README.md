@@ -589,45 +589,31 @@ Tecnologías usadas
 [![visualstudio](https://img.shields.io/badge/VisualStudio-black?style=for-the-badge&logo=visualstudio&logoColor=blue&labelColor=101010)]()
 [![anaconda](https://img.shields.io/badge/anaconda-black?style=for-the-badge&logo=anaconda&logoColor=green&labelColor=101010)]()
 
+[![Jupyter](https://img.shields.io/badge/jupyter-black?style=for-the-badge&logo=jupyter&logoColor=orange&labelColor=101010)]()
+
 <!-- FrontEnd -->
 
 [![React.js](https://img.shields.io/badge/React-black?style=for-the-badge&logo=React&logoColor=blue&labelColor=101010)]()
 [![Sass](https://img.shields.io/badge/sass-black?style=for-the-badge&logo=sass&logoColor=pink&labelColor=101010)]()
 
  
-[![django](https://img.shields.io/badge/Django-black?style=for-the-badge&logo=Django&logoColor=red&labelColor=101010)]()
+[![django](https://img.shields.io/badge/Django-black?style=for-the-badge&logo=Django&logoColor=green&labelColor=101010)]()
 [![Strapi](https://img.shields.io/badge/Strapi-black?style=for-the-badge&logo=Strapi&logoColor=blue&labelColor=101010)]()
 
-
-Diseño
-
-[![Figma](https://img.shields.io/badge/Figma-black?style=for-the-badge&logo=Figma&logoColor=purple&labelColor=101010)]()
-
-Control de versiones 
-
 [![Github](https://img.shields.io/badge/Github-black?style=for-the-badge&logo=Github&logoColor=white&labelColor=101010)]()
-[![Notion](https://img.shields.io/badge/Notion-black?style=for-the-badge&logo=Notion&logoColor=white&labelColor=101010)]()
 
-### :chart: Analisis
+
 
 [![numpy](https://img.shields.io/badge/numpy-black?style=for-the-badge&logo=numpy&logoColor=blue&labelColor=101010)]()[![pandas](https://img.shields.io/badge/pandas-black?style=for-the-badge&logo=pandas&logoColor=purple&labelColor=101010)]()[![Plotly](https://img.shields.io/badge/Plotly-black?style=for-the-badge&logo=Plotly&logoColor=white&labelColor=101010)]()
 
-### :brain: Machine Learning
 
-[![Tendorflow](https://img.shields.io/badge/TensorFlow-black?style=for-the-badge&logo=TensorFlow&logoColor=orange&labelColor=101010)]()
+[![Tensorflow](https://img.shields.io/badge/TensorFlow-black?style=for-the-badge&logo=TensorFlow&logoColor=orange&labelColor=101010)]()
+
+[![Keras](https://img.shields.io/badge/Feras-black?style=for-the-badge&logo=Keras&logoColor=red&labelColor=101010)]()
+
 [![scikit](https://img.shields.io/badge/scikit--learn-black?style=for-the-badge&logo=scikit-learn&logoColor=orange&labelColor=101010)]()
 
-### :spider: Scraping
-
-[![Selenium](https://img.shields.io/badge/Selenium-black?style=for-the-badge&logo=Selenium&logoColor=green&labelColor=101010)]()
-[![Beatifulsoup](https://img.shields.io/badge/Beatifulsoup-black?style=for-the-badge&logo=Python&logoColor=orange&labelColor=101010)]()
-
-### :paperclip: Documentación
-
-[![chatgpt](https://img.shields.io/badge/chatgpt-black?style=for-the-badge&logo=OpenAI&logoColor=white&labelColor=101010)]()
-[![bing](https://img.shields.io/badge/chatbing-black?style=for-the-badge&logo=microsoftbing&logoColor=celest&labelColor=101010)]()
-[![stackoverflow](https://img.shields.io/badge/stackoverflow-black?style=for-the-badge&logo=stackoverflow&logoColor=celest&labelColor=101010)]()
-
+[![Trello](https://img.shields.io/badge/trello-black?style=for-the-badge&logo=trello&logoColor=blue&labelColor=101010)]()
 
 </div>
 
