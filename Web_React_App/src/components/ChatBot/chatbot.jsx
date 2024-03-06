@@ -29,6 +29,7 @@ function Chatbot() {
       try {
         setIsLoading(true);
 
+        // Muestra el mensaje del usuario por la web
         setMessages((prevMessages) => [
           ...prevMessages,
           { type: "user", text: trimmedInput },

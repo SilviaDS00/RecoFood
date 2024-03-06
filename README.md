@@ -314,7 +314,7 @@ El entrenamiendo del modelo de predicción del IMC lo puedes encontrar en este c
 
 ## 7. Procesamiento del Lenguaje Natural - ChatBot<a name="id7"></a>
 
-En esta sección, describiremos el funcionamiento de nuestro chatbot. Utilizamos el Procesamiento de Lenguaje Natural (PLN) para interactuar con los usuarios de manera más accesible. Además, hemos implementado la funcionalidad de generación de texto a audio. Esto significa que el usuario tiene la opción de recibir las respuestas del chatbot en formato de audio. Así, ofrecemos una experiencia más versátil y personalizada para nuestros usuarios. Nuestro chatbot ha sido implementado de manera completa, abarcando tanto el frontend como el backend.
+En esta sección, describimos el funcionamiento de nuestro chatbot. Utilizamos el Procesamiento de Lenguaje Natural (PLN) para interactuar con los usuarios de una manera más accesible. Además, hemos implementado la funcionalidad de generación de texto a audio. Esto significa que el usuario tiene la opción de recibir las respuestas del chatbot en formato de voz. Así, ofrecemos una experiencia más versátil y personalizada para nuestros usuarios. Nuestro chatbot ha sido implementado de manera completa, abarcando tanto el frontend como el backend.
 
 ## **FRONT-END**
 
@@ -352,9 +352,19 @@ Las referencias incluyen:
 
 ### 7.3 Función para enviar datos al servidor
 
-La función enviarDatos se encarga de enviar la entrada del usuario al servidor y procesar la respuesta. Esta función también maneja la creación y reproducción de archivos de audio.
+La función enviarDatos se encarga de enviar la entrada del usuario al servidor y procesar la respuesta. 
 
-![enviarDatos_function](https://github.com/SilviaDS00/RecoFood/assets/146923466/8a95a3f0-0fe7-4c3e-9d13-44324f1bd4f6)
+#### 7.3.1 Preparación del mensaje del usuario y envío de la solicitud al servidor
+
+
+
+#### 7.3.2 Obtención de la respuesta del servidor
+
+
+
+#### 7.3.3 Obtención y preparación del audio de la respuesta del servidor
+
+
 
 ### 7.4 Función para manejar la reproducción de audio
 
@@ -374,7 +384,7 @@ Se utilizan varios efectos secundarios (`useEffect`) para manejar la reproducci�
 
 Empezamos importando los módulos necesarios:
 
-- `Django`: Django: Se han utilizado varias funciones y clases de Django para manejar las solicitudes HTTP y las respuestas.
+- `Django`: Se han utilizado varias funciones y clases de Django para manejar las solicitudes HTTP y las respuestas.
 
 - `Python Standard Library`: Se han utilizado varios módulos de la biblioteca estándar de Python para manejar las operaciones del sistema operativo, la entrada/salida, el registro, las fechas y horas, y las expresiones regulares.
 
@@ -398,28 +408,18 @@ Configuramos el modelo de chat de Gemini-Pro y se inicia una nueva sesión de ch
 
 Definimos la vista chatbot_view que maneja las solicitudes GET y POST. En caso de una solicitud POST, se obtiene el mensaje del usuario, se envía al modelo de chat y se procesa la respuesta.
 
-![chatbot_view](https://github.com/SilviaDS00/RecoFood/assets/146923466/6cd5d339-1ecc-42f3-bb13-f65b96969924)
+#### 7.8.1 Obtiene los datos de la solicitud POST
 
 
-### 7.9 Manejo de la solicitud POST
 
-Si se recibe una solicitud POST, se extrae el mensaje del usuario de los datos de la solicitud. Luego, se envía este mensaje al modelo de chat y se obtiene la respuesta.
-
-![post_request_handling](https://github.com/SilviaDS00/RecoFood/assets/146923466/3efdd2f7-5317-4227-b30d-f8f206f40085)
+#### 7.8.2 Envía el mensaje del usuario a Gemini-Pro y obtiene la respuesta
 
 
-### 7.10 Conversión de la respuesta a audio
 
-La respuesta del chatbot se convierte en audio utilizando la biblioteca gTTS. Se genera un nombre de archivo único para el archivo de audio y se guarda en el directorio de medios.
-
-![audio_conversion](https://github.com/SilviaDS00/RecoFood/assets/146923466/467c9af8-32cd-4f4f-951f-0c9024d225a9)
+#### 7.8.3 Convierte la respuesta del chatbot en audio y devuelve la respuesta al cliente
 
 
-### 7.11 Respuesta de la solicitud POST
 
-Finalmente, se devuelve la respuesta del chatbot y el nombre del archivo de audio como respuesta a la solicitud POST.
-
-![post_request_response](https://github.com/SilviaDS00/RecoFood/assets/146923466/7e4ea384-8cc0-4ad9-b08c-4f2a0d4c8316)
 
 
 ## 8. Aplicación web<a name="id8"></a>
