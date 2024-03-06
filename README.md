@@ -57,6 +57,8 @@ La clasificación de alimentos a través de Food101 es esencial para ayudar a lo
 
 ### Entrenamiento de clasificación de imágenes
 
+Para la creación de nuestro modelo de clasificación de imágenes, lo hemos hecho mediante **Redes Neuronales Convolucionales**, usando las librerías de TensorFlor y Keras.
+
 ## 2. Obtención de los datos<a name="id2"></a>
 
 **NOTA:** Todos los pasos de obtención de los datos, visualización de los datos y entrenamiento del modelo se hacen en [este Cuaderno de Jupyter](https://github.com/SilviaDS00/RecoFood/blob/main/Modelo_Entrenamiento/Modelo_RecoFood.ipynb)
@@ -182,8 +184,6 @@ Found 20200 images belonging to 101 classes.
 ```
 
 ## 5. Entrenamiento del modelo y comprobación del rendimiento<a name="id5"></a>
-
-Para la creación de nuestro modelo, lo hemos hecho mediante **Redes Neuronales Convolucionales**
 
 Hemos realizado pruebas con 3 arquitecturas preentrenadas: `InceptionV3`, `ResNet50`, `DenseNet121`.
 
