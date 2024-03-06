@@ -7,7 +7,7 @@ _TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, 
 ---
 <div align="center">
 
-[Presentación](https://github.com/SilviaDS00/RecoFood/blob/main/Presentaci%C3%B3n-RecoFood-TFM.pdf) | [Vídeo](#id15)
+[Presentación](https://github.com/SilviaDS00/RecoFood/blob/main/Presentaci%C3%B3n-RecoFood-TFM.pdf) | [Vídeo]([#id15](https://youtu.be/gkjc4TvADOY)
 
 </div>
 
