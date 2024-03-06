@@ -3,6 +3,8 @@ import { Loader } from "semantic-ui-react";
 import "./chatbot.scss";
 
 function Chatbot() {
+
+  // Estados
   const [inputValue, setInputValue] = useState("");
   const [messages, setMessages] = useState([
     { type: "bot", text: "¡Hola! Me alegro de verte. ¿En qué puedo ayudarte hoy?" },
@@ -12,6 +14,7 @@ function Chatbot() {
   const [isLoading, setIsLoading] = useState(false);
   const [audioRefs, setAudioRefs] = useState({});
 
+  // Referencias
   const audioRef = useRef();
   const chatContainerRef = useRef();
 
@@ -151,3 +154,6 @@ function Chatbot() {
 }
 
 export default Chatbot;
+
+
+

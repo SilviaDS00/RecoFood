@@ -194,3 +194,5 @@ def prediction_bmi(request):
         return JsonResponse(response_data)
     else:
         return JsonResponse({"message": "Método no permitido"}, status=405)
+
+
