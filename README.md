@@ -652,7 +652,7 @@ _TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, 
 
 ## Porcentajes de trabajo del grupo
 
-Silvia Donaire Serrano: 53%
+Silvia Donaire Serrano: 52%
 
 Elena Racero González: 33%
 
