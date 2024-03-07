@@ -649,3 +649,9 @@ Tecnologías usadas
 ---
 
 _TFM realizado por **[Silvia Donaire Serrano](https://github.com/SilviaDS00)**, **[Elena Racero González](https://github.com/ElenaRacero3)** y **[Manuel Fajardo Jiménez](https://github.com/Manufajimez)** del Máster de Inteligencia Arficial y Big Data del CPIFP Alan Turing_
+
+## Porcentajes de trabajo del grupo
+
+Silvia Donaire Serrano: 53%
+Elena Racero González: 33%
+Manuel Fajardo Jiménez: 15%
